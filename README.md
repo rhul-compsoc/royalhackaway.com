@@ -1,1 +1,1 @@
-# royalhackaway.github.io
+# royalhackaway.xyz
