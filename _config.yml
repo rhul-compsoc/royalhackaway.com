@@ -34,37 +34,25 @@ sponsors: {
   ]
 }
 event: {
-  public: false,
+  public: true,
   name: Hackathon 2018,
   details: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and {{}} come together and make awesome projects!',
   schedule: {
     'Saturday' : [
-      ['10:00', 'asdf'],
-      ['11:00', 'asdf'],
-      ['12:00', 'asdf'],
-      ['13:00', 'asdf'],
-      ['14:00', 'asdf'],
-      ['15:00', 'asdf'],
-      ['16:00', 'asdf'],
-      ['17:00', 'asdf'],
-      ['18:00', 'asdf'],
-      ['19:00', 'asdf'],
-      ['20:00', 'asdf'],
-      ['21:00', 'asdf']
+      ['10:00', 'Registration opens'],
+      ['11:00', 'Opening Ceremony'],
+      ['12:00', 'Hacking Begins'],
+      ['13:00', 'Lunch'],
+      ['18:00', 'Dinner'],
+      ['21:00', 'MLH Minigame'],
+      ['23:59', 'Midnight Pizza']
     ],
     'Sunday': [
-      ['10:00', 'fdsa'],
-      ['11:00', 'fdsa'],
-      ['12:00', 'fdsa'],
-      ['13:00', 'fdsa'],
-      ['14:00', 'fdsa'],
-      ['15:00', 'fdsa'],
-      ['16:00', 'fdsa'],
-      ['17:00', 'fdsa'],
-      ['18:00', 'fdsa'],
-      ['19:00', 'fdsa'],
-      ['20:00', 'fdsa'],
-      ['21:00', 'fdsa']
+      ['08:00', 'Breakfast'],
+      ['12:00', 'Hacking Ends and Lunch'],
+      ['13:00', 'Presentations'],
+      ['15:00', 'Judging'],
+      ['16:00', 'Closing Ceremony']
     ]
   },
   date: '2018-01-13T10:10:00+00:00',
