@@ -35,7 +35,7 @@ sponsors: {
 }
 event: {
   public: true,
-  name: Hackathon 2018,
+  name: Royal Hackaway 2018,
   details: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and {{}} come together and make awesome projects!',
   schedule: {
     'Saturday' : [
