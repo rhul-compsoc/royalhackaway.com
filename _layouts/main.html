@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  {% include head.html %}
+
+  <body id="top">
+
+    {% include header.html %}
+
+    <main>
+
+      <!--<section id="mlh" class="tint-bg">
+        <div class="text-center" style="padding: 10px;">
+          <a href="https://mlh.io/seasons/eu-2017/events">
+            <img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-white.svg" style="height: 2vw;">
+          </a>
+        </div>
+      </section>-->
+
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+    <script src="https://cdn.rawgit.com/requirejs/requirejs/master/require.js" data-main="/assets/js/app.min.js"></script>
+
+  </body>
+</html>

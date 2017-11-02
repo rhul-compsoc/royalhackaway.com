@@ -1,0 +1,103 @@
+description: 'Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.'
+author: Benzi <hi@benzi.io>
+email: contact@royalhackaway.xyz
+navs:
+  - {name: Home, path: /}
+  - {name: About, path: /about}
+  - {name: Sponsors,path: /sponsors}
+  - {name: Schedule, path: /schedule}
+  - {name: Code of Conduct, path: /coc}
+socials:
+  - {name: Facebook, url: '#', icon: icon-s-facebook}
+  - {name: Twitter, url: '#', icon: icon-s-twitter}
+sponsors: {
+  gold: [
+    {
+      name: GitHub,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://github.com',
+      logo: '/assets/images/github.svg',
+      shade: dark,
+      color: '#0f0d0e'
+    }
+  ], silver: [
+    {
+      name: Twitter,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://twitter.com',
+      logo: '/assets/images/twitter.svg',
+      shade: dark,
+      color: '#1da1f2'
+    }
+  ], bronze: [
+    {
+      name: GitHub,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://github.com',
+      logo: '/assets/images/github.svg',
+      shade: dark,
+      color: '#0f0d0e'
+    }, {
+      name: Twitter,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://twitter.com',
+      logo: '/assets/images/twitter.svg',
+      shade: dark,
+      color: '#1da1f2'
+    }
+  ], partner: [
+    {
+      name: GitHub,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://github.com',
+      logo: '/assets/images/github.svg',
+      shade: dark,
+      color: '#0f0d0e'
+    }, {
+      name: Twitter,
+      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      url: 'https://twitter.com',
+      logo: '/assets/images/twitter.svg',
+      shade: dark,
+      color: '#1da1f2'
+    }
+  ]
+}
+event: {
+  public: true,
+  name: Hackathon 2018,
+  details: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+  schedule: {
+    'Saturday' : [
+      ['10:00', 'asdf'],
+      ['11:00', 'asdf'],
+      ['12:00', 'asdf'],
+      ['13:00', 'asdf'],
+      ['14:00', 'asdf'],
+      ['15:00', 'asdf'],
+      ['16:00', 'asdf'],
+      ['17:00', 'asdf'],
+      ['18:00', 'asdf'],
+      ['19:00', 'asdf'],
+      ['20:00', 'asdf'],
+      ['21:00', 'asdf']
+    ],
+    'Sunday': [
+      ['10:00', 'fdsa'],
+      ['11:00', 'fdsa'],
+      ['12:00', 'fdsa'],
+      ['13:00', 'fdsa'],
+      ['14:00', 'fdsa'],
+      ['15:00', 'fdsa'],
+      ['16:00', 'fdsa'],
+      ['17:00', 'fdsa'],
+      ['18:00', 'fdsa'],
+      ['19:00', 'fdsa'],
+      ['20:00', 'fdsa'],
+      ['21:00', 'fdsa']
+    ]
+  },
+  date: '2018-02-08T10:00:00+00:00',
+  location: 'Windsor Building',
+  tickets: '#'
+}

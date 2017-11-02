@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Royal Hackaway</title>
-  </head>
-  <body>
-    <code>coming soon ...</code>
-  </body>
-</html>
+---
+layout: main
+title: Home
+---
+
+<section id="hero">
+  <div id="owl-main" class="owl-carousel owl-one-item">
+
+    <div class="item img-bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/rhul-founders.jpg);">
+      <div class="container">
+        <div class="caption vertical-center text-center">
+          <h1 class="fadeInDown-1 light-color">Royal Hackaway</h1>
+          <p class="fadeInDown-2 light-color">Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+          <a class="fadeInDown-3 light-color btn" href="/sponsors">Sponsor Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% if site.event.public %}
+  <section id="tickets" class="tint-bg">
+    <div class="container inner-sm">
+      <div class="row">
+        <div class="col-sm-11 center-block text-center">
+          <h1 class="single-block">Get a ticket for the next hackathon! <a href="{{ site.event.tickets }}" class="btn btn-large">Buy Ticket</a></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}

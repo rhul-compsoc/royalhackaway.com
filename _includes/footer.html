@@ -1,0 +1,47 @@
+<footer class="dark-bg">
+  <div class="container inner">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 inner">
+        <a href="#top" class="scroll-to"><img class="logo img-intext" src="/assets/images/logo-light.svg" alt=""></a>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 inner">
+        <h4>Scheduled Event</h4>
+
+          {% if site.event.public %}
+
+              <ul class="item-details">
+                <li class="location">{{ site.event.location }}</li>
+                <li class="date">{{ site.event.date | date: '%d %B %Y' }}</li>
+                <li class="time">{{ site.event.date | date: '%I:%M %p' }}</li>
+              </ul>
+
+              <a href="/schedule" class="txt-btn">More information</a>
+
+          {% else %}
+            <p>There are currently no upcoming events.</p>
+          {% endif %}
+
+      </div>
+
+      <div class="col-md-4 col-sm-6 inner">
+        <h4>Contact Us</h4>
+        <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+        <ul class="contacts">
+          <li><a href="mailto:{{ site.email }}"><i class="icon-mail-1 contact"></i> {{ site.email }}</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container inner">
+      <p class="text-center">
+        <i class="icon-code"></i>&nbsp;with&nbsp;<i class="icon-heart"></i>&nbsp;by&nbsp;<a href="https://github.com/Benzi" target="_blank">Benzi</a>
+      </p>
+    </div>
+  </div>
+</footer>
