@@ -1,4 +1,4 @@
-description: 'Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.'
+description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018/'
 author: Benzi <hi@benzi.io>
 email: contact@royalhackaway.xyz
 navs:
@@ -9,64 +9,34 @@ navs:
   - {name: Code of Conduct, path: /coc}
 socials:
   - {name: Facebook, url: '#', icon: icon-s-facebook}
-  - {name: Twitter, url: '#', icon: icon-s-twitter}
+  - {name: Twitter, url: 'https://twitter.com/royalhackaway', icon: icon-s-twitter}
 sponsors: {
   gold: [
-    {
-      name: GitHub,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
-      url: 'https://github.com',
-      logo: '/assets/images/github.svg',
-      shade: dark,
-      color: '#0f0d0e'
-    }
   ], silver: [
-    {
-      name: Twitter,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
-      url: 'https://twitter.com',
-      logo: '/assets/images/twitter.svg',
-      shade: dark,
-      color: '#1da1f2'
-    }
   ], bronze: [
-    {
-      name: GitHub,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
-      url: 'https://github.com',
-      logo: '/assets/images/github.svg',
-      shade: dark,
-      color: '#0f0d0e'
-    }, {
-      name: Twitter,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
-      url: 'https://twitter.com',
-      logo: '/assets/images/twitter.svg',
-      shade: dark,
-      color: '#1da1f2'
-    }
   ], partner: [
     {
       name: GitHub,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+      description: '',
       url: 'https://github.com',
       logo: '/assets/images/github.svg',
       shade: dark,
       color: '#0f0d0e'
-    }, {
-      name: Twitter,
-      description: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
-      url: 'https://twitter.com',
-      logo: '/assets/images/twitter.svg',
-      shade: dark,
-      color: '#1da1f2'
+    }, 
+    {
+      name: MLH,
+      description: '',
+      url: 'https://mlh.io',
+      logo: '/assets/images/mlh.svg',
+      shade: light,
+      color: '#ffffff'
     }
   ]
 }
 event: {
-  public: true,
+  public: false,
   name: Hackathon 2018,
-  details: 'Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.',
+  details: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and {{}} come together and make awesome projects!',
   schedule: {
     'Saturday' : [
       ['10:00', 'asdf'],
@@ -97,7 +67,7 @@ event: {
       ['21:00', 'fdsa']
     ]
   },
-  date: '2018-02-08T10:00:00+00:00',
-  location: 'Windsor Building',
-  tickets: '#'
+  date: '2018-01-13T10:10:00+00:00',
+  location: 'Royal Holloway, Windsor Building',
+  tickets: 'https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279'
 }
