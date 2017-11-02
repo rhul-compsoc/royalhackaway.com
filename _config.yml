@@ -1,4 +1,4 @@
-description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018/'
+description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018'
 author: Benzi <hi@benzi.io>
 email: sponsors@royalhackaway.xyz
 navs:
@@ -22,7 +22,7 @@ sponsors: {
       logo: '/assets/images/github.svg',
       shade: dark,
       color: '#0f0d0e'
-    }, 
+    },
     {
       name: MLH,
       description: 'Major League Hacking (MLH) is the official student hackathon league.',
@@ -67,7 +67,7 @@ event: {
       ['21:00', 'fdsa']
     ]
   },
-  date: '2018-01-13T10:10:00+00:00',
+  date: '2018-01-13T10:00:00+00:00',
   location: 'Royal Holloway, Windsor Building',
   tickets: 'https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279'
 }
