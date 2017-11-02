@@ -3,11 +3,7 @@
     <div class="navbar-header">
       <div class="container">
 
-        <ul class="info pull-left">
-          <li><a href="https://mlh.io/seasons/eu-2017/events"><img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-grayscale.svg" style="height: 20px;"></a></li>
-        </ul>
-
-        <ul class="social pull-right">
+        <ul class="social pull-left">
           {% for social in site.socials %}
             <li><a href="{{ social.url }}"><i class="{{ social.icon }}"></i></a></li>
           {% endfor %}
@@ -28,7 +24,7 @@
             <img src="/assets/images/logo-dark.svg" class="logo" alt="Royal Hackaway">
           </a>
 
-          <ul class="nav navbar-nav pull-right">
+          <ul class="nav navbar-nav pull-left">
             {% for nav in site.navs %}
               <li><a href="{{ nav.path }}" class="scroll-to" data-anchor-offset="0">{{ nav.name }}</a></li>
             {% endfor %}

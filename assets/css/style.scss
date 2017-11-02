@@ -35,6 +35,13 @@ footer p a {
 #faq h3, #faq p {
   text-align: center;
 }
+#mlh-banner {
+  display: none;
+}
+#mlh-banner img {
+  height: 10vw;
+  padding: 15px;
+}
 
 @keyframes colorshift {
   @for $i from 1 through 7 {
@@ -83,5 +90,14 @@ footer p a {
     #{percentage(1/6) * ($i - 1)} {
       border-left-color: unquote(nth($colors, $i));
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  #mlh-trust-badge {
+    visibility: hidden;
+  }
+  #mlh-banner {
+    display: block;
   }
 }

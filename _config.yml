@@ -1,4 +1,4 @@
-description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018'
+description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018.'
 author: Benzi <hi@benzi.io>
 email: sponsors@royalhackaway.xyz
 navs:
@@ -11,10 +11,10 @@ socials:
   - {name: Facebook, url: '#', icon: icon-s-facebook}
   - {name: Twitter, url: 'https://twitter.com/royalhackaway', icon: icon-s-twitter}
 sponsors: {
-  gold: [
-  ], silver: [
-  ], bronze: [
-  ], partner: [
+  gold: [],
+  silver: [],
+  bronze: [],
+  partner: [
     {
       name: GitHub,
       description: 'GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers.',
@@ -22,8 +22,7 @@ sponsors: {
       logo: '/assets/images/github.svg',
       shade: dark,
       color: '#0f0d0e'
-    },
-    {
+    }, {
       name: MLH,
       description: 'Major League Hacking (MLH) is the official student hackathon league.',
       url: 'https://mlh.io',
@@ -36,7 +35,7 @@ sponsors: {
 event: {
   public: true,
   name: Royal Hackaway 2018,
-  details: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and {{}} come together and make awesome projects!',
+  details: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and programmers come together and make awesome projects!',
   schedule: {
     'Saturday' : [
       ['10:00', 'Registration opens'],

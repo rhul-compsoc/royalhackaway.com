@@ -36,15 +36,17 @@ title: Sponsors
         {% capture heading %}Partners{% endcapture %}
       {% endif %}
 
-      <div id="{{ id }}" class="container">
-        <div class="row inner-sm">
-          <div class="col-md-8 col-sm-9 center-block text-center">
-            <header>
-              <h2 style="text-transform: uppercase;">{{ heading }}</h2>
-            </header>
+      {% if s[1].size > 0 %}
+        <div id="{{ id }}" class="container">
+          <div class="row inner-sm">
+            <div class="col-md-8 col-sm-9 center-block text-center">
+              <header>
+                <h2 style="text-transform: uppercase;">{{ heading }}</h2>
+              </header>
+            </div>
           </div>
         </div>
-      </div>
+      {% endif %}
 
       {% for sponsor in s[1] %}
 
