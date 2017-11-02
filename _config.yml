@@ -1,6 +1,6 @@
 description: 'Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018/'
 author: Benzi <hi@benzi.io>
-email: contact@royalhackaway.xyz
+email: sponsors@royalhackaway.xyz
 navs:
   - {name: Home, path: /}
   - {name: About, path: /about}
