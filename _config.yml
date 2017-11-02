@@ -25,7 +25,7 @@ sponsors: {
     }, 
     {
       name: MLH,
-      description: 'Major League Hacking (MLH) is the official student hackathon league. Each year, they power over 200 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to more than 65,000 students around the world. MLH is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.',
+      description: 'Major League Hacking (MLH) is the official student hackathon league.',
       url: 'https://mlh.io',
       logo: '/assets/images/mlh.svg',
       shade: light,
