@@ -29,8 +29,7 @@ sponsors: {
       logo: '/assets/images/mlh.svg',
       shade: light,
       color: '#ffffff'
-    }, 
-    {
+    }, {
       name: Majestic,
       description: 'The planet's largest Link Index database',
       url: 'https://majestic.com',
