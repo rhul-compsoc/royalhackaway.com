@@ -1,97 +1,97 @@
---- 
+---
 author: "Benzi <hi@benzi.io>"
 description: "Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018."
 email: sponsors@royalhackaway.xyz
-event: 
+event:
   date: "2018-01-13T10:00:00+00:00"
   details: "Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and programmers come together and make awesome projects!"
   location: "Royal Holloway, Windsor Building"
   name: "Royal Hackaway 2018"
   public: true
-  schedule: 
-    Saturday: 
-      - 
+  schedule:
+    Saturday:
+      -
         - "10:00"
         - "Registration opens"
-      - 
+      -
         - "11:00"
         - "Opening Ceremony"
-      - 
+      -
         - "12:00"
         - "Hacking Begins"
-      - 
+      -
         - "13:00"
         - Lunch
-      - 
+      -
         - "18:00"
         - Dinner
-      - 
+      -
         - "21:00"
         - "MLH Minigame"
-      - 
+      -
         - "23:59"
         - "Midnight Pizza"
-    Sunday: 
-      - 
+    Sunday:
+      -
         - "08:00"
         - Breakfast
-      - 
+      -
         - "12:00"
         - "Hacking Ends and Lunch"
-      - 
+      -
         - "13:00"
         - Presentations
-      - 
+      -
         - "15:00"
         - Judging
-      - 
+      -
         - "16:00"
         - "Closing Ceremony"
   tickets: "https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279"
-navs: 
-  - 
+navs:
+  -
     name: Home
     path: /
-  - 
+  -
     name: About
     path: /about
-  - 
+  -
     name: Sponsors
     path: /sponsors
-  - 
+  -
     name: Schedule
     path: /schedule
-  - 
+  -
     name: "Code of Conduct"
     path: /coc
-socials: 
-  - 
+socials:
+  -
     icon: icon-s-facebook
     name: Facebook
     url: "#"
-  - 
+  -
     icon: icon-s-twitter
     name: Twitter
     url: "https://twitter.com/royalhackaway"
-sponsors: 
+sponsors:
   bronze: []
   gold: []
-  partner: 
-    - 
+  partner:
+    -
       color: "#0f0d0e"
       description: "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers."
       logo: /assets/images/github.svg
       name: GitHub
       shade: dark
       url: "https://github.com"
-    - 
+    -
       color: "#ffffff"
       description: "Major League Hacking (MLH) is the official student hackathon league."
       logo: /assets/images/mlh.svg
       name: MLH
       shade: light
       url: "https://mlh.io"
-    - 
+    -
       color: "#ffffff"
       description: "The planet's largest Link Index database"
       logo: /assets/images/majestic.png
