@@ -92,10 +92,10 @@ sponsors:
       shade: light
       url: "https://mlh.io"
     - 
-      color: "#ffffff"
+      color: "#1c3b51"
       description: "The planet's largest Link Index database"
       logo: /assets/images/majestic.png
       name: Majestic
-      shade: light
+      shade: dark
       url: "https://majestic.com"
   silver: []
