@@ -12,7 +12,7 @@ event:
     Saturday:
       -
         - "10:00"
-        - "Registration opens"
+        - "Registration Opens"
       -
         - "11:00"
         - "Opening Ceremony"
@@ -24,13 +24,13 @@ event:
         - Lunch
       -
         - "15:00"
-        - Using APIs - Abdul
+        - Using APIs (Workshop)
       -
         - "16:00"
-        - Git and GitHub - Oliver
+        - Git and GitHub (Workshop)
       -
         - "16:00"
-        - How to manage your team and win at hackathons - Wilson
+        - How to manage your team and win at hackathons (Workshop)
       -
         - "18:00"
         - Dinner
@@ -46,7 +46,7 @@ event:
         - Breakfast
       -
         - "12:00"
-        - "Hacking Ends and Lunch"
+        - "Hacking Ends w/ Lunch"
       -
         - "13:00"
         - Presentations
