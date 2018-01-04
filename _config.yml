@@ -1,62 +1,6 @@
 ---
+description: "Royal Hackaway hosts hackathons organised by students for students at Royal Holloway, University of London."
 author: "Benzi <hi@benzi.io>"
-description: "Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018."
-email: hugh@royalhackaway.xyz
-event:
-  date: "2018-01-13T10:00:00+00:00"
-  details: "Royal Hackaway is a 24 hour student hackathon hosted at Royal Holloway on the 13th to the 14th of January 2018 where the most creative inventors, desginers and programmers come together and make awesome projects!"
-  location: "Royal Holloway, Windsor Building"
-  name: "Royal Hackaway 2018"
-  public: true
-  schedule:
-    Saturday:
-      -
-        - "10:00"
-        - "Registration Opens"
-      -
-        - "11:00"
-        - "Opening Ceremony"
-      -
-        - "12:00"
-        - "Hacking Begins"
-      -
-        - "13:00"
-        - Lunch
-      -
-        - "15:00"
-        - Using APIs (Workshop)
-      -
-        - "16:00"
-        - Git and GitHub (Workshop)
-      -
-        - "16:00"
-        - How to manage your team and win at hackathons (Workshop)
-      -
-        - "18:00"
-        - Dinner
-      -
-        - "21:00"
-        - "MLH Minigame"
-      -
-        - "23:59"
-        - "Midnight Pizza"
-    Sunday:
-      -
-        - "08:00"
-        - Breakfast
-      -
-        - "12:00"
-        - "Hacking Ends w/ Lunch"
-      -
-        - "13:00"
-        - Presentations
-      -
-        - "15:00"
-        - Judging
-      -
-        - "16:00"
-        - "Closing Ceremony"
-  tickets: "https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279"
 navs:
   -
     name: Home
@@ -82,36 +26,92 @@ socials:
     icon: icon-s-twitter
     name: Twitter
     url: "https://twitter.com/royalhackaway"
+email: hugh@royalhackaway.xyz
+event:
+  date: "2018-01-13T10:00:00+00:00"
+  details: "Royal Hackaway 2018 is a 24 hour hackathon taking place on the 13-14 January 2018. This is great opportunity for creative inventors, designers and programmers to come together to create awesome projects."
+  location: "Windsor Building, Royal Holloway, UoL"
+  name: "Royal Hackaway 2018"
+  public: true
+  schedule:
+    "Saturday — Day 1":
+      -
+        - "10:00"
+        - "Registration Opens"
+      -
+        - "11:00"
+        - "Opening Ceremony"
+      -
+        - "12:00"
+        - "Hacking Begins"
+      -
+        - "13:00"
+        - "Lunch"
+      -
+        - "15:00"
+        - "Using APIs (Workshop)"
+      -
+        - "16:00"
+        - "Git and GitHub (Workshop)"
+      -
+        - "16:00"
+        - "How to manage your team and win at hackathons (Workshop)"
+      -
+        - "18:00"
+        - "Dinner"
+      -
+        - "21:00"
+        - "MLH Minigame"
+      -
+        - "23:59"
+        - "Midnight Pizza"
+    "Sunday — Day 2":
+      -
+        - "08:00"
+        - "Breakfast"
+      -
+        - "12:00"
+        - "Hacking Ends w/ Lunch"
+      -
+        - "13:00"
+        - "Presentations"
+      -
+        - "15:00"
+        - "Judging"
+      -
+        - "16:00"
+        - "Closing Ceremony"
+  tickets: "https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279"
 sponsors:
-  bronze: []
   gold: []
+  silver: []
+  bronze: []
   partner:
     -
-      color: "#0f0d0e"
+      color: "#0F0D0E"
       description: "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers."
       logo: /assets/images/github.svg
       name: GitHub
       shade: dark
       url: "https://github.com"
     -
-      color: "#ffffff"
+      color: "#FFF"
       description: "Major League Hacking (MLH) is the official student hackathon league."
       logo: /assets/images/mlh.svg
       name: MLH
       shade: light
       url: "https://mlh.io"
     -
-      color: "#ffffff"
+      color: "#FFF"
       description: "Majestic: The planet's largest Link Index database"
       logo: /assets/images/majestic.png
       name: Majestic
       shade: light
       url: "https://majestic.com"
     -
-      color: "#ffffff"
+      color: "#FFF"
       description: "Department of Computer Science at Royal Holloway, University of London"
       logo: /assets/images/rhul-logo.svg
       name: "Department of Computer Science"
       shade: light
       url: "https://www.royalholloway.ac.uk/computerscience/home.aspx"
-  silver: []
