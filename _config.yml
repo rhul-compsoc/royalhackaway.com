@@ -28,11 +28,24 @@ socials:
     url: "https://twitter.com/royalhackaway"
 email: hugh@royalhackaway.xyz
 event:
+  public: true
   date: "2018-01-13T10:00:00+00:00"
+  name: "Royal Hackaway 2018"
   details: "Royal Hackaway 2018 is a 24 hour hackathon taking place on the 13-14 January 2018. This is great opportunity for creative inventors, designers and programmers to come together to create awesome projects."
   location: "Windsor Building, Royal Holloway, UoL"
-  name: "Royal Hackaway 2018"
-  public: true
+  map:
+    coords:
+      lat: "51.4253791"
+      lng: "-0.5674995"
+    placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
+  venue_floor_plan: ""
+  tickets: "https://royalhackaway.eventbrite.com"
+  start: "2018-01-13T12:00:00+00:00"
+  end: "2018-01-14T12:00:00+00:00"
+  internet:
+    ssid: "CampusNet"
+    username: "Hackathon"
+    password: "LjMTQEj5"
   schedule:
     "Saturday — Day 1":
       -
@@ -81,7 +94,6 @@ event:
       -
         - "16:00"
         - "Closing Ceremony"
-  tickets: "https://www.eventbrite.co.uk/e/royal-hackaway-tickets-39231435279"
 sponsors:
   gold: []
   silver: []

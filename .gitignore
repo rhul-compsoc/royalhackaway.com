@@ -6,7 +6,7 @@ _site
 .sass-cache
 *.gem
 assets/js/app.js
-assets/js/scripts.js
+assets/js/scripts.*
 Gemfile.lock
 gulpfile.js
 node_modules
