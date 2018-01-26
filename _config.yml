@@ -1,6 +1,8 @@
 ---
 description: "Royal Hackaway hosts hackathons organised by students for students at Royal Holloway, University of London."
 author: "Benzi <hi@benzi.io>"
+include: ["_pages"]
+exclude: ["_pages/faq", "_pages/coc", "_pages/hackaway2018"]
 navs:
   -
     name: Home
@@ -14,9 +16,6 @@ navs:
   -
     name: Schedule
     path: /schedule
-  -
-    name: "Code of Conduct"
-    path: /coc
 socials:
   -
     icon: icon-s-facebook
@@ -28,7 +27,7 @@ socials:
     url: "https://twitter.com/royalhackaway"
 email: hugh@royalhackaway.xyz
 event:
-  public: true
+  public: false
   date: "2018-01-13T10:00:00+00:00"
   name: "Royal Hackaway 2018"
   details: "Royal Hackaway 2018 is a 24 hour hackathon taking place on the 13-14 January 2018. This is great opportunity for creative inventors, designers and programmers to come together to create awesome projects."
