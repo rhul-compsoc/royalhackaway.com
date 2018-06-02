@@ -1,8 +1,9 @@
 ---
 description: "Royal Hackaway hosts hackathons organised by students for students at Royal Holloway, University of London."
 author: "Benzi <hi@benzi.io>"
-include: ["_pages"]
+include: ["_tmp"]
 exclude: ["_pages/faq", "_pages/coc", "_pages/hackaway2018", "*.md"]
+maintenance: true
 navs:
   -
     name: Home

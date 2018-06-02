@@ -6,7 +6,9 @@
 
   <body id="top">
 
-    {% include header.html %}
+    {% if site.maintenance != true %}
+      {% include header.html %}
+    {% endif %}
 
     <main>
 
@@ -14,9 +16,12 @@
 
     </main>
 
-    {% include footer.html %}
+    {% if site.maintenance != true %}
+      {% include footer.html %}
+    {% endif %}
 
     <script src="https://cdn.rawgit.com/requirejs/requirejs/master/require.js" data-main="/assets/js/app.min.js"></script>
 
   </body>
+
 </html>
