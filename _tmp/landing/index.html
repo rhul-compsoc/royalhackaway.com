@@ -17,3 +17,17 @@ permalink: /
     </div>
   </div>
 </section>
+
+<section id="share" class="dark-bg">
+  <div class="container">
+
+    {% for social in site.socials %}
+    <div class="col-sm-6 reset-padding">
+      <a href="{{ social.url }}" class="btn-share-md">
+        <i class="{{ social.icon }}"></i>
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
