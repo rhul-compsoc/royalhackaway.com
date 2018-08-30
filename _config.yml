@@ -1,9 +1,9 @@
 ---
 description: "Royal Hackaway hosts hackathons organised by students for students at Royal Holloway, University of London."
 author: "Benzi <hi@benzi.io>"
-include: ["_tmp"]
-exclude: ["_pages/faq", "_pages/coc", "_pages/hackaway2018", "*.md"]
-maintenance: true
+include: ["_pages"]
+exclude: ["_pages/faq", "_pages/coc", "_pages/hackaway2018","_pages/schedule", "*.md"]
+maintenance: false
 navs:
   -
     name: Home
@@ -26,7 +26,7 @@ socials:
     icon: icon-s-twitter
     name: Twitter
     url: "https://twitter.com/royalhackaway"
-email: hugh@royalhackaway.xyz
+email: hello@royalhackaway.com
 event:
   public: false
   date: "2018-01-13T10:00:00+00:00"
@@ -40,8 +40,8 @@ event:
     placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
   venue_floor_plan: ""
   tickets: "https://royalhackaway.eventbrite.com"
-  start: "2018-01-13T12:00:00+00:00"
-  end: "2018-01-14T12:00:00+00:00"
+  start: "2019-02-13T12:00:00+00:00"
+  end: "2019-02-14T12:00:00+00:00"
   internet:
     ssid: "CampusNet"
     username: "Hackathon"
