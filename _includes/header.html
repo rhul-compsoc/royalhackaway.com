@@ -26,7 +26,7 @@
 
           <ul class="nav navbar-nav pull-left">
             {% for nav in site.navs %}
-              <li><a href="{{ nav.path }}" class="scroll-to" data-anchor-offset="0">{{ nav.name }}</a></li>
+              <li><a href="{{ site.url }}#{{ nav.path }}" class="scroll-to" data-anchor-offset="0">{{ nav.name }}</a></li>
             {% endfor %}
           </ul>
 

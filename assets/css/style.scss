@@ -25,10 +25,16 @@ footer p a {
   border-radius: 10px;
   width: 100px;
 }
+
+section {
+  min-height: 100vh;
+}
+
 .vertical-center {
   display: flex;
   align-items: center;
 }
+
 .sponsor a > img {
   height: 100px;
 }
