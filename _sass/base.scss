@@ -1,1 +1,24 @@
+.jumbotron.image-bg-center{
+  height:100vh;
+  text-align: center;
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20%;
+}
 
+section.fullheight {
+  min-height: 100vh;
+}
+
+section.mediumheight{
+  min-height: 30vh;
+}
+
+.btn.btn-primary {
+  background-color: #EB6824;
+  box-shadow: 0 5px #b54f1b;
+  border-width: 0;
+}
