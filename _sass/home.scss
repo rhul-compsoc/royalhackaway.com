@@ -25,6 +25,7 @@ section .container {
 
 #future-events .container .card  {
   margin: 10px;
+  background-color: white;
 }
 
 section#hackaway-ad {
@@ -33,4 +34,15 @@ section#hackaway-ad {
   box-shadow: 0 10px #d3791f;
   margin-bottom:5%;
   color: #FFFFFF;
+}
+
+.card a {
+position: absolute;
+top: 0; left: 0;
+height: 100%; width: 100%;
+}
+
+.card lead {
+  font-weight: lighter;
+  font-size: 5;
 }

@@ -1,7 +1,8 @@
 ---
 title: LocalHost 2018
-short-desc: "example"
-colour: #FFFFFF
+display-date: 02 Feb 2002
+short-desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+color: "#4E92DF"
 "Saturday — Day 1":
   -
     - "10:00"

@@ -1,7 +1,8 @@
 ---
 title: Royal Hackaway 2019
-short-desc: "example"
-colour: #FFFFFF
+display-date: 02-03 Feb 2019
+short-desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+color: "#F48B22"
 schedule:
   "Saturday — Day 1":
     -
