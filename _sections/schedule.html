@@ -1,49 +1,33 @@
 <section id="schedule">
-  <div class="container inner-md">
+  <div class="container">
     <div class="row">
-
       {% if site.event.public %}
-
-      <div class="col-md-8">
-        <div id="owl-work" class="owl-carousel owl-inner-pagination owl-inner-nav owl-ui-md">
-
-          <div>
-
-            {% for d in site.event.schedule %}
-              {% assign i = forloop.index %}
-              {% if i <= 2 %}
-
-                <div class="col-md-6">
-                  <table class="table table-bordered table-striped">
-                    <thead>
+      <div class="col-8">
+          {% for d in site.event.schedule %}
+            {% assign i = forloop.index %}
+            {% if i <= 2 %}
+              <div class="col-6">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center" colspan="2">{{ d[0] }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in d[1] %}
+                      {% assign j = forloop.index0 %}
                       <tr>
-                        <th class="text-center" colspan="2">{{ d[0] }}</th>
+                        <td>{{ d[1][j][0] }}</td>
+                        <td>{{ d[1][j][1] }}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-
-                      {% for item in d[1] %}
-                        {% assign j = forloop.index0 %}
-                        <tr>
-                          <td>{{ d[1][j][0] }}</td>
-                          <td>{{ d[1][j][1] }}</td>
-                        </tr>
-                      {% endfor %}
-
-                    </tbody>
-
-                  </table>
-                </div>
-              {% endif %}
-
-            {% endfor %}
-
-          </div>
-
-        </div>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            {% endif %}
+          {% endfor %}
       </div>
-
-      <div class="col-md-4 inner-left-sm">
+      <div class="col-4">
         <header>
           <h2>{{ site.event.name }}</h2>
           <p class="text-small">{{ site.event.details }}</p>

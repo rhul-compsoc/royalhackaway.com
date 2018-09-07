@@ -9,16 +9,12 @@
   padding-top: 20%;
 }
 
-section.fullheight {
+section .fullheight {
   min-height: 100vh;
 }
 
-section.mediumheight{
-  min-height: 30vh;
-}
 
-.btn.btn-primary {
-  background-color: #EB6824;
-  box-shadow: 0 5px #b54f1b;
-  border-width: 0;
+section .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
