@@ -1,12 +1,12 @@
-<section id="schedule">
+<section id="schedule bg-light">
   <div class="container">
     <div class="row">
       {% if site.event.public %}
-      <div class="col-8">
+      <div class="col-md-8 row">
           {% for d in site.event.schedule %}
             {% assign i = forloop.index %}
             {% if i <= 2 %}
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <table class="table table-bordered table-striped">
                   <thead>
                     <tr>
@@ -27,7 +27,7 @@
             {% endif %}
           {% endfor %}
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-xs-12">
         <header>
           <h2>{{ site.event.name }}</h2>
           <p class="text-small">{{ site.event.details }}</p>
@@ -42,7 +42,6 @@
       </div>
 
       {% else %}
-
         <div class="col-md-8 col-sm-9 center-block text-center">
           <header>
             <h1>Nothing scheduled</h1>
