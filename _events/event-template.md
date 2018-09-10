@@ -1,19 +1,19 @@
 ---
-name: "MLH Local Hack Day 2018"
-is-public: true
+name: ""
+is-public: false
 
 start: "2001-01-01T12:00:00+00:00"
 end: "201-01-01T12:00:00+00:00"
 
-short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+short-description: ""
 
 # Used for styling
-colour: "#DA1E1E"
-display-date: "01 Dec 2018"
+colour: "#FFFFFF"
+display-date: ""
 
 layout: event
 
-location: "Mcrea 126"
+location: ""
 
 map:
   coords:
@@ -26,6 +26,8 @@ venue_floor_plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
 
+start: "2001-01-01T12:00:00+00:00"
+end: "201-01-01T12:00:00+00:00"
 
 internet:
   ssid: ""
@@ -82,4 +84,4 @@ schedule:
       - "Closing Ceremony"
 ---
 
-this is some example content.
+This is some extra example content.

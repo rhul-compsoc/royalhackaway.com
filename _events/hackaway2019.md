@@ -1,8 +1,37 @@
 ---
-title: Royal Hackaway 2019
-display-date: 02-03 Feb 2019
-short-desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-color: "#F48B22"
+name: "Royal Hackaway 2019"
+is-public: true
+
+start: "2019-02-01T12:00:00+00:00"
+end: "201-02-03T12:00:00+00:00"
+
+short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+# Used for styling
+colour: "#FFFFFF"
+display-date: "02-03 Feb 2019"
+
+layout: event
+
+location: "Windsor Building, on Campus"
+
+map:
+  coords:
+    lat: "51.4253791"
+    lng: "-0.5674995"
+  placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
+
+
+venue_floor_plan: ""
+
+tickets: "https://tickets.royalhackaway.com/"
+
+
+internet:
+  ssid: ""
+  username: ""
+  password: ""
+
 schedule:
   "Saturday — Day 1":
     -
