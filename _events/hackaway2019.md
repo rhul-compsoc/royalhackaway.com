@@ -8,7 +8,7 @@ end: "201-02-03T12:00:00+00:00"
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
 # Used for styling
-colour: "#FFFFFF"
+color: "#F37021"
 display-date: "02-03 Feb 2019"
 
 layout: event

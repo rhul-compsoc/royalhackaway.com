@@ -8,7 +8,7 @@ end: "201-01-01T12:00:00+00:00"
 short-description: ""
 
 # Used for styling
-colour: "#FFFFFF"
+color: "#FFFFFF"
 display-date: ""
 
 layout: event
