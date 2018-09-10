@@ -2,8 +2,8 @@
 name: "MLH Local Hack Day 2018"
 is-public: true
 
-start: "2001-01-01T12:00:00+00:00"
-end: "201-01-01T12:00:00+00:00"
+start: "2018-11-01T12:00:00+00:00"
+end: "2018-11-01T12:00:00+00:00"
 
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 

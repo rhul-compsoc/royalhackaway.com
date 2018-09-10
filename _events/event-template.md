@@ -2,8 +2,8 @@
 name: ""
 is-public: false
 
-start: "2001-01-01T12:00:00+00:00"
-end: "201-01-01T12:00:00+00:00"
+start: "2099-01-01T12:00:00+00:00"
+end: "2001-01-01T12:00:00+00:00"
 
 short-description: ""
 
@@ -25,10 +25,6 @@ map:
 venue_floor_plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
-
-start: "2001-01-01T12:00:00+00:00"
-end: "201-01-01T12:00:00+00:00"
-
 internet:
   ssid: ""
   username: ""

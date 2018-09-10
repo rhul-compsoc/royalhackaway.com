@@ -2,19 +2,22 @@
     <div class="container border">
       <h2 class="text-center">Events to look out for</h2>
         <div class="row justify-content-center">
-      {% for event in site.events %}
-        {% if event.is-public %}
-          <div class="card col-sm-6 col-md-3" style="border-width: 1px; border-color: {{ event.color }};">
-            <a href="/{{ event.slug }}"></a>
 
-            <div class="card-body">
-              <h5 class="card-title"><b>{{ event.name }}</b></h5>
-              <h6 class="card-text">{{ event.display-date }} </h6>
-              <p class="card-text">{{ event.short-description }}</p>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
+
+          {% assign sorted-events = site.events | sort: 'start' %}
+          {% for event in sorted-events %}
+            {% if event.is-public %}
+              <div class="card col-sm-6 col-md-3" style="border-width: 1px; border-color: {{ event.color }};">
+                <a href="/{{ event.slug }}"></a>
+
+                <div class="card-body">
+                  <h5 class="card-title"><b>{{ event.name }}</b></h5>
+                  <h6 class="card-text">{{ event.display-date }} </h6>
+                  <p class="card-text">{{ event.short-description }}</p>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
   </div>
-</div>
 </section>

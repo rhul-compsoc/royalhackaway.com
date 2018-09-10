@@ -9,10 +9,7 @@
 
   <body id="top">
 
-    {% if site.maintenance != true %}
       {% include header.html %}
-    {% endif %}
-
 
     <main>
 
@@ -20,11 +17,7 @@
 
     </main>
 
-    {% if site.maintenance != true %}
-      {% include footer.html %}
-    {% endif %}
-
-
+    {% include footer.html %}
 
   </body>
 

@@ -2,14 +2,14 @@
 name: "LocalHost 2018"
 is-public: true
 
-start: "2001-01-01T12:00:00+00:00"
-end: "201-01-01T12:00:00+00:00"
+start: "2018-08-01T12:00:00+00:00"
+end: "2018-08-01T12:00:00+00:00"
 
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
 # Used for styling
 color: ""#4E92DF"
-display-date: "03-Sep 2019"
+display-date: "03-Sep 2018"
 
 layout: event
 
@@ -25,9 +25,6 @@ map:
 venue_floor_plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
-
-start: "2001-01-01T12:00:00+00:00"
-end: "201-01-01T12:00:00+00:00"
 
 internet:
   ssid: ""
