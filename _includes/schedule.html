@@ -3,7 +3,7 @@
     <div class="row">
       {% if site.event.public %}
       <div class="col-md-8 row">
-          {% for d in site.event.schedule %}
+          {% for d in schedule %}
             {% assign i = forloop.index %}
             {% if i <= 2 %}
               <div class="col-md-6 col-sm-12">
