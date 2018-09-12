@@ -10,28 +10,29 @@ short-description: "Lorem Ipsum is simply dummy text of the printing and typeset
 # Used for styling
 color: "#F37021"
 display-date: "02-03 Feb 2019"
-
 layout: event
-
 location: "Windsor Building, on Campus"
 
+show-map: false
 map:
   coords:
     lat: "51.4253791"
     lng: "-0.5674995"
   placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
 
-
-venue_floor_plan: ""
+show-floor-plan: false
+venue-floor-plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
 
 
+show-wifi-details: false
 internet:
   ssid: ""
   username: ""
   password: ""
 
+show-schedule: false
 schedule:
   "Saturday — Day 1":
     -
@@ -105,35 +106,6 @@ schedule:
   </div>
 </section>
 
-<section id="internet">
-  <div class="container inner-sm">
-    <div class="row">
-      <div class="col-md-4 center-block text-center">
-        <table class="table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th class="text-center" colspan="2">Get Online</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Network SSID</b></td>
-              <td><code>{{ site.event.internet.ssid }}</code></td>
-            </tr>
-            <tr>
-              <td><b>Username</b></td>
-              <td><code>{{ site.event.internet.username }}</code></td>
-            </tr>
-            <tr>
-              <td><b>Password</b></td>
-              <td><code>{{ site.event.internet.password }}</code></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="map" class="height-sm"></section>
 

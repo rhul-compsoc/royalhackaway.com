@@ -10,11 +10,10 @@ short-description: "Lorem Ipsum is simply dummy text of the printing and typeset
 # Used for styling
 color: "#DA1E1E"
 display-date: "01 Dec 2018"
-
 layout: event
-
 location: "Mcrea 126"
 
+show-map: false
 map:
   coords:
     lat: "51.4253791"
@@ -22,16 +21,18 @@ map:
   placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
 
 
-venue_floor_plan: ""
+show-floor-plan: false
+venue-floor-plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
 
-
+show-wifi-details: false
 internet:
   ssid: ""
   username: ""
   password: ""
-
+  
+show-schedule: false
 schedule:
   "Saturday — Day 1":
     -

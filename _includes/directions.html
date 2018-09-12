@@ -1,0 +1,34 @@
+<section class="directions" >
+  <script type="text/javascript">
+    function initMap() {
+      var coords = {lat: {{ map.coords.lat }}, lng: {{ map.coords.long}} },
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: coords,
+        zoom: 16,
+        keyboardShortcuts: false,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        disableDoubleClickZoom: false,
+        draggable: true
+      }),
+      service = new google.maps.places.PlacesService(map);
+      service.getDetails({
+        placeId: {{ map.placeID }}
+      }, function(place, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location
+          }), infowindow = new google.maps.InfoWindow();
+          infowindow.setContent('<div><strong>'+place.name+'</strong><br>'+'<p>'+place.formatted_address+'</p></div>');
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+          });
+          google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+            infowindow.open(map, marker);
+          });
+        }
+      });
+    }
+  </script>
+</section>

@@ -2,10 +2,32 @@
 layout: main
 title: Event
 ---
-<section>
-{{ content }}
-</section>
+
+{% if page.show-map %}
+  <section>
+    {% include directions.html map=page.map %}
+  </section>
+{% endif %}
+
+
+{% if page.show-floor-plan %}
+  <section>
+
+  </section>
+{% endif %}
+
+
+{% if page.show-wifi-details %}
+  <section>
+  </section>
+{% endif %}
+
+{% if page.show-schedule %}
+  <section>
+    {% include schedule.html schedule=page.schedule %}
+  </section>
+{% endif %}
 
 <section>
-{% include schedule.html schedule=page.schedule %}
+  {{ content }}
 </section>

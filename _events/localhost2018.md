@@ -8,13 +8,12 @@ end: "2018-08-01T12:00:00+00:00"
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
 # Used for styling
-color: ""#4E92DF"
+color: "#4E92DF"
 display-date: "03-Sep 2018"
-
 layout: event
-
 location: "Mccrea 125"
 
+show-map: false
 map:
   coords:
     lat: "51.4253791"
@@ -22,15 +21,18 @@ map:
   placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
 
 
-venue_floor_plan: ""
+show-floor-plan: false
+venue-floor-plan: ""
 
 tickets: "https://tickets.royalhackaway.com/"
 
+show-wifi-details: false
 internet:
   ssid: ""
   username: ""
   password: ""
-
+  
+show-schedule: false
 schedule:
   "Saturday — Day 1":
     -

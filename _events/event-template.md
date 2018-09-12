@@ -10,11 +10,10 @@ short-description: ""
 # Used for styling
 color: "#FFFFFF"
 display-date: ""
-
 layout: event
-
 location: ""
 
+show-map: false
 map:
   coords:
     lat: "51.4253791"
@@ -22,14 +21,21 @@ map:
   placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
 
 
-venue_floor_plan: ""
+show-floor-plan: false
+venue-floor-plan: ""
+
 
 tickets: "https://tickets.royalhackaway.com/"
+
+
+show-wifi-details: false
 internet:
   ssid: ""
   username: ""
   password: ""
 
+
+show-schedule: false
 schedule:
   "Saturday — Day 1":
     -
