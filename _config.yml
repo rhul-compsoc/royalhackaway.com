@@ -9,19 +9,17 @@ maintenance: false
 navs:
   -
     name: Home
-    path: top
+    link: "#top"
   -
     name: About
-    path: about
+    link: "#about"
   -
     name: Sponsors
-    path: sponsors
-  -
-    name: Schedule
-    path: schedule
+    link: "#sponsors"
   -
     name: FAQ
-    path: faq
+    link: "/faq"
+
 socials:
   -
     icon: icon-s-facebook

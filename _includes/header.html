@@ -7,10 +7,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
             {% for nav in site.navs %}
-              <li><a href="{{ site.url }}#{{ nav.path }}" class="nav-link text-dark" data-anchor-offset="0">{{ nav.name }}</a></li>
+              {% assign link = site.url | append: nav.link %}
+              <li><a href="{{ link }}" class="nav-link text-dark" data-anchor-offset="0">{{ nav.name }}</a></li>
             {% endfor %}
           </ul>
         </div>
+
+        <a href="https://computingsociety.co.uk">
+          <button class="btn my-2 my-sm-0" id="compsoc-link" >RHUL CompSoc</button>
+        </a>
+
       </div>
     </nav>
 </header>

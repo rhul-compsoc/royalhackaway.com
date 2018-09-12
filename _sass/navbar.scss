@@ -1,12 +1,24 @@
 .navbar-brand img {
-  height: 50px;
+  height: 70px;
 }
 
 .navbar-brand {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  padding-right: 2%;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }
+
 
 .nav-link {
 
+}
+
+.navbar {
+}
+
+#compsoc-link.btn{
+  background-color: #C32026;
+  color: #FFFFFF;
+  box-shadow: 0 3px #88161a;
 }
