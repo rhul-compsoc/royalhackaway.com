@@ -12,6 +12,7 @@ color: "#DA1E1E"
 display-date: "01 Dec 2018"
 layout: event
 location: "Mcrea 126"
+jumbotron-image: 2018-1.png
 
 show-map: false
 map:
@@ -31,7 +32,7 @@ internet:
   ssid: ""
   username: ""
   password: ""
-  
+
 show-schedule: false
 schedule:
   "Saturday — Day 1":

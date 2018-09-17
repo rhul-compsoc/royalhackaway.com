@@ -3,7 +3,7 @@ name: "Royal Hackaway 2019"
 is-public: true
 
 start: "2019-02-01T12:00:00+00:00"
-end: "201-02-03T12:00:00+00:00"
+end: "2019-02-03T12:00:00+00:00"
 
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
@@ -12,8 +12,9 @@ color: "#F37021"
 display-date: "02-03 Feb 2019"
 layout: event
 location: "Windsor Building, on Campus"
+jumbotron-image: 2018-1.png
 
-show-map: false
+show-map: true
 map:
   coords:
     lat: "51.4253791"
@@ -26,13 +27,13 @@ venue-floor-plan: ""
 tickets: "https://tickets.royalhackaway.com/"
 
 
-show-wifi-details: false
+show-wifi-details: true
 internet:
-  ssid: ""
-  username: ""
-  password: ""
+  ssid: "example "
+  username: "example "
+  password: "example"
 
-show-schedule: false
+show-schedule: true
 schedule:
   "Saturday — Day 1":
     -
@@ -82,106 +83,5 @@ schedule:
       - "16:00"
       - "Closing Ceremony"
 ---
-<section id="countdown">
-  <div class="container inner-top-md">
-    <div class="row">
-      <div class="col-md-8 col-sm-9 center-block text-center">
-        <header id="countdown-1"></header>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="text">
-  <div class="container inner-top-md">
-    <div class="row">
-      <div class="col-md-8 col-sm-9 center-block text-center">
-        <p>
-          Dinner choices (form closes at 4:45pm): <a href="https://goo.gl/forms/3u6g0RXtsylhdFzu1">goo.gl/forms/3u6g0RXtsylhdFzu1</a>
-        </p><p>
-          Devpost submissions: <a href="https://royal-hackaway.devpost.com/">royal-hackaway.devpost.com</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="map" class="height-sm"></section>
-
-<script src="https://cdn.rawgit.com/HugoGiraudel/Countdown.js/master/countdown.js"></script>
-<script type="text/javascript">
-var c1 = new Countdown({
-  selector: '#countdown-1',
-  msgBefore: '<h1 id="countdown-2"></h1><p>until the hacking begins</p>',
-  msgAfter: '<h1>It\'s all over now.</h1>',
-  msgPattern: '<h1>{hours} hours {minutes} minutes {seconds} seconds</h1><p>left to hack</p>',
-  dateStart: new Date('2018-01-13T12:00:00+00:00'),
-  dateEnd: new Date('2018-01-14T12:00:00+00:00')
-}), c2 = new Countdown({
-  selector: '#countdown-2',
-  msgBefore: '',
-  msgAfter: '',
-  msgPattern: '{hours} hours {minutes} minutes {seconds} seconds',
-  dateStart: new Date(),
-  dateEnd: new Date('2018-01-13T12:00:00+00:00')
-});
-</script>
-<script type="text/javascript">
-  function initMap() {
-    var coords = {lat: 51.4253791, lng: -0.5674995},
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: coords,
-      zoom: 16,
-      keyboardShortcuts: false,
-      disableDefaultUI: true,
-      scrollwheel: false,
-      disableDoubleClickZoom: false,
-      draggable: true
-    }),
-    service = new google.maps.places.PlacesService(map);
-    service.getDetails({
-      placeId: 'ChIJXUCjP_55dkgR4OIhA2pQA6A'
-    }, function(place, status) {
-      if (status ===
-Saturday — Day 1
-10:00 	Registration Opens
-11:00 	Opening Ceremony
-12:00 	Hacking Begins
-13:00 	Lunch
-15:00 	Using APIs (Workshop)
-16:00 	Git and GitHub (Workshop)
-16:00 	How to manage your team and win at hackathons (Workshop)
-18:00 	Dinner
-21:00 	MLH Minigame
-23:59 	Midnight Pizza
-Sunday — Day 2
-08:00 	Breakfast
-12:00 	Hacking Ends w/ Lunch
-13:00 	Presentations
-15:00 	Judging
-16:00 	Closing Ceremony
-Royal Hackaway 2019
-
-Royal Hackaway 2019 is a 24 hour hackathon taking place on the 2nd-3rd January 2018. This is great opportunity for creative inventors, designers and programmers to come together to create awesome projects.
-
-    Windsor Building, Royal Holloway, UoL
-    13 January 2018
-    10:00 AM
-
- google.maps.places.PlacesServiceStatus.OK) {
-        var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-        }), infowindow = new google.maps.InfoWindow();
-        infowindow.setContent('<div><strong>'+place.name+'</strong><br>'+'<p>'+place.formatted_address+'</p></div>');
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map, marker);
-        });
-        google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
-          infowindow.open(map, marker);
-        });
-      }
-    });
-  }
-</script>
+This is an example description of Royal Hackaway 2019.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

@@ -1,4 +1,22 @@
 
+main {
+  padding-top: 100px;
+}
+
+.jumbotron {
+  text-align: center;
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vert-line {
+    border-left: 1px solid white;
+    max-width: 1px;
+    height: auto;
+}
 
 .btn.btn-primary {
   background-color: #EB6824;
@@ -13,4 +31,12 @@ footer .container {
 
 footer .logo {
   margin: 2%;
+}
+
+#event-splash {
+  min-height: 50vh;
+}
+
+#splash-body {
+  border-left: white;
 }

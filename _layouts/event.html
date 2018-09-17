@@ -3,31 +3,36 @@ layout: main
 title: Event
 ---
 
-{% if page.show-map %}
-  <section>
-    {% include directions.html map=page.map %}
-  </section>
-{% endif %}
 
+<section id="event-splash" class="jumbotron image-bg-center half-height" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/{{ page.jumbotron-image }});">
+    <div class="row">
+    <div class="col-md-5 col-xs-12">
+      <img class="float-right" src="/assets/images/rh-small.svg" id="event-logo">
+    </div>
+    <div id="splash-body" class="col-md-5 text-light col-xs-12 row">
+      <h1>{{ page.name }}</h1>
+      <p class="text-light align-text-center">{{ page.short-description}}</p>
+      <a class="btn btn-primary btn-lg text-light align-bottom" href="/sponsors">Grab a free ticket</a>
+    </div>
+  </div>
+</section>
 
-{% if page.show-floor-plan %}
-  <section>
-
-  </section>
-{% endif %}
-
-
-{% if page.show-wifi-details %}
-  <section>
-  </section>
-{% endif %}
 
 {% if page.show-schedule %}
-  <section>
-    {% include schedule.html schedule=page.schedule %}
-  </section>
+    {% include schedule.html event=page.schedule %}
 {% endif %}
 
-<section>
-  {{ content }}
-</section>
+
+
+
+
+{% if page.show-map %}
+    {% include directions.html map=page.map %}
+{% endif %}
+
+{% if page.show-floor-plan %}
+{% endif %}
+
+{% if page.show-wifi-details %}
+  {% include internet.html internet=page.internet %}
+{% endif %}
