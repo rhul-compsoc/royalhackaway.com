@@ -12,6 +12,9 @@ color: "#4E92DF"
 display-date: "03-Sep 2018"
 layout: event
 location: "Mccrea 125"
+jumbotron-image: 2018-1.png
+small-logo: "localhost-logo.svg"
+logo-width: 3
 
 show-map: false
 map:
@@ -31,7 +34,7 @@ internet:
   ssid: ""
   username: ""
   password: ""
-  
+
 show-schedule: false
 schedule:
   "Saturday — Day 1":

@@ -1,22 +1,21 @@
 
-jumbotron#event-splash {
-
-}
-
 
 #event-logo {
   height: auto;
   margin: 5%;
 }
 
+#event-splash {
+  margin-bottom: 0;
+}
+
 #event-splash .btn {
   vertical-align: bottom;
 }
 
-#splash-body {
-  padding-left: 5vh;
-  padding-right: 5vh;
-  border-left: white;
+#event-description .container{
+  padding-top:2vh;
+  padding-bottom: 2vh;
 }
 
 

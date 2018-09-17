@@ -5,11 +5,26 @@ main {
 
 .jumbotron {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.background-image{
+
   background: center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+
+
+.half-height{
+  min-height: 30vh;
+}
+
+.full-height{
+  min-height:90vh;
 }
 
 .vert-line {

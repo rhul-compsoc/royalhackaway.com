@@ -4,27 +4,31 @@ title: Event
 ---
 
 
-<section id="event-splash" class="jumbotron image-bg-center half-height" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/{{ page.jumbotron-image }});">
-    <div class="row">
-    <div class="col-md-5 col-xs-12">
-      <img class="float-right" src="/assets/images/rh-small.svg" id="event-logo">
+<section id="event-splash" class="jumbotron half-height background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/{{ page.jumbotron-image }});">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-{{ page.logo-width }} col-xs-12">
+        <img class="img-fluid" src="/assets/images/{{ page.small-logo }}" id="event-logo">
+      </div>
     </div>
-    <div id="splash-body" class="col-md-5 text-light col-xs-12 row">
-      <h1>{{ page.name }}</h1>
-      <p class="text-light align-text-center">{{ page.short-description}}</p>
-      <a class="btn btn-primary btn-lg text-light align-bottom" href="/sponsors">Grab a free ticket</a>
+    <div class="row justify-content-center text-center">
+      <div id="splash-body" class="col-md-6 text-light col-xs-12">
+        <h1>{{ page.name }}</h1>
+        <p> {{ page.start }}</p>
+        <p>{{ page.short-description}}</p>
+        <a class="btn btn-primary btn-lg text-light" href="{{ page.tickets }}">Grab a free ticket</a>
+      </div>
     </div>
-  </div>
+</section>
+
+<section id="event-description" style="background-color: {{ page.color }}">
+  <div class="container text-light">
+ <p class="">{{ content }}</p>
 </section>
 
 
 {% if page.show-schedule %}
     {% include schedule.html event=page.schedule %}
 {% endif %}
-
-
-
-
 
 {% if page.show-map %}
     {% include directions.html map=page.map %}

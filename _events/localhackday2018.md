@@ -13,6 +13,8 @@ display-date: "01 Dec 2018"
 layout: event
 location: "Mcrea 126"
 jumbotron-image: 2018-1.png
+small-logo: "hackday_logo.svg"
+logo-width: 2
 
 show-map: false
 map:

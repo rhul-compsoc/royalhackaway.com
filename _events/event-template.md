@@ -12,6 +12,8 @@ color: "#FFFFFF"
 display-date: ""
 layout: event
 location: ""
+small-logo: "rh-small.svg"
+logo-width: 1
 
 show-map: false
 map:
