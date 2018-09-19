@@ -40,13 +40,20 @@ main {
 }
 
 
-footer .container {
+footer > .container {
   padding-top: 2%;
 }
 
-footer .logo {
+footer > .logo {
   margin: 2%;
 }
+
+
+
+.jumbotron.full-height{
+  padding-top: 15%;
+}
+
 
 #event-splash {
   min-height: 50vh;

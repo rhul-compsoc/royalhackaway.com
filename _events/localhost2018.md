@@ -12,7 +12,8 @@ color: "#4E92DF"
 display-date: "03-Sep 2018"
 layout: event
 location: "Mccrea 125"
-jumbotron-image: 2018-1.png
+jumbotron-image: localhost-1.jpg
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "localhost-logo.svg"
 logo-width: 3
 

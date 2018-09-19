@@ -12,7 +12,8 @@ color: "#DA1E1E"
 display-date: "01 Dec 2018"
 layout: event
 location: "Mcrea 126"
-jumbotron-image: 2018-1.png
+jumbotron-image: localhack-1.jpeg
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "hackday_logo.svg"
 logo-width: 2
 

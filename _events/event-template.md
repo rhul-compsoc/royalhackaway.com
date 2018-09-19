@@ -12,8 +12,9 @@ color: "#FFFFFF"
 display-date: ""
 layout: event
 location: ""
+jumbotron-image:
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "rh-small.svg"
-logo-width: 1
 
 show-map: false
 map:

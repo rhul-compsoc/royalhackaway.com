@@ -3,16 +3,25 @@
   padding-top: 20%;
 }
 
-section .container {
+section > .container {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-#future-events .container {
+#top > .jumbotron > .btn {
+  margin-top: 5vh;
+}
+
+#top > .lead {
+  padding-bottom: 5%;
+}
+
+
+#future-events > .container {
   padding: 2%;
 }
 
-#future-events .container .card  {
+#future-events > .container .card  {
   margin: 10px;
   background-color: white;
 }
@@ -25,13 +34,13 @@ section#hackaway-ad {
   color: #FFFFFF;
 }
 
-.card a {
+.card > a {
 position: absolute;
 top: 0; left: 0;
 height: 100%; width: 100%;
 }
 
-.card lead {
+.card > lead {
   font-weight: lighter;
   font-size: 5;
 }

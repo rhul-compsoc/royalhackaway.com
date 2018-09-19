@@ -5,28 +5,37 @@
   margin: 5%;
 }
 
-#event-splash {
-  margin-bottom: 0;
-}
 
-#event-splash .btn {
+#event-splash > .btn {
   vertical-align: bottom;
 }
 
-#event-description .container{
+#event-description > .container{
   padding-top:2vh;
   padding-bottom: 2vh;
 }
 
-
-#event-splash p {
-  padding-top: 5vh;
+.jumbotron.half-height{
+  margin-bottom: 0;
 }
 
-#event-splash a {
+#event-splash > a {
   margin-top: 10vh;
 }
 
-#event-splash h1 {
-  margin-top: 2vh;
+#splash-body > p {
+  margin-bottom: 3vh;
+}
+
+#splash-body {
+  margin-top: 1vh;
+}
+
+#splash-body > h1{
+  padding-top: 0;
+}
+
+#splash-body > .lead {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
 }
