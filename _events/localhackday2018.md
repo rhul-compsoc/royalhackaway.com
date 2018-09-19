@@ -6,6 +6,7 @@ start: "2018-11-01T12:00:00+00:00"
 end: "2018-11-01T12:00:00+00:00"
 
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+full-description: ""
 
 # Used for styling
 color: "#DA1E1E"
@@ -18,11 +19,7 @@ small-logo: "hackday_logo.svg"
 logo-width: 2
 
 show-map: false
-map:
-  coords:
-    lat: "51.4253791"
-    lng: "-0.5674995"
-  placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
+map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
 
 
 show-floor-plan: false

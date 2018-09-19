@@ -3,8 +3,20 @@ main {
   padding-top: 100px;
 }
 
+.spaced {
+  padding: 5px;
+}
+
+.subtitle {
+  padding-bottom: 3vh;
+}
+
 .jumbotron {
   text-align: center;
+  margin-bottom: 0;
+}
+
+#top > .jumbotron {
   margin-bottom: 0;
 }
 

@@ -4,25 +4,28 @@ title: Event
 ---
 
 
-<section id="event-splash" class="jumbotron half-height background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/{{ page.jumbotron-image }});">
+<section id="event-splash" class="jumbotron half-height background-image" style="background-image: linear-gradient({{ page.jumbotron-image-adjust }}), url(assets/images/{{ page.jumbotron-image }});">
+
     <div class="row justify-content-center text-center">
       <div class="col-md-{{ page.logo-width }} col-xs-12">
         <img class="img-fluid" src="/assets/images/{{ page.small-logo }}" id="event-logo">
       </div>
     </div>
+
     <div class="row justify-content-center text-center">
       <div id="splash-body" class="col-md-6 text-light col-xs-12">
         <h1>{{ page.name }}</h1>
-        <p> {{ page.start }}</p>
-        <p>{{ page.short-description}}</p>
-        <a class="btn btn-primary btn-lg text-light" href="{{ page.tickets }}">Grab a free ticket</a>
+        <p>{{ page.start | date: '%d %B %Y' }}</p>
+        <p class="lead">{{ page.short-description}}</p>
+        <a class="btn btn-primary btn-lg btn-text-light" href="{{ page.tickets }}">Grab a free ticket</a>
       </div>
     </div>
 </section>
 
 <section id="event-description" style="background-color: {{ page.color }}">
   <div class="container text-light">
- <p class="">{{ content }}</p>
+    <p>{{ page.full-description }}</p>
+  </div>
 </section>
 
 
@@ -30,8 +33,13 @@ title: Event
     {% include schedule.html event=page.schedule %}
 {% endif %}
 
+{{ content }}
+
+{% if page.show-sponsors %}
+{% endif %}
+
 {% if page.show-map %}
-    {% include directions.html map=page.map %}
+    {% include map.html map=page.map %}
 {% endif %}
 
 {% if page.show-floor-plan %}
@@ -40,3 +48,8 @@ title: Event
 {% if page.show-wifi-details %}
   {% include internet.html internet=page.internet %}
 {% endif %}
+
+<section class="container text-center">
+  <p> Questions, queries or qualms about this event? </p>
+  <a class="btn btn-primary text-light" href="mailto:{{ site.email }}">Get in touch</a>
+</section>

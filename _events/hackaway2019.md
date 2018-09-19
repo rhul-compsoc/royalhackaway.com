@@ -5,7 +5,13 @@ is-public: true
 start: "2019-02-01T12:00:00+00:00"
 end: "2019-02-03T12:00:00+00:00"
 
-short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+short-description: "An exciting 24 hour hackathon, for students from any university."
+
+full-description: "Royal Hackaway is Royal Holloway's annual hackathon. <br>Open to university students from the UK and around the world, in this 24 hour hackathon you'll work as a group to build a project. You'll pick up new skills, try out new tech, and meet new people. This is our second time running this event, and we're excited to create a more inclusive and rewarding event for all. "
+
+
+
+event-info: "hackaway"
 
 # Used for styling
 color: "#F37021"
@@ -17,12 +23,8 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "rh-small.svg"
 logo-width: 1
 
-show-map: false
-map:
-  coords:
-    lat: "51.4253791"
-    lng: "-0.5674995"
-  placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
+show-map: true
+map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -85,6 +87,32 @@ schedule:
     -
       - "16:00"
       - "Closing Ceremony"
+
 ---
-This is an example description of Royal Hackaway 2019.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+<section class="container">
+  <h2>Event info:</h2>
+  <div class="row">
+    <div class="col-md-6">
+    <h2>What we'll provide:</h2>
+      <ul>
+        <li>Food and drinks for the duration of the event</li>
+        <li>Electronics </li>
+        <li>Workshops, </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+    <h2>What you'll need:</h2>
+      <ul>
+        <li>A valid university student ID</li>
+        <li>A sleeping bag (if you need one)</li>
+        <li>Transport to and from the event</li>
+        <li> </li>
+      </ul>
+    </div>
+</div>
+
+  <div class="alert alert-danger">
+  You must be 18+ to attend this event!
+  </div>
+</section>

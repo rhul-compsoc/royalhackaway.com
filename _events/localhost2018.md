@@ -5,7 +5,10 @@ is-public: true
 start: "2018-08-01T12:00:00+00:00"
 end: "2018-08-01T12:00:00+00:00"
 
-short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+full-description: "This event is like a mini-hackathon, where you'll learn a new skill.
+It's a great place to start if you're interested in the hacking commmunity, want to pick up a new skill, or just want to try something fun.
+"
 
 # Used for styling
 color: "#4E92DF"
@@ -18,11 +21,7 @@ small-logo: "localhost-logo.svg"
 logo-width: 3
 
 show-map: false
-map:
-  coords:
-    lat: "51.4253791"
-    lng: "-0.5674995"
-  placeID: "ChIJXUCjP_55dkgR4OIhA2pQA6A"
+map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
 
 
 show-floor-plan: false
@@ -86,5 +85,3 @@ schedule:
       - "16:00"
       - "Closing Ceremony"
 ---
-
-This is some extra example content.
