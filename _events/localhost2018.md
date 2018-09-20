@@ -6,9 +6,8 @@ start: "2018-08-01T12:00:00+00:00"
 end: "2018-08-01T12:00:00+00:00"
 
 short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-full-description: "This event is like a mini-hackathon, where you'll learn a new skill.
-It's a great place to start if you're interested in the hacking commmunity, want to pick up a new skill, or just want to try something fun.
-"
+full-description: "This event is like a mini-hackathon, where you'll learn a new skill, and put it to use.
+It's a great place to start if you're interested in the hacking commmunity, want to pick up a new skill, or just want to try something fun!"
 
 # Used for styling
 color: "#4E92DF"
@@ -20,9 +19,8 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "localhost-logo.svg"
 logo-width: 3
 
-show-map: false
-map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
-
+show-map: true
+map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -37,7 +35,7 @@ internet:
 
 show-schedule: false
 schedule:
-  "Saturday — Day 1":
+  "Monday 1st August":
     -
       - "10:00"
       - "Registration Opens"
@@ -68,20 +66,4 @@ schedule:
     -
       - "23:59"
       - "Midnight Pizza"
-  "Sunday — Day 2":
-    -
-      - "08:00"
-      - "Breakfast"
-    -
-      - "12:00"
-      - "Hacking Ends w/ Lunch"
-    -
-      - "13:00"
-      - "Presentations"
-    -
-      - "15:00"
-      - "Judging"
-    -
-      - "16:00"
-      - "Closing Ceremony"
 ---

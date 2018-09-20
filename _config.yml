@@ -13,12 +13,8 @@ navs:
     name: About
     link: "#about"
   -
-    name: Sponsors
-    link: "#sponsors"
-  -
-    name: FAQ
-    link: "/faq"
-
+    name: Sponsor us
+    link: "/assets/pdf/sponsordeck.pdf"
 socials:
   -
     icon: icon-s-facebook

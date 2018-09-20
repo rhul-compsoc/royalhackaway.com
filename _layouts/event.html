@@ -29,17 +29,20 @@ title: Event
 </section>
 
 
-{% if page.show-schedule %}
-    {% include schedule.html event=page.schedule %}
+{% if page.show-map %}
+  {% include map.html %}
 {% endif %}
 
-{{ content }}
+<section id="event-info" class="text-center">
+  {{ content }}
+</section>
+
+{% if page.show-schedule %}
+  {% include schedule.html %}
+{% endif %}
+
 
 {% if page.show-sponsors %}
-{% endif %}
-
-{% if page.show-map %}
-    {% include map.html map=page.map %}
 {% endif %}
 
 {% if page.show-floor-plan %}
@@ -49,7 +52,7 @@ title: Event
   {% include internet.html internet=page.internet %}
 {% endif %}
 
-<section class="container text-center">
+<section id="get-in-touch" class="container text-center">
   <p> Questions, queries or qualms about this event? </p>
   <a class="btn btn-primary text-light" href="mailto:{{ site.email }}">Get in touch</a>
 </section>

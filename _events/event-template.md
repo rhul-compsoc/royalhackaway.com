@@ -18,7 +18,7 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 small-logo: "rh-small.svg"
 
 show-map: false
-map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
+map-src: "https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -34,7 +34,7 @@ internet:
   password: ""
 
 
-show-schedule: false
+show-schedule: yes
 schedule:
   "Saturday — Day 1":
     -

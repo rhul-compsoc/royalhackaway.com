@@ -5,8 +5,8 @@ is-public: true
 start: "2018-11-01T12:00:00+00:00"
 end: "2018-11-01T12:00:00+00:00"
 
-short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-full-description: ""
+short-description: "A hackathon for the sleep-deprived."
+full-description: "Local Hack Day is a global hackathon uniting thousands of students. Participants across 100+ distributed campuses are able to connect with their local communities and other hackers around the world through digital workshops & mini-events, social media, and a global livestream."
 
 # Used for styling
 color: "#DA1E1E"
@@ -19,8 +19,7 @@ small-logo: "hackday_logo.svg"
 logo-width: 2
 
 show-map: false
-map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
-
+map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -84,4 +83,6 @@ schedule:
       - "Closing Ceremony"
 ---
 
-this is some example content.
+<div class="container half-height">
+  <h2>We'll reveal more information about this event soon.</h2>
+</div>

@@ -24,7 +24,7 @@ small-logo: "rh-small.svg"
 logo-width: 1
 
 show-map: true
-map-src: https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed
+map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -90,29 +90,6 @@ schedule:
 
 ---
 
-<section class="container">
-  <h2>Event info:</h2>
-  <div class="row">
-    <div class="col-md-6">
-    <h2>What we'll provide:</h2>
-      <ul>
-        <li>Food and drinks for the duration of the event</li>
-        <li>Electronics </li>
-        <li>Workshops, </li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-    <h2>What you'll need:</h2>
-      <ul>
-        <li>A valid university student ID</li>
-        <li>A sleeping bag (if you need one)</li>
-        <li>Transport to and from the event</li>
-        <li> </li>
-      </ul>
-    </div>
+<div class="container half-height">
+  <h2>We'll reveal more information about this event soon.</h2>
 </div>
-
-  <div class="alert alert-danger">
-  You must be 18+ to attend this event!
-  </div>
-</section>
