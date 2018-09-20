@@ -19,7 +19,7 @@ display-date: "02-03 Feb 2019"
 layout: event
 location: "Windsor Building, on Campus"
 jumbotron-image: 2018-1.png
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)"
 small-logo: "rh-small.svg"
 logo-width: 1
 
@@ -29,7 +29,10 @@ map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwl
 show-floor-plan: false
 venue-floor-plan: ""
 
+show-ticket-button: true
+disable-button: false
 tickets: "https://tickets.royalhackaway.com/"
+ticket-button-text: "Reserve a free ticket"
 
 
 show-wifi-details: false

@@ -17,7 +17,12 @@ title: Event
         <h1>{{ page.name }}</h1>
         <p>{{ page.start | date: '%d %B %Y' }}</p>
         <p class="lead">{{ page.short-description}}</p>
-        <a class="btn btn-primary btn-lg btn-text-light" href="{{ page.tickets }}">Grab a free ticket</a>
+
+        {% if page.show-ticket-button %}
+          <a class="btn btn-primary btn-lg btn-text-light {% if page.disable-button %}  disabled {% endif %}" href="{{ page.tickets }}" >
+            {{ page.ticket-button-text }}
+          </a>
+        {% endif %}
       </div>
     </div>
 </section>

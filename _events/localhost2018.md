@@ -14,8 +14,8 @@ color: "#4E92DF"
 display-date: "03-Sep 2018"
 layout: event
 location: "Mccrea 125"
-jumbotron-image: localhost-1.jpg
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
+jumbotron-image: "localhack-1.jpeg"
+jumbotron-image-adjust: "rgba(250, 250, 250, 0.3), rgba(0, 0, 0, 0.9)"
 small-logo: "localhost-logo.svg"
 logo-width: 3
 
@@ -25,7 +25,11 @@ map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&
 show-floor-plan: false
 venue-floor-plan: ""
 
+
+show-ticket-button: false
+disable-button: true
 tickets: "https://tickets.royalhackaway.com/"
+ticket-button-text: "Tickets available soon"
 
 show-wifi-details: false
 internet:
@@ -67,3 +71,7 @@ schedule:
       - "23:59"
       - "Midnight Pizza"
 ---
+
+<div class="container half-height">
+  <h2>We'll reveal more information about this event soon.</h2>
+</div>

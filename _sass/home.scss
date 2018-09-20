@@ -1,4 +1,4 @@
-.backgruond-image.full-height{
+.background-image.full-height{
   height:100vh;
   padding-top: 20%;
 }
@@ -7,10 +7,25 @@
   margin: 5px;
 }
 
+#hackaway-ad > div > h2 {
+  padding-bottom: 1vh;
+}
 
+#hackaway-ad > div >  p {
+  padding-bottom: 1vh;
+}
+
+#about {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
 section > .container {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #top > .jumbotron > .btn {

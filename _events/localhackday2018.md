@@ -5,7 +5,7 @@ is-public: true
 start: "2018-11-01T12:00:00+00:00"
 end: "2018-11-01T12:00:00+00:00"
 
-short-description: "A hackathon for the sleep-deprived."
+short-description: "A short, sweet, and rewarding hackathon."
 full-description: "Local Hack Day is a global hackathon uniting thousands of students. Participants across 100+ distributed campuses are able to connect with their local communities and other hackers around the world through digital workshops & mini-events, social media, and a global livestream."
 
 # Used for styling
@@ -13,8 +13,8 @@ color: "#DA1E1E"
 display-date: "01 Dec 2018"
 layout: event
 location: "Mcrea 126"
-jumbotron-image: localhack-1.jpeg
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
+jumbotron-image: localhost-1.jpg
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)"
 small-logo: "hackday_logo.svg"
 logo-width: 2
 
@@ -24,7 +24,10 @@ map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&
 show-floor-plan: false
 venue-floor-plan: ""
 
-tickets: "https://tickets.royalhackaway.com/"
+show-ticket-button: true
+disable-button: true
+tickets: ""
+ticket-button-text: "Tickets available soon"
 
 show-wifi-details: false
 internet:

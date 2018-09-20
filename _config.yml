@@ -2,8 +2,7 @@
 author: "Benzi <hi@benzi.io>"
 include: ["index.html", "_pages"]
 
-display_ad: false
-maintenance: false
+display_ad: true
 
 navs:
   -
