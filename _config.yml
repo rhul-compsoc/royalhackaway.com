@@ -9,20 +9,30 @@ navs:
     name: Home
     link: "#top"
   -
-    name: About
-    link: "#about"
+    name: Events
+    link: "#future-events"
   -
     name: Sponsor us
-    link: "/assets/pdf/sponsordeck.pdf"
+    link: "/sponsor"
+  -
+    name: About
+    link: "/about"
+  -
+    name: Contact us
+    link: "/about"
 socials:
   -
-    icon: icon-s-facebook
+    icon: "facebook-white.svg"
     name: Facebook
     url: "https://facebook.com/royalhackaway"
   -
-    icon: icon-s-twitter
+    icon: "twitter.svg"
     name: Twitter
     url: "https://twitter.com/royalhackaway"
+  -
+    icon: "github-mark.png"
+    name: GitHub
+    url: "https://github.com/royalhackaway"
 
 email: hello@royalhackaway.com
 
