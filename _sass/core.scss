@@ -1,6 +1,6 @@
 
 main {
-  padding-top: 0vh;
+  padding-top: 3%;
 }
 
 .spaced {
@@ -49,6 +49,10 @@ main {
   background-color: #EB6824;
   box-shadow: 0 5px #b54f1b;
   border-width: 0;
+}
+
+.below-navbar {
+  padding-top: 5vh;
 }
 
 .btn.btn-primary:hover {

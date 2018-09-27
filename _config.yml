@@ -4,6 +4,8 @@ include: ["index.html", "_pages"]
 
 display_ad: true
 
+footer-description: "Royal Hackaway is a student-run group that hosts hackathons at Royal Holloway, University of London."
+
 navs:
   -
     name: Home
@@ -13,13 +15,7 @@ navs:
     link: "#future-events"
   -
     name: Sponsor us
-    link: "/sponsor"
-  -
-    name: About
-    link: "/about"
-  -
-    name: Contact us
-    link: "/about"
+    link: "/assets/pdf/sponsordeck.pdf"
 socials:
   -
     icon: "facebook-white.svg"
