@@ -1,34 +1,34 @@
 ---
-name: "Icebreaker hackathon"
+name: "Freshers Hackathon"
 is-public: true
 
-start: "2018-01-01T12:00:00+00:00"
-end: "2018-01-01T12:00:00+00:00"
+start: "2018-09-30T12:00:00+00:00"
+end: "2018-09-30T12:00:00+00:00"
 
 short-description: "A great place to start if you're interested in hacking."
-full-description: "This event puts"
+full-description: "Some of you lot have never written a line of code, and others of you spend your weekends writing C for fun (you're insane). A coding event that suits everyone sounds impossible, right? Think again. We'll have pizzas, games and a CTF style coding challenge for everyone who wants to get involved. There'll be prizes for the quickest team to finish!"
 
 # Used for styling
 color: "#205eb5"
-display-date: "Sunday 30th Sep"
+display-date: "30 Sep 2018"
 layout: event
-location: "uygyui"
-jumbotron-image:
+location: "Mccrea 125"
+jumbotron-image: hackathon-image.jpg
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 
 display-logo: false
 small-logo: "rh-small.svg"
 logo-width: 2
 
-show-map: false
-map-src: "https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed"
+show-map: true
+map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
 
-show-ticket-button: true
-disable-button: true
-tickets: "https://tickets.royalhackaway.com/"
+show-ticket-button: yes
+disable-button: false
+tickets: "https://www.facebook.com/events/453038041884752/"
 ticket-button-text: "RSVP"
 
 show-wifi-details: false
@@ -38,7 +38,7 @@ internet:
   password: ""
 
 
-show-schedule: yes
+show-schedule: false
 schedule:
   "Saturday — Day 1":
     -
@@ -89,12 +89,8 @@ schedule:
       - "Closing Ceremony"
 ---
 
-
-
-<section id="event-description" style="background-color: {{ page.color }}">
-  <div class="container text-light">
- <p class=""> this is some example extra content.</p>
-</section>
-
-
-This is some extra example content.
+<div class="container">
+  <div class="alert alert-warning" role="alert">
+    This event is for Royal Holloway students
+  </div>
+</div>

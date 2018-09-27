@@ -12,7 +12,7 @@
         {% assign sorted-events = site.events | sort: 'start'%}
         {% for event in sorted-events limit:1 %}
           {% if event.is-public %}
-              <div class="container event-outline-container">
+              <div class="event-outline-container">
                 <a class="no-hover-style" href="{{ page.slug }}">
                   <b>{{ event.name }}</b>
                   <ul class="item-details">
@@ -24,9 +24,6 @@
                 </a>
 
               </div>
-
-
-
           {% else %}
             <p>There are currently no upcoming events.</p>
           {% endif %}

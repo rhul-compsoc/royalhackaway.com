@@ -2,8 +2,8 @@
 name: "Local Hack Day 2018"
 is-public: true
 
-start: "2018-11-01T12:00:00+00:00"
-end: "2018-11-01T12:00:00+00:00"
+start: "2018-12-02T12:00:00+00:00"
+end: "2018-12-02T12:00:00+00:00"
 
 short-description: "A short, sweet, and rewarding hackathon."
 full-description: "Local Hack Day is a global hackathon uniting thousands of students. Participants across 100+ distributed campuses are able to connect with their local communities and other hackers around the world through digital workshops & mini-events, social media, and a global livestream."
@@ -12,15 +12,15 @@ full-description: "Local Hack Day is a global hackathon uniting thousands of stu
 color: "#DA1E1E"
 display-date: "01 Dec 2018"
 layout: event
-location: "Mcrea 126"
+location: "Mcrea 125"
 jumbotron-image: localhost-1.jpg
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)"
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: "hackday_logo.svg"
 logo-width: 2
 
-show-map: false
+show-map: yes
 map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false

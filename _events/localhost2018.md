@@ -1,8 +1,8 @@
 ---
 name: "LocalHost 2018"
-is-public: true
+is-public: false
 
-start: "2018-08-01T12:00:00+00:00"
+start: "2018-10-01T12:00:00+00:00"
 end: "2018-08-01T12:00:00+00:00"
 
 short-description: "Pick up a new skill, and build somewithing with it,"
@@ -14,13 +14,13 @@ display-date: "Date TBA"
 layout: event
 location: "Mccrea 125"
 jumbotron-image: "localhack-1.jpeg"
-jumbotron-image-adjust: "rgba(250, 250, 250, 0.3), rgba(0, 0, 0, 0.9)"
+jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: "localhost-logo.svg"
 logo-width: 3
 
-show-map: true
+show-map: false
 map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
