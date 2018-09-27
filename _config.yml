@@ -71,3 +71,6 @@ collections:
   events:
     output: true
     permalink: /:slug
+
+sass:
+  style: compressed
