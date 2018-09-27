@@ -1,24 +1,24 @@
 ---
-name: ""
-is-public: false
+name: "Icebreaker hackathon"
+is-public: true
 
-start: "2099-01-01T12:00:00+00:00"
-end: "2001-01-01T12:00:00+00:00"
+start: "2018-01-01T12:00:00+00:00"
+end: "2018-01-01T12:00:00+00:00"
 
-short-description: ""
-full-description: ""
+short-description: "A great place to start if you're interested in hacking."
+full-description: "This event puts"
 
 # Used for styling
-color: "#FFFFFF"
-display-date: ""
+color: "#205eb5"
+display-date: "Sunday 30th Sep"
 layout: event
-location: ""
+location: "uygyui"
 jumbotron-image:
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 
 display-logo: false
 small-logo: "rh-small.svg"
-logo-width: 1
+logo-width: 2
 
 show-map: false
 map-src: "https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed"

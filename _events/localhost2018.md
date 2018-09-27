@@ -5,17 +5,18 @@ is-public: true
 start: "2018-08-01T12:00:00+00:00"
 end: "2018-08-01T12:00:00+00:00"
 
-short-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-full-description: "This event is like a mini-hackathon, where you'll learn a new skill, and put it to use.
-It's a great place to start if you're interested in the hacking commmunity, want to pick up a new skill, or just want to try something fun!"
+short-description: "Pick up a new skill, and build somewithing with it,"
+full-description: "This event is like a mini-hackathon, where you'll learn a new skill, and put it to use."
 
 # Used for styling
 color: "#4E92DF"
-display-date: "03-Sep 2018"
+display-date: "Date TBA"
 layout: event
 location: "Mccrea 125"
 jumbotron-image: "localhack-1.jpeg"
 jumbotron-image-adjust: "rgba(250, 250, 250, 0.3), rgba(0, 0, 0, 0.9)"
+
+display-logo: true
 small-logo: "localhost-logo.svg"
 logo-width: 3
 

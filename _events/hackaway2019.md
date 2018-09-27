@@ -20,6 +20,8 @@ layout: event
 location: "Windsor Building, on Campus"
 jumbotron-image: 2018-1.png
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)"
+
+display-logo: true
 small-logo: "rh-small.svg"
 logo-width: 1
 

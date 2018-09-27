@@ -1,5 +1,5 @@
 ---
-name: "MLH Local Hack Day 2018"
+name: "Local Hack Day 2018"
 is-public: true
 
 start: "2018-11-01T12:00:00+00:00"
@@ -15,6 +15,8 @@ layout: event
 location: "Mcrea 126"
 jumbotron-image: localhost-1.jpg
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)"
+
+display-logo: true
 small-logo: "hackday_logo.svg"
 logo-width: 2
 
