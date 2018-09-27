@@ -43,6 +43,10 @@ section > .container {
   margin-top: 5vh;
 }
 
+#top > .background-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/rhul-founders.jpg);
+}
+
 #top > .lead {
   padding-bottom: 5%;
 }
