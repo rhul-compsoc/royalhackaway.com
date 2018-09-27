@@ -1,3 +1,6 @@
+---
+
+---
 <!DOCTYPE html>
 
 <html lang="en">
@@ -6,9 +9,8 @@
 
   <body id="top">
 
-    {% if site.maintenance != true %}
       {% include header.html %}
-    {% endif %}
+
 
     <main>
 
@@ -16,11 +18,7 @@
 
     </main>
 
-    {% if site.maintenance != true %}
-      {% include footer.html %}
-    {% endif %}
-
-    <script src="https://cdn.rawgit.com/requirejs/requirejs/master/require.js" data-main="/assets/js/app.min.js"></script>
+    {% include footer.html %}
 
   </body>
 

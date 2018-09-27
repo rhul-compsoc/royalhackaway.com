@@ -1,37 +1,22 @@
 <header>
-  <div class="navbar">
-    <div class="navbar-header">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="mainNav">
       <div class="container">
-
-        <ul class="social pull-left">
-          {% for social in site.socials %}
-            <li><a href="{{ social.url }}"><i class="{{ social.icon }}"></i></a></li>
-          {% endfor %}
-        </ul>
-
-        <a class="navbar-brand" href="/"><img src="/assets/images/rh.svg" class="logo" alt="Royal Hackaway"></a>
-
-        <a class="navbar-toggle btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class="icon-menu-1"></i></a>
-
-      </div>
-    </div>
-
-    <div class="yamm">
-      <div class="navbar-collapse collapse">
-        <div class="container">
-
-          <a class="navbar-brand scroll-to" href="/">
-            <img src="/assets/images/rh.svg" class="logo" alt="Royal Hackaway">
-          </a>
-
-          <ul class="nav navbar-nav pull-left">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/rh.svg" class="d-inline-block align-top" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
             {% for nav in site.navs %}
-              <li><a href="{{ nav.path }}" class="scroll-to" data-anchor-offset="0">{{ nav.name }}</a></li>
+              {% assign link = site.url | append: nav.link %}
+              <li><a href="{{ link }}" class="nav-link text-dark" data-anchor-offset="0">{{ nav.name }}</a></li>
             {% endfor %}
           </ul>
-
         </div>
+
+        <a class="btn btn-light border navbar-brand cs-button" href="https://computingsociety.co.uk">
+          <img class="img-fluid" src="/assets/images/cs_logo.svg">
+        </a>
+
       </div>
-    </div>
-  </div>
+    </nav>
 </header>
