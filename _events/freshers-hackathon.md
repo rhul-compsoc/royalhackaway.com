@@ -1,6 +1,6 @@
 ---
 name: "Freshers Hackathon"
-is-public: true
+is-public: false
 
 start: "2018-09-30T12:00:00+00:00"
 end: "2018-09-30T12:00:00+00:00"
