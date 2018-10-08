@@ -1,0 +1,12 @@
+<!-- Intended for use with event pages (makes use of event sponsors list) -->
+{% if page.show-sponsors-list %}
+<section class="half-height">
+    <div class="container">
+        {% for sponsor in page.sponsors %}
+            <div class="card">
+                <img src= "" class="card-img">
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %

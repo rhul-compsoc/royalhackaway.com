@@ -71,6 +71,15 @@ schedule:
     -
       - "23:59"
       - "Midnight Pizza"
+
+
+show-sponsors-list: false
+sponsors:
+  - Not-Binary
+  - Example2
+  - Example3
+  - Example4
+
 ---
 
 <div class="container half-height">
