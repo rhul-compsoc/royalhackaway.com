@@ -73,12 +73,6 @@ schedule:
       - "Midnight Pizza"
 
 
-show-sponsors-list: false
-sponsors:
-  - Not-Binary
-  - Example2
-  - Example3
-  - Example4
 
 ---
 

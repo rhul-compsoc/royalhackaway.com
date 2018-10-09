@@ -87,13 +87,6 @@ schedule:
       - "16:00"
       - "Closing Ceremony"
 
-
-show-sponsors-list: false
-sponsors:
-  - Not-Binary
-  - Example2
-  - Example3
-  - Example4
 ---
 
 <div class="container half-height">

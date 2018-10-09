@@ -72,5 +72,6 @@ collections:
     output: true
     permalink: /:slug
 
+
 sass:
   style: compressed

@@ -94,17 +94,21 @@ schedule:
       - "Closing Ceremony"
 
 
+
 show-sponsors-list: true
 sponsors:
-    - Not-Binary
-    - Example2
-    - Example3
-    - Example4
+    - 
+      Name: "Balsamiq"
+      Link: "https://www.balsamiq.com/"
+      Icon: ""
+      Colour: #A60000
+    - 
+      Name: "Example123"
+      Link: "https://www.example.com"
+      Icon: ""
+      Colour: #A60000
 ---
 
 <div class="container half-height">
   <h2>We'll reveal more information about this event soon.</h2>
 </div>
-
-{% include sponsors.html %}
-

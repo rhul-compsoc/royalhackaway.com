@@ -91,10 +91,17 @@ schedule:
 
 show-sponsors-list: false
 sponsors:
-  - Not-Binary
-  - Example2
-  - Example3
-  - Example4
+    - 
+      Name: "Example"
+      Link: "https://www.example.com/"
+      Icon: ""
+      Colour: #A60000
+    - 
+      Name: "Example2"
+      Link: "https://www.example.com"
+      Icon: ""
+      Colour: #A60000
+      
 ---
 
 
