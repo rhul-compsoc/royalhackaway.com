@@ -3,7 +3,7 @@ name: "Royal Hackaway 2019"
 is-public: true
 is-over: false
 
-start: "2019-02-01T12:00:00+00:00"
+start: "2019-02-02T12:00:00+00:00"
 end: "2019-02-03T12:00:00+00:00"
 
 short-description: "An exciting 24 hour hackathon, for students from any university."
