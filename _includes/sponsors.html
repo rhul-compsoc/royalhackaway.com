@@ -1,12 +1,17 @@
-<!-- Intended for use with event pages (makes use of event sponsors list) -->
-{% if page.show-sponsors-list %}
+
 <section class="half-height">
-    <div class="container">
-        {% for sponsor in page.sponsors %}
-            <div class="card">
-                <img src= "" class="card-img">
+    {% for tier in page.sponsors %}
+        <div class="text-center justify-content-center">
+            <h2 class="" style="color:{{ tier.colour }}">{{ tier.name }}</h2>
+            <div class="container row justify-content-center">
+            {% for sponsor in tier.tier-sponsors %}
+                <a href="{{ sponsor.link }}" class="col-md-3 rounded" style="background-color: {{ sponsor.colour }}">
+                    <img src= "/assets/images/sponsors/{{ sponsor.image }}" class="img-fluid">
+                </a>
+            {% endfor %}
             </div>
-        {% endfor %}
-    </div>
+
+
+        </div>
+    {% endfor %}
 </section>
-{% endif %

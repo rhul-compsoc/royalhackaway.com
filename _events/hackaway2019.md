@@ -96,17 +96,52 @@ schedule:
 
 
 show-sponsors-list: true
-sponsors:
-    - 
-      Name: "Balsamiq"
-      Link: "https://www.balsamiq.com/"
-      Icon: ""
-      Colour: #A60000
-    - 
-      Name: "Example123"
-      Link: "https://www.example.com"
-      Icon: ""
-      Colour: #A60000
+sponsors: 
+    -
+        name: "Gold" 
+        colour: "#2D1911"
+        tier-sponsors:
+            - 
+              name: "Balsamiq"
+              link: "https://www.balsamiq.com/"
+              image: "balsamiq-smile.svg"
+              colour: "#A60000"
+            - 
+              name: "Not-Binary"
+              link: "https://notbinary.co.uk/"
+              image: "not-binary.png"
+              colour: "#FFF50F"
+    -
+        name: "Silver" 
+        colour: "#2D1911"
+        tier-sponsors:
+            - 
+              name: "Balsamiq"
+              link: "https://www.balsamiq.com/"
+              image: "balsamiq-smile.svg"
+              colour: "#A60000"
+            - 
+              name: "Not-Binary"
+              link: "https://notbinary.co.uk/"
+              image: "not-binary.png"
+              colour: "#FFF50F"
+    -
+        name: "Bronze" 
+        colour: "#2D1911"
+        tier-sponsors:
+            - 
+              name: "Balsamiq"
+              link: "https://www.balsamiq.com/"
+              image: "balsamiq-smile.svg"
+              colour: "#A60000"
+            - 
+              name: "Not-Binary"
+              link: "https://notbinary.co.uk/"
+              image: "not-binary.png"
+              colour: "#FFF50F"
+         
+     
+
 ---
 
 <div class="container half-height">
