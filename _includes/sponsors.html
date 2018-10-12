@@ -1,36 +1,19 @@
-<section id="sponsors">
-  <div class="inner-top-md">
-    <div class="container">
-        <div class="center-block text-center">
-          <header>
-            <h1>Sponsors</h1>
-            <p>Sponsors make this event possible from providing food to awesome APIs and technology. We offer you the chance to engage with the next generation of innovators, to demonstrate your products and teach them new things alongside unique recruitment opportunities.</p>
-            <a href="/assets/pdf/sponsordeck.pdf" class="btn btn-primary">Become a Sponsor</a>
-          </header>
-        </div>
 
-
-        {% for tier in page.sponsors %}
-        <div class="row">
-            <h2>{{ tier.name }}</h2>
-
-            {% for sponsor in tier.tier-sponsors%}
-                <div class="col-md-4 col-sm-12 justify-content-md-center">
-                    <div id="{{ sponsor.name }}" class="col-8 justify-content-md-center sponsor" style="background-color:{{ sponsor.colour }}">
-                        <div class="inner-top-xs inner-bottom-xs">
-                            <a href="{{ sponsor.link }}">
-                                <img class="center-block" src="/assets/images/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
-                            </a>
-                        </div>
-                        <div>
-                            <p class="justified-text">{{ sponsor.description }}</p>
-                        </div>
-                    </div>
-                </div>
+<section class="half-height sponsors">
+    <h2 id="sponsors-title" class="text-center display-4">Sponsors</h2>
+    {% for tier in page.sponsors %}
+    <div class="sponsor-tier">
+        <h2 class="text-center" style="color: {{ tier.colour }}"><b>{{ tier.name }}</b></h2>
+        <div class="row justify-content-center">
+            {% for sponsor in tier.tier-sponsors %}
+            <a id="{{ sponsor.name }}" href="{{ sponsor.link }}" class="sponsor align-middle col-md-2 rounded row" style="background-color: {{ sponsor.colour }}; box-shadow: 4px 5px {{ sponsor.shadow-colour }};">
+                    <img class="col-12" src= "/assets/images/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+            </a>
             {% endfor %}
         </div>
-        {% endfor %}
-
     </div>
-  </div>
+    {% endfor %}
+    <div class="text-center">
+        <a href="/assets/pdf/sponsordeck.pdf" class="btn btn-primary btn-lg btn-text-light">Become a sponsor</a>
+    </div>
 </section>
