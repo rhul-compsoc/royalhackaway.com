@@ -99,44 +99,50 @@ show-sponsors-list: true
 sponsors: 
     -
         name: "Gold" 
-        colour: "#2D1911"
+        colour: "#FFD700"
         tier-sponsors:
             - 
               name: "Balsamiq"
               link: "https://www.balsamiq.com/"
+              description: "Balsamiq is the maker of the industry-leading rapid wireframing software that combines the simplicity of paper sketching with the power of a digital tool so that teams can focus on what's important"
               image: "balsamiq-smile.svg"
               colour: "#A60000"
             - 
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
+              description: "This is some example text"
               image: "not-binary.png"
               colour: "#FFF50F"
     -
         name: "Silver" 
-        colour: "#2D1911"
+        colour: "#909499"
         tier-sponsors:
             - 
               name: "Balsamiq"
               link: "https://www.balsamiq.com/"
+              description: "Balsamiq is the maker of the industry-leading rapid wireframing software that combines the simplicity of paper sketching with the power of a digital tool so that teams can focus on what's important"
               image: "balsamiq-smile.svg"
               colour: "#A60000"
-            - 
+            -
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
+              description: "This is some example text"
               image: "not-binary.png"
               colour: "#FFF50F"
     -
         name: "Bronze" 
-        colour: "#2D1911"
+        colour: "#CD7F32"
         tier-sponsors:
             - 
               name: "Balsamiq"
               link: "https://www.balsamiq.com/"
+              description: "Balsamiq is the maker of the industry-leading rapid wireframing software that combines the simplicity of paper sketching with the power of a digital tool so that teams can focus on what's important"
               image: "balsamiq-smile.svg"
               colour: "#A60000"
-            - 
+            -
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
+              description: "This is some example text"
               image: "not-binary.png"
               colour: "#FFF50F"
          

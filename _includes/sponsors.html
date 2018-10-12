@@ -1,66 +1,36 @@
 <section id="sponsors">
   <div class="inner-top-md">
-
     <div class="container">
-      <div class="row">
         <div class="center-block text-center">
           <header>
             <h1>Sponsors</h1>
             <p>Sponsors make this event possible from providing food to awesome APIs and technology. We offer you the chance to engage with the next generation of innovators, to demonstrate your products and teach them new things alongside unique recruitment opportunities.</p>
-            <a href="/assets/pdf/sponsordeck.pdf" class="btn">Become a Sponsor</a>
+            <a href="/assets/pdf/sponsordeck.pdf" class="btn btn-primary">Become a Sponsor</a>
           </header>
         </div>
-      </div>
+
+
+        {% for tier in page.sponsors %}
+        <div class="row">
+            <h2>{{ tier.name }}</h2>
+
+            {% for sponsor in tier.tier-sponsors%}
+                <div class="col-md-4 col-sm-12 justify-content-md-center">
+                    <div id="{{ sponsor.name }}" class="col-8 justify-content-md-center sponsor" style="background-color:{{ sponsor.colour }}">
+                        <div class="inner-top-xs inner-bottom-xs">
+                            <a href="{{ sponsor.link }}">
+                                <img class="center-block" src="/assets/images/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                            </a>
+                        </div>
+                        <div>
+                            <p class="justified-text">{{ sponsor.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
     </div>
-</br></br></br>
-
-    {% for s in site.sponsors %}
-
-      {% assign i = forloop.index0 %}
-
-      {% if s[0] == 'gold' %}
-        {% capture id %}gold-sponsors{% endcapture %}
-        {% capture heading %}Gold Sponsors{% endcapture %}
-      {% elsif s[0] == 'silver' %}
-        {% capture id %}silver-sponsors{% endcapture %}
-        {% capture heading %}Silver Sponsors{% endcapture %}
-      {% elsif s[0] == 'bronze' %}
-        {% capture id %}bronze-sponsors{% endcapture %}
-        {% capture heading %}Bronze Sponsors{% endcapture %}
-      {% elsif s[0] == 'partner' %}
-        {% capture id %}partners{% endcapture %}
-        {% capture heading %}Partners{% endcapture %}
-      {% endif %}
-
-      {% if s[1].size > 0 %}
-        <div id="{{ id }}">
-          <div class="row justify-content-md-center">
-            <div class="col col-lg-6 center-block text-center sponsor_top">
-              <header>
-                <h>{{ heading }}</h2>
-              </header>
-            </div>
-          </div>
-        </div>
-      {% endif %}
-
-      {% for sponsor in s[1] %}
-
-        {% assign j = forloop.index0 %}
-        <div class="row justify-content-md-center">
-            <div id="{{ s[1][j].name }}" class="row col col-lg-6 justify-content-md-center sponsor" style="background-color: {{ s[1][j].color }};">
-              <div class="inner-top-xs inner-bottom-xs">
-                <a href="{{ s[1][j].url }}">
-                  <img class="center-block" src="{{ s[1][j].logo }}" alt="{{ s[1][j].name }}">
-                </a>
-              </div>
-              <div>
-                <p class="justified-text" style="color: {{ s[1][j].text-color }};">{{ s[1][j].description }}</p>
-              </div>
-            </div>
-        </div>
-      {% endfor %}
-    {% endfor %}
-
   </div>
 </section>
