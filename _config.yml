@@ -33,19 +33,29 @@ socials:
 email: hello@royalhackaway.com
 
 sponsors:
-  gold: []
-  silver: []
-  bronze: []
-  partner:
+  gold: 
     -
       color: "#0F0D0E"
+      text-color: "white"
       description: "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers."
       logo: /assets/images/github.svg
       name: GitHub
       shade: dark
       url: "https://github.com"
+  silver: 
     -
       color: "#FFF"
+      text-color: "black"
+      description: "Majestic: The planet's largest Link Index database"
+      logo: /assets/images/majestic.png
+      name: Majestic
+      shade: light
+      url: "https://majestic.com"
+  bronze: []
+  partner:
+    -
+      color: "#FFF"
+      text-color: "black"
       description: "Major League Hacking (MLH) is the official student hackathon league."
       logo: /assets/images/mlh.svg
       name: MLH
@@ -53,13 +63,7 @@ sponsors:
       url: "https://mlh.io"
     -
       color: "#FFF"
-      description: "Majestic: The planet's largest Link Index database"
-      logo: /assets/images/majestic.png
-      name: Majestic
-      shade: light
-      url: "https://majestic.com"
-    -
-      color: "#FFF"
+      text-color: "black"
       description: "Department of Computer Science at Royal Holloway, University of London"
       logo: /assets/images/rhul-logo.svg
       name: "Department of Computer Science"
@@ -75,3 +79,4 @@ collections:
 
 sass:
   style: compressed
+  sass_dir: _sass
