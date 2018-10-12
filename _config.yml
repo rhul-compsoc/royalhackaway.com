@@ -1,5 +1,5 @@
 ---
-author: "Benzi <hi@benzi.io>"
+repository: royalhackaway/royalhackaway.github.io
 include: ["index.html", "_pages"]
 
 display_ad: true
