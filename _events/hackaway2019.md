@@ -107,7 +107,32 @@ sponsors:
               image: "compsci.png"
               colour: "#1C1616"
               shadow-colour: "#696969"
+    -
+        name: "Supporter" 
+        colour: "#000000"
+        tier-sponsors:
             - 
+              name: "Gitkraken"
+              link: "https://www.gitkraken.com/"
+              image: "gitkraken.svg"
+              colour: "#000000"
+              shadow-colour: "#696969"
+            - 
+              name: "MLH"
+              link: "https://mlh.io"
+              image: "mlh.svg"
+              colour: "#FFFFFF"
+              shadow-colour: "#265a8f"
+         
+     
+
+---
+
+<div class="container">
+  <h2>We'll reveal more information about this event soon.</h2>
+</div>
+
+<!--             - 
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
               image: "not-binary.png"
@@ -138,22 +163,4 @@ sponsors:
               link: "https://www.balsamiq.com/"
               image: "balsamiq-smile.svg"
               colour: "#A60000"
-              shadow-colour: "#B60016"
-    -
-        name: "Supporter" 
-        colour: "#000000"
-        tier-sponsors:
-            - 
-              name: "Gitkraken"
-              link: "https://www.gitkraken.com/"
-              image: "gitkraken.svg"
-              colour: "#000000"
-              shadow-colour: "#696969"
-         
-     
-
----
-
-<div class="container">
-  <h2>We'll reveal more information about this event soon.</h2>
-</div>
+              shadow-colour: "#B60016" -->
