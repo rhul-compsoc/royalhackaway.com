@@ -87,6 +87,21 @@ schedule:
     -
       - "16:00"
       - "Closing Ceremony"
+
+
+show-sponsors-list: false
+sponsors:
+    - 
+      Name: "Example"
+      Link: "https://www.example.com/"
+      Icon: ""
+      Colour: #A60000
+    - 
+      Name: "Example2"
+      Link: "https://www.example.com"
+      Icon: ""
+      Colour: #A60000
+      
 ---
 
 

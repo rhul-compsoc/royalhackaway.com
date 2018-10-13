@@ -1,5 +1,5 @@
 ---
-author: "Benzi <hi@benzi.io>"
+repository: royalhackaway/royalhackaway.github.io
 include: ["index.html", "_pages"]
 
 display_ad: true
@@ -16,6 +16,7 @@ navs:
   -
     name: Sponsor us
     link: "/assets/pdf/sponsordeck.pdf"
+
 socials:
   -
     icon: "facebook-white.svg"
@@ -32,45 +33,13 @@ socials:
 
 email: hello@royalhackaway.com
 
-sponsors:
-  gold: []
-  silver: []
-  bronze: []
-  partner:
-    -
-      color: "#0F0D0E"
-      description: "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers."
-      logo: /assets/images/github.svg
-      name: GitHub
-      shade: dark
-      url: "https://github.com"
-    -
-      color: "#FFF"
-      description: "Major League Hacking (MLH) is the official student hackathon league."
-      logo: /assets/images/mlh.svg
-      name: MLH
-      shade: light
-      url: "https://mlh.io"
-    -
-      color: "#FFF"
-      description: "Majestic: The planet's largest Link Index database"
-      logo: /assets/images/majestic.png
-      name: Majestic
-      shade: light
-      url: "https://majestic.com"
-    -
-      color: "#FFF"
-      description: "Department of Computer Science at Royal Holloway, University of London"
-      logo: /assets/images/rhul-logo.svg
-      name: "Department of Computer Science"
-      shade: light
-      url: "https://www.royalholloway.ac.uk/computerscience/home.aspx"
-
 
 collections:
   events:
     output: true
     permalink: /:slug
 
+
 sass:
   style: compressed
+  sass_dir: _sass

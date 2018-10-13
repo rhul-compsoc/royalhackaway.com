@@ -86,6 +86,7 @@ schedule:
     -
       - "16:00"
       - "Closing Ceremony"
+
 ---
 
 <div class="container half-height">
