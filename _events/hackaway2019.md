@@ -23,7 +23,7 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: "rh-small.svg"
-logo-width: 1
+logo-width: 2
 
 show-map: true
 map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -34,7 +34,7 @@ venue-floor-plan: ""
 show-ticket-button: true
 disable-button: false
 tickets: "https://tickets.royalhackaway.com/"
-ticket-button-text: "Grab a free ticket!"
+ticket-button-text: "Grab a free ticket"
 
 
 show-wifi-details: false
