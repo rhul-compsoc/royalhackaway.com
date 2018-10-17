@@ -30,12 +30,6 @@ jobs:
           name: Node dependencies
           command: npm install -g firebase-tools@3.9.1 --unsafe-perm
 
-      - save_cache:
-          paths:
-            - /usr/local/bundle
-            - /usr/local/lib/node_modules
-          key: v2-dependencies-{{ checksum "Gemfile.lock" }}
-
       - run:
           name: Build
           command: bundle exec jekyll build --verbose
