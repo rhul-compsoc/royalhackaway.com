@@ -1,10 +1,10 @@
-<section class="full-height" id="top">
+<section class="full-height" id="full-height">
   <div class="jumbotron jumbotron-fluid background-image full-height">
         <h1 class="display-1 text-light">Royal Hackaway</h1>
         <h2 class=" text-light">What will you build?</h2>
           <div id="socials" class="row justify-content-center">
             {% for social in site.socials %}
-              <a href="{{ social.url }}"><img class="social-icon img-fluid" src="/assets/images/{{ social.icon }}"></a>
+              <a href="{{ social.url }}"><img class="social-icon img-fluid" alt="{{ social.icon }}" src="/assets/images/{{ social.icon }}"></a>
             {% endfor %}
           </div>
 
