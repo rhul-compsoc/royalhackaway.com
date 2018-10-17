@@ -24,7 +24,7 @@ jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: "rh-small.svg"
-logo-width: 1
+logo-width: 2
 
 show-map: true
 map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -35,7 +35,7 @@ venue-floor-plan: ""
 show-ticket-button: true
 disable-button: false
 tickets: "https://tickets.royalhackaway.com/"
-ticket-button-text: "Reserve a free ticket"
+ticket-button-text: "Grab a free ticket"
 
 
 show-wifi-details: false
@@ -97,35 +97,35 @@ schedule:
 
 
 show-sponsors-list: true
-sponsors: 
+sponsors:
     -
-        name: "Gold" 
+        name: "Gold"
         colour: "#FFD700"
         tier-sponsors:
-            - 
+            -
               name: "Royal Holloway, University of London computing department"
               link: "https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
               image: "compsci.png"
               colour: "#1C1616"
               shadow-colour: "#696969"
     -
-        name: "Supporter" 
+        name: "Supporter"
         colour: "#000000"
         tier-sponsors:
-            - 
+            -
               name: "Gitkraken"
               link: "https://www.gitkraken.com/"
               image: "gitkraken.svg"
               colour: "#000000"
               shadow-colour: "#696969"
-            - 
+            -
               name: "MLH"
               link: "https://mlh.io"
               image: "mlh.svg"
               colour: "#FFFFFF"
               shadow-colour: "#265a8f"
-         
-     
+
+
 
 ---
 
@@ -133,33 +133,33 @@ sponsors:
   <h2>We'll reveal more information about this event soon.</h2>
 </div>
 
-<!--             - 
+<!--             -
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
               image: "not-binary.png"
               colour: "#FFF50F"
               shadow-colour: "#FFBF00"
     -
-        name: "Silver" 
+        name: "Silver"
         colour: "#919499"
         tier-sponsors:
-            - 
+            -
               name: "Balsamiq"
               link: "https://www.balsamiq.com/"
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
-            - 
+            -
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
               image: "not-binary.png"
               colour: "#FFF50F"
               shadow-colour: "#FFBF00"
     -
-        name: "Bronze" 
+        name: "Bronze"
         colour: "#CD7F32"
         tier-sponsors:
-            - 
+            -
               name: "Balsamiq"
               link: "https://www.balsamiq.com/"
               image: "balsamiq-smile.svg"
