@@ -1,9 +1,10 @@
 ---
 name: "Local Hack Day 2018"
 is-public: true
+is-over: false
 
-start: "2018-12-02T12:00:00+00:00"
-end: "2018-12-02T12:00:00+00:00"
+start: "2018-12-01T12:00:00+00:00"
+end: "2018-12-01T12:00:00+00:00"
 
 short-description: "A short, sweet, and rewarding hackathon."
 full-description: "Local Hack Day is a global hackathon uniting thousands of students. Participants across 100+ distributed campuses are able to connect with their local communities and other hackers around the world through digital workshops & mini-events, social media, and a global livestream."

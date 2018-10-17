@@ -10,8 +10,10 @@
         <h4>Next Event:</h4>
 
         {% assign sorted-events = site.events | sort: 'start'%}
-        {% for event in sorted-events limit:1 %}
-          {% if event.is-public %}
+        {% for event in sorted-events %}
+          {% if event.is-over %}
+            <!-- do nothing --> 
+          {% elsif event.is-public and event.is-over == "false" %}
               <div class="event-outline-container">
                 <a class="no-hover-style" href="{{ page.slug }}">
                   <b>{{ event.name }}</b>
@@ -24,7 +26,7 @@
                 </a>
 
               </div>
-          {% else %}
+          {% elsif event.is-over == "false" and event.is-public %}
             <p>There are currently no upcoming events.</p>
           {% endif %}
         {% endfor %}
