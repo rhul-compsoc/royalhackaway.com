@@ -1,6 +1,7 @@
 ---
 name: "LocalHost 2018"
 is-public: false
+is-over: false
 
 start: "2018-10-01T12:00:00+00:00"
 end: "2018-08-01T12:00:00+00:00"

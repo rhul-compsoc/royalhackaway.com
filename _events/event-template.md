@@ -1,6 +1,7 @@
 ---
 name: ""
 is-public: false
+is-over: false
 
 start: "2099-01-01T12:00:00+00:00"
 end: "2001-01-01T12:00:00+00:00"
