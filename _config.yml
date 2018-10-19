@@ -9,10 +9,10 @@ footer-description: "Royal Hackaway is a student-run group that hosts hackathons
 navs:
   -
     name: Home
-    link: "#top"
+    link: "/#top"
   -
     name: Events
-    link: "#future-events"
+    link: "/#future-events"
   -
     name: Sponsor us
     link: "/assets/pdf/sponsordeck.pdf"

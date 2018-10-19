@@ -9,7 +9,7 @@ title: Event
   {% if page.display-logo %}
     <div class="row justify-content-center text-center">
       <div class="col-md-{{ page.logo-width }} col-xs-12">
-        <img class="img-fluid" src="/assets/images/{{ page.small-logo }}" id="event-logo">
+        <img class="img-fluid" src="/assets/images/{{ page.small-logo }}" id="event-logo" alt="{{ page.small-logo }}">
       </div>
     </div>
     {% endif %}
@@ -48,9 +48,12 @@ title: Event
   {% include schedule.html %}
 {% endif %}
 
-
 {% if page.show-sponsors-list %}
   {% include sponsors.html %}
+{% endif %}
+
+{% if page.show-faq %}
+  {% include faq.html %}
 {% endif %}
 
 {% if page.show-floor-plan %}

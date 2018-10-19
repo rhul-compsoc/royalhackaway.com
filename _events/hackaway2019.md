@@ -32,6 +32,8 @@ map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwl
 show-floor-plan: false
 venue-floor-plan: ""
 
+show-faq: true
+
 show-ticket-button: true
 disable-button: false
 tickets: "https://tickets.royalhackaway.com/"
@@ -130,7 +132,7 @@ sponsors:
 ---
 
 <div class="container">
-  <h2>We'll reveal more information about this event soon.</h2>
+  <h2>We'll reveal more information such as the schedule and our exciting plans soon.</h2>
 </div>
 
 <!--             -

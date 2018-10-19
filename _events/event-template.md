@@ -107,7 +107,7 @@ sponsors:
 
 
 
-<section id="event-description" style="background-color: {{ page.color }}">
+<section id="event-extra-content" style="background-color: {{ page.color }}">
   <div class="container text-light">
  <p class=""> this is some example extra content.</p>
 </section>
