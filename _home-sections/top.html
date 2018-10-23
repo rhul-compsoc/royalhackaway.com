@@ -1,13 +1,14 @@
 <section class="full-height" id="top">
-  <div class="jumbotron jumbotron-fluid background-image full-height">
+    <div class="jumbotron jumbotron-fluid background-image full-height">
         <h1 class="display-1 text-light">Royal Hackaway</h1>
         <h2 class=" text-light">What will you build?</h2>
-          <div id="socials" class="row justify-content-center">
+        <div id="socials" class="row justify-content-center">
             {% for social in site.socials %}
-              <a href="{{ social.url }}"><img class="social-icon img-fluid" alt="{{ social.icon }}" src="/assets/images/{{ social.icon }}"></a>
+                <a href="{{ social.url }}">
+                    <img class="social-icon img-fluid" alt="{{ social.icon }}" src="/assets/images/{{ social.icon }}" />
+                </a>
             {% endfor %}
-          </div>
-
+        </div>
         <a class="btn btn-primary btn-lg text-light" href="#future-events">Get Involved</a>
-  </div>
+    </div>
 </section>
