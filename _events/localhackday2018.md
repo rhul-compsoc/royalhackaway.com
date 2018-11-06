@@ -3,8 +3,8 @@ name: "Local Hack Day 2018"
 is-public: true
 is-over: false
 
-start: "2018-12-01T12:00:00+00:00"
-end: "2018-12-01T12:00:00+00:00"
+start: "2018-12-01T09:00:00+00:00"
+end: "2018-12-01T19:30:00+00:00"
 
 short-description: "A short, sweet, and rewarding hackathon."
 full-description: "Local Hack Day is a global hackathon uniting thousands of students. Participants across 100+ distributed campuses are able to connect with their local communities and other hackers around the world through digital workshops & mini-events, social media, and a global livestream."
@@ -13,7 +13,7 @@ full-description: "Local Hack Day is a global hackathon uniting thousands of stu
 color: "#DA1E1E"
 display-date: "01 Dec 2018"
 layout: event
-location: "Mcrea 125"
+location: "Shilling 0-06 PC Lab"
 jumbotron-image: localhost-1.jpg
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
@@ -22,15 +22,15 @@ small-logo: "hackday_logo.svg"
 logo-width: 2
 
 show-map: yes
-map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
+map-src: "https://maps.google.com/maps?q=Shilling+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 show-floor-plan: false
 venue-floor-plan: ""
 
 show-ticket-button: true
-disable-button: true
-tickets: ""
-ticket-button-text: "Tickets available soon"
+disable-button: false
+tickets: "https://localhackday.mlh.io/lhd-2018/events/255-royal-holloway-uol"
+ticket-button-text: "Sign up now!"
 
 show-wifi-details: false
 internet:
@@ -89,7 +89,3 @@ schedule:
       - "Closing Ceremony"
 
 ---
-
-<div class="container half-height">
-  <h2>We'll reveal more information about this event soon.</h2>
-</div>
