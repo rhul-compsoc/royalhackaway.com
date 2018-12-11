@@ -111,6 +111,16 @@ sponsors:
               colour: "#1C1616"
               shadow-colour: "#696969"
     -
+      name: "Silver"
+      colour: "#919499"
+      tier-sponsors:
+          -
+            name: "GitHub"
+            link: "https://www.github.com/"
+            image: "github.svg"
+            colour: "#000000"
+            shadow-colour: "#696969"
+    -
         name: "Bronze"
         colour: "#CD7F32"
         tier-sponsors:
