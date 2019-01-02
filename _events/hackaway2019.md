@@ -27,7 +27,7 @@ small-logo: "rh-small.svg"
 logo-width: 2
 
 show-map: true
-map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwloc=&output=embed"
+map-src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106"
 
 show-floor-plan: false
 venue-floor-plan: ""
