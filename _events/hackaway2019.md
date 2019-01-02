@@ -120,6 +120,12 @@ sponsors:
             image: "github.svg"
             colour: "#000000"
             shadow-colour: "#696969"
+          -
+              name: "Not-Binary"
+              link: "https://notbinary.co.uk/"
+              image: "not-binary.png"
+              colour: "#FFF50F"
+              shadow-colour: "#FFBF00"
     -
         name: "Bronze"
         colour: "#CD7F32"
@@ -171,10 +177,5 @@ sponsors:
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
-            -
-              name: "Not-Binary"
-              link: "https://notbinary.co.uk/"
-              image: "not-binary.png"
-              colour: "#FFF50F"
-              shadow-colour: "#FFBF00"
+
  -->
