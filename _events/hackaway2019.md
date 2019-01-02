@@ -111,6 +111,26 @@ sponsors:
               colour: "#1C1616"
               shadow-colour: "#696969"
     -
+      name: "Silver"
+      colour: "#919499"
+      tier-sponsors:
+          -
+            name: "GitHub"
+            link: "https://www.github.com/"
+            image: "github.svg"
+            colour: "#000000"
+            shadow-colour: "#696969"
+    -
+        name: "Bronze"
+        colour: "#CD7F32"
+        tier-sponsors:
+            -
+              name: "Balsamiq"
+              link: "https://www.balsamiq.com/"
+              image: "balsamiq-smile.svg"
+              colour: "#A60000"
+              shadow-colour: "#B60016"
+    -
         name: "Supporter"
         colour: "#000000"
         tier-sponsors:
@@ -157,13 +177,4 @@ sponsors:
               image: "not-binary.png"
               colour: "#FFF50F"
               shadow-colour: "#FFBF00"
-    -
-        name: "Bronze"
-        colour: "#CD7F32"
-        tier-sponsors:
-            -
-              name: "Balsamiq"
-              link: "https://www.balsamiq.com/"
-              image: "balsamiq-smile.svg"
-              colour: "#A60000"
-              shadow-colour: "#B60016" -->
+ -->
