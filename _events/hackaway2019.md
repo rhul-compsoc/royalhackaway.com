@@ -130,6 +130,12 @@ sponsors:
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
+            -
+              name: "Guardtime"
+              link: "https://guardtime.com/"
+              image: "guardtime.svg"
+              colour: "#faf9f7"
+              shadow-colour: "#e41e13" 
     -
         name: "Supporter"
         colour: "#000000"
