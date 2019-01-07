@@ -130,6 +130,12 @@ sponsors:
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
+            -
+              name: "UKGovCamp"
+              link: "https://www.ukgovcamp.com"
+              image: "ukgc.png"
+              colour: "#FFFFFF"
+              shadow-colour: "#d53246"
     -
         name: "Supporter"
         colour: "#000000"
