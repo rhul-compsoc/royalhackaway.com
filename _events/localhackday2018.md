@@ -1,7 +1,7 @@
 ---
 name: "Local Hack Day 2018"
 is-public: true
-is-over: false
+is-over: true
 
 start: "2018-12-01T09:00:00+00:00"
 end: "2018-12-01T19:30:00+00:00"
