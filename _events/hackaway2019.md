@@ -136,6 +136,13 @@ sponsors:
               image: "ig.svg"
               colour: "#262629"
               shadow-colour: "#262629"
+            -
+              name: "UKGovCamp"
+              link: "https://www.ukgovcamp.com"
+              image: "ukgc.png"
+              colour: "#FFFFFF"
+              shadow-colour: "#d53246"
+
     -
         name: "Supporter"
         colour: "#000000"
