@@ -118,11 +118,17 @@ sponsors:
             colour: "#000000"
             shadow-colour: "#696969"
           -
-              name: "Not-Binary"
-              link: "https://notbinary.co.uk/"
-              image: "not-binary.png"
-              colour: "#FFF50F"
-              shadow-colour: "#FFBF00"
+            name: "Not-Binary"
+            link: "https://notbinary.co.uk/"
+            image: "not-binary.png"
+            colour: "#FFF50F"
+            shadow-colour: "#FFBF00"
+          -
+            name: "Nexmo"
+            link: "https://www.nexmo.com/"
+            image: "nexmo.png"
+            colour: "#FFFFFF"
+            shadow-colour: "#148dcd"
     -
         name: "Bronze"
         colour: "#CD7F32"
