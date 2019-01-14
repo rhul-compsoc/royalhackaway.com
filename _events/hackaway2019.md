@@ -181,10 +181,6 @@ sponsors:
 
 ---
 
-<div class="container">
-  <h2>We'll reveal more information such as the schedule and our exciting plans soon.</h2>
-</div>
-
 <!--             -
               name: "Not-Binary"
               link: "https://notbinary.co.uk/"
