@@ -143,6 +143,12 @@ sponsors:
               colour: "#A60000"
               shadow-colour: "#B60016"
             -
+              name: "Guardtime"
+              link: "https://guardtime.com/"
+              image: "guardtime.svg"
+              colour: "#faf9f7"
+              shadow-colour: "#e41e13" 
+            -
               name: "IG"
               link: "http://ig.com"
               image: "ig.svg"
