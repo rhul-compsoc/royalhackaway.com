@@ -46,15 +46,15 @@ internet:
   username: "example "
   password: "example"
 
-show-schedule: false
+show-schedule: true
 schedule:
-  "Saturday — Day 1":
+  "Saturday 2nd — Day 1":
     -
-      - "10:00"
+      - "09:30"
       - "Registration Opens"
     -
       - "11:00"
-      - "Opening Ceremony"
+      - "Opening Ceremony and Team Building"
     -
       - "12:00"
       - "Hacking Begins"
@@ -62,30 +62,27 @@ schedule:
       - "13:00"
       - "Lunch"
     -
-      - "15:00"
-      - "Using APIs (Workshop)"
-    -
-      - "16:00"
-      - "Git and GitHub (Workshop)"
-    -
-      - "16:00"
-      - "How to manage your team and win at hackathons (Workshop)"
+      - "14:00"
+      - "Workshops Begin <small>(more details soon...)</small>"
     -
       - "18:00"
       - "Dinner"
     -
-      - "21:00"
+      - "20:00"
       - "MLH Minigame"
     -
       - "23:59"
       - "Midnight Pizza"
-  "Sunday — Day 2":
+  "Sunday 3rd — Day 2":
     -
       - "08:00"
       - "Breakfast"
     -
+      - "11:00"
+      - "Submissions Close"
+    -
       - "12:00"
-      - "Hacking Ends w/ Lunch"
+      - "Hacking Ends with Lunch"
     -
       - "13:00"
       - "Presentations"

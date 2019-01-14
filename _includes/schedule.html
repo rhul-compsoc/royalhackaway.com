@@ -1,15 +1,14 @@
 <section id="schedule bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 row">
                 {% for d in page.schedule %}
                     {% assign i = forloop.index %}
                     {% if i <= 2 %}
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-sm">
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" colspan="2">{{ d[0] }}</th>
+                                        <th class="text-center" colspan="4">{{ d[0] }}</th>
                                     </tr>
                                 </thead>
 
@@ -26,21 +25,6 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-            </div>
-
-            <div class="col-md-4 col-xs-12">
-                <header>
-                    <h2>{{ page.event.name }}</h2>
-                    <p class="text-small">{{ page.details }}</p>
-                    <a href="{{ site.event.tickets }}" class="btn btn-large">Get a Ticket</a>
-
-                    <ul class="item-details inner-top-xs outer-top-xs border-top">
-                        <li class="location">{{ page.location }}</li>
-                        <li class="date">{{ page.start | date: '%d %B %Y' }}</li>
-                        <li class="time">{{ page.end | date: '%I:%M %p' }}</li>
-                    </ul>
-                </header>
-            </div>
         </div>
     </div>
 </section>
