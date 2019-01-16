@@ -5,6 +5,7 @@
             {% assign sorted-events = site.events | sort: 'start' %}
             {% for event in sorted-events %}
                 {% if event.is-public %}
+                    {% if event.is-over == false %}
                     <div class="card col-sm-6 col-md-3" style="border-width: 1px; border-color: {{ event.color }};">
                         <a href="/{{ event.slug }}"></a>
                         <div class="card-body">
@@ -13,6 +14,7 @@
                             <p class="card-text align-bottom">{{ event.short-description }}</p>
                         </div>
                     </div>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </div>

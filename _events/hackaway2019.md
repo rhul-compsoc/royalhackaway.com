@@ -3,8 +3,8 @@ name: "Royal Hackaway 2019"
 is-public: true
 is-over: false
 
-start: "2019-02-02T12:00:00+00:00"
-end: "2019-02-03T12:00:00+00:00"
+start: "2019-02-02T09:30:00+00:00"
+end: "2019-02-03T17:00:00+00:00"
 
 short-description: "An exciting 24 hour hackathon, for students from any university."
 
@@ -27,7 +27,7 @@ small-logo: "rh-small.svg"
 logo-width: 2
 
 show-map: true
-map-src: "https://maps.google.com/maps?q=windsor%20building%&t=&z=13&ie=UTF8&iwloc=&output=embed"
+map-src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106"
 
 show-floor-plan: false
 venue-floor-plan: ""
@@ -46,15 +46,15 @@ internet:
   username: "example "
   password: "example"
 
-show-schedule: false
+show-schedule: true
 schedule:
-  "Saturday — Day 1":
+  "Saturday 2nd — Day 1":
     -
-      - "10:00"
+      - "09:30"
       - "Registration Opens"
     -
       - "11:00"
-      - "Opening Ceremony"
+      - "Opening Ceremony and Team Building"
     -
       - "12:00"
       - "Hacking Begins"
@@ -62,30 +62,27 @@ schedule:
       - "13:00"
       - "Lunch"
     -
-      - "15:00"
-      - "Using APIs (Workshop)"
-    -
-      - "16:00"
-      - "Git and GitHub (Workshop)"
-    -
-      - "16:00"
-      - "How to manage your team and win at hackathons (Workshop)"
+      - "14:00"
+      - "Workshops Begin <small>(more details soon...)</small>"
     -
       - "18:00"
       - "Dinner"
     -
-      - "21:00"
+      - "20:00"
       - "MLH Minigame"
     -
       - "23:59"
       - "Midnight Pizza"
-  "Sunday — Day 2":
+  "Sunday 3rd — Day 2":
     -
       - "08:00"
       - "Breakfast"
     -
+      - "11:00"
+      - "Submissions Close"
+    -
       - "12:00"
-      - "Hacking Ends w/ Lunch"
+      - "Hacking Ends with Lunch"
     -
       - "13:00"
       - "Presentations"
@@ -120,6 +117,18 @@ sponsors:
             image: "github.svg"
             colour: "#000000"
             shadow-colour: "#696969"
+          -
+            name: "Not-Binary"
+            link: "https://notbinary.co.uk/"
+            image: "not-binary.png"
+            colour: "#FFF50F"
+            shadow-colour: "#FFBF00"
+          -
+            name: "Nexmo"
+            link: "https://www.nexmo.com/"
+            image: "nexmo.png"
+            colour: "#FFFFFF"
+            shadow-colour: "#148dcd"
     -
         name: "Bronze"
         colour: "#CD7F32"
@@ -130,6 +139,25 @@ sponsors:
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
+            -
+              name: "Guardtime"
+              link: "https://guardtime.com/"
+              image: "guardtime.svg"
+              colour: "#faf9f7"
+              shadow-colour: "#e41e13" 
+            -
+              name: "IG"
+              link: "http://ig.com"
+              image: "ig.svg"
+              colour: "#262629"
+              shadow-colour: "#262629"
+            -
+              name: "UKGovCamp"
+              link: "https://www.ukgovcamp.com"
+              image: "ukgc.png"
+              colour: "#FFFFFF"
+              shadow-colour: "#d53246"
+
     -
         name: "Supporter"
         colour: "#000000"
@@ -146,14 +174,18 @@ sponsors:
               image: "mlh.svg"
               colour: "#FFFFFF"
               shadow-colour: "#265a8f"
+            -
+               name: "Sticker Mule"
+               link: "http://hackp.ac/mlh-stickermule-hackathons"
+               image: "stickermule-logo.svg"
+               colour: "#4E2817"
+               shadow-colour: "#3f1f11"
+ 
+
 
 
 
 ---
-
-<div class="container">
-  <h2>We'll reveal more information such as the schedule and our exciting plans soon.</h2>
-</div>
 
 <!--             -
               name: "Not-Binary"
@@ -171,10 +203,5 @@ sponsors:
               image: "balsamiq-smile.svg"
               colour: "#A60000"
               shadow-colour: "#B60016"
-            -
-              name: "Not-Binary"
-              link: "https://notbinary.co.uk/"
-              image: "not-binary.png"
-              colour: "#FFF50F"
-              shadow-colour: "#FFBF00"
+
  -->
