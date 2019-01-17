@@ -180,6 +180,12 @@ sponsors:
                image: "stickermule-logo.svg"
                colour: "#4E2817"
                shadow-colour: "#3f1f11"
+            -
+               name: "Nordic Semiconductor"
+               link: "https://www.nordicsemi.com"
+               image: "nordic.svg"
+               colour: "#FFFFFF"
+               shadow-colour: "#00a9ce"
  
 
 
