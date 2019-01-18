@@ -186,6 +186,13 @@ sponsors:
                image: "hacksmiths.svg"
                colour: "#FFFFFF"
                shadow-colour: "#C52085"
+            -
+               name: "Nordic Semiconductor"
+               link: "https://www.nordicsemi.com"
+               image: "nordic.svg"
+               colour: "#FFFFFF"
+               shadow-colour: "#00a9ce"
+
 
 
 
