@@ -181,12 +181,18 @@ sponsors:
                colour: "#4E2817"
                shadow-colour: "#3f1f11"
             -
+               name: "Hacksmiths"
+               link: "https://goldsmiths.tech/"
+               image: "hacksmiths.svg"
+               colour: "#FFFFFF"
+               shadow-colour: "#C52085"
+            -
                name: "Nordic Semiconductor"
                link: "https://www.nordicsemi.com"
                image: "nordic.svg"
                colour: "#FFFFFF"
                shadow-colour: "#00a9ce"
- 
+
 
 
 
