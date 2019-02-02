@@ -72,13 +72,13 @@ schedule:
       - "Nexmo (Downstairs)"
     -
       - "15:00"
-      - "The Psychology of Dev Teams"
+      - "The Psychology of Dev Teams (Downstairs)"
     -
       - "16:00"
-      - "NotBinary Container Workshop"
+      - "NotBinary Container Workshop (Upstairs)"
     -
       - "16:00"
-      - "GitHub Workshop"
+      - "GitHub Workshop (Downstairs)"
     -
       - "18:00"
       - "Dinner"
