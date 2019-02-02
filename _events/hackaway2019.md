@@ -63,13 +63,13 @@ schedule:
       - "Lunch"
     -
       - "14:00"
-      - "Digital Ocean (Upstairs)"
+      - "Digital Audio (Upstairs)"
     -
       - "14:00"
       - "Digital Ocean (Downstairs)"
     -
       - "15:00"
-      - "Nexmo (Downstairs)"
+      - "Nexmo (Upstairs)"
     -
       - "15:00"
       - "The Psychology of Dev Teams (Downstairs)"
