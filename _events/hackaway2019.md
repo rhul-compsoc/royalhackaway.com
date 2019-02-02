@@ -36,8 +36,8 @@ show-faq: true
 
 show-ticket-button: true
 disable-button: false
-tickets: "https://tickets.royalhackaway.com/"
-ticket-button-text: "Grab a free ticket"
+tickets: "https://royal-hackaway-v2.devpost.com/"
+ticket-button-text: "Submit your 2019 project to DevPost"
 
 
 show-wifi-details: false
@@ -63,7 +63,22 @@ schedule:
       - "Lunch"
     -
       - "14:00"
-      - "Workshops Begin <small>(more details soon...)</small>"
+      - "Digital Ocean (Upstairs)"
+    -
+      - "14:00"
+      - "Digital Ocean (Downstairs)"
+    -
+      - "15:00"
+      - "Nexmo (Downstairs)"
+    -
+      - "15:00"
+      - "The Psychology of Dev Teams"
+    -
+      - "16:00"
+      - "NotBinary Container Workshop"
+    -
+      - "16:00"
+      - "GitHub Workshop"
     -
       - "18:00"
       - "Dinner"
@@ -199,21 +214,3 @@ sponsors:
 
 ---
 
-<!--             -
-              name: "Not-Binary"
-              link: "https://notbinary.co.uk/"
-              image: "not-binary.png"
-              colour: "#FFF50F"
-              shadow-colour: "#FFBF00"
-    -
-        name: "Silver"
-        colour: "#919499"
-        tier-sponsors:
-            -
-              name: "Balsamiq"
-              link: "https://www.balsamiq.com/"
-              image: "balsamiq-smile.svg"
-              colour: "#A60000"
-              shadow-colour: "#B60016"
-
- -->
