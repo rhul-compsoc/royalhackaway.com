@@ -1,0 +1,193 @@
+---
+layout:
+title: Countdown
+permalink: /countdown
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+
+    {% include_relative _includes/head.html %}
+
+    <style>
+        #countdown-container{
+            padding-bottom: 10vh;
+        }
+
+        #countdown-and-logo-container{
+            display: none;
+            padding-top: 20vh;
+        }
+
+        #only-logo-container {
+            padding-top: 35vh;
+        }
+    </style>
+</head>
+<body>
+        <div class="container-fluid" style="color: #FFFFFF; background-color: #EB6824; height: 100vh;">
+            <div id="countdown-and-logo-container" class="">
+                <div id="countdown-container" class="container-fluid row justify-content-center text-center">
+                    <div class="col-sm-11 col-md-6">
+                        <div id="js-timer" class="timer" role="timer" data-endtime="2019-02-01 16:00:00">
+
+                            <span class="timer__item" id="timer-days">
+                                <span class="timer__value"></span>
+                            </span><!--/.timer__item-->
+
+                            <span class="timer__item" id="timer-hours">
+                                <span class="display-1 timer__value">{{hours}}</span>
+                                <span class="display-4">H :</span>
+                            </span><!--/.timer__item-->
+
+                            <span class="timer__item" id="timer-minutes">
+                                <span class="display-1 timer__value">{{minutes}}</span>
+                                <span class="display-4">M :</span>
+                            </span><!--/.timer__item-->
+
+                            <span class="timer__item" id="timer-seconds">
+                                <span class="timer__value display-1">{{seconds}}</span>
+                                <span class="display-4">S</span>
+                            </span><!--/.timer__item-->
+
+                            </div><!--/.timer-->
+                    </div>
+                </div>
+
+
+
+                <div id="" class="row justify-content-center">
+                    <img src="/assets/images/rh-light.svg" class="col-md-5 col-sm-12" alt="RoyalHackaway" />
+                </div>
+            </div>
+
+            <div id="only-logo-container">
+                <div class="row justify-content-center">
+                    <img src="/assets/images/rh-light.svg" class="col-md-5 col-sm-12" alt="RoyalHackaway" />
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+<script>
+    (function() {
+
+        'use strict';
+
+        /**
+         * Define global Util object if it doesn't exist
+         */
+        if ( 'object' !== typeof window.Timer ) {
+            window.Timer = {};
+        }
+
+        /**
+         * Namspace string
+         */
+        Timer.ns = "JavaScript Timer";
+
+        Timer.getTimeRemaining = function( endtimeRaw ) {
+
+            // Some browsers need a "T" in there...
+            var endtime = new Date( endtimeRaw.replace(/\s/, 'T') );
+
+            var t = Date.parse( endtime ) - Date.parse( new Date() );
+            var seconds = Math.floor( ( t / 1000 ) % 60 );
+            var minutes = Math.floor( ( t / 1000 / 60 ) % 60 );
+            var hours = Math.floor( ( t / ( 1000 * 60 * 60 ) ) % 24 );
+            var days = Math.floor( t /( 1000 * 60 * 60 * 24 ) );
+
+            // Build out the JSON object
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+
+
+
+        };
+
+        Timer.updateClock = function( endtime ) {
+
+            var t = this.getTimeRemaining( endtime );
+            var days = document.getElementById( 'timer-days' );
+            var hours = document.getElementById( 'timer-hours' );
+            var minutes = document.getElementById( 'timer-minutes' );
+            var seconds = document.getElementById( 'timer-seconds' );
+
+            hours.querySelector('.timer__value').innerHTML = ( '0' + t.hours ).slice( -2 );
+            minutes.querySelector('.timer__value').innerHTML = ( '0' + t.minutes ).slice( -2 );
+
+            // Adds a leading 0 to maintain spacing
+            seconds.querySelector('.timer__value').innerHTML = ( '0' + t.seconds ).slice( -2 );
+            console.log("hours :"+ t.hours);
+            console.log("minutes :" + t.minutes);
+            // If the timer is at zero
+            if ( t.total <= 0 ) {
+                // Stop the timer
+                clearInterval( this.timeinterval );
+
+                // Zero out the timer
+                console.log("after");
+                jQuery("#countdown-and-logo-container").css("display", "none");
+                jQuery("#only-logo-container").css("display", "block");
+
+            } else if ( t.days === 1 && t.hours === 0 && t.minutes < 10){
+                jQuery("#countdown-and-logo-container").css("display", "block");
+                jQuery("#only-logo-container").css("display", "none");
+
+                hours.querySelector('.timer__value').innerHTML = "24";
+                minutes.querySelector('.timer__value').innerHTML = "00";
+                seconds.querySelector('.timer__value').innerHTML = "00";
+            } else if (t.days > 0){
+                jQuery("#countdown-and-logo-container").css("display", "none");
+                jQuery("#only-logo-container").css("display", "block");
+            } else {
+                console.log("during");
+                jQuery("#countdown-and-logo-container").css("display", "block");
+                jQuery("#only-logo-container").css("display", "none");
+                console.log(t.total)
+            }
+
+        };
+
+        Timer.start = function( obj ) {
+
+            var timer = obj.timer;
+            var endtime = obj.endtime;
+
+            if ( timer ) {
+
+                // Run the function once to avoid a delayed start
+                this.updateClock( endtime );
+
+                // Set up the time interval to tick the clock down
+                this.timeinterval = setInterval( function () {
+
+                    Timer.updateClock( endtime );
+
+                }, 1000 );
+
+            } // timer
+        }
+
+    } )();
+
+
+    Timer.start( {
+        'timer' : document.getElementById( 'js-timer' ),
+        'endtime' : '2019-02-03 12:00:00'
+    } );
+
+</script>
+</html>
