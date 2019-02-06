@@ -1,6 +1,6 @@
 ---
 name: "BAE Systems Applied Intelligence – Capture the Flag 2019"
-is-public: true
+is-public: false
 is-over: false
 
 start: "2019-03-09T10:00:00+00:00"
