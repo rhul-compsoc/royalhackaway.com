@@ -1,7 +1,7 @@
 ---
 name: "Royal Hackaway 2019"
 is-public: true
-is-over: false
+is-over: true
 
 start: "2019-02-02T09:30:00+00:00"
 end: "2019-02-03T17:00:00+00:00"
