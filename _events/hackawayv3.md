@@ -1,14 +1,14 @@
 ---
-name: "Royal Hackaway 2019"
+name: "Royal Hackaway v3"
 is-public: true
-is-over: true
+is-over: false
 
-start: "2019-02-02T09:30:00+00:00"
-end: "2019-02-03T17:00:00+00:00"
+start: "2020-02-01T09:30:00+00:00"
+end: "2020-02-02T18:00:00+00:00"
 
-short-description: "An exciting 24 hour hackathon, for students from any university."
+short-description: "An exciting two-day hackathon, for students from any university."
 
-full-description: "Royal Hackaway is Royal Holloway's annual hackathon. <br>Open to university students from the UK and around the world, in this 24 hour hackathon you'll work as a group to build a project. You'll pick up new skills, try out new tech, and meet new people. This is our second time running this event, and we're excited to create a more inclusive and rewarding event for all. "
+full-description: "Royal Hackaway is Royal Holloway's annual hackathon. <br>Open to university students from the UK and around the world, in this two-day hackathon you'll work as a team to build a project. You'll pick up new skills, try out new tech, and meet new people. This is our third time running this event, and we're excited to create a more inclusive and rewarding event for all. "
 
 
 
@@ -16,9 +16,9 @@ event-info: "hackaway"
 
 # Used for styling
 color: "#F37021"
-display-date: "02-03 Feb 2019"
+display-date: "01-02 Feb 2020"
 layout: event
-location: "Windsor Building, on Campus"
+location: "Windsor Building, RHUL"
 jumbotron-image: 2018-1.png
 jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
@@ -36,8 +36,8 @@ show-faq: true
 
 show-ticket-button: true
 disable-button: false
-tickets: "https://royal-hackaway-v2.devpost.com/"
-ticket-button-text: "Submit your 2019 project to DevPost"
+tickets: "https://ti.to/royal-hackaway/royal-hackaway-v3"
+ticket-button-text: "Get your tickets here"
 
 
 show-wifi-details: false
@@ -48,69 +48,54 @@ internet:
 
 show-schedule: true
 schedule:
-  "Saturday 2nd — Day 1":
+  "Saturday 1st — Day 1":
     -
-      - "09:30"
+      - "08:00"
       - "Registration Opens"
     -
-      - "11:00"
+      - "09:30"
       - "Opening Ceremony and Team Building"
     -
-      - "12:00"
+      - "10:00"
+      - "Registration Closes"
+    -
+      - "10:15"
       - "Hacking Begins"
     -
-      - "13:00"
+      - "12:00"
       - "Lunch"
-    -
-      - "14:00"
-      - "Digital Audio (Upstairs)"
-    -
-      - "14:00"
-      - "Digital Ocean (Downstairs)"
-    -
-      - "15:00"
-      - "Nexmo (Upstairs)"
-    -
-      - "15:00"
-      - "The Psychology of Dev Teams (Downstairs)"
-    -
-      - "16:00"
-      - "NotBinary Container Workshop (Upstairs)"
-    -
-      - "16:00"
-      - "GitHub Workshop (Downstairs)"
     -
       - "18:00"
       - "Dinner"
     -
-      - "20:00"
-      - "MLH Minigame"
-    -
       - "23:59"
       - "Midnight Pizza"
-  "Sunday 3rd — Day 2":
+  "Sunday 2nd — Day 2":
+    -
+      - "00:05"
+      - "Midnight Werewolf"
     -
       - "08:00"
       - "Breakfast"
     -
-      - "11:00"
-      - "Submissions Close"
-    -
       - "12:00"
-      - "Hacking Ends with Lunch"
-    -
-      - "13:00"
-      - "Presentations"
+      - "Hacking Ends"
     -
       - "15:00"
-      - "Judging"
+      - "Submissions Close"
     -
-      - "16:00"
+      - "15:30"
+      - "Mass Judging"
+    -
+      - "16:30"
+      - "Presentations"
+    -
+      - "17:00"
       - "Closing Ceremony"
 
 
 
-show-sponsors-list: true
+show-sponsors-list: false
 sponsors:
     -
         name: "Gold"
