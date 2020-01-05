@@ -56,11 +56,11 @@ schedule:
       - "09:30"
       - "Opening Ceremony and Team Building"
     -
-      - "10:00"
-      - "Registration Closes"
-    -
       - "10:15"
       - "Hacking Begins"
+    -
+      - "11:00"
+      - "Registration Closes"
     -
       - "12:00"
       - "Lunch"
