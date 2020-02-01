@@ -90,7 +90,7 @@ schedule:
       - ""
       - "Mass Judging"
     -
-      - "4pm @ the latest"
+      - "16:00 @ the latest"
       - "Presentations & Closing Ceremony"
 
 
