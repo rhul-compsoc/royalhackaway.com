@@ -78,20 +78,20 @@ schedule:
       - "08:00"
       - "Breakfast"
     -
-      - "12:00"
+      - "13:00"
       - "Hacking Ends"
     -
-      - "15:00"
+      - "13:00"
       - "Submissions Close"
     -
-      - "15:30"
+      - ""
+      - "Lunch"
+    -
+      - ""
       - "Mass Judging"
     -
-      - "16:30"
-      - "Presentations"
-    -
-      - "17:00"
-      - "Closing Ceremony"
+      - "4pm @ the latest"
+      - "Presentations & Closing Ceremony"
 
 
 
