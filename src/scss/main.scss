@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'config.scss';
+
+// TODO: Get rid of this if it doesn't make scrollbars appear anymore
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary-background-colour;
+  box-shadow: 0 5px darken($primary-background-colour, 10%);
+  border-width: 0;
+
+  &:hover, &:active {
+    background-color: lighten($primary-background-colour, 10%);
+    box-shadow: 0 5px $primary-background-colour
+  }
+
+  &.disabled {
+    opacity: 0.7
+  }
+}

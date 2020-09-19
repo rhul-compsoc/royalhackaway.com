@@ -1,0 +1,36 @@
+@import '_config';
+
+.eventJumbotron {
+  min-height: 50vh;
+  position: relative;
+  left: 0;
+  top: 0;
+
+  color: $primary-foreground-colour;
+  
+  .eventJumbotronImagelessBackground, .eventJumbotronBackground {
+    background-color: $primary-background-colour;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .eventJumbotronBackground {
+    filter: brightness(30%);
+  }
+
+  .eventJumbotronContent {
+    width: 100%;
+    margin: 2em 0;
+
+    .eventLogo {
+      padding-top: 10vh;
+      height: 30vh;
+      margin: 5%;
+      max-width: 70vh;
+    }
+  }
+}
