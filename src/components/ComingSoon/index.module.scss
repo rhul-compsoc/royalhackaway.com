@@ -13,6 +13,7 @@
   .comingSoonContainer {
     display: grid;
     gap: 2em;
+    padding: 1em;
     grid-template-areas: "logo content";
 
     @media screen and (max-width: $mobile-width) {
