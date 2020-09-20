@@ -17,7 +17,7 @@ class MajorLeagueHackingBadge extends Component {
         rel="noreferrer"
       >
         <img
-          src={`https://s3.amazonaws.com/logged-assets/trust-badge/${year}/mlh-trust-badge-${year}-white.svg`}
+          src={`https://s3.amazonaws.com/logged-assets/trust-badge/${year}/mlh-trust-badge-${year}-gray.svg`}
           alt={`Major League Hacking ${year} Hackathon Season`}
         />
       </a>
