@@ -7,14 +7,14 @@
   margin-right: 0;
 }
 
-.btn.btn-primary {
-  background-color: $primary-background-colour;
-  box-shadow: 0 5px darken($primary-background-colour, 10%);
+.btn-hackaway {
+  background-color: $primary-button-colour;
+  box-shadow: 0 5px lighten($primary-button-shadow-colour, 10%);
   border-width: 0;
 
   &:hover, &:active {
-    background-color: lighten($primary-background-colour, 10%);
-    box-shadow: 0 5px $primary-background-colour
+    background-color: darken($primary-button-colour, 10%);
+    box-shadow: 0 5px $primary-button-shadow-colour
   }
 
   &.disabled {

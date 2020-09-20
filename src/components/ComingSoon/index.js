@@ -65,7 +65,7 @@ class ComingSoon extends Component {
               // TODO: Get updates!
               
               */}
-              <a className="btn btn-outline-light" href={sponsorHandout}>
+              <a className="btn btn-hackaway btn-lg" href={sponsorHandout}>
                 Sponsor Us
               </a>
             </div>

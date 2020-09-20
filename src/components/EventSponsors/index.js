@@ -81,7 +81,7 @@ class EventSponsors extends Component {
         >
           <a
             href={sponsorHandout}
-            className="btn btn-primary btn-lg btn-text-light"
+            className="btn btn-hackaway btn-lg"
           >
             Become a sponsor
           </a>

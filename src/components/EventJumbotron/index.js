@@ -65,7 +65,7 @@ class EventJumbotron extends Component {
 
               {show_ticket_button && (
                 <a
-                  className="btn btn-primary btn-lg btn-text-light"
+                  className="btn btn-hackaway"
                   href={tickets}
                 >
                   {ticket_button_text}
