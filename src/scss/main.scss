@@ -11,6 +11,7 @@
   background-color: $primary-button-colour;
   box-shadow: 0 5px lighten($primary-button-shadow-colour, 10%);
   border-width: 0;
+  font-weight: 600;
 
   &:hover, &:active {
     background-color: darken($primary-button-colour, 10%);
