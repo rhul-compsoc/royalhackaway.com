@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/zhac/240/',
   siteMetadata: {
     title: "Royal Hackaway",
     description:
@@ -6,7 +7,7 @@ module.exports = {
     author: "rhul-compsoc",
     twitter: "RHULCompSoc",
     github: "rhul-compsoc",
-    email: "wes@royalhackaway.com",
+    email: "hello@royalhackaway.com",
     siteUrl: "https://royalhackaway.com",
   },
   plugins: [
