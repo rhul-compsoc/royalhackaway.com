@@ -11,10 +11,12 @@ class Header extends Component {
       <header className={styles.header}>
         <nav
           className="navbar navbar-expand-lg bg-light fixed-top"
-          id="mainNav"
         >
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <Link className={CombineStyles(
+              'navbar-brand',
+              styles.logoLink
+            )} to="/">
               <img
                 src={logo}
                 className={CombineStyles(
