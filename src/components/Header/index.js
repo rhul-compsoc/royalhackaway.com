@@ -9,14 +9,12 @@ class Header extends Component {
   render() {
     return (
       <header className={styles.header}>
-        <nav
-          className="navbar navbar-expand-lg bg-light fixed-top"
-        >
+        <nav className="navbar navbar-expand-lg bg-light fixed-top">
           <div className="container">
-            <Link className={CombineStyles(
-              'navbar-brand',
-              styles.logoLink
-            )} to="/">
+            <Link
+              className={CombineStyles("navbar-brand", styles.logoLink)}
+              to="/"
+            >
               <img
                 src={logo}
                 className={CombineStyles(

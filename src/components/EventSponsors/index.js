@@ -79,10 +79,7 @@ class EventSponsors extends Component {
             styles.sponsorButtonContainer
           )}
         >
-          <a
-            href={sponsorHandout}
-            className="btn btn-hackaway btn-lg"
-          >
+          <a href={sponsorHandout} className="btn btn-hackaway btn-lg">
             Become a sponsor
           </a>
         </div>

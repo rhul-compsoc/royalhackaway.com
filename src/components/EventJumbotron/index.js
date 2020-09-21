@@ -64,10 +64,7 @@ class EventJumbotron extends Component {
               <p>{short_description}</p>
 
               {show_ticket_button && (
-                <a
-                  className="btn btn-hackaway"
-                  href={tickets}
-                >
+                <a className="btn btn-hackaway" href={tickets}>
                   {ticket_button_text}
                 </a>
               )}
