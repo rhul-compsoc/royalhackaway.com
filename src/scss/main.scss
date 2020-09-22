@@ -7,18 +7,30 @@
   margin-right: 0;
 }
 
-.btn-hackaway {
-  background-color: $primary-button-colour;
-  box-shadow: 0 5px lighten($primary-button-shadow-colour, 10%);
-  border-width: 0;
-  font-weight: 600;
+@mixin create-button($name, $background-colour, $shadow, $lighten: true) {
+  .btn-#{$name} {
+    background-color: $background-colour;
+    box-shadow: 0 5px $shadow;
+    border-width: 0;
+    font-weight: 600;
+  
+    &.disabled {
+      opacity: 0.7
+    }
 
-  &:hover, &:active {
-    background-color: darken($primary-button-colour, 10%);
-    box-shadow: 0 5px $primary-button-shadow-colour
-  }
-
-  &.disabled {
-    opacity: 0.7
-  }
+    @if $lighten {
+      &:hover, &:active {
+        background-color: lighten($background-colour, 10%);
+        box-shadow: 0 5px lighten($shadow, 10%);
+      }
+    } @else {
+      &:hover, &:active {
+        background-color: darken($background-colour, 10%);
+        box-shadow: 0 5px darken($shadow, 10%);
+      }
+    }
+  } 
 }
+
+@include create-button("hackaway-white", $primary-button-colour, $primary-button-shadow-colour, false);
+@include create-button("hackaway-orange", $secondary-button-colour, $secondary-button-shadow-colour, true);
