@@ -13,7 +13,7 @@ class EventSchedule extends Component {
                 <table className="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th className="text-center" colspan="2">
+                      <th className="text-center" colSpan="2">
                         {name}
                       </th>
                     </tr>

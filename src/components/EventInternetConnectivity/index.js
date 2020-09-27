@@ -12,7 +12,7 @@ class EventInternetConnectivity extends Component {
               <table className="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th className="text-center" colspan="3">
+                    <th className="text-center" colSpan="3">
                       Get Online
                     </th>
                   </tr>
