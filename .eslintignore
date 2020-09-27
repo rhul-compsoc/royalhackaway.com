@@ -1,0 +1,5 @@
+gatsby-*.js
+.cache/
+node_modules/
+oldsrc/
+public/

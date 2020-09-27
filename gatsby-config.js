@@ -36,6 +36,8 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-eslint",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
