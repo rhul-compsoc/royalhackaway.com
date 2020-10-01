@@ -5,7 +5,7 @@ $bootstrap-padding: 0.5rem;
   // grid-area: header
 
   // Bootstrap adds 0.5rem top and bottom
-  height: calc($logo-height + $bootstrap-padding + $bootstrap-padding);
+  height: calc(#{$logo-height} + #{$bootstrap-padding} + #{$bootstrap-padding});
 }
 
 .logoLink {
