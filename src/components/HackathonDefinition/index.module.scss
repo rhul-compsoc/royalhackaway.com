@@ -1,0 +1,52 @@
+@import '_config';
+
+.hackathonDef {
+  height: 100%;
+  flex-grow: 1;
+
+  display: grid;
+  background: $secondary-background-colour;
+  color: $secondary-foreground-colour;
+  align-content: center;
+  justify-content: center;
+
+  .hackathonDefContainer {
+    display: grid;
+    gap: 2em;
+    padding: 1em;
+    grid-template-areas: "logo content";
+
+    @media screen and (max-width: $mobile-width) {
+      grid-template-areas: "logo" "content";
+    }
+
+    .hackathonDefLeft {
+      display: flex;
+      grid-area: logo;
+      height: 100px;
+      align-self: right;
+      justify-self: right;
+    }
+    .hackathonDefCtr {
+        display: flex;
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+      }
+    .hackathonDefRight {
+      grid-area: content;
+      .hackathonDefTitle {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .hackathonDefButtons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+    }
+  }
+}
