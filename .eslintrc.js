@@ -33,6 +33,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
     // This rule means that TypeScript functions must always declare a type, even when it's obvious, such as `() => 'hello'`, to avoid incorrect type returns.
     "@typescript-eslint/explicit-function-return-type": "off",
+
+    // https://github.com/prettier/eslint-plugin-prettier
+    // This disables the errors for prettier, and replaces them with warnings. `-Wall`
+    "prettier/prettier": "warn",
   },
   overrides: [
     {
