@@ -47,7 +47,7 @@ class Template extends Component {
     const { markdownRemark } = this.props.data
     const { frontmatter } = markdownRemark
     const { remainingTime, difference } = this.state
-    const percentageComplete = 100 - ((remainingTime / difference) * 100)
+    const percentageComplete = 100 - (remainingTime / difference) * 100
 
     const { full_description, jumbotron_image } = frontmatter
 
@@ -63,12 +63,16 @@ class Template extends Component {
           image={jumbotron_image?.publicURL}
         />
 
-        <section className={styles.background} style={{
-          backgroundImage: `linear-gradient(to right, #f48c42, ${percentageComplete}%, green)`
-        }}>
+        <section
+          className={styles.background}
+          style={{
+            backgroundImage: `linear-gradient(to right, #f48c42, ${percentageComplete}%, green)`,
+          }}
+        >
           <h1>Hacking Time</h1>
           <p className="display-1">
-            {hours} hour{hours !== 1 && "s"} {mins} min{mins !== 1 && "s"} {secs} sec{secs !== 1 && "s"}
+            {hours} hour{hours !== 1 && "s"} {mins} min{mins !== 1 && "s"}{" "}
+            {secs} sec{secs !== 1 && "s"}
           </p>
         </section>
       </Layout>
