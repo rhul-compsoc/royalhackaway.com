@@ -49,7 +49,7 @@ class Template extends Component {
     const { remainingTime, difference } = this.state
     const percentageComplete = 100 - (remainingTime / difference) * 100
 
-    const { full_description, jumbotron_image } = frontmatter
+    const { name, full_description, jumbotron_image } = frontmatter
 
     const secs = Math.floor(remainingTime / 1000) % 60
     const mins = Math.floor(remainingTime / 1000 / 60) % 60
