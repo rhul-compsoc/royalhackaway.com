@@ -14,7 +14,7 @@ class HackathonDefinition extends Component {
         <div className="row justify-content-center py-5">
           <div className="col-4 text-right">
             <h4>
-              Royal Hacakway is an initiative of the{" "}
+              Royal Hackaway is an initiative of the{" "}
               <a href="https://cmpsc.uk">
                 Computing Society at Royal Holloway, Univertiy of London
               </a>

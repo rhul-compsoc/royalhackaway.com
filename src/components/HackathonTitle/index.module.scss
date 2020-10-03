@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '_config';
+
+.hackathonTitle {
+  background: $jumbotron-background-gradient;
+  color: $jumbotron-foreground-colour;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  
+  @include media-breakpoint-down(xs) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
