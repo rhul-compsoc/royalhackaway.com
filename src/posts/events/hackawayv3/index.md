@@ -6,6 +6,10 @@ is-over: false
 start: "2020-02-01T09:30:00+00:00"
 end: "2020-02-02T18:00:00+00:00"
 
+create-hacking-countdown-timer: true
+hacking-start: 2020-02-01T11:00:00+00
+hacking-end: 2020-02-02T13:00:00+00
+
 short-description: "An exciting two-day hackathon, for students from any university."
 
 full-description: >

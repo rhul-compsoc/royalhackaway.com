@@ -2,6 +2,22 @@ const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 const fs = require("fs")
 
+const getTemplate = templateName => {
+  const template = path.resolve(
+    __dirname,
+    "src",
+    "templates",
+    templateName,
+    "index.js"
+  )
+
+  if (fs.existsSync(template)) {
+    return template
+  } else {
+    throw new Error(`Could not find the specified template file at ${template}`)
+  }
+}
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
@@ -40,6 +56,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
             }
             frontmatter {
               is_public
+              create_hacking_countdown_timer
             }
           }
         }
@@ -52,19 +69,21 @@ exports.createPages = ({ actions, graphql, reporter }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const template = node.fields.template
-      let templatePath = path.resolve(
-        __dirname,
-        "src",
-        "templates",
-        template,
-        "index.js"
-      )
-
-      if (fs.existsSync(templatePath) && node.frontmatter.is_public) {
+      // If public, create the page based on the folder it is in.
+      if (node.frontmatter.is_public) {
+        const template = node.fields.template
         createPage({
           path: node.fields.slug,
-          component: templatePath,
+          component: getTemplate(template),
+          context: node.fields,
+        })
+      }
+
+      // If requested, create a countdown timer for pages that request it.
+      if (node.frontmatter.create_hacking_countdown_timer) {
+        createPage({
+          path: node.fields.slug + "timer/",
+          component: getTemplate("timer"),
           context: node.fields,
         })
       }
