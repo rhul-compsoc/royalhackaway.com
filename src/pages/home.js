@@ -4,6 +4,7 @@ import { SEO } from "../components/SEO"
 import { HackathonDefinition } from "../components/HackathonDefinition"
 import { HackathonTitle } from "../components/HackathonTitle"
 import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
+import DropdownFrequentlyAskedQuestions from "../components/DropdownFrequentlyAskedQuestions"
 const HomePage = () => (
   <Layout>
     <SEO title="Home" />
@@ -11,6 +12,7 @@ const HomePage = () => (
     <HackathonTitle />
     <HackathonDefinition />
     <EventFrequentlyAskedQuestions />
+    <DropdownFrequentlyAskedQuestions />
   </Layout>
 )
 
