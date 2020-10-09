@@ -1,22 +1,41 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from "react";
 
-function DropdownQuestion(props) {
-    const [expanded, setExpanded] = useState(false);
+import "./Accordion.css";
 
-    function handleClick() {
-        setExpanded(!expanded);
-    }
+function Accordion(props) {
+  const [setActive, setActiveState] = useState("");
+  const [setHeight, setHeightState] = useState("0px");
+  const [setRotate, setRotateState] = useState("accordion__icon");
 
+  const content = useRef(null);
 
+  function toggleAccordion() {
+    setActiveState(setActive === "" ? "active" : "");
+    setHeightState(
+      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
+    );
+    setRotateState(
+      setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
+    );
+  }
 
-    return (
-        <div className="col-sm-4">
-            <h3 className="text-left text-muted">{props.title}</h3>
-            <div dangerouslySetInnerHTML={{ __html: props.html }} />
-            <p>{expanded ? "expanded" : "not expanded" }</p>
-            <button type="button" className="btn btn-primary" onClick={() => handleClick(!expanded)}>Button</button>
-        </div>
-    )
+  return (
+    <div className="accordion__section">
+      <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+        <p className="accordion__title">{props.title}</p>
+      </button>
+      <div
+        ref={content}
+        style={{ maxHeight: `${setHeight}` }}
+        className="accordion__content"
+      >
+        <div
+          className="accordion__text"
+          dangerouslySetInnerHTML={{ __html: props.html }}
+        />
+      </div>
+    </div>
+  );
 }
 
-export default DropdownQuestion;
+export default Accordion;
