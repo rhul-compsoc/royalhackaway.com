@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby"
 import DropdownQuestion from "./DropdownQuestion";
 
+import styles from './index.module.scss';
+
 function DropdownFrequentlyAskedQuestions() {
   const data = useStaticQuery(graphql`
         query {
@@ -18,7 +20,7 @@ function DropdownFrequentlyAskedQuestions() {
           }
         `);
   return (
-    <div>
+    <section className={styles.faq_section}>
       <div className="row justify-content-md-center">
         <div id="faq-title-wrapper" className="col-sm-4 text-center">
           <h2 className="display-4">FAQ</h2>
@@ -34,7 +36,7 @@ function DropdownFrequentlyAskedQuestions() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

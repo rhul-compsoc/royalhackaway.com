@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-import "./Accordion.css";
+import styles from "./index.module.scss";
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -15,22 +15,24 @@ function Accordion(props) {
       setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
     );
     setRotateState(
-      setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
+      setRotate === "active" ? "accordion__icon" : "accordion__icon rotate"
     );
   }
 
   return (
-    <div className="accordion__section">
-      <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-        <p className="accordion__title">{props.title}</p>
+    <div className={"col-6"}>
+      <div className={styles.accordion_title_container}>
+      <button className={styles.accordion_title_text} onClick={() => toggleAccordion()}>
+        {props.title}
       </button>
+      <img src="src/assets/images/Chevron_down_font_awesome.svg"></img>
+      </div>
       <div
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
-        className="accordion__content"
+        className={styles.accordion__content}
       >
         <div
-          className="accordion__text"
           dangerouslySetInnerHTML={{ __html: props.html }}
         />
       </div>
