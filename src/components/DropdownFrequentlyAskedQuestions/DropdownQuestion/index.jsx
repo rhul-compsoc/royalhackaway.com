@@ -20,7 +20,7 @@ function Accordion(props) {
   }
 
   return (
-    <div className={"col-6"}>
+    <div className={styles.accordion}>
       <div className={styles.accordion_title_container}>
       <button className={styles.accordion_title_text} onClick={() => toggleAccordion()}>
         {props.title}
@@ -32,7 +32,7 @@ function Accordion(props) {
         style={{ maxHeight: `${setHeight}` }}
         className={styles.accordion__content}
       >
-        <div
+        <p
           dangerouslySetInnerHTML={{ __html: props.html }}
         />
       </div>

@@ -1,7 +1,18 @@
 @import '_config';
 
 
+.accordion {
+  width: 45%;
+  margin-right: 1rem;
+}
 
+@media only screen and (max-width: $mobile-width) {
+  .accordion {
+    width: 80%;
+    display: block;
+    margin: auto auto;
+  }
+}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion-button {
   background-color: #eee;
@@ -16,6 +27,7 @@
 }
 
 .accordion_title_container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   background-color: $secondary-background-colour;
@@ -24,20 +36,16 @@
 }
 .accordion_title_text {
   justify-content: flex-start;
+  text-align: left;
   background-color: $secondary-background-colour;
   border: none;
   
 }
 
-.accordion_title_chevron {
-
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover,
-.active {
-  background-color: #ccc;
-}
+.active {}
+
 
 /* Style the accordion chevron icon */
 .accordion__icon {
