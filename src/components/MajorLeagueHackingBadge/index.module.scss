@@ -1,3 +1,19 @@
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
 .badge {
-  display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000
+  z-index: 999;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 80px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 60px;
+    right: 15px;
+  }
 }
