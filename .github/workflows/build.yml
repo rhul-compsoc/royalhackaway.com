@@ -12,9 +12,9 @@ jobs:
         with:
           node-version: 14.x
       - name: Install dependencies
-        run: yarn install --prod --pure-lockfile
+        run: npm install --production
       - name: Build
-        run: yarn build --prefix-paths
+        run: npm run build --prefix-paths
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
