@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: npm install --production
       - name: Build
-        run: npm run build --prefix-paths
+        run: npm run build -- --prefix-paths
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
