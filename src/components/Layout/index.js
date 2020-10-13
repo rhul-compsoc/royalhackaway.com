@@ -3,7 +3,6 @@ import "../../scss/main.scss"
 import { DefaultSEO } from "../DefaultSEO"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
-import { MajorLeagueHackingBadge } from "../MajorLeagueHackingBadge"
 import styles from "./index.module.scss"
 
 class Layout extends Component {
@@ -11,7 +10,6 @@ class Layout extends Component {
     return (
       <div>
         <DefaultSEO />
-        <MajorLeagueHackingBadge />
         <div className={styles.layout}>
           <Header />
           <main className={styles.content}>{this.props.children}</main>
