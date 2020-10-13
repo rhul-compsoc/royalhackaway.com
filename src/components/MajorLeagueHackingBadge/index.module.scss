@@ -1,5 +1,6 @@
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
 .badge {
   z-index: 999;
@@ -8,11 +9,11 @@ $breakpoint-lg: 992px;
   right: 0;
   top: 0;
 
-  @media screen and (max-width: $breakpoint-lg) {
+  @include media-breakpoint-down(lg) {
     width: 80px;
   }
 
-  @media screen and (max-width: $breakpoint-md) {
+  @include media-breakpoint-down(md) {
     width: 60px;
     right: 15px;
   }

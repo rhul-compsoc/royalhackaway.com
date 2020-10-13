@@ -1,6 +1,8 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 $logo-height: 2.5rem;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
 
 .navBar {
   display: flex;
@@ -9,7 +11,7 @@ $breakpoint-lg: 992px;
   position: relative;
   height: 75px;
 
-  @media screen and (max-width: $breakpoint-md) {
+  @include media-breakpoint-down(md) {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
@@ -50,7 +52,7 @@ $breakpoint-lg: 992px;
       border-radius: 3px;
     }
 
-    @media screen and (min-width: $breakpoint-md) {
+    @include media-breakpoint-up(md) {
       display: none;
     }
   }
@@ -59,11 +61,11 @@ $breakpoint-lg: 992px;
 .navBarRightSide {
   margin-right: 100px;
 
-  @media screen and (max-width: $breakpoint-lg) {
+  @include media-breakpoint-down(lg) {
     margin-right: 80px;
   }
 
-  @media screen and (max-width: $breakpoint-md) {
+  @include media-breakpoint-down(md) {
     margin-right: 60px;
   }
 
@@ -87,7 +89,7 @@ $breakpoint-lg: 992px;
       }
     }
 
-    @media screen and (max-width: $breakpoint-md) {
+    @include media-breakpoint-down(md) {
       min-height: 100vh;
       width: 100vw;
       position: fixed;
@@ -117,7 +119,7 @@ $breakpoint-lg: 992px;
 
 .navBarRightSideActive {
   ul {
-    @media screen and (max-width: $breakpoint-md) {
+    @include media-breakpoint-down(md) {
       left: 0;
     }
   }
