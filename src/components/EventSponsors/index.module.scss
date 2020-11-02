@@ -2,19 +2,40 @@
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .sponsor {
-  height: 15vh;
+  // height: 15vh;
   margin: 0.5em;
+  max-width: 50vw;
+  flex-grow: 0;
+  overflow: hidden;
 }
 
 .sponsorLogo {
   max-width: 100%;
   max-height: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .sponsorButtonContainer {
   margin: 2em 0;
+}
+
+.tier1 {
+  height: 8em;
+}
+
+.tier2 {
+  height: 5em;
+}
+
+.tier3 {
+  height: 3em;
+}
+
+.tier4 {
+  height: 2.5em;
 }

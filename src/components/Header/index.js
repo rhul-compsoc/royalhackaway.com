@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 import React, { useState } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import logo from "../../assets/images/logo/rh.svg"
 import styles from "./index.module.scss"
-import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
+// import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
 import { MajorLeagueHackingBadge } from "../MajorLeagueHackingBadge"
 
 export const Header = () => {
@@ -40,11 +40,47 @@ export const Header = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <a href={sponsorHandout}>Sponsor Us</a>
-            </li>
+            <StaticQuery
+              query={graphql`
+                {
+                  allMarkdownRemark(
+                    filter: {
+                      fields: { template: { eq: "events" } }
+                      frontmatter: { is_public: { eq: true } }
+                    }
+                    sort: { fields: frontmatter___start, order: DESC }
+                    limit: 1
+                  ) {
+                    nodes {
+                      frontmatter {
+                        show_sponsor_button
+                        sponsor_document {
+                          publicURL
+                        }
+                      }
+                    }
+                  }
+                }
+              `}
+              render={data => {
+                if (!data?.allMarkdownRemark?.nodes) return null
+
+                const {
+                  sponsor_document,
+                  show_sponsor_button,
+                } = data.allMarkdownRemark.nodes[0].frontmatter
+
+                if (!show_sponsor_button) return null
+
+                return (
+                  <li>
+                    <a href={sponsor_document?.publicURL}>Sponsor Us</a>
+                  </li>
+                )
+              }}
+            />
           </ul>
-          <MajorLeagueHackingBadge />
+          {/* <MajorLeagueHackingBadge /> */}
         </div>
       </nav>
     </header>

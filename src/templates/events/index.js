@@ -22,6 +22,9 @@ export default function Template({ data }) {
     show_map,
     map_src,
     schedule,
+    sponsors,
+    sponsor_document,
+    show_sponsor_button,
     show_sponsors_list,
     jumbotron_image,
     show_wifi_details,
@@ -53,7 +56,14 @@ export default function Template({ data }) {
       }
 
       {show_schedule && <EventSchedule schedule={schedule} />}
-      {show_sponsors_list && <EventSponsors data={data} />}
+      {show_sponsors_list && (
+        <EventSponsors
+          sponsors={sponsors}
+          sponsor_document={sponsor_document}
+          show_sponsors_list={show_sponsors_list}
+          show_sponsor_button={show_sponsor_button}
+        />
+      )}
       {show_faq && <EventFrequentlyAskedQuestions />}
       {show_wifi_details && <EventInternetConnectivity internet={internet} />}
       <EventQualms />
@@ -100,9 +110,14 @@ export const pageQuery = graphql`
           }
         }
         show_sponsors_list
+        show_sponsor_button
+        sponsor_document {
+          publicURL
+        }
         sponsors {
           colour
           name
+          tier
           tier_sponsors {
             colour
             image {

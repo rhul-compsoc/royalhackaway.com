@@ -79,9 +79,12 @@ schedule:
         activity: Closing Ceremony
 
 show-sponsors-list: false
+show-sponsor-button: false
+sponsor-document: null
 sponsors:
   - colour: "#FFD700"
     name: Gold
+    tier: 1
     tier-sponsors:
       - colour: "#1C1616"
         image: ../../../assets/images/sponsors/compsci.png
