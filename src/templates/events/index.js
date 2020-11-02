@@ -26,6 +26,8 @@ export default function Template({ data }) {
     jumbotron_image,
     show_wifi_details,
     internet,
+    show_schedule,
+    show_faq,
   } = frontmatter
   return (
     <Layout>
@@ -50,9 +52,9 @@ export default function Template({ data }) {
         )
       }
 
-      <EventSchedule schedule={schedule} />
+      {show_schedule && <EventSchedule schedule={schedule} />}
       {show_sponsors_list && <EventSponsors data={data} />}
-      <EventFrequentlyAskedQuestions />
+      {show_faq && <EventFrequentlyAskedQuestions />}
       {show_wifi_details && <EventInternetConnectivity internet={internet} />}
       <EventQualms />
     </Layout>
@@ -88,6 +90,8 @@ export const pageQuery = graphql`
         color
         show_map
         map_src
+        show_faq
+        show_schedule
         schedule {
           name
           events {
