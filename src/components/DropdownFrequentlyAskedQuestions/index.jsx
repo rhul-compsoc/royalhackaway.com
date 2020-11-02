@@ -6,6 +6,7 @@ import DropdownQuestion from "./DropdownQuestion";
 import styles from './index.module.scss';
 
 function DropdownFrequentlyAskedQuestions() {
+  // Get the FAQ data
   const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(filter: {fields: {template: {eq: "faq"}}}) {

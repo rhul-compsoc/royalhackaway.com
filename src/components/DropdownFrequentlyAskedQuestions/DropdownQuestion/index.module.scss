@@ -43,8 +43,12 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.accordion:hover,
-.active {}
+.accordion_title_container:hover{
+  background-color: #f2f2f2;
+  .accordion_title_text {
+    background-color: #f2f2f2;
+  }
+}
 
 
 /* Style the accordion chevron icon */
