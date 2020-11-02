@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import styles from "./index.module.scss"
 import smallLogo from "../../assets/images/logo/rh-small-light.svg"
 import { CombineStyles } from "../../helpers/CombineStyles"
-import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
 import { graphql, StaticQuery } from "gatsby"
 
 class ComingSoon extends Component {
@@ -27,6 +26,10 @@ class ComingSoon extends Component {
                   ) {
                     nodes {
                       frontmatter {
+                        show_sponsor_button
+                        sponsor_document {
+                          publicURL
+                        }
                         name
                         start
                       }
@@ -35,37 +38,39 @@ class ComingSoon extends Component {
                 }
               `}
               render={data => {
-                const latest = data.allMarkdownRemark.nodes[0]?.frontmatter
-                const date = new Date(latest.start).toLocaleDateString(
-                  undefined,
-                  {
-                    year: "numeric",
-                    month: "long",
-                    day: "2-digit",
-                  }
-                )
+                if (!data.allMarkdownRemark.nodes[0]) return null
 
-                if (!latest) return null
+                const {
+                  name,
+                  start,
+                  sponsor_document,
+                  show_sponsor_button,
+                } = data.allMarkdownRemark.nodes[0].frontmatter
+                const date = new Date(start).toLocaleDateString(undefined, {
+                  year: "numeric",
+                  month: "long",
+                  day: "2-digit",
+                })
 
                 return (
                   <>
-                    <h1 className={styles.comingSoonTitle}>{latest.name}</h1>
+                    <h1 className={styles.comingSoonTitle}>{name}</h1>
                     <h2>{date}</h2>
+                    <p>More information coming soon!</p>
+                    <div className={styles.comingSoonButtons}>
+                      {show_sponsor_button && (
+                        <a
+                          className="btn btn-hackaway-white"
+                          href={sponsor_document?.publicURL}
+                        >
+                          Sponsor Us
+                        </a>
+                      )}
+                    </div>
                   </>
                 )
               }}
             />
-            <p>More information coming soon!</p>
-            <div className={styles.comingSoonButtons}>
-              {/*
-              <a className="btn btn-outline-light" href="https://">
-                Get Updates
-              </a>
-              */}
-              <a className="btn btn-hackaway-white" href={sponsorHandout}>
-                Sponsor Us
-              </a>
-            </div>
           </div>
         </div>
       </section>

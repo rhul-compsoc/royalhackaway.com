@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import styles from "./index.module.scss"
-import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
+// import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
 
 // query MyQuery {
 //   allMarkdownRemark {
@@ -11,6 +11,7 @@ import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
 //         sponsors {
 //           colour
 //           name
+//           tier
 //           tier_sponsors {
 //             colour
 //             image
@@ -26,10 +27,11 @@ import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
 
 class EventSponsors extends Component {
   render() {
-    const { markdownRemark } = this.props.data
-    const { frontmatter } = markdownRemark
-
-    const { sponsors: sponsorTiers } = frontmatter
+    const {
+      sponsors: sponsorTiers,
+      sponsor_document = null,
+      show_sponsor_button = false,
+    } = this.props
 
     return (
       <section>
@@ -52,18 +54,23 @@ class EventSponsors extends Component {
                   href={tierSponsor.link}
                   className={CombineStyles(
                     "align-middle",
-                    "col-md-2",
-                    "row",
+                    // "col-md-2",
+                    // "row",
                     "rounded",
                     styles.sponsor
                   )}
-                  style={{
-                    backgroundColor: tierSponsor.colour,
-                    boxShadow: "4px 5px " + tierSponsor.shadow_colour,
-                  }}
+                  style={
+                    {
+                      // backgroundColor: tierSponsor.colour,
+                      // boxShadow: "4px 5px " + tierSponsor.shadow_colour,
+                    }
+                  }
                 >
                   <img
-                    className={CombineStyles("col-12", styles.sponsorLogo)}
+                    className={CombineStyles(
+                      styles.sponsorLogo,
+                      styles["tier" + tier.tier]
+                    )}
                     src={tierSponsor.image.publicURL}
                     alt={tierSponsor.name}
                     title={tierSponsor.name}
@@ -73,16 +80,21 @@ class EventSponsors extends Component {
             </div>
           </div>
         ))}
-        <div
-          className={CombineStyles(
-            "text-center",
-            styles.sponsorButtonContainer
-          )}
-        >
-          <a href={sponsorHandout} className="btn btn-hackaway-white btn-lg">
-            Become a sponsor
-          </a>
-        </div>
+        {show_sponsor_button && (
+          <div
+            className={CombineStyles(
+              "text-center",
+              styles.sponsorButtonContainer
+            )}
+          >
+            <a
+              href={sponsor_document?.publicURL}
+              className="btn btn-hackaway-white btn-lg"
+            >
+              Become a sponsor
+            </a>
+          </div>
+        )}
       </section>
     )
   }

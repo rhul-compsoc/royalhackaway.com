@@ -90,10 +90,13 @@ schedule:
       - time: 16:00 @ the latest
         activity: Presentations & Closing Ceremony
 
-show-sponsors-list: false
+show-sponsors-list: true
+show-sponsor-button: true
+sponsor-document: ./sponsorhandout.pdf
 sponsors:
   - name: "Gold"
     colour: "#FFD700"
+    tier: 1
     tier-sponsors:
       - name: "Royal Holloway, University of London computing department"
         link: "https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
@@ -103,6 +106,7 @@ sponsors:
 
   - name: "Silver"
     colour: "#919499"
+    tier: 2
     tier-sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
@@ -122,6 +126,7 @@ sponsors:
 
   - name: "Bronze"
     colour: "#CD7F32"
+    tier: 3
     tier-sponsors:
       - name: "Balsamiq"
         link: "https://www.balsamiq.com/"
@@ -146,6 +151,7 @@ sponsors:
 
   - name: "Supporter"
     colour: "#000000"
+    tier: 4
     tier-sponsors:
       - name: "Gitkraken"
         link: "https://www.gitkraken.com/"

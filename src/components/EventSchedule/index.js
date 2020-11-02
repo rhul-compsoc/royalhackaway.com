@@ -6,6 +6,7 @@ class EventSchedule extends Component {
 
     return (
       <section>
+        <h2 className="text-center display-4">Schedule</h2>
         <div className="container">
           <div className="row">
             {schedule.map(({ name, events }, scheduleIndex) => (
