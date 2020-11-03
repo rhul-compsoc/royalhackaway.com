@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/royalhackaway.com/",
+  // pathPrefix: "/royalhackaway.com/",
   siteMetadata: {
     title: "Royal Hackaway",
     description:
