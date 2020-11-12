@@ -26,7 +26,9 @@ class HackathonTitle extends Component {
               </p>
             </div>
             <div className={styles.buttons}>
-              {show_ticket_button && <a className="btn btn-hackaway-white px-4">Get a Ticket</a>}
+              {show_ticket_button && (
+                <a className="btn btn-hackaway-white px-4">Get a Ticket</a>
+              )}
               <a className="btn btn-hackaway-white px-4">Sponsor Us</a>
             </div>
           </div>
