@@ -60,7 +60,7 @@ show-schedule: false
 schedule: []
 
 show-sponsors-list: false
-show-sponsor-button: false
-sponsor-document: null
+show-sponsor-button: true
+sponsor-document: ./SponsorDeckV4.pdf
 sponsors: []
 ---
