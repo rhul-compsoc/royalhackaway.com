@@ -1,13 +1,19 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
 @import '_config';
 
 .hackathonTitle {
-  background: $jumbotron-background-gradient;
+  background-image: url("../../assets/images/background/founders.svg"), $jumbotron-background-gradient;
+  background-position: center, center;
+  background-size: contain, auto;
+  background-repeat: no-repeat, no-repeat;
   color: $jumbotron-foreground-colour;
 }
 
 .buttons {
   display: flex;
+  justify-content: center;
   gap: 1em;
   
   @include media-breakpoint-down(xs) {

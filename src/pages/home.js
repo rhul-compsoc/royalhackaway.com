@@ -8,15 +8,29 @@ import { EventSponsors } from "../components/EventSponsors"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
-  const { frontmatter } = allMarkdownRemark.nodes[0]
+  const { fields, frontmatter } = allMarkdownRemark.nodes[0]
 
-  const { show_ticket_button, show_sponsors_list, sponsors } = frontmatter
+  const {
+    name,
+    show_ticket_button,
+    show_sponsors_list,
+    sponsors,
+    show_sponsor_button,
+    sponsor_document,
+  } = frontmatter
+  const { slug } = fields
 
   return (
     <Layout>
       <SEO title="Home" />
       {/* Insert elements here! */}
-      <HackathonTitle show_ticket_button={show_ticket_button} />
+      <HackathonTitle
+        show_ticket_button={show_ticket_button}
+        show_sponsor_button={show_sponsor_button}
+        sponsor_document={sponsor_document}
+        name={name}
+        slug={slug}
+      />
       <HackathonDefinition />
       {show_sponsors_list && <EventSponsors sponsors={sponsors} />}
     </Layout>
@@ -36,8 +50,13 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
+          name
           show_ticket_button
           show_sponsors_list
+          show_sponsor_button
+          sponsor_document {
+            publicURL
+          }
           sponsors {
             colour
             name
@@ -52,6 +71,9 @@ export const pageQuery = graphql`
               shadow_colour
             }
           }
+        }
+        fields {
+          slug
         }
       }
     }
