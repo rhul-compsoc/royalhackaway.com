@@ -17,7 +17,7 @@ class HackathonDefinition extends Component {
               <h4>
                 Royal Hackaway is an initiative of the{" "}
                 <a href="https://cmpsc.uk">
-                  Computing Society at Royal Holloway, Univertiy of London
+                  Computing Society at Royal Holloway, University of London
                 </a>
               </h4>
               <h4>
