@@ -1,5 +1,5 @@
 ---
-name: "Royal Hackaway V4 Online"
+name: "Royal Hackaway v4 Online"
 is-public: true
 is-over: false
 
@@ -17,7 +17,7 @@ full-description: >
   Spend the two days as a team working together on making a project, try out new tech, and meet new people virtually!
 
 
-  Royal Hackaway V4 will be our first online event, and streamed live to you.
+  Royal Hackaway v4 will be our first online event, and streamed live to you.
 
 event-info: "hackaway"
 
