@@ -25,8 +25,8 @@ class HackathonTitle extends Component {
             <h1 className="py-2">Create something awesome</h1>
           </div>
         </div>
-        <div className="row justify-content-center py-2">
-          {show_livestream ? (
+        {show_livestream ? (
+          <div className="row justify-content-center py-2">
             <div className="col-12 col-sm-8 col-m-6 col-xl-4">
               <div className={styles.livestreamContainer}>
                 <iframe
@@ -38,12 +38,16 @@ class HackathonTitle extends Component {
                 ></iframe>
               </div>
             </div>
-          ) : (
-            <>
+          </div>
+        ) : (
+          <>
+            <div className="row justify-content-center py-2">
               <div className="col-12 col-sm-8 col-m-6 col-xl-4 text-center">
                 <p className={styles.description}>{full_description}</p>
               </div>
-              <div className="col-12 text-center">
+            </div>
+            <div className="row justify-content-center py-2">
+              <div className="col-12 col-sm-10 text-center">
                 <Countdown
                   renderer={({ days, hours, minutes, seconds }) => (
                     <span className="display-4">
@@ -56,9 +60,10 @@ class HackathonTitle extends Component {
                   date={start}
                 />
               </div>
-            </>
-          )}
-        </div>
+            </div>
+          </>
+        )}
+
         <div className="row justify-content-center py-5">
           <div className="col">
             <div className={styles.buttons}>
