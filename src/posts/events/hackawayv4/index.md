@@ -1,9 +1,9 @@
 ---
-name: "Royal Hackaway v4"
+name: "Royal Hackaway V4 Online"
 is-public: true
 is-over: false
 
-start: "2021-02-06T09:30:00+00:00"
+start: "2021-02-06T10:00:00+00:00"
 end: "2021-02-07T18:00:00+00:00"
 
 create-hacking-countdown-timer: true
@@ -13,14 +13,11 @@ hacking-end: 2021-02-07T13:00:00+00
 short-description: "An exciting two-day online hackathon, for students at university."
 
 full-description: >
-  Royal Hackaway is Royal Holloway's annual hackathon.
+  Royal Hackaway is Royal Holloway's annual hackathon, open to university students from anywhere around the UK and the world!
+  Spend the two days as a team working together on making a project, try out new tech, and meet new people virtually!
 
-  Open to university students from anywhere around the UK and the world!
-  Spend the two days as a team working together on making a project, try
-  out new tech, and meet new people virtually!
 
-  Our first virtual event will be our most accessable hackathon to date,
-  and should be rewarding for all that attend.
+  Royal Hackaway V4 will be our first online event, and streamed live to you.
 
 event-info: "hackaway"
 
@@ -63,4 +60,7 @@ show-sponsors-list: false
 show-sponsor-button: true
 sponsor-document: ./SponsorDeckV4.pdf
 sponsors: []
+
+show-livestream: false
+livestream-youtube: HnJiTjTtIzc
 ---

@@ -17,6 +17,10 @@ const HomePage = ({ data }) => {
     sponsors,
     show_sponsor_button,
     sponsor_document,
+    show_livestream,
+    livestream_youtube,
+    full_description,
+    start,
   } = frontmatter
   const { slug } = fields
 
@@ -27,9 +31,13 @@ const HomePage = ({ data }) => {
       <HackathonTitle
         show_ticket_button={show_ticket_button}
         show_sponsor_button={show_sponsor_button}
+        show_livestream={show_livestream}
         sponsor_document={sponsor_document}
+        livestream_youtube={livestream_youtube}
+        full_description={full_description}
         name={name}
         slug={slug}
+        start={start}
       />
       <HackathonDefinition />
       {show_sponsors_list && <EventSponsors sponsors={sponsors} />}
@@ -51,9 +59,13 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           name
+          start
+          full_description
           show_ticket_button
           show_sponsors_list
           show_sponsor_button
+          show_livestream
+          livestream_youtube
           sponsor_document {
             publicURL
           }
