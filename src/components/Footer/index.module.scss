@@ -1,16 +1,26 @@
 @import '_config';
 
+.logo {
+  height: 2.5em;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   display: flex;
   grid-area: footer;
-
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
 
   .footerContent {
     margin: .8em 0 1em 0;
     text-align: center;
 
-    a {
+    .footerLink {
       color: $footer-link-colour;
     }
   }
