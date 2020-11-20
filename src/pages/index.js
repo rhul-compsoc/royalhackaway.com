@@ -12,12 +12,12 @@ const HomePage = ({ data }) => {
 
   const {
     name,
-    show_ticket_button,
+    enable_ticket_button,
     show_sponsors_list,
     sponsors,
     show_sponsor_button,
     sponsor_document,
-    show_livestream,
+    show_livestream_embed,
     livestream_youtube,
     full_description,
     start,
@@ -29,9 +29,9 @@ const HomePage = ({ data }) => {
       <SEO title="Home" />
       {/* Insert elements here! */}
       <HackathonTitle
-        show_ticket_button={show_ticket_button}
+        enable_ticket_button={enable_ticket_button}
         show_sponsor_button={show_sponsor_button}
-        show_livestream={show_livestream}
+        show_livestream_embed={show_livestream_embed}
         sponsor_document={sponsor_document}
         livestream_youtube={livestream_youtube}
         full_description={full_description}
@@ -61,10 +61,10 @@ export const pageQuery = graphql`
           name
           start
           full_description
-          show_ticket_button
+          enable_ticket_button
           show_sponsors_list
           show_sponsor_button
-          show_livestream
+          show_livestream_embed
           livestream_youtube
           sponsor_document {
             publicURL

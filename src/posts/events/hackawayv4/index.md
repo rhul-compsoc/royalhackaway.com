@@ -42,7 +42,7 @@ venue-floor-plan: ""
 
 show-faq: false
 
-show-ticket-button: false
+enable-ticket-button: false
 disable-button: false
 tickets: "https://example.com/"
 ticket-button-text: "Get your tickets here"
@@ -61,6 +61,10 @@ show-sponsor-button: true
 sponsor-document: ./SponsorDeckV4.pdf
 sponsors: []
 
-show-livestream: false
+show-livestream-embed: false
+enable-livestream-button: false
 livestream-youtube: HnJiTjTtIzc
+
+enable-chat-link: false
+chat-link: https://dc.cmpsc.uk/
 ---

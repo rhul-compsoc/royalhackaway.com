@@ -28,7 +28,7 @@ map-src: "https://maps.google.com/maps?q=windsor%20building%2C%20royal%20hollowa
 show-floor-plan: false
 venue-floor-plan: ""
 
-show-ticket-button: true
+enable-ticket-button: true
 disable-button: true
 tickets: "https://tickets.royalhackaway.com/"
 ticket-button-text: "RSVP"

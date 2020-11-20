@@ -36,7 +36,7 @@ map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&
 show-floor-plan: false
 venue-floor-plan: ""
 
-show-ticket-button: true
+enable-ticket-button: true
 disable-button: false
 tickets: "https://www.facebook.com/events/453038041884752/"
 ticket-button-text: "RSVP"

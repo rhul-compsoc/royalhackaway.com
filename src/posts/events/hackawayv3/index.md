@@ -44,7 +44,7 @@ venue-floor-plan: ""
 
 show-faq: true
 
-show-ticket-button: true
+enable-ticket-button: true
 disable-button: false
 tickets: "https://ti.to/royal-hackaway/royal-hackaway-v3"
 ticket-button-text: "Get your tickets here"

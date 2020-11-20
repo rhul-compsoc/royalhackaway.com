@@ -93,7 +93,7 @@ export const pageQuery = graphql`
         start
         location
         short_description
-        show_ticket_button
+        enable_ticket_button
         ticket_button_text
         full_description
         tickets
@@ -134,6 +134,10 @@ export const pageQuery = graphql`
           ssid
           password
         }
+        enable_livestream_button
+        livestream_youtube
+        enable_chat_link
+        chat_link
       }
     }
   }

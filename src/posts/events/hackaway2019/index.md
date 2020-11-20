@@ -40,7 +40,7 @@ venue-floor-plan: ""
 
 show-faq: true
 
-show-ticket-button: true
+enable-ticket-button: true
 disable-button: false
 tickets: "https://royal-hackaway-v2.devpost.com/"
 ticket-button-text: "Submit your 2019 project to DevPost"

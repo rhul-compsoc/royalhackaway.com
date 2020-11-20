@@ -89,7 +89,7 @@ class EventSponsors extends Component {
           >
             <a
               href={sponsor_document?.publicURL}
-              className="btn btn-hackaway-white btn-lg"
+              className="btn btn-hackaway-orange text-white"
             >
               Become a sponsor
             </a>

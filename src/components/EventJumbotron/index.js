@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styles from "./index.module.scss"
 import Img from "gatsby-image"
 import { CombineStyles } from "../../helpers/CombineStyles"
+import { ButtonsContainer } from "../ButtonsContainer"
 
 class EventJumbotron extends Component {
   render() {
@@ -15,9 +16,13 @@ class EventJumbotron extends Component {
       start,
       location: eventLocation,
       short_description,
-      show_ticket_button,
+      enable_ticket_button,
       ticket_button_text,
       tickets,
+      enable_livestream_button,
+      livestream_youtube,
+      enable_chat_link,
+      chat_link,
     } = frontmatter
     const jumbotronImageFluid =
       frontmatter?.jumbotron_image?.childImageSharp?.fluid
@@ -63,11 +68,38 @@ class EventJumbotron extends Component {
               </p>
               <p>{short_description}</p>
 
-              {show_ticket_button && (
-                <a className="btn btn-hackaway-white" href={tickets}>
-                  {ticket_button_text}
-                </a>
-              )}
+              <ButtonsContainer>
+                {enable_ticket_button ? (
+                  <a className="btn btn-hackaway-white px-4" href={tickets}>
+                    {ticket_button_text}
+                  </a>
+                ) : (
+                  <span className="btn btn-hackaway-white px-4 disabled">
+                    Tickets coming soon™
+                  </span>
+                )}
+                {enable_livestream_button ? (
+                  <a
+                    className="btn btn-hackaway-white px-4"
+                    href={`https://www.youtube.com/watch?v=${livestream_youtube}`}
+                  >
+                    Watch Live
+                  </a>
+                ) : (
+                  <span className="btn btn-hackaway-white px-4 disabled">
+                    Watch Live
+                  </span>
+                )}
+                {enable_chat_link ? (
+                  <a className="btn btn-hackaway-white px-4" href={chat_link}>
+                    Join the Discord
+                  </a>
+                ) : (
+                  <span className="btn btn-hackaway-white px-4 disabled">
+                    Join the Discord
+                  </span>
+                )}
+              </ButtonsContainer>
             </div>
           </div>
         </div>

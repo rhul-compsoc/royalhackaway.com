@@ -1,6 +1,3 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins/_breakpoints";
 @import '_config';
 
 .description {
@@ -29,15 +26,4 @@
   background-size: contain, auto;
   background-repeat: no-repeat, no-repeat;
   color: $jumbotron-foreground-colour;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  
-  @include media-breakpoint-down(xs) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }

@@ -3,13 +3,14 @@ import styles from "./index.module.scss"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { Link } from "gatsby"
 import Countdown from "react-countdown"
+import { ButtonsContainer } from "../ButtonsContainer"
 
 class HackathonTitle extends Component {
   render() {
     const {
-      show_ticket_button = true,
+      enable_ticket_button = true,
       show_sponsor_button,
-      show_livestream,
+      show_livestream_embed,
       sponsor_document,
       livestream_youtube,
       name,
@@ -25,7 +26,7 @@ class HackathonTitle extends Component {
             <h1 className="py-2">Create something awesome</h1>
           </div>
         </div>
-        {show_livestream ? (
+        {show_livestream_embed ? (
           <div className="row justify-content-center py-2">
             <div className="col-12 col-sm-8 col-m-6 col-xl-4">
               <div className={styles.livestreamContainer}>
@@ -66,13 +67,13 @@ class HackathonTitle extends Component {
 
         <div className="row justify-content-center py-5">
           <div className="col">
-            <div className={styles.buttons}>
-              {show_ticket_button ? (
+            <ButtonsContainer>
+              {enable_ticket_button ? (
                 <a className="btn btn-hackaway-white px-4">Get a Ticket</a>
               ) : (
-                <a className="btn btn-hackaway-white px-4 disabled">
+                <span className="btn btn-hackaway-white px-4 disabled">
                   Tickets coming soon™
-                </a>
+                </span>
               )}
               <Link className="btn btn-hackaway-white px-4" to={slug}>
                 {name}
@@ -85,7 +86,7 @@ class HackathonTitle extends Component {
                   Sponsor Us
                 </a>
               )}
-            </div>
+            </ButtonsContainer>
           </div>
         </div>
       </section>
