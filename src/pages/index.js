@@ -43,6 +43,7 @@ const HomePage = ({ data }) => {
       {show_sponsors_list && (
         <EventSponsors
           sponsors={sponsors}
+          sponsor_document={sponsor_document}
           show_sponsor_button={show_sponsor_button}
         />
       )}
