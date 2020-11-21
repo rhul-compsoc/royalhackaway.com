@@ -12,11 +12,13 @@
   
   @include media-breakpoint-down(md) {
     display: grid;
+    grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
   }
 
   @include media-breakpoint-down(xs) {
     display: grid;
+    grid-auto-flow: dense;
     grid-template-columns: 1fr;
   }
 }
