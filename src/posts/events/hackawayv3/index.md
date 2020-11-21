@@ -1,5 +1,6 @@
 ---
 name: "Royal Hackaway v3"
+render: true
 is-public: true
 is-over: false
 
@@ -110,7 +111,7 @@ sponsors:
     tier-sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
-        image: "../../../assets/images/sponsors/github.svg"
+        image: "../../../assets/images/sponsors/github_b.svg"
         colour: "#000000"
         shadow-colour: "#696969"
       - name: "Not-Binary"

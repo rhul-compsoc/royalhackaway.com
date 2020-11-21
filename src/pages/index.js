@@ -40,7 +40,12 @@ const HomePage = ({ data }) => {
         start={start}
       />
       <HackathonDefinition />
-      {show_sponsors_list && <EventSponsors sponsors={sponsors} />}
+      {show_sponsors_list && (
+        <EventSponsors
+          sponsors={sponsors}
+          show_sponsor_button={show_sponsor_button}
+        />
+      )}
     </Layout>
   )
 }

@@ -8,7 +8,12 @@ class EventFrequentlyAskedQuestions extends Component {
       <StaticQuery
         query={graphql`
           query {
-            allMarkdownRemark(filter: { fields: { template: { eq: "faq" } } }) {
+            allMarkdownRemark(
+              filter: {
+                fields: { template: { eq: "faq" } }
+                frontmatter: { is_public: { eq: true } }
+              }
+            ) {
               nodes {
                 frontmatter {
                   name
