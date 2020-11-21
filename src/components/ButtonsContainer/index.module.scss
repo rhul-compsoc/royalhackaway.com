@@ -4,9 +4,11 @@
 @import '_config';
 
 .buttons {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
   gap: 1em;
+  grid-gap: 1em;
   
   @include media-breakpoint-down(md) {
     display: grid;
