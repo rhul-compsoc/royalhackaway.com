@@ -1,10 +1,12 @@
 import React from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import styles from "./index.module.scss"
-import testImage from '../../assets/images/hexagon/1.jpeg'
+import testImage from "../../assets/images/hexagon/1.jpeg"
 
 const HexagonGrid = ({ children, className, ...props }) => (
-  <div {...props} className={CombineStyles(styles.grid, className)}>{children}</div>
+  <div {...props} className={CombineStyles(styles.grid, className)}>
+    {children}
+  </div>
 )
 
 const HexagonRow = ({ children }) => (
@@ -25,7 +27,7 @@ const HexagonImage = ({ src, clipping }) => (
 
 const HexagonFlankingContainer = () => (
   <div className="container">
-    <div className={CombineStyles('row', styles.flankContainer)}>
+    <div className={CombineStyles("row", styles.flankContainer)}>
       <HexagonGrid className={styles.flankLeft}>
         <HexagonRow>
           <HexagonImage src={testImage} />
@@ -48,4 +50,10 @@ const HexagonFlankingContainer = () => (
   </div>
 )
 
-export { HexagonImage, HexagonGrid, Hexagon, HexagonRow, HexagonFlankingContainer }
+export {
+  HexagonImage,
+  HexagonGrid,
+  Hexagon,
+  HexagonRow,
+  HexagonFlankingContainer,
+}
