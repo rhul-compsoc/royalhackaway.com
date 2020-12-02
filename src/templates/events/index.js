@@ -42,15 +42,6 @@ export default function Template({ data }) {
 
       <EventJumbotron data={data} />
 
-      {show_sponsors_list && (
-        <EventSponsors
-          sponsors={sponsors}
-          sponsor_document={sponsor_document}
-          show_sponsors_list={show_sponsors_list}
-          show_sponsor_button={show_sponsor_button}
-        />
-      )}
-
       {full_description && (
         <EventDescription colour={color} description={full_description} />
       )}
@@ -68,6 +59,16 @@ export default function Template({ data }) {
       {show_schedule && <EventSchedule schedule={schedule} />}
       {show_faq && <EventFrequentlyAskedQuestions />}
       {show_wifi_details && <EventInternetConnectivity internet={internet} />}
+
+      {show_sponsors_list && (
+        <EventSponsors
+          sponsors={sponsors}
+          sponsor_document={sponsor_document}
+          show_sponsors_list={show_sponsors_list}
+          show_sponsor_button={show_sponsor_button}
+        />
+      )}
+      
       <EventQualms />
     </Layout>
   )
