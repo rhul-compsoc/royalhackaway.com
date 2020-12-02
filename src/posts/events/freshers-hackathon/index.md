@@ -1,5 +1,6 @@
 ---
 name: "Freshers Hackathon"
+render: true
 is-public: false
 is-over: true
 

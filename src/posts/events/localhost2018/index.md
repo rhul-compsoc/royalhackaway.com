@@ -1,5 +1,6 @@
 ---
 name: "LocalHost 2018"
+render: true
 is-public: false
 is-over: false
 

@@ -1,5 +1,6 @@
 ---
 name: "Royal Hackaway 2019"
+render: true
 is-public: true
 is-over: true
 

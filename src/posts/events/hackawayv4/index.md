@@ -1,5 +1,6 @@
 ---
 name: "Royal Hackaway v4 Online"
+render: true
 is-public: true
 is-over: false
 
@@ -40,11 +41,11 @@ map-src: null
 show-floor-plan: false
 venue-floor-plan: ""
 
-show-faq: false
+show-faq: true
 
-enable-ticket-button: false
+enable-ticket-button: true
 disable-button: false
-tickets: "https://example.com/"
+tickets: https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform
 ticket-button-text: "Get your tickets here"
 
 show-wifi-details: false
@@ -56,10 +57,19 @@ internet:
 show-schedule: false
 schedule: []
 
-show-sponsors-list: false
+show-sponsors-list: true
 show-sponsor-button: true
 sponsor-document: ./SponsorDeckV4.pdf
-sponsors: []
+sponsors:
+  - name: "Bronze"
+    colour: "#CD7F32"
+    tier: 3
+    tier-sponsors:
+      - name: "GitHub"
+        link: "https://www.github.com/"
+        image: "../../../assets/images/sponsors/github_b.svg"
+        colour: "#000000"
+        shadow-colour: "#696969"
 
 show-livestream-embed: false
 enable-livestream-button: false
