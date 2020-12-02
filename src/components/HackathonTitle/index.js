@@ -19,7 +19,7 @@ class HackathonTitle extends Component {
       ticket_button_text,
       start,
       display_date,
-      tickets
+      tickets,
     } = this.props
 
     return (

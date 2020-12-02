@@ -47,7 +47,7 @@ class EventSponsors extends Component {
                   className={CombineStyles(
                     "row",
                     "justify-content-center",
-                    styles.sponsorTier,
+                    styles.sponsorTier
                   )}
                 >
                   {tier.tier_sponsors.map(tierSponsor => (

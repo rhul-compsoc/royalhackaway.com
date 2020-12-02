@@ -68,7 +68,7 @@ export default function Template({ data }) {
           show_sponsor_button={show_sponsor_button}
         />
       )}
-      
+
       <EventQualms />
     </Layout>
   )

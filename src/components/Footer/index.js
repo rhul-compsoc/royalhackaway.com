@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { CombineStyles } from "../../helpers/CombineStyles"
 import styles from "./index.module.scss"
 import compsoc from "../../assets/images/logo/compsoc.svg"
 import { graphql, StaticQuery } from "gatsby"
