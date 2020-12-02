@@ -23,6 +23,7 @@ const HomePage = ({ data }) => {
     display_date,
     ticket_button_text,
     start,
+    tickets,
   } = frontmatter
   const { slug } = fields
 
@@ -39,6 +40,7 @@ const HomePage = ({ data }) => {
         livestream_youtube={livestream_youtube}
         full_description={full_description}
         display_date={display_date}
+        tickets={tickets}
         name={name}
         slug={slug}
         start={start}
@@ -78,6 +80,7 @@ export const pageQuery = graphql`
           livestream_youtube
           display_date
           ticket_button_text
+          tickets
           sponsor_document {
             publicURL
           }

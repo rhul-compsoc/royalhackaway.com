@@ -18,7 +18,8 @@ class HackathonTitle extends Component {
       slug,
       ticket_button_text,
       start,
-      display_date
+      display_date,
+      tickets
     } = this.props
 
     return (
@@ -74,7 +75,7 @@ class HackathonTitle extends Component {
           <div className="col">
             <ButtonsContainer>
               {enable_ticket_button ? (
-                <a className="btn btn-hackaway-white px-4">
+                <a className="btn btn-hackaway-white px-4" href={tickets}>
                   {ticket_button_text}
                 </a>
               ) : (
