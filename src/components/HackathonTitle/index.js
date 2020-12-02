@@ -16,7 +16,9 @@ class HackathonTitle extends Component {
       name,
       full_description,
       slug,
+      ticket_button_text,
       start,
+      display_date
     } = this.props
 
     return (
@@ -49,6 +51,9 @@ class HackathonTitle extends Component {
             </div>
             <div className="row justify-content-center py-2">
               <div className="col-12 col-sm-10 text-center">
+                <p className="display-4">
+                  <strong>{display_date}</strong>
+                </p>
                 <Countdown
                   renderer={({ days, hours, minutes, seconds }) => (
                     <span className="display-4">
@@ -69,7 +74,9 @@ class HackathonTitle extends Component {
           <div className="col">
             <ButtonsContainer>
               {enable_ticket_button ? (
-                <a className="btn btn-hackaway-white px-4">Get a Ticket</a>
+                <a className="btn btn-hackaway-white px-4">
+                  {ticket_button_text}
+                </a>
               ) : (
                 <span className="btn btn-hackaway-white px-4 disabled">
                   Tickets coming soon™

@@ -20,6 +20,8 @@ const HomePage = ({ data }) => {
     show_livestream_embed,
     livestream_youtube,
     full_description,
+    display_date,
+    ticket_button_text,
     start,
   } = frontmatter
   const { slug } = fields
@@ -33,8 +35,10 @@ const HomePage = ({ data }) => {
         show_sponsor_button={show_sponsor_button}
         show_livestream_embed={show_livestream_embed}
         sponsor_document={sponsor_document}
+        ticket_button_text={ticket_button_text}
         livestream_youtube={livestream_youtube}
         full_description={full_description}
+        display_date={display_date}
         name={name}
         slug={slug}
         start={start}
@@ -72,6 +76,8 @@ export const pageQuery = graphql`
           show_sponsor_button
           show_livestream_embed
           livestream_youtube
+          display_date
+          ticket_button_text
           sponsor_document {
             publicURL
           }

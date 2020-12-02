@@ -62,7 +62,7 @@ class EventJumbotron extends Component {
             <div className="col-md-6 text-light col-xs-12">
               <h1>{name}</h1>
               <p>
-                {formattedDate}
+                <strong>{formattedDate}</strong>
                 <br />
                 {eventLocation}
               </p>

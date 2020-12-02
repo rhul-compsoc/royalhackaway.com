@@ -25,7 +25,7 @@ event-info: "hackaway"
 # Used for styling
 
 color: "#F37021"
-display-date: "6th to 7th February 2021"
+display-date: "February 6-7th 2021"
 layout: event
 location: "Fully virtual, on Discord and YouTube Live"
 jumbotron-image: ../../../assets/images/background/2018-1.png
