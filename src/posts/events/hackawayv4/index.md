@@ -45,7 +45,7 @@ show-faq: true
 
 enable-ticket-button: true
 disable-button: false
-tickets: https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform
+tickets: https://forms.gle/ZMsZy1Gq7A4cxKm27
 ticket-button-text: "Register Your Interest"
 
 show-wifi-details: false
