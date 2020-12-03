@@ -61,15 +61,26 @@ show-sponsors-list: true
 show-sponsor-button: true
 sponsor-document: ./SponsorDeckV4.pdf
 sponsors:
+  - name: "Silver"
+    colour: silver
+    tier: 2
+    tier-sponsors:
+      - name: DigitalOcean
+        link: https://digitalocean.com
+        image:
+          ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
     tier-sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
-        image: "../../../assets/images/sponsors/github_b.svg"
-        colour: "#000000"
-        shadow-colour: "#696969"
+        image:
+          ../../../assets/images/sponsors/github/combo-lt-120.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
 
 show-livestream-embed: false
 enable-livestream-button: false

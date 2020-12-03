@@ -7,10 +7,13 @@
 
 .sponsor {
   // height: 15vh;
+  display: inline-flex;
   margin: 0.5em;
   max-width: 50vw;
   flex-grow: 0;
   overflow: hidden;
+  gap: 1em;
+  align-items: center;
 }
 
 .sponsorLogo {

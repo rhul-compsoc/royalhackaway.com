@@ -56,24 +56,17 @@ class EventSponsors extends Component {
                       href={tierSponsor.link}
                       className={CombineStyles(
                         "align-middle",
-                        // "col-md-2",
-                        // "row",
                         "rounded",
                         styles.sponsor
                       )}
-                      style={
-                        {
-                          // backgroundColor: tierSponsor.colour,
-                          // boxShadow: "4px 5px " + tierSponsor.shadow_colour,
-                        }
-                      }
                     >
                       <img
                         className={CombineStyles(
                           styles.sponsorLogo,
                           styles["tier" + tier.tier]
                         )}
-                        src={tierSponsor.image.publicURL}
+                        src={tierSponsor.image?.publicURL}
+                        key={tierSponsor.image}
                         alt={tierSponsor.name}
                         title={tierSponsor.name}
                       />
