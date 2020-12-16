@@ -86,6 +86,6 @@ show-livestream-embed: false
 enable-livestream-button: false
 livestream-youtube: HnJiTjTtIzc
 
-enable-chat-link: false
+enable-chat-link: true
 chat-link: https://discord.gg/c8mq6cDwjF
 ---
