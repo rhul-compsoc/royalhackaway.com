@@ -7,6 +7,7 @@ import { HackathonCountdown } from "../components/HackathonCountdown"
 import { graphql } from "gatsby"
 import { EventSponsors } from "../components/EventSponsors"
 import { People } from "../components/People"
+import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -33,6 +34,7 @@ const HomePage = ({ data }) => {
           show_sponsor_button={show_sponsor_button}
         />
       )}
+      <EventFrequentlyAskedQuestions />
       <People />
     </Layout>
   )

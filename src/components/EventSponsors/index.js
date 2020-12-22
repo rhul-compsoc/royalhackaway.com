@@ -55,7 +55,7 @@ class EventSponsors extends Component {
                       key={tierSponsor.name}
                       href={tierSponsor.link}
                       className={CombineStyles(
-                        "align-middle",
+                        "justify-content-center",
                         "rounded",
                         styles.sponsor
                       )}
