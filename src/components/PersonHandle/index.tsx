@@ -1,5 +1,6 @@
 import React from "react"
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FiMail } from "react-icons/fi"
 
 enum PersonService {
   TWITTER = "twitter",
@@ -12,7 +13,7 @@ const HandleData = {
   },
   email: {
     prefix: "mailto:",
-    Icon: () => <span>📧</span>,
+    Icon: FiMail,
   },
   github: {
     prefix: "https://github.com/",
