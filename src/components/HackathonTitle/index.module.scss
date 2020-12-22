@@ -26,4 +26,10 @@
   background-size: contain, auto;
   background-repeat: no-repeat, no-repeat;
   color: $jumbotron-foreground-colour;
+  padding: 4em 0;
+
+  .name {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }

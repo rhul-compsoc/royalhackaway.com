@@ -1,0 +1,19 @@
+@import '_config';
+
+.hackathonCountdown {
+  color: $secondary-foreground-colour;
+  background-color: $secondary-background-colour;
+  padding: 2em 0;
+}
+
+.digit {
+  font-size: 4em;
+  font-weight: bold;
+  color: $hackaway-orange;
+  display: block;
+  margin: -0.25em 0;
+}
+
+.label {
+  font-size: 1.3em;
+}

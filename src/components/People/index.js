@@ -42,21 +42,25 @@ class People extends Component {
           <section className={styles.people}>
             <div className="row justify-content-md-center">
               <div className="col-sm-4 text-center">
-                <h2 className="display-4">People</h2>
+                <h2 className="display-4">Team</h2>
                 <p className="text-muted">The team that makes this possible.</p>
               </div>
             </div>
             <div className="container">
               <div className="row justify-content-center">
                 {data.allMarkdownRemark.nodes
-                  .sort((a, b) => b - a)
-                  .map((person, index) => (
-                    <div className="col-6 col-sm-4 col-md-3" key={index}>
+                  .sort((a, b) => a.frontmatter.name - b.frontmatter.name)
+                  .map(person => (
+                    <div
+                      className="col-xs-10 col-sm-4 col-md-3"
+                      key={person.frontmatter.name}
+                    >
                       <Img
-                        fluid={
-                          person.frontmatter.jumbotron_image.childImageSharp
-                            .fluid
-                        }
+                        fluid={{
+                          ...person.frontmatter.jumbotron_image.childImageSharp
+                            .fluid,
+                          aspectRatio: 1,
+                        }}
                       />
                       <div className="text-center">
                         <h3 className={styles.name}>

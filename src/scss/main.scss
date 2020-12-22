@@ -32,5 +32,6 @@
   } 
 }
 
+@include create-button("hackaway-blurple", $chat-link-colour, $primary-button-shadow-colour, false);
 @include create-button("hackaway-white", $primary-button-colour, $primary-button-shadow-colour, false);
 @include create-button("hackaway-orange", $secondary-button-colour, $secondary-button-shadow-colour, true);
