@@ -1,6 +1,6 @@
 ---
 name: Leondro Lio
-short-description: Doesn't do anything
+short-description: Logistics Lead
 render: false
 is-public: true
 jumbotron-image: ./tapir.jpg

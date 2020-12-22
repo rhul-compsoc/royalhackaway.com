@@ -48,29 +48,44 @@ class People extends Component {
             </div>
             <div className="container">
               <div className="row justify-content-center">
-                {data.allMarkdownRemark.nodes.map((person, index) => (
-                  <div className="col-6 col-sm-4 col-md-3" key={index}>
-                    <Img
-                      fluid={
-                        person.frontmatter.jumbotron_image.childImageSharp.fluid
-                      }
-                    />
-                    <div className="text-center">
-                      <h3 className={styles.name}>{person.frontmatter.name}</h3>
-                      {
-                        person.frontmatter.short_description &&
-                        <p className={CombineStyles(styles.description, 'text-muted')}>{person.frontmatter.short_description}</p>
-                      }
-                      <div
-                        className={styles.body}
-                        dangerouslySetInnerHTML={{ __html: person.html }}
-                      ></div>
-                      {
-                        person.frontmatter.handles.map(handle => <PersonHandle key={handle.handle} handle={handle.handle} service={handle.service} />)
-                      }
+                {data.allMarkdownRemark.nodes
+                  .sort((a, b) => b - a)
+                  .map((person, index) => (
+                    <div className="col-6 col-sm-4 col-md-3" key={index}>
+                      <Img
+                        fluid={
+                          person.frontmatter.jumbotron_image.childImageSharp
+                            .fluid
+                        }
+                      />
+                      <div className="text-center">
+                        <h3 className={styles.name}>
+                          {person.frontmatter.name}
+                        </h3>
+                        {person.frontmatter.short_description && (
+                          <p
+                            className={CombineStyles(
+                              styles.description,
+                              "text-muted"
+                            )}
+                          >
+                            {person.frontmatter.short_description}
+                          </p>
+                        )}
+                        {/* <div
+                          className={styles.body}
+                          dangerouslySetInnerHTML={{ __html: person.html }}
+                        ></div> */}
+                        {person.frontmatter.handles.map(handle => (
+                          <PersonHandle
+                            key={handle.handle}
+                            handle={handle.handle}
+                            service={handle.service}
+                          />
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
               </div>
             </div>
           </section>
