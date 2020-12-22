@@ -5,6 +5,7 @@ import { HackathonDefinition } from "../components/HackathonDefinition"
 import { HackathonTitle } from "../components/HackathonTitle"
 import { graphql } from "gatsby"
 import { EventSponsors } from "../components/EventSponsors"
+import { People } from "../components/People"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -53,6 +54,7 @@ const HomePage = ({ data }) => {
           show_sponsor_button={show_sponsor_button}
         />
       )}
+      <People />
     </Layout>
   )
 }
