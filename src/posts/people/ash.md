@@ -3,10 +3,12 @@ name: ash
 short-description: Planning/Coordination Lead
 render: false
 is-public: true
-jumbotron-image: ./panda.png
+jumbotron-image: ./ash.jpg
 handles:
-  - service: twitter
-    handle: aejb_
+  - service: github
+    handle: aejb
+  - service: email
+    handle: ash@computingsociety.co.uk
 ---
 
 Hello world!
