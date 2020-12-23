@@ -11,7 +11,6 @@ const partition = <T>(items: T[], partitions: number): T[][] => {
   for (let i = 0; i < items.length; i++) {
     output[i % partitions].push(items[i])
   }
-  console.log(output)
   return output
 }
 
