@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import { EventSponsors } from "../components/EventSponsors"
 import { People } from "../components/People"
 import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
+import { EventQualms } from "../components/EventQualms"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -26,6 +27,7 @@ const HomePage = ({ data }) => {
       <HackathonTitle frontmatter={frontmatter} />
       <HackathonCountdown frontmatter={frontmatter} />
       <HackathonDefinition />
+      <EventFrequentlyAskedQuestions />
       {show_sponsors_list && (
         <EventSponsors
           sponsors={sponsors}
@@ -33,7 +35,6 @@ const HomePage = ({ data }) => {
           show_sponsor_button={show_sponsor_button}
         />
       )}
-      <EventFrequentlyAskedQuestions />
       {/* <People /> */}
     </Layout>
   )

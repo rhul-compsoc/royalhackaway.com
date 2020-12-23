@@ -3,6 +3,8 @@ import React, { Component } from "react"
 import styles from "./index.module.scss"
 import { Collapsable } from "../Collapsable"
 import { partition } from "../../helpers/partition"
+import { EventQualms } from "../EventQualms"
+import { CombineStyles } from "../../helpers/CombineStyles"
 
 class EventFrequentlyAskedQuestions extends Component {
   constructor(props) {
@@ -43,10 +45,17 @@ class EventFrequentlyAskedQuestions extends Component {
         render={data => (
           <section className={styles.faq}>
             <div className="container">
-              <div className="row justify-content-center">
-                <div id="faq-title-wrapper" className="col-sm-4 text-center">
-                  <h2 className="display-4">FAQ</h2>
-                  <p>Questions people usually have.</p>
+              <div
+                className={CombineStyles(
+                  "row justify-content-center",
+                  styles.title
+                )}
+              >
+                <div className="col-12 text-center">
+                  <h2 className="display-5 fw-bold">
+                    Frequently Asked Questions
+                  </h2>
+                  <p>Answers to some questions we get a lot of!</p>
                 </div>
               </div>
 
@@ -71,6 +80,7 @@ class EventFrequentlyAskedQuestions extends Component {
                 )}
               </div>
             </div>
+            <EventQualms />
           </section>
         )}
       />

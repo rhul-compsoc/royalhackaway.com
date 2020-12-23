@@ -20,7 +20,7 @@ class EventQualms extends Component {
           <section className={CombineStyles("text-center", styles.eventQualms)}>
             <p>Questions, queries or qualms about this event?</p>
             <a
-              className="btn btn-hackaway-orange text-white"
+              className="btn btn-hackaway-white"
               href={`mailto:${data.site.siteMetadata.email}`}
             >
               Get in touch

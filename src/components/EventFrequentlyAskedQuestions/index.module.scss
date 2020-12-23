@@ -1,7 +1,12 @@
 @import '_config';
 
 .faq {
-  padding: 3em 0;
+  padding: 5em 0;
   color: $primary-foreground-colour;
   background-color: $primary-background-colour;
+
+  .title {
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
 }
