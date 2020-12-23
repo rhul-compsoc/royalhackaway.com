@@ -23,57 +23,59 @@ class HackathonTitle extends Component {
 
     return (
       <section className={styles.hackathonTitle}>
-        <div className="row justify-content-center">
-          <div className="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-            <h1 className={styles.name}>{short_name}</h1>
-            <h3>Create something awesome</h3>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+              <h1 className={styles.name}>{short_name}</h1>
+              <h3>Create something awesome</h3>
 
-            {show_livestream_embed ? (
-              <div className={styles.livestreamContainer}>
-                <iframe
-                  className={styles.livestream}
-                  src={`https://www.youtube.com/embed/${livestream_youtube}?autoplay=1`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ) : (
-              <>
-                <p>
-                  <FaMapMarkerAlt /> {location} <br />
-                  <FaCalendarAlt /> {display_date}
-                </p>
-                <p className={styles.description}>{full_description}</p>
-              </>
-            )}
-            <ButtonsContainer>
-              {enable_ticket_button ? (
-                <a className="btn btn-hackaway-white px-4" href={tickets}>
-                  {ticket_button_text}
-                </a>
+              {show_livestream_embed ? (
+                <div className={styles.livestreamContainer}>
+                  <iframe
+                    className={styles.livestream}
+                    src={`https://www.youtube.com/embed/${livestream_youtube}?autoplay=1`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               ) : (
-                <span className="btn btn-hackaway-white px-4 disabled">
-                  Tickets coming soon™
-                </span>
+                <>
+                  <p>
+                    <FaMapMarkerAlt /> {location} <br />
+                    <FaCalendarAlt /> {display_date}
+                  </p>
+                  <p className={styles.description}>{full_description}</p>
+                </>
               )}
-              {show_sponsor_button && (
-                <a
-                  className="btn btn-hackaway-white px-4"
-                  href={sponsor_document?.publicURL}
-                >
-                  Sponsor Us
-                </a>
-              )}
-              {enable_chat_link && (
-                <a
-                  className="btn btn-hackaway-blurple text-white px-4"
-                  href={chat_link}
-                >
-                  <FaDiscord /> Join Discord
-                </a>
-              )}
-            </ButtonsContainer>
+              <ButtonsContainer>
+                {enable_ticket_button ? (
+                  <a className="btn btn-hackaway-white px-4" href={tickets}>
+                    {ticket_button_text}
+                  </a>
+                ) : (
+                  <span className="btn btn-hackaway-white px-4 disabled">
+                    Tickets coming soon™
+                  </span>
+                )}
+                {show_sponsor_button && (
+                  <a
+                    className="btn btn-hackaway-white px-4"
+                    href={sponsor_document?.publicURL}
+                  >
+                    Sponsor Us
+                  </a>
+                )}
+                {enable_chat_link && (
+                  <a
+                    className="btn btn-hackaway-blurple text-white px-4"
+                    href={chat_link}
+                  >
+                    <FaDiscord /> Join Discord
+                  </a>
+                )}
+              </ButtonsContainer>
+            </div>
           </div>
         </div>
       </section>

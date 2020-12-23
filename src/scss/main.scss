@@ -1,6 +1,10 @@
 @import 'config.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 @mixin create-button($name, $background-colour, $shadow, $lighten: true) {
   .btn-#{$name} {
