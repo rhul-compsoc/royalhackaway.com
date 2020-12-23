@@ -3,30 +3,12 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 @import '_config';
 
+.header {
+  margin-bottom: 1.5em;
+}
+
 .hackathonDef {
   background: $tertiary-background-colour;
   color: $tertiary-foreground-colour;
-
-  .lrContainer {
-    display: grid;
-    gap: 1em;
-    grid-template-areas: "left right";
-    
-    .left {
-      text-align: right;
-      grid-area: left;
-    }
-  
-    .right {
-      text-align: left;
-      grid-area: right;
-    }
-
-    @include media-breakpoint-down(md) {
-      grid-template-areas: "left" "right";
-      .left, .right {
-        text-align: center;
-      }
-    }
-  }
+  padding: 5em 0;
 }

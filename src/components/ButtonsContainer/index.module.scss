@@ -4,12 +4,12 @@
 @import '_config';
 
 .buttons {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   grid-gap: 1em;
   
-  @include media-breakpoint-between(sm, lg) {
+  @include media-breakpoint-between(sm, xl) {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;

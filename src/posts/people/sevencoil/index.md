@@ -1,6 +1,8 @@
 ---
 name: Leondro Lio
+priority: 0.8
 short-description: Logistics Lead
+description: I&apos;m terrible at developing websites.
 render: false
 is-public: true
 jumbotron-image: ./sevencoil.jpg

@@ -24,14 +24,11 @@ class HackathonTitle extends Component {
     return (
       <section className={styles.hackathonTitle}>
         <div className="row justify-content-center">
-          <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+          <div className="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
             <h1 className={styles.name}>{short_name}</h1>
             <h3>Create something awesome</h3>
-          </div>
-        </div>
-        {show_livestream_embed ? (
-          <div className="row justify-content-center py-2">
-            <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+
+            {show_livestream_embed ? (
               <div className={styles.livestreamContainer}>
                 <iframe
                   className={styles.livestream}
@@ -41,24 +38,15 @@ class HackathonTitle extends Component {
                   allowFullScreen
                 ></iframe>
               </div>
-            </div>
-          </div>
-        ) : (
-          <>
-            <div className="row justify-content-center py-2">
-              <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+            ) : (
+              <>
                 <p>
                   <FaMapMarkerAlt /> {location} <br />
                   <FaCalendarAlt /> {display_date}
                 </p>
                 <p className={styles.description}>{full_description}</p>
-              </div>
-            </div>
-          </>
-        )}
-
-        <div className="row justify-content-center py-3">
-          <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+              </>
+            )}
             <ButtonsContainer>
               {enable_ticket_button ? (
                 <a className="btn btn-hackaway-white px-4" href={tickets}>

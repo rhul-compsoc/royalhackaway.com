@@ -34,12 +34,9 @@ const PersonHandle = ({
 }): JSX.Element => {
   const { prefix, Icon } = HandleData[service]
   return (
-    <>
-      <a href={prefix + handle}>
-        <Icon /> {handle}
-      </a>
-      <br />
-    </>
+    <a href={prefix + handle}>
+      <Icon />
+    </a>
   )
 }
 

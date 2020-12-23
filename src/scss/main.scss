@@ -1,11 +1,6 @@
 @import 'config.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 
-// TODO: Get rid of this if it doesn't make scrollbars appear anymore
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 @mixin create-button($name, $background-colour, $shadow, $lighten: true) {
   .btn-#{$name} {
