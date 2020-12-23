@@ -6,17 +6,16 @@
 .buttons {
   display: grid;
   grid-auto-flow: column;
-  justify-content: center;
   gap: 1em;
   grid-gap: 1em;
   
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-between(sm, lg) {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-only(xs) {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: 1fr;

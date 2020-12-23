@@ -1,9 +1,7 @@
 import React, { Component } from "react"
-import styles from "./index.module.scss"
-import { CombineStyles } from "../../helpers/CombineStyles"
-import { Link } from "gatsby"
-import Countdown from "react-countdown"
+import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 import { ButtonsContainer } from "../ButtonsContainer"
+import styles from "./index.module.scss"
 
 class HackathonTitle extends Component {
   render() {
@@ -13,25 +11,27 @@ class HackathonTitle extends Component {
       show_livestream_embed,
       sponsor_document,
       livestream_youtube,
-      name,
+      short_name,
       full_description,
-      slug,
       ticket_button_text,
-      start,
       display_date,
       tickets,
-    } = this.props
+      location,
+      enable_chat_link,
+      chat_link,
+    } = this.props.frontmatter
 
     return (
-      <section className={CombineStyles(styles.hackathonTitle)}>
-        <div className="row justify-content-center py-4">
-          <div className="col-12 col-xs-12 col-sm-8 text-center py-4">
-            <h1 className="py-2">Create something awesome</h1>
+      <section className={styles.hackathonTitle}>
+        <div className="row justify-content-center">
+          <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+            <h1 className={styles.name}>{short_name}</h1>
+            <h3>Create something awesome</h3>
           </div>
         </div>
         {show_livestream_embed ? (
           <div className="row justify-content-center py-2">
-            <div className="col-12 col-sm-8 col-m-6 col-xl-4">
+            <div className="col-12 col-sm-8 col-m-6 col-xl-5">
               <div className={styles.livestreamContainer}>
                 <iframe
                   className={styles.livestream}
@@ -46,33 +46,19 @@ class HackathonTitle extends Component {
         ) : (
           <>
             <div className="row justify-content-center py-2">
-              <div className="col-12 col-sm-8 col-m-6 col-xl-4 text-center">
-                <p className={styles.description}>{full_description}</p>
-              </div>
-            </div>
-            <div className="row justify-content-center py-2">
-              <div className="col-12 col-sm-10 text-center">
-                <p className="display-4">
-                  <strong>{display_date}</strong>
+              <div className="col-12 col-sm-8 col-m-6 col-xl-5">
+                <p>
+                  <FaMapMarkerAlt /> {location} <br />
+                  <FaCalendarAlt /> {display_date}
                 </p>
-                <Countdown
-                  renderer={({ days, hours, minutes, seconds }) => (
-                    <span className="display-4">
-                      {days} day{days !== 1 && "s"}, {hours} hour
-                      {hours !== 1 && "s"}, {minutes} minute
-                      {minutes !== 1 && "s"} and {seconds} second
-                      {seconds !== 1 && "s"}
-                    </span>
-                  )}
-                  date={start}
-                />
+                <p className={styles.description}>{full_description}</p>
               </div>
             </div>
           </>
         )}
 
-        <div className="row justify-content-center py-5">
-          <div className="col">
+        <div className="row justify-content-center py-3">
+          <div className="col-12 col-sm-8 col-m-6 col-xl-5">
             <ButtonsContainer>
               {enable_ticket_button ? (
                 <a className="btn btn-hackaway-white px-4" href={tickets}>
@@ -83,15 +69,20 @@ class HackathonTitle extends Component {
                   Tickets coming soon™
                 </span>
               )}
-              <Link className="btn btn-hackaway-white px-4" to={slug}>
-                {name}
-              </Link>
               {show_sponsor_button && (
                 <a
                   className="btn btn-hackaway-white px-4"
                   href={sponsor_document?.publicURL}
                 >
                   Sponsor Us
+                </a>
+              )}
+              {enable_chat_link && (
+                <a
+                  className="btn btn-hackaway-blurple text-white px-4"
+                  href={chat_link}
+                >
+                  <FaDiscord /> Join Discord
                 </a>
               )}
             </ButtonsContainer>

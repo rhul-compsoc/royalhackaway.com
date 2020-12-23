@@ -1,5 +1,13 @@
-$primary-background-colour: #f48c42;
+$hackaway-orange: #f48c42;
+
 $primary-foreground-colour: white;
+$primary-background-colour: $hackaway-orange;
+
+$secondary-foreground-colour: white;
+$secondary-background-colour: #343a40;
+
+$tertiary-foreground-colour: black;
+$tertiary-background-colour: white;
 
 $primary-button-colour: white;
 $primary-button-shadow-colour: black;
@@ -10,12 +18,11 @@ $secondary-button-shadow-colour: darken($secondary-button-colour, 20%);
 $jumbotron-background-gradient: linear-gradient(to right, #f67e3a, #f39346);
 $jumbotron-foreground-colour: white;
 
-$footer-link-colour: #f48c42;
+$footer-link-colour: $hackaway-orange;
+$chat-link-colour: #7289DA;
 
 $mobile-width: 576px;
-
-$secondary-background-colour: white;
-$secondary-foreground-colour: black;
+$radius: 5px;
 
 // $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 // $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;

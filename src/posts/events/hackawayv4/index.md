@@ -1,5 +1,6 @@
 ---
 name: "Royal Hackaway v4 Online"
+short_name: Royal Hackaway v4
 render: true
 is-public: true
 is-over: false
@@ -25,7 +26,7 @@ event-info: "hackaway"
 # Used for styling
 
 color: "#F37021"
-display-date: "February 6-7th 2021"
+display-date: Saturday 6th February - Sunday 7th February 2021
 layout: event
 location: "Fully virtual, on Discord and YouTube Live"
 jumbotron-image: ../../../assets/images/background/2018-1.png
@@ -67,8 +68,7 @@ sponsors:
     tier-sponsors:
       - name: DigitalOcean
         link: https://digitalocean.com
-        image:
-          ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
+        image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
   - name: "Bronze"
@@ -77,8 +77,7 @@ sponsors:
     tier-sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
-        image:
-          ../../../assets/images/sponsors/github/combo-lt-120.svg
+        image: ../../../assets/images/sponsors/github/combo-lt-120.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
 
