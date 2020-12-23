@@ -9,7 +9,12 @@ class HackathonDefinition extends Component {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12">
-              <h2 className={CombineStyles("text-center fw-bold display-5", styles.header)}>
+              <h2
+                className={CombineStyles(
+                  "text-center fw-bold display-5",
+                  styles.header
+                )}
+              >
                 We make hackathons happen.
               </h2>
             </div>

@@ -1,14 +1,12 @@
+import { graphql } from "gatsby"
 import React from "react"
-import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
+import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
+import { EventSponsors } from "../components/EventSponsors"
+import { HackathonCountdown } from "../components/HackathonCountdown"
 import { HackathonDefinition } from "../components/HackathonDefinition"
 import { HackathonTitle } from "../components/HackathonTitle"
-import { HackathonCountdown } from "../components/HackathonCountdown"
-import { graphql } from "gatsby"
-import { EventSponsors } from "../components/EventSponsors"
-import { People } from "../components/People"
-import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
-import { EventQualms } from "../components/EventQualms"
+import { Layout } from "../components/Layout"
+import { SEO } from "../components/SEO"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
