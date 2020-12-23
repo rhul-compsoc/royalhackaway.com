@@ -4,8 +4,7 @@
 @import '_config';
 
 .buttons {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   gap: 1em;
   grid-gap: 1em;
   
