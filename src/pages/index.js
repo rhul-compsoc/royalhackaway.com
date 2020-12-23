@@ -6,6 +6,7 @@ import { HackathonCountdown } from "../components/HackathonCountdown"
 import { HackathonDefinition } from "../components/HackathonDefinition"
 import { HackathonTitle } from "../components/HackathonTitle"
 import { Layout } from "../components/Layout"
+import { People } from "../components/People"
 import { SEO } from "../components/SEO"
 
 const HomePage = ({ data }) => {
@@ -17,6 +18,7 @@ const HomePage = ({ data }) => {
     sponsors,
     show_sponsor_button,
     sponsor_document,
+    short_name,
   } = frontmatter
 
   return (
@@ -33,7 +35,7 @@ const HomePage = ({ data }) => {
           show_sponsor_button={show_sponsor_button}
         />
       )}
-      {/* <People /> */}
+      <People name={short_name} />
     </Layout>
   )
 }
