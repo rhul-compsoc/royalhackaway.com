@@ -1,6 +1,6 @@
 ---
 name: YeoJin
-priority: 0
+priority: -2
 short-description: Placeholder
 description: You're going to die, whether you like it or not.
 render: false
