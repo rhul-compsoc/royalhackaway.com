@@ -1,6 +1,8 @@
 ---
 name: Joshua Sawyer
+priority: 1
 short-description: Lead Organiser
+description: null
 render: false
 is-public: true
 jumbotron-image: ./jcsawyer123.jpg

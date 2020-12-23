@@ -1,13 +1,13 @@
+import { graphql } from "gatsby"
 import React from "react"
-import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
+import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
+import { EventSponsors } from "../components/EventSponsors"
+import { HackathonCountdown } from "../components/HackathonCountdown"
 import { HackathonDefinition } from "../components/HackathonDefinition"
 import { HackathonTitle } from "../components/HackathonTitle"
-import { HackathonCountdown } from "../components/HackathonCountdown"
-import { graphql } from "gatsby"
-import { EventSponsors } from "../components/EventSponsors"
+import { Layout } from "../components/Layout"
 import { People } from "../components/People"
-import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAskedQuestions"
+import { SEO } from "../components/SEO"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -18,6 +18,7 @@ const HomePage = ({ data }) => {
     sponsors,
     show_sponsor_button,
     sponsor_document,
+    short_name,
   } = frontmatter
 
   return (
@@ -26,6 +27,7 @@ const HomePage = ({ data }) => {
       <HackathonTitle frontmatter={frontmatter} />
       <HackathonCountdown frontmatter={frontmatter} />
       <HackathonDefinition />
+      <EventFrequentlyAskedQuestions />
       {show_sponsors_list && (
         <EventSponsors
           sponsors={sponsors}
@@ -33,8 +35,7 @@ const HomePage = ({ data }) => {
           show_sponsor_button={show_sponsor_button}
         />
       )}
-      <EventFrequentlyAskedQuestions />
-      {/* <People /> */}
+      <People name={short_name} />
     </Layout>
   )
 }
