@@ -34,7 +34,7 @@ const HomePage = ({ data }) => {
         />
       )}
       <EventFrequentlyAskedQuestions />
-      <People />
+      {/* <People /> */}
     </Layout>
   )
 }
