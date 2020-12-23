@@ -1,8 +1,5 @@
-import { Link } from "gatsby"
 import React, { Component } from "react"
-import Countdown from "react-countdown"
 import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
-import { CombineStyles } from "../../helpers/CombineStyles"
 import { ButtonsContainer } from "../ButtonsContainer"
 import styles from "./index.module.scss"
 
@@ -14,12 +11,9 @@ class HackathonTitle extends Component {
       show_livestream_embed,
       sponsor_document,
       livestream_youtube,
-      name,
       short_name,
       full_description,
-      slug,
       ticket_button_text,
-      start,
       display_date,
       tickets,
       location,

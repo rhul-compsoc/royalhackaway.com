@@ -3,6 +3,7 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es5",
+    "lib": ["DOM"],
     "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

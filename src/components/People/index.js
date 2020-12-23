@@ -40,7 +40,7 @@ class People extends Component {
         `}
         render={data => (
           <section className={styles.people}>
-            <div className="row justify-content-md-center">
+            <div className="row justify-content-center">
               <div className="col-sm-4 text-center">
                 <h2 className="display-4">Team</h2>
                 <p className="text-muted">The team that makes this possible.</p>

@@ -1,9 +1,5 @@
-import { Link } from "gatsby"
 import React, { Component } from "react"
 import Countdown from "react-countdown"
-import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
-import { CombineStyles } from "../../helpers/CombineStyles"
-import { ButtonsContainer } from "../ButtonsContainer"
 import styles from "./index.module.scss"
 
 class HackathonCountdown extends Component {

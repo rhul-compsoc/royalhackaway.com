@@ -11,7 +11,7 @@ import { EventFrequentlyAskedQuestions } from "../components/EventFrequentlyAske
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
-  const { fields, frontmatter } = allMarkdownRemark.nodes[0]
+  const { frontmatter } = allMarkdownRemark.nodes[0]
 
   const {
     show_sponsors_list,
@@ -19,7 +19,6 @@ const HomePage = ({ data }) => {
     show_sponsor_button,
     sponsor_document,
   } = frontmatter
-  const { slug } = fields
 
   return (
     <Layout>

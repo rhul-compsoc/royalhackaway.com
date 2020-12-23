@@ -68,8 +68,7 @@ sponsors:
     tier-sponsors:
       - name: DigitalOcean
         link: https://digitalocean.com
-        image:
-          ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
+        image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
   - name: "Bronze"
@@ -78,8 +77,7 @@ sponsors:
     tier-sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
-        image:
-          ../../../assets/images/sponsors/github/combo-lt-120.svg
+        image: ../../../assets/images/sponsors/github/combo-lt-120.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
 
