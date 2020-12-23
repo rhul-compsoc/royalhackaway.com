@@ -4,7 +4,7 @@ priority: -2
 short-description: Placeholder
 description: You're going to die, whether you like it or not.
 render: false
-is-public: true
+is-public: false
 jumbotron-image: ./yeojin.png
 handles:
   - service: email

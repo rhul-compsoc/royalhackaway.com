@@ -4,7 +4,7 @@ priority: 0
 short-description: Driver
 description: I'm an endangered species! Please save us.
 render: false
-is-public: true
+is-public: false
 jumbotron-image: ./tapir.jpg
 handles:
   - service: email
