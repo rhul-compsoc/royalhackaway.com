@@ -6,6 +6,15 @@
   padding: 2em 0;
 }
 
+.segments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.segment {
+  text-align: center;
+}
+
 .digit {
   font-size: 4em;
   font-weight: bold;
