@@ -51,8 +51,13 @@ module.exports = {
         icon: "src/assets/images/logo/rh-small-1024.png", // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-YHVZ8QBQYD"
+        ]
+      }
+    }
   ],
 }
