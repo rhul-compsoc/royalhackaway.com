@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styles from "./index.module.scss"
-import compsoc from "../../assets/images/logo/compsoc.svg"
+import compsoc from "../../assets/images/logo/rh-white.svg"
 import { graphql, StaticQuery } from "gatsby"
 
 class Footer extends Component {
