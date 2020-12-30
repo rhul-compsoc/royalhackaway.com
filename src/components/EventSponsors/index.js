@@ -40,7 +40,7 @@ class EventSponsors extends Component {
             <div className="col-12">
               <h2 className="text-center display-5 fw-bold">Sponsors</h2>
               {sponsorTiers.map(tier => (
-                <div key={tier.name}>
+                <div key={tier.name} className={styles.tier}>
                   <h2 className="text-center" style={{ color: tier.colour }}>
                     <b>{tier.name}</b>
                   </h2>
