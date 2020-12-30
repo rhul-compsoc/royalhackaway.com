@@ -80,6 +80,15 @@ sponsors:
         image: ../../../assets/images/sponsors/github/combo-lt-120.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
+  - name: "Partner"
+    colour: null
+    tier: 4
+    tier-sponsors:
+      - name: Hackathons UK
+        link: https://hackathons.org.uk
+        image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
 
 show-livestream-embed: false
 enable-livestream-button: false
