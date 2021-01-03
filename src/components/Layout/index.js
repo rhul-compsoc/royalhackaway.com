@@ -4,6 +4,7 @@ import { DefaultSEO } from "../DefaultSEO"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import styles from "./index.module.scss"
+import { CookieCutter } from "../CookieCutter"
 
 class Layout extends Component {
   render() {
@@ -15,6 +16,7 @@ class Layout extends Component {
           <main className={styles.content}>{this.props.children}</main>
           <Footer />
         </div>
+        <CookieCutter />
       </div>
     )
   }

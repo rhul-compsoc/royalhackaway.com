@@ -12,7 +12,7 @@
     "gatsby": "^2.29.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-eslint": "^2.0.8",
-    "gatsby-plugin-google-gtag": "^2.5.0",
+    "gatsby-plugin-gdpr-cookies": "^1.0.11",
     "gatsby-plugin-manifest": "^2.9.0",
     "gatsby-plugin-offline": "^3.7.0",
     "gatsby-plugin-react-helmet": "^3.7.0",
@@ -31,7 +31,8 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
     "sass": "^1.30.0",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.0",
