@@ -2,7 +2,12 @@ import React, { Component } from "react"
 import styles from "./index.module.scss"
 import compsoc from "../../assets/images/logo/rh-white.svg"
 import { ContactEmail } from "../ContactEmail"
-import { FaFacebook, FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa"
+import {
+  FaFacebook,
+  FaFacebookSquare,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa"
 
 class Footer extends Component {
   render() {
@@ -34,7 +39,10 @@ class Footer extends Component {
               </p>
               <ul className={styles.links}>
                 <li>
-                  <a href="https://twitter.com/RoyalHackaway" className="link-light text-decoration-none">
+                  <a
+                    href="https://twitter.com/RoyalHackaway"
+                    className="link-light text-decoration-none"
+                  >
                     <FaTwitter /> Twitter
                   </a>
                 </li>

@@ -55,9 +55,9 @@ module.exports = {
       resolve: "gatsby-plugin-gdpr-cookies",
       options: {
         googleAnalytics: {
-          trackingId: "G-YHVZ8QBQYD"
-        }
-      }
-    }
+          trackingId: "G-YHVZ8QBQYD",
+        },
+      },
+    },
   ],
 }
