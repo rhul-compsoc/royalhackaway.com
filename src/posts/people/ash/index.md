@@ -1,5 +1,5 @@
 ---
-name: ash
+name: Thomas Bass
 priority: 0.9
 short-description: Planning Lead
 description: null
