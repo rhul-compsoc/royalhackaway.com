@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa"
+import { Link } from "gatsby"
 
 class Footer extends Component {
   render() {
@@ -58,6 +59,17 @@ class Footer extends Component {
               <p>
                 If you have any questions, reach out to us at{" "}
                 <ContactEmail className="link-orange text-decoration-none" />
+              </p>
+
+              <h3 className="fw-bold">Data Protection</h3>
+              <p>
+                See how we deal with your data in our{" "}
+                <Link
+                  to="/dataprotection"
+                  className="link-orange text-decoration-none"
+                >
+                  Data Protection Policy
+                </Link>
               </p>
             </div>
           </div>
