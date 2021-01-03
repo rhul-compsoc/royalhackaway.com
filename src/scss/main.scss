@@ -6,6 +6,10 @@
   margin-right: 0;
 }
 
+.link-orange {
+  color: $hackaway-orange
+}
+
 @mixin create-button($name, $background-colour, $shadow, $lighten: true) {
   .btn-#{$name} {
     background-color: $background-colour;
