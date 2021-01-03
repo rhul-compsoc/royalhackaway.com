@@ -1,60 +1,56 @@
 import React, { Component } from "react"
 import styles from "./index.module.scss"
 import compsoc from "../../assets/images/logo/rh-white.svg"
-import { graphql, StaticQuery } from "gatsby"
+import { ContactEmail } from "../ContactEmail"
+import { FaFacebook, FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa"
 
 class Footer extends Component {
   render() {
     return (
       <footer className="bg-dark text-light">
         <div className="container">
-          <div className="row justify-content-center py-4">
-            <div className="col-md-6">
+          <div className="row justify-content-center py-5">
+            <div className="col col-sm-12 col-md-4">
               <img src={compsoc} className={styles.logo} />
               <p>
-                Royal Hackaway is a student-run group that hosts hackathons at
-                Royal Holloway, University of London.
+                Royal Hackaway is an entity of the Royal Holloway, Computing
+                Society that hosts hackathons and other similarly cool events.
               </p>
               <p>
-                The Computing Society exists to create a setting where
-                like-minded computing enthusiasts can interact and socialise.
-                Our core aim is to make the student experience more enjoyable
-                for those with even the slightest interest.
+                For more information about the Computing Society visit our{" "}
+                <a
+                  className="link-orange text-decoration-none"
+                  href="https://computingsociety.co.uk"
+                >
+                  Website
+                </a>
               </p>
             </div>
-            <div className="col-md-6">
-              <h2>Links</h2>
+            <div className="col col-sm-12 col-md-8">
+              <h2 className="fw-bold">Stay Connected</h2>
+              <p>
+                To keep up to date with all things Royal Hackaway follow our
+                social media pages
+              </p>
               <ul className={styles.links}>
                 <li>
-                  <a href="https://computingsociety.co.uk">Computing Society</a>
-                </li>
-                <li>
-                  <a href="/sitemap.xml">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://github.com/rhul-compsoc/royalhackaway.com">
-                    royalhackaway.com on GitHub
+                  <a href="https://twitter.com/RoyalHackaway" className="link-light text-decoration-none">
+                    <FaTwitter /> Twitter
                   </a>
                 </li>
-                <li>
-                  <StaticQuery
-                    query={graphql`
-                      query {
-                        site {
-                          siteMetadata {
-                            email
-                          }
-                        }
-                      }
-                    `}
-                    render={data => (
-                      <a href={`mailto:${data.site.siteMetadata.email}`}>
-                        {data.site.siteMetadata.email}
-                      </a>
-                    )}
-                  />
-                </li>
+                {/* <li>
+                  <FaFacebookSquare /> Facebook
+                </li> */}
+                {/* <li>
+                  <FaInstagram /> Instantgram
+                </li> */}
               </ul>
+
+              <h3 className="fw-bold">Contact Us</h3>
+              <p>
+                If you have any questions, reach out to us at{" "}
+                <ContactEmail className="link-orange text-decoration-none" />
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +60,7 @@ class Footer extends Component {
             Brought to you by the{" "}
             <a
               href="https://computingsociety.co.uk/"
-              className={styles.footerLink}
+              className="link-orange text-decoration-none"
             >
               Royal Holloway, Computing Society
             </a>
