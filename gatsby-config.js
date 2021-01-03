@@ -52,11 +52,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-gtag",
+      resolve: "gatsby-plugin-gdpr-cookies",
       options: {
-        trackingIds: [
-          "G-YHVZ8QBQYD"
-        ]
+        googleAnalytics: {
+          trackingId: "G-YHVZ8QBQYD"
+        }
       }
     }
   ],
