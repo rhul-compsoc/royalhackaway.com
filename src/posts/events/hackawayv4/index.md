@@ -71,6 +71,11 @@ sponsors:
         image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
+      - name: 20i
+        link: https://www.20i.com/
+        image: ../../../assets/images/sponsors/20i/20i_logo.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
