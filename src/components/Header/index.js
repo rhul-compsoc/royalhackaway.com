@@ -4,7 +4,7 @@ import { CombineStyles } from "../../helpers/CombineStyles"
 import logo from "../../assets/images/logo/rh.svg"
 import styles from "./index.module.scss"
 // import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
-// import { MajorLeagueHackingBadge } from "../MajorLeagueHackingBadge"
+import { MajorLeagueHackingBadge } from "../MajorLeagueHackingBadge"
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false)
@@ -80,7 +80,7 @@ export const Header = () => {
               }}
             />
           </ul>
-          {/* <MajorLeagueHackingBadge /> */}
+          <MajorLeagueHackingBadge />
         </div>
       </nav>
     </header>

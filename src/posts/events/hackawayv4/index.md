@@ -94,6 +94,11 @@ sponsors:
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
+      - name: MLH
+        link: https://mlh.io/
+        image: ../../../assets/images/sponsors/mlh.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
 
 show-livestream-embed: false
 enable-livestream-button: false

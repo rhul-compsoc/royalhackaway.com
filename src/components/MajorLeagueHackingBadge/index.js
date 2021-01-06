@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import styles from "./index.module.scss"
 
 // TODO: Replace year.
-const year = 2020
+const year = 2021
 
 class MajorLeagueHackingBadge extends Component {
   render() {
