@@ -27,10 +27,8 @@ event-info: "hackaway"
 
 color: "#F37021"
 display-date: Saturday 6th February - Sunday 7th February 2021
-layout: event
 location: "Fully virtual, on Discord and YouTube Live"
 jumbotron-image: ../../../assets/images/background/2018-1.png
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: ../../../assets/images/logo/rh-small.svg
@@ -39,13 +37,9 @@ logo-width: 2
 show-map: false
 map-src: null
 
-show-floor-plan: false
-venue-floor-plan: ""
-
 show-faq: true
 
 enable-ticket-button: true
-disable-button: false
 tickets: https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform
 ticket-button-text: "Register Your Interest"
 

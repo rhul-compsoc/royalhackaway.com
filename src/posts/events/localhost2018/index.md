@@ -14,10 +14,8 @@ full-description: "This event is like a mini-hackathon, where you'll learn a new
 
 color: "#4E92DF"
 display-date: "Date TBA"
-layout: event
 location: "Mccrea 125"
 jumbotron-image: ./localhack-1.jpeg
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: ../../../assets/images/logo/localhost-logo.svg
@@ -26,11 +24,7 @@ logo-width: 3
 show-map: false
 map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
-show-floor-plan: false
-venue-floor-plan: ""
-
 enable-ticket-button: false
-disable-button: true
 tickets: "https://tickets.royalhackaway.com/"
 ticket-button-text: "Tickets available soon"
 

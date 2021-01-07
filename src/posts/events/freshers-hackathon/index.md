@@ -22,10 +22,8 @@ full-description: >
 
 color: "#205eb5"
 display-date: "30 Sep 2018"
-layout: event
 location: "Mccrea 125"
 jumbotron-image: ./hackathon-image.jpg
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 
 display-logo: true
 small-logo: ../../../assets/images/logo/rh-small.svg
@@ -34,11 +32,7 @@ logo-width: 2
 show-map: true
 map-src: "https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
-show-floor-plan: false
-venue-floor-plan: ""
-
 enable-ticket-button: true
-disable-button: false
 tickets: "https://www.facebook.com/events/453038041884752/"
 ticket-button-text: "RSVP"
 
