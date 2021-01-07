@@ -21,10 +21,10 @@
 }
 
 .hackathonTitle {
-  background-image: url("../../assets/images/background/founders.svg"), $jumbotron-background-gradient;
-  background-position: center, center;
-  background-size: contain, auto;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("../../assets/images/background/founders-side-orange.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: $jumbotron-foreground-colour;
   padding: 5em 0;
   min-height: 75vh;

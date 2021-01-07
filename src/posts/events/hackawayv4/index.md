@@ -40,8 +40,8 @@ map-src: null
 show-faq: true
 
 enable-ticket-button: true
-tickets: https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform
-ticket-button-text: "Register Your Interest"
+tickets: https://tickets.royalhackaway.com/
+ticket-button-text: Get your tickets here
 
 show-wifi-details: false
 internet:
@@ -63,6 +63,9 @@ sponsors:
       - name: DigitalOcean
         link: https://digitalocean.com
         image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
+      - name: 20i
+        link: https://www.20i.com/
+        image: ../../../assets/images/sponsors/20i/20i_logo.svg
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
@@ -82,6 +85,9 @@ sponsors:
       - name: Hackathons UK
         link: https://hackathons.org.uk
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
+      - name: MLH
+        link: https://mlh.io/
+        image: ../../../assets/images/sponsors/mlh.svg
 
 show-livestream-embed: false
 enable-livestream-button: false
