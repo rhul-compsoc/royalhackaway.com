@@ -83,6 +83,9 @@ export const pageQuery = graphql`
               link
               name
               shadow_colour
+              style {
+                height
+              }
             }
           }
         }

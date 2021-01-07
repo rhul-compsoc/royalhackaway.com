@@ -66,6 +66,7 @@ class EventSponsors extends Component {
                             styles.sponsorLogo,
                             styles["tier" + tier.tier]
                           )}
+                          style={tierSponsor.style}
                           src={tierSponsor.image?.publicURL}
                           key={tierSponsor.image}
                           alt={tierSponsor.name}

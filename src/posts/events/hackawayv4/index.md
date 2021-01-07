@@ -84,6 +84,13 @@ sponsors:
     colour: null
     tier: 4
     tier-sponsors:
+      - name: Sticker Mule
+        link: http://hackp.ac/mlh-stickermule-hackathons
+        image: ../../../assets/images/sponsors/stickermule/sticker-mule-logo-light-bg.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
+        style:
+          height: 4em
       - name: Hackathons UK
         link: https://hackathons.org.uk
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg

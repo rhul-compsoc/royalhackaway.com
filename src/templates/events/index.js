@@ -129,6 +129,9 @@ export const pageQuery = graphql`
             link
             name
             shadow_colour
+            style {
+              height
+            }
           }
         }
         show_wifi_details
