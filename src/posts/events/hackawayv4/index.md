@@ -46,8 +46,8 @@ show-faq: true
 
 enable-ticket-button: true
 disable-button: false
-tickets: https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform
-ticket-button-text: "Register Your Interest"
+tickets: https://tickets.royalhackaway.com/
+ticket-button-text: Get your tickets here
 
 show-wifi-details: false
 internet:
