@@ -13,11 +13,9 @@ import styles from "./index.module.scss"
 //           name
 //           tier
 //           tier_sponsors {
-//             colour
 //             image
 //             link
 //             name
-//             shadow_colour
 //           }
 //         }
 //       }

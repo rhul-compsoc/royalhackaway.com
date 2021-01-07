@@ -87,11 +87,10 @@ sponsors:
     name: Gold
     tier: 1
     tier-sponsors:
-      - colour: "#1C1616"
-        image: ../../../assets/images/sponsors/compsci.png
+      - image: ../../../assets/images/sponsors/compsci.png
         link: "https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
         name: "Royal Holloway, University of London Computing Department"
-        shadow-colour: "#696969"
+
 # For more tiers, copy the gold tier and edit it
 ---
 

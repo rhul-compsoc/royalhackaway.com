@@ -69,8 +69,6 @@ sponsors:
       - name: DigitalOcean
         link: https://digitalocean.com
         image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
@@ -78,8 +76,6 @@ sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
         image: ../../../assets/images/sponsors/github/combo-lt-120.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
   - name: "Partner"
     colour: null
     tier: 4
@@ -87,15 +83,11 @@ sponsors:
       - name: Sticker Mule
         link: http://hackp.ac/mlh-stickermule-hackathons
         image: ../../../assets/images/sponsors/stickermule/sticker-mule-logo-light-bg.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
         style:
           height: 4em
       - name: Hackathons UK
         link: https://hackathons.org.uk
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
 
 show-livestream-embed: false
 enable-livestream-button: false

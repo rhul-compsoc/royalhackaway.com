@@ -122,13 +122,11 @@ export const pageQuery = graphql`
           name
           tier
           tier_sponsors {
-            colour
             image {
               publicURL
             }
             link
             name
-            shadow_colour
             style {
               height
             }
