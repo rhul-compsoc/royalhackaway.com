@@ -71,6 +71,11 @@ sponsors:
         image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
+      - name: 20i
+        link: https://www.20i.com/
+        image: ../../../assets/images/sponsors/20i/20i_logo.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
@@ -94,6 +99,11 @@ sponsors:
       - name: Hackathons UK
         link: https://hackathons.org.uk
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
+        colour: "#FFFFFF"
+        shadow-colour: "#FFFFFF"
+      - name: MLH
+        link: https://mlh.io/
+        image: ../../../assets/images/sponsors/mlh.svg
         colour: "#FFFFFF"
         shadow-colour: "#FFFFFF"
 
