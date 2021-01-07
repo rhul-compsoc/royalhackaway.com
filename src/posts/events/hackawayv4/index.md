@@ -27,10 +27,8 @@ event-info: "hackaway"
 
 color: "#F37021"
 display-date: Saturday 6th February - Sunday 7th February 2021
-layout: event
 location: "Fully virtual, on Discord and YouTube Live"
 jumbotron-image: ../../../assets/images/background/2018-1.png
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)"
 
 display-logo: true
 small-logo: ../../../assets/images/logo/rh-small.svg
@@ -39,13 +37,9 @@ logo-width: 2
 show-map: false
 map-src: null
 
-show-floor-plan: false
-venue-floor-plan: ""
-
 show-faq: true
 
 enable-ticket-button: true
-disable-button: false
 tickets: https://tickets.royalhackaway.com/
 ticket-button-text: Get your tickets here
 
@@ -69,13 +63,9 @@ sponsors:
       - name: DigitalOcean
         link: https://digitalocean.com
         image: ../../../assets/images/sponsors/digitalocean/DO_Logo_horizontal_blue.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
       - name: 20i
         link: https://www.20i.com/
         image: ../../../assets/images/sponsors/20i/20i_logo.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
   - name: "Bronze"
     colour: "#CD7F32"
     tier: 3
@@ -83,8 +73,6 @@ sponsors:
       - name: "GitHub"
         link: "https://www.github.com/"
         image: ../../../assets/images/sponsors/github/combo-lt-120.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
   - name: "Partner"
     colour: null
     tier: 4
@@ -92,20 +80,14 @@ sponsors:
       - name: Sticker Mule
         link: http://hackp.ac/mlh-stickermule-hackathons
         image: ../../../assets/images/sponsors/stickermule/sticker-mule-logo-light-bg.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
         style:
           height: 4em
       - name: Hackathons UK
         link: https://hackathons.org.uk
         image: ../../../assets/images/sponsors/hackathonsuk/Pink-NoText.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
       - name: MLH
         link: https://mlh.io/
         image: ../../../assets/images/sponsors/mlh.svg
-        colour: "#FFFFFF"
-        shadow-colour: "#FFFFFF"
 
 show-livestream-embed: false
 enable-livestream-button: false

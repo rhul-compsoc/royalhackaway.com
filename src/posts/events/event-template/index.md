@@ -14,10 +14,8 @@ full-description: ""
 
 color: "#FFFFFF"
 display-date: ""
-layout: event
 location: ""
 jumbotron-image:
-jumbotron-image-adjust: "rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)"
 
 display-logo: true
 small-logo: ../../../assets/images/logo/rh-small.svg
@@ -26,11 +24,7 @@ logo-width: 1
 show-map: false
 map-src: "https://maps.google.com/maps?q=windsor%20building%2C%20royal%20holloway%20university%20of%20london&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
-show-floor-plan: false
-venue-floor-plan: ""
-
 enable-ticket-button: true
-disable-button: true
 tickets: "https://tickets.royalhackaway.com/"
 ticket-button-text: "RSVP"
 
@@ -87,11 +81,9 @@ sponsors:
     name: Gold
     tier: 1
     tier-sponsors:
-      - colour: "#1C1616"
-        image: ../../../assets/images/sponsors/compsci.png
+      - image: ../../../assets/images/sponsors/compsci.png
         link: "https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
         name: "Royal Holloway, University of London Computing Department"
-        shadow-colour: "#696969"
 # For more tiers, copy the gold tier and edit it
 ---
 

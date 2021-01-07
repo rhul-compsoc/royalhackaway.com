@@ -13,11 +13,9 @@ import styles from "./index.module.scss"
 //           name
 //           tier
 //           tier_sponsors {
-//             colour
 //             image
 //             link
 //             name
-//             shadow_colour
 //           }
 //         }
 //       }
@@ -57,7 +55,6 @@ class EventSponsors extends Component {
                         href={tierSponsor.link}
                         className={CombineStyles(
                           "justify-content-center",
-                          "rounded",
                           styles.sponsor
                         )}
                       >

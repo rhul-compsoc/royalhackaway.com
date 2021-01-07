@@ -1,14 +1,9 @@
+import { Link } from "gatsby"
 import React, { Component } from "react"
-import styles from "./index.module.scss"
+import { FaTwitter } from "react-icons/fa"
 import compsoc from "../../assets/images/logo/rh-white.svg"
 import { ContactEmail } from "../ContactEmail"
-import {
-  FaFacebook,
-  FaFacebookSquare,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa"
-import { Link } from "gatsby"
+import styles from "./index.module.scss"
 
 class Footer extends Component {
   render() {
