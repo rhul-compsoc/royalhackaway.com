@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 import { FaTwitter } from "react-icons/fa"
 import compsoc from "../../assets/images/logo/rh-white.svg"
+import { CombineStyles } from "../../helpers/CombineStyles"
 import { ContactEmail } from "../ContactEmail"
 import styles from "./index.module.scss"
 
@@ -56,16 +57,25 @@ class Footer extends Component {
                 <ContactEmail className="link-orange text-decoration-none" />
               </p>
 
-              <h3 className="fw-bold">Data Protection</h3>
-              <p>
-                See how we deal with your data in our{" "}
-                <Link
-                  to="/dataprotection"
-                  className="link-orange text-decoration-none"
-                >
-                  Data Protection Policy
-                </Link>
-              </p>
+              <h3 className="fw-bold">Important Links</h3>
+              <ul className={CombineStyles(styles.links, "link-orange")}>
+                <li>
+                  <Link
+                    to="/dataprotection"
+                    className="link-orange text-decoration-none"
+                  >
+                    Data Protection Policy
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                    className="link-orange text-decoration-none"
+                  >
+                    MLH Code of Conduct
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
