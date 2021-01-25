@@ -4,4 +4,4 @@ render: false
 is-public: true
 ---
 
-All our events follow the [MLH Code of Conduct](https://static.mlh.io/docs/mlh-code-of-conduct.pdf)
+All our events follow both [our Code of Conduct](/CodeOfConduct_2.pdf) and [MLH Code of Conduct](https://static.mlh.io/docs/mlh-code-of-conduct.pdf)

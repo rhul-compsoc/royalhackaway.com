@@ -69,6 +69,14 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a
+                    href="/CodeOfConduct_2.pdf"
+                    className="link-orange text-decoration-none"
+                  >
+                    CompSoc Code of Conduct
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                     className="link-orange text-decoration-none"
                   >
