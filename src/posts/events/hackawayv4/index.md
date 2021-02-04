@@ -56,6 +56,13 @@ show-sponsors-list: true
 show-sponsor-button: true
 sponsor-document: ./SponsorDeckV4.pdf
 sponsors:
+  - name: Gold
+    colour: gold
+    tier: 1
+    tier-sponsors:
+      - name: Royal Holloway Computer Science
+        link: https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/
+        image: ../../../assets/images/sponsors/rhul/CompSci_Logo.pdf.svg
   - name: "Silver"
     colour: silver
     tier: 2
