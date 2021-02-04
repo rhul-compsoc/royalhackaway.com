@@ -5,8 +5,8 @@ import { SEO } from "../../components/SEO"
 import styles from "./index.module.scss"
 
 class Template extends Component {
-  constructor(props, ...more) {
-    super(props, ...more)
+  constructor(props) {
+    super(props)
     const { markdownRemark } = props.data
     const { frontmatter } = markdownRemark
     const { hacking_start, hacking_end } = frontmatter
