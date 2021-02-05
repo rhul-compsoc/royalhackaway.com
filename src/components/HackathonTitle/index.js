@@ -1,5 +1,11 @@
 import React, { Component } from "react"
-import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
+import {
+  FaCalendarAlt,
+  FaDiscord,
+  FaMapMarkerAlt,
+  FaTwitch,
+  FaYoutube,
+} from "react-icons/fa"
 import { ButtonsContainer } from "../ButtonsContainer"
 import styles from "./index.module.scss"
 
@@ -10,7 +16,8 @@ class HackathonTitle extends Component {
       show_sponsor_button,
       show_livestream_embed,
       sponsor_document,
-      livestream_youtube,
+      livestream_type,
+      livestream_link,
       short_name,
       full_description,
       ticket_button_text,
@@ -19,7 +26,46 @@ class HackathonTitle extends Component {
       location,
       enable_chat_link,
       chat_link,
+      enable_livestream_button,
     } = this.props.frontmatter
+
+    let livestreamSection
+
+    if (!show_livestream_embed) {
+      livestreamSection = (
+        <>
+          <p>
+            <FaMapMarkerAlt /> {location} <br />
+            <FaCalendarAlt /> {display_date}
+          </p>
+          <p className={styles.description}>{full_description}</p>
+        </>
+      )
+    } else if (livestream_type === "youtube") {
+      livestreamSection = (
+        <div className={styles.livestreamContainer}>
+          <iframe
+            className={styles.livestream}
+            src={`https://www.youtube.com/embed/${livestream_link}?autoplay=1`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )
+    } else if (livestream_type === "twitch") {
+      livestreamSection = (
+        <div className={styles.livestreamContainer}>
+          <iframe
+            className={styles.livestream}
+            src={`https://player.twitch.tv/?channel=${livestream_link}&parent=${encodeURIComponent(
+              window.location.hostname
+            )}`}
+            allowFullScreen
+          ></iframe>
+        </div>
+      )
+    }
 
     return (
       <section className={styles.hackathonTitle}>
@@ -28,26 +74,7 @@ class HackathonTitle extends Component {
             <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
               <h1 className={styles.name}>{short_name}</h1>
               <h3>Create something awesome</h3>
-
-              {show_livestream_embed ? (
-                <div className={styles.livestreamContainer}>
-                  <iframe
-                    className={styles.livestream}
-                    src={`https://www.youtube.com/embed/${livestream_youtube}?autoplay=1`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ) : (
-                <>
-                  <p>
-                    <FaMapMarkerAlt /> {location} <br />
-                    <FaCalendarAlt /> {display_date}
-                  </p>
-                  <p className={styles.description}>{full_description}</p>
-                </>
-              )}
+              {livestreamSection}
               <ButtonsContainer>
                 {enable_ticket_button ? (
                   <a className="btn btn-hackaway-white px-4" href={tickets}>
@@ -64,6 +91,22 @@ class HackathonTitle extends Component {
                     href={sponsor_document?.publicURL}
                   >
                     Sponsor Us
+                  </a>
+                )}
+                {enable_livestream_button && livestream_type === "youtube" && (
+                  <a
+                    className="btn btn-hackaway-youtube text-white px-4"
+                    href={`https://www.youtube.com/watch?v=${livestream_link}`}
+                  >
+                    <FaYoutube /> YouTube
+                  </a>
+                )}
+                {enable_livestream_button && livestream_type === "twitch" && (
+                  <a
+                    className="btn btn-hackaway-twitch text-white px-4"
+                    href={`https://twitch.tv/${livestream_link}`}
+                  >
+                    <FaTwitch /> Twitch.tv
                   </a>
                 )}
                 {enable_chat_link && (

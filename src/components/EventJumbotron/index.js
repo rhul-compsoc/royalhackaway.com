@@ -3,6 +3,7 @@ import styles from "./index.module.scss"
 import Img from "gatsby-image"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { ButtonsContainer } from "../ButtonsContainer"
+import { FaTwitch, FaYoutube } from "react-icons/fa"
 
 class EventJumbotron extends Component {
   render() {
@@ -20,7 +21,8 @@ class EventJumbotron extends Component {
       ticket_button_text,
       tickets,
       enable_livestream_button,
-      livestream_youtube,
+      livestream_type,
+      livestream_link,
       enable_chat_link,
       chat_link,
     } = frontmatter
@@ -78,17 +80,21 @@ class EventJumbotron extends Component {
                     Tickets coming soon™
                   </span>
                 )}
-                {enable_livestream_button ? (
+                {enable_livestream_button && livestream_type === "youtube" && (
                   <a
-                    className="btn btn-hackaway-white px-4"
-                    href={`https://www.youtube.com/watch?v=${livestream_youtube}`}
+                    className="btn btn-hackaway-youtube text-white px-4"
+                    href={`https://www.youtube.com/watch?v=${livestream_link}`}
                   >
-                    Watch Live
+                    <FaYoutube /> YouTube
                   </a>
-                ) : (
-                  <span className="btn btn-hackaway-white px-4 disabled">
-                    Watch Live
-                  </span>
+                )}
+                {enable_livestream_button && livestream_type === "twitch" && (
+                  <a
+                    className="btn btn-hackaway-twitch text-white px-4"
+                    href={`https://twitch.tv/${livestream_link}`}
+                  >
+                    <FaTwitch /> Twitch.tv
+                  </a>
                 )}
                 {enable_chat_link ? (
                   <a className="btn btn-hackaway-white px-4" href={chat_link}>

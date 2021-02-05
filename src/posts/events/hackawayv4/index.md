@@ -50,10 +50,68 @@ internet:
   password: "example"
 
 show-schedule: false
-schedule: []
+schedule:
+  - name: Saturday 5th — Day 1
+    events:
+      - time: "09:00"
+        activity: Discord Server opens!
+      - time: "10:00"
+        activity: Opening Ceremony
+      - time: "10:20"
+        activity: Q&A Session
+      - time: "10:40"
+        activity: Team Building on Discord - by Megi
+      - time: "11:00"
+        activity: 🟢 Hacking Begins 🟢
+      - time: "11:00"
+        activity: Introduction to GitHub - By Ash
+      - time: "12:00"
+        activity: Introduction to Rust talk - By Isaac
+      - time: "13:00"
+        activity: Lunch
+      - time: "14:00"
+        activity: Esoteric Languages - By Louise and Shaw
+      - time: "16:00"
+        activity: Pictionary Challenge - By Hackathons UK
+      - time: "18:00"
+        activity: How to Play BAMZOOKi - By Dipo
+      - time: "18:15"
+        activity: The Mods Play BAMZOOKi
+      - time: "19:00"
+        activity: Games Social - With GameSoc and Hack Productions
+      - time: "21:00"
+        activity: Day One Live-stream Ends - Goodnight!
+  - name: Sunday 6th — Day 2
+    events:
+      - time: "10:00"
+        activity: Good Morning!
+      - time: "11:00"
+        activity: Social - With Megi
+      - time: "12:00"
+        activity: DevPost Submission Process Walkthrough - By Joshua
+      - time: ""
+        activity: BlackRock competition with MLH
+      - time: "13:00"
+        activity: Lunch
+      - time: "14:00"
+        activity: Hacker Community Panel - With Hackathons UK and MLH
+      - time: "16:00"
+        activity: ⚠ DevPost Submission Deadline ⚠
+      - time: ""
+        activity: BAMZOOKi Competition
+      - time: "17:00"
+        activity: 📸 DOCUMENTATION & VIDEO DEADLINE 📄
+      - time: "18:00"
+        activity: 🚨 Coding Ends - Submission Deadline 🚨
+      - time: "19:00"
+        activity: Judging takes place
+      - time: "20:30"
+        activity: "Results Ceremony - Winners Announced"
+      - time: "21:00"
+        activity: See you next year!
 
 show-sponsors-list: true
-show-sponsor-button: true
+show-sponsor-button: false
 sponsor-document: ./SponsorDeckV4.pdf
 sponsors:
   - name: Gold
@@ -98,7 +156,8 @@ sponsors:
 
 show-livestream-embed: false
 enable-livestream-button: false
-livestream-youtube: HnJiTjTtIzc
+livestream-type: twitch
+livestream-link: hackathonsuk
 
 enable-chat-link: true
 chat-link: https://discord.gg/c8mq6cDwjF

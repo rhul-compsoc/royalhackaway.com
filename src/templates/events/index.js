@@ -139,7 +139,8 @@ export const pageQuery = graphql`
           password
         }
         enable_livestream_button
-        livestream_youtube
+        livestream_type
+        livestream_link
         enable_chat_link
         chat_link
       }

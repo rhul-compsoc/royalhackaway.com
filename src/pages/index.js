@@ -61,7 +61,9 @@ export const pageQuery = graphql`
           show_sponsors_list
           show_sponsor_button
           show_livestream_embed
-          livestream_youtube
+          enable_livestream_button
+          livestream_type
+          livestream_link
           display_date
           ticket_button_text
           tickets
