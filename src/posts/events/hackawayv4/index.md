@@ -154,8 +154,8 @@ sponsors:
         link: https://mlh.io/
         image: ../../../assets/images/sponsors/mlh.svg
 
-show-livestream-embed: false
-enable-livestream-button: false
+show-livestream-embed: true
+enable-livestream-button: true
 livestream-type: twitch
 livestream-link: hackathonsuk
 
