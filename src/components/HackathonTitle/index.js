@@ -59,7 +59,9 @@ class HackathonTitle extends Component {
           <iframe
             className={styles.livestream}
             src={`https://player.twitch.tv/?channel=${livestream_link}&parent=${encodeURIComponent(
-              window.location.hostname
+              typeof window !== "undefined"
+                ? window.location.hostname
+                : "royalhackaway.com"
             )}`}
             allowFullScreen
           ></iframe>

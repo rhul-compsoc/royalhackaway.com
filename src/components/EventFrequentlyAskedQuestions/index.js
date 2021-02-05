@@ -36,6 +36,7 @@ class EventFrequentlyAskedQuestions extends Component {
                 }
                 frontmatter {
                   name
+                  is_public
                 }
                 html
               }
@@ -60,24 +61,27 @@ class EventFrequentlyAskedQuestions extends Component {
               </div>
 
               <div className="row">
-                {partition(data.allMarkdownRemark.nodes, 2).map(
-                  (column, index) => (
-                    <div className="col-12 col-md-6" key={index}>
-                      {column.map(faq => (
-                        <div
-                          key={faq.fields.slug}
-                          onClick={() => this.toggle(faq.fields.slug)}
-                        >
-                          <Collapsable
-                            title={faq.frontmatter.name}
-                            html={faq.html}
-                            collapsed={this.state.opened !== faq.fields.slug}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  )
-                )}
+                {partition(
+                  data.allMarkdownRemark.nodes.filter(
+                    node => node.frontmatter.is_public
+                  ),
+                  2
+                ).map((column, index) => (
+                  <div className="col-12 col-md-6" key={index}>
+                    {column.map(faq => (
+                      <div
+                        key={faq.fields.slug}
+                        onClick={() => this.toggle(faq.fields.slug)}
+                      >
+                        <Collapsable
+                          title={faq.frontmatter.name}
+                          html={faq.html}
+                          collapsed={this.state.opened !== faq.fields.slug}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
             <EventQualms />
