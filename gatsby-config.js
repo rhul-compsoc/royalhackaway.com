@@ -10,13 +10,20 @@ module.exports = {
     email: "hello@royalhackaway.com",
     siteUrl: "https://royalhackaway.com",
   },
+  mapping: {
+    "MarkdownRemark.frontmatter.people": "MarkdownRemark.fields.id",
+    "MarkdownRemark.frontmatter.faq": "MarkdownRemark.fields.id",
+    "MarkdownRemark.frontmatter.sponsors.companies": "MarkdownRemark.fields.id",
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-sass",
       options: {
-        includePaths: ["src/scss"],
+        sassOptions: {
+          includePaths: ["src/scss"],
+        },
         implementation: require("sass"),
       },
     },

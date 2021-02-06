@@ -1,0 +1,42 @@
+@import '_config';
+
+.people {
+  padding: 5em 0;
+  color: $primary-foreground-colour;
+  background-color: $primary-background-colour;
+
+  .title {
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  .cardContent {
+    background-color: white;
+    color: black;
+    padding: 0.5em 0.25em;
+    .name {
+      font-weight: bold;
+    }
+    .description {
+      padding-top: 0;
+    }
+  }
+  .pictureContainer {
+    .picture {
+      width: 100%;
+    }
+  }
+}
+
+.handles {
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+  padding: 0.4em 0;
+  line-height: 0;
+}

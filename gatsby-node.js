@@ -28,6 +28,16 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const folderName = directoryParts[0]
     const slug = createFilePath({ node, getNode })
 
+    const { name } = path.parse(
+      createFilePath({ node, getNode, trailingSlash: false })
+    )
+
+    createNodeField({
+      name: "id",
+      node,
+      value: name,
+    })
+
     createNodeField({
       name: "slug",
       node,
@@ -43,7 +53,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   return graphql(`
     {
@@ -57,7 +67,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
             frontmatter {
               is_public
               render
-              create_hacking_countdown_timer
+              homepage
             }
           }
         }
@@ -73,18 +83,22 @@ exports.createPages = ({ actions, graphql, reporter }) => {
       // If public, create the page based on the folder it is in.
       if (node.frontmatter.render && node.frontmatter.is_public) {
         const template = node.fields.template
-        createPage({
-          path: node.fields.slug,
-          component: getTemplate(template),
-          context: node.fields,
-        })
-      }
 
-      // If requested, create a countdown timer for pages that request it.
-      if (node.frontmatter.create_hacking_countdown_timer) {
+        let slug = node.fields.slug
+
+        if (node.frontmatter.homepage) {
+          createRedirect({
+            fromPath: slug,
+            toPath: "/",
+            isPermanent: false,
+          })
+
+          slug = "/"
+        }
+
         createPage({
-          path: node.fields.slug + "timer/",
-          component: getTemplate("timer"),
+          path: slug,
+          component: getTemplate(template),
           context: node.fields,
         })
       }

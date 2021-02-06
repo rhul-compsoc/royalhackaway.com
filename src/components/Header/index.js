@@ -53,7 +53,7 @@ export const Header = () => {
                   ) {
                     nodes {
                       frontmatter {
-                        show_sponsor_button
+                        sponsor_document_enable
                         sponsor_document {
                           publicURL
                         }
@@ -67,10 +67,10 @@ export const Header = () => {
 
                 const {
                   sponsor_document,
-                  show_sponsor_button,
+                  sponsor_document_enable,
                 } = data.allMarkdownRemark.nodes[0].frontmatter
 
-                if (!show_sponsor_button) return null
+                if (!sponsor_document_enable) return null
 
                 return (
                   <li>

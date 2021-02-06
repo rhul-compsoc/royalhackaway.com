@@ -1,11 +1,9 @@
 ---
 name: Tapir
-priority: 0
 short-description: Driver
 description: I'm an endangered species! Please save us.
 render: false
-is-public: false
-jumbotron-image: ./tapir.jpg
+image: ./tapir.jpg
 handles:
   - service: email
     handle: tapir@computingsociety.co.uk
