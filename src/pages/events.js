@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import { ButtonsContainer } from "../components/ButtonsContainer"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import styles from "./index.module.scss"
-import Img from "gatsby-image"
 
 class EventSponsors extends Component {
   render() {

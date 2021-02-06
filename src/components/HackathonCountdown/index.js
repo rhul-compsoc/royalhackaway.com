@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Countdown from "react-countdown"
 import styles from "./index.module.scss"
 

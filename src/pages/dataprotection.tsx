@@ -1,8 +1,8 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
 
-const DataProtectionPage = () => (
+const DataProtectionPage = (): ReactNode => (
   <Layout>
     <SEO title="Data Protection Policy" />
     <section>
