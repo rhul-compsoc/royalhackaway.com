@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/zhac/240/",
   siteMetadata: {
     title: "Royal Hackaway",
     description:
