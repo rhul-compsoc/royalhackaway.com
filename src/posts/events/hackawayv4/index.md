@@ -194,8 +194,8 @@ faq:
 # Livestream Settings
 # Enabling the embed replaces the jumbotron description
 # Enabling the button shows the Twitch/YouTube button
-livestream_embed_enable: false
-livestream_button_enable: false
+livestream_embed_enable: true
+livestream_button_enable: true
 # Valid options: ["twitch", "youtube"]
 livestream_type: twitch
 # The ID to link/embed
