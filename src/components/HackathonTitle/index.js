@@ -12,26 +12,27 @@ import styles from "./index.module.scss"
 class HackathonTitle extends Component {
   render() {
     const {
-      enable_ticket_button = true,
-      show_sponsor_button,
-      show_livestream_embed,
+      ticket_button_enable,
+      sponsor_document_enable,
+      livestream_embed_enable,
       sponsor_document,
       livestream_type,
       livestream_link,
       short_name,
       full_description,
-      ticket_button_text,
+      ticket_button_label,
       display_date,
-      tickets,
+      ticket_button_link,
       location,
-      enable_chat_link,
+      chat_link_enable,
       chat_link,
-      enable_livestream_button,
+      livestream_button_enable,
+      subtitle,
     } = this.props.frontmatter
 
     let livestreamSection
 
-    if (!show_livestream_embed) {
+    if (!livestream_embed_enable) {
       livestreamSection = (
         <>
           <p>
@@ -75,19 +76,22 @@ class HackathonTitle extends Component {
           <div className="row justify-content-center">
             <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
               <h1 className={styles.name}>{short_name}</h1>
-              <h3>Create something awesome</h3>
+              <h3>{subtitle}</h3>
               {livestreamSection}
               <ButtonsContainer>
-                {enable_ticket_button ? (
-                  <a className="btn btn-hackaway-white px-4" href={tickets}>
-                    {ticket_button_text}
+                {ticket_button_enable ? (
+                  <a
+                    className="btn btn-hackaway-white px-4"
+                    href={ticket_button_link}
+                  >
+                    {ticket_button_label}
                   </a>
                 ) : (
                   <span className="btn btn-hackaway-white px-4 disabled">
-                    Tickets coming soon™
+                    {ticket_button_label}
                   </span>
                 )}
-                {show_sponsor_button && (
+                {sponsor_document_enable && (
                   <a
                     className="btn btn-hackaway-white px-4"
                     href={sponsor_document?.publicURL}
@@ -95,7 +99,7 @@ class HackathonTitle extends Component {
                     Sponsor Us
                   </a>
                 )}
-                {enable_livestream_button && livestream_type === "youtube" && (
+                {livestream_button_enable && livestream_type === "youtube" && (
                   <a
                     className="btn btn-hackaway-youtube text-white px-4"
                     href={`https://www.youtube.com/watch?v=${livestream_link}`}
@@ -103,7 +107,7 @@ class HackathonTitle extends Component {
                     <FaYoutube /> YouTube
                   </a>
                 )}
-                {enable_livestream_button && livestream_type === "twitch" && (
+                {livestream_button_enable && livestream_type === "twitch" && (
                   <a
                     className="btn btn-hackaway-twitch text-white px-4"
                     href={`https://twitch.tv/${livestream_link}`}
@@ -111,7 +115,7 @@ class HackathonTitle extends Component {
                     <FaTwitch /> Twitch.tv
                   </a>
                 )}
-                {enable_chat_link && (
+                {chat_link_enable && (
                   <a
                     className="btn btn-hackaway-blurple text-white px-4"
                     href={chat_link}

@@ -1,18 +1,33 @@
 ---
-name: "Royal Hackaway v3"
+name: Royal Hackaway v3
+short_name: Royal Hackaway v3
+subtitle: Create something awesome
 render: true
 is-public: true
-is-over: false
+is-over: true
 
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
+# Sets up (temporary) redirect from "/events/hackawayv4" to "/"
+homepage: false
+
+# Enable/disable the countdown timer on the homepage
+# It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
+start_timer_enable: false
 start: "2020-02-01T09:30:00+00:00"
 end: "2020-02-02T18:00:00+00:00"
 
-create-hacking-countdown-timer: true
-hacking-start: 2020-02-01T11:00:00+00
-hacking-end: 2020-02-02T13:00:00+00
+# A text representation of the time period. Stick anything you like here.
+display_date: Saturday 1st February - Sunday 2nd February 2020
 
-short-description: "An exciting two-day hackathon, for students from any university."
+# The start and end of the hacking period
+# Not used yet, but might be useful for the future
+hacking_start: 2020-02-01T11:00:00+00
+hacking_end: 2020-02-02T13:00:00+00
 
+# A description of the event in hand.
+# Short is currently not being used
+# Full is used for the site jumbotron and for SSO
+short-description: An exciting two-day hackathon, for students from any university.
 full-description: >
   Royal Hackaway is Royal Holloway's annual hackathon.
 
@@ -22,35 +37,25 @@ full-description: >
   This is our third time running this event, and we're excited to
   create a more inclusive and rewarding event for all.
 
-event-info: "hackaway"
+# Enable the section which brings up the dictionary definition of what a hackathon is
+hackathon_definition_enable: true
 
-# Used for styling
+# Location Settings
+# Describes the location the event is taking place
+# Disabling the location embed hides the iframe for "location_embed_link"
+location: Windsor Building, RHUL
+location_embed_enable: true
+location_embed_link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106
 
-color: "#F37021"
-display-date: "01-02 Feb 2020"
-location: "Windsor Building, RHUL"
-jumbotron-image: ../../../assets/images/background/2018-1.png
+# Ticket Settings
+# Disabling the button greys it out
+ticket_button_enable: false
+ticket_button_link: https://ti.to/royal-hackaway/royal-hackaway-v3
+ticket_button_label: Get your tickets here
 
-display-logo: true
-small-logo: ../../../assets/images/logo/rh-small.svg
-logo-width: 2
-
-show-map: true
-map-src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106"
-
-show-faq: true
-
-enable-ticket-button: true
-tickets: "https://ti.to/royal-hackaway/royal-hackaway-v3"
-ticket-button-text: "Get your tickets here"
-
-show-wifi-details: false
-internet:
-  ssid: "example "
-  username: "example "
-  password: "example"
-
-show-schedule: true
+# Schedule Settings
+# Disabling the schedule just hides the section
+schedule_enable: true
 schedule:
   - name: Saturday 1st — Day 1
     events:
@@ -85,66 +90,97 @@ schedule:
       - time: 16:00 @ the latest
         activity: Presentations & Closing Ceremony
 
-show-sponsors-list: true
-show-sponsor-button: true
-sponsor-document: ./sponsorhandout.pdf
+# Sponsor Settings
+# Disabling the sponsor document hides the "Sponsor Us!" button
+# Please include relative link to a file (preferably a PDF). Word Documents are prohibited
+sponsor_document_enable: true
+sponsor_document: ./sponsorhandout.pdf
+
+# Disabling the sponsor list hides the section
+# "Companies" are found in `/src/posts/companies`
+# 1. Create a new folder
+# 2. Create and populate `index.md`
+# 3. Refer to company via the folder name (or filename if not "index.md")
+sponsors_list_enable: true
 sponsors:
-  - name: "Gold"
-    colour: "#FFD700"
+  - name: Gold
+    colour: gold
     tier: 1
-    tier-sponsors:
-      - name: "Royal Holloway, University of London computing department"
-        link: "https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/"
-        image: "../../../assets/images/sponsors/compsci.png"
-
-  - name: "Silver"
-    colour: "#919499"
+    companies:
+      - rhulcompsci50
+  - name: Silver
+    colour: silver
     tier: 2
-    tier-sponsors:
-      - name: "GitHub"
-        link: "https://www.github.com/"
-        image: "../../../assets/images/sponsors/github_b.svg"
-      - name: "Not-Binary"
-        link: "https://notbinary.co.uk/"
-        image: "../../../assets/images/sponsors/not-binary.png"
-      - name: "Nexmo"
-        link: "https://www.nexmo.com/"
-        image: "../../../assets/images/sponsors/nexmo.png"
-
-  - name: "Bronze"
+    companies:
+      - github
+      - notbinary
+      - nexmo
+  - name: Bronze
     colour: "#CD7F32"
     tier: 3
-    tier-sponsors:
-      - name: "Balsamiq"
-        link: "https://www.balsamiq.com/"
-        image: "../../../assets/images/sponsors/balsamiq-smile.svg"
-      - name: "Guardtime"
-        link: "https://guardtime.com/"
-        image: "../../../assets/images/sponsors/guardtime.svg"
-      - name: "IG"
-        link: "http://ig.com"
-        image: "../../../assets/images/sponsors/ig.svg"
-      - name: "UKGovCamp"
-        link: "https://www.ukgovcamp.com"
-        image: "../../../assets/images/sponsors/ukgc.png"
-
-  - name: "Supporter"
-    colour: "#000000"
+    companies:
+      - balsamiq
+      - guardtime
+      - ig
+      - ukgovcamp
+  - name: Supporter
+    colour: null
     tier: 4
-    tier-sponsors:
-      - name: "Gitkraken"
-        link: "https://www.gitkraken.com/"
-        image: "../../../assets/images/sponsors/gitkraken.svg"
-      - name: "MLH"
-        link: "https://mlh.io"
-        image: "../../../assets/images/sponsors/mlh.svg"
-      - name: "Sticker Mule"
-        link: "http://hackp.ac/mlh-stickermule-hackathons"
-        image: "../../../assets/images/sponsors/stickermule-logo.svg"
-      - name: "Hacksmiths"
-        link: "https://goldsmiths.tech/"
-        image: "../../../assets/images/sponsors/hacksmiths.svg"
-      - name: "Nordic Semiconductor"
-        link: "https://www.nordicsemi.com"
-        image: "../../../assets/images/sponsors/nordic.svg"
+    companies:
+      - gitkraken
+      - mlh
+      - stickermule
+      - hacksmiths
+      - nordicsemi
+
+# People Settings
+# Disabling the people section hides the people section
+# "people[].person" are found in `/src/posts/people`
+people_enable: true
+people:
+  - person: ash
+    role: Someone Else
+  - person: jcsawyer123
+    role: Organiser
+  - person: wes
+    role: Someone
+
+# FAQ Settings
+# Disabling the FAQ section hides the FAQ section
+# "FAQ" are found in `/src/posts/faq`
+faq_enable: true
+faq:
+  - can-i-go-home-overnight-leave-early
+  - whats-a-hackathon
+  - can-i-start-before-i-arrive
+  - do-i-have-to-study-computer-science
+  - do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - how-much-does-it-cost
+  - want-to-join-the-committee
+  - what-is-a-faq
+  - who-can-attend
+  - who-owns-my-project
+
+# Livestream Settings
+# Enabling the embed replaces the jumbotron description
+# Enabling the button shows the Twitch/YouTube button
+livestream_embed_enable: false
+livestream_button_enable: false
+# Valid options: ["twitch", "youtube"]
+livestream_type: twitch
+# The ID to link/embed
+# Twitch: The channel name
+# YouTube: The video ID
+livestream_link: hackathonsuk
+
+# Chat Settings
+# Disabling the chat link hides the Discord button
+chat_link_enable: false
+chat_link: https://discord.gg/c8mq6cDwjF
 ---
+
+<!--
+  The HTML content is not used as of yet.
+  Use it in the future in case you need custom markup somewhere
+-->

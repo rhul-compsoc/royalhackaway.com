@@ -83,6 +83,14 @@ class Footer extends Component {
                     MLH Code of Conduct
                   </a>
                 </li>
+                <li>
+                  <Link
+                    to="/events"
+                    className="link-orange text-decoration-none"
+                  >
+                    Past Events
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

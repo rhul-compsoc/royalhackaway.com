@@ -1,34 +1,13 @@
 import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import styles from "./index.module.scss"
-// import sponsorHandout from "../../assets/pdf/sponsorhandout.pdf"
-
-// query MyQuery {
-//   allMarkdownRemark {
-//     nodes {
-//       frontmatter {
-//         show_sponsors_list
-//         sponsors {
-//           colour
-//           name
-//           tier
-//           tier_sponsors {
-//             image
-//             link
-//             name
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 class EventSponsors extends Component {
   render() {
     const {
-      sponsors: sponsorTiers,
+      sponsors,
       sponsor_document = null,
-      show_sponsor_button = false,
+      sponsor_document_enable = false,
     } = this.props
 
     return (
@@ -37,44 +16,36 @@ class EventSponsors extends Component {
           <div className="row">
             <div className="col-12">
               <h2 className="text-center display-5 fw-bold">Sponsors</h2>
-              {sponsorTiers.map(tier => (
+              {sponsors.map(tier => (
                 <div key={tier.name} className={styles.tier}>
                   <h2 className="text-center" style={{ color: tier.colour }}>
                     <b>{tier.name}</b>
                   </h2>
-                  <div
-                    className={CombineStyles(
-                      "row",
-                      "justify-content-center",
-                      styles.sponsorTier
-                    )}
-                  >
-                    {tier.tier_sponsors.map(tierSponsor => (
+                  <div className={styles.sponsorTier}>
+                    {tier.companies.map(({ frontmatter: company }) => (
                       <a
-                        key={tierSponsor.name}
-                        href={tierSponsor.link}
-                        className={CombineStyles(
-                          "justify-content-center",
-                          styles.sponsor
-                        )}
+                        key={company.name}
+                        href={company.link}
+                        className={styles.sponsor}
                       >
+                        {/* TODO: Use Gatsby Image Sharp to lazy-load PNG files */}
                         <img
                           className={CombineStyles(
                             styles.sponsorLogo,
                             styles["tier" + tier.tier]
                           )}
-                          style={tierSponsor.style}
-                          src={tierSponsor.image?.publicURL}
-                          key={tierSponsor.image}
-                          alt={tierSponsor.name}
-                          title={tierSponsor.name}
+                          style={company.style}
+                          src={company.image?.publicURL}
+                          key={company.image}
+                          alt={company.name}
+                          title={company.name}
                         />
                       </a>
                     ))}
                   </div>
                 </div>
               ))}
-              {show_sponsor_button && (
+              {sponsor_document_enable && (
                 <div
                   className={CombineStyles(
                     "text-center",
