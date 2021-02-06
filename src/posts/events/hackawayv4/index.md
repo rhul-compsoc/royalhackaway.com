@@ -153,17 +153,27 @@ sponsors:
 
 # People Settings
 # Disabling the people section hides the people section
-# "People" are found in `/src/posts/people`
+# "people[].person" are found in `/src/posts/people`
 people_enable: true
 people:
-  - ash
-  - jcsawyer123
-  - sevencoil
-  - hexillium
-  - megui
-  - thewitherbane
-  - tayma
-  - isaac
+  - person: jcsawyer123
+    role: Lead Organiser
+  - person: ash
+    role: Planning Lead
+  - person: sevencoil
+    role: Logistics Lead
+  - person: hexillium
+    role: Bot Whisperer
+  - person: megui
+    role: Secretary
+  - person: ayw
+    role: Vice President
+  - person: thewitherbane
+    role: Academic Director
+  - person: tayma
+    role: Outreach Director
+  - person: isaac
+    role: Treasurer
 
 # FAQ Settings
 # Disabling the FAQ section hides the FAQ section

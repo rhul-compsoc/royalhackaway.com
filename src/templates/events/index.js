@@ -86,23 +86,26 @@ export const pageQuery = graphql`
         name
         people_enable
         people {
-          frontmatter {
-            name
-            description
-            short_description
-            is_public
-            handles {
-              service
-              handle
-            }
-            image {
-              childImageSharp {
-                fluid(maxWidth: 512) {
-                  ...GatsbyImageSharpFluid
+          person {
+            frontmatter {
+              name
+              description
+              short_description
+              is_public
+              handles {
+                service
+                handle
+              }
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 512) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
           }
+          role
         }
         schedule_enable
         short_name

@@ -16,7 +16,7 @@ const PeopleSection = ({ event_name, people }) => (
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-xl-8">
           <div className="row justify-content-center">
-            {people.map(person => (
+            {people.map(({ person, role }) => (
               <div
                 className={CombineStyles(
                   "col-6 col-sm-4 col-md-3",
@@ -46,7 +46,7 @@ const PeopleSection = ({ event_name, people }) => (
                         "text-muted"
                       )}
                     >
-                      {person.frontmatter.short_description}
+                      {role}
                     </span>
                     <div className={styles.handles}>
                       {person.frontmatter.handles.map(handle => (

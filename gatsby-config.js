@@ -10,7 +10,7 @@ module.exports = {
     siteUrl: "https://royalhackaway.com",
   },
   mapping: {
-    "MarkdownRemark.frontmatter.people": "MarkdownRemark.fields.id",
+    "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.id",
     "MarkdownRemark.frontmatter.faq": "MarkdownRemark.fields.id",
     "MarkdownRemark.frontmatter.sponsors.companies": "MarkdownRemark.fields.id",
   },
