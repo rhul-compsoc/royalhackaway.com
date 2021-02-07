@@ -10,6 +10,7 @@ import { PeopleSection } from "../../components/PeopleSection"
 import { ScheduleSection } from "../../components/ScheduleSection"
 import { GoogleMaps } from "../../components/GoogleMaps"
 import { SEO } from "../../components/SEO"
+import { MajorLeagueHackingBadge } from "../../components/MajorLeagueHackingBadge"
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -31,6 +32,8 @@ const HomePage = ({ data }) => {
     hackathon_definition_enable,
     location_embed_enable,
     location_embed_link,
+    mlh_badge_enable,
+    mlh_badge_year,
   } = frontmatter
 
   return (
@@ -52,6 +55,8 @@ const HomePage = ({ data }) => {
         <PeopleSection event_name={short_name} people={people} />
       )}
       {schedule_enable && <ScheduleSection schedule={schedule} />}
+
+      {mlh_badge_enable && <MajorLeagueHackingBadge year={mlh_badge_year} />}
     </Layout>
   )
 }
@@ -83,6 +88,8 @@ export const pageQuery = graphql`
         location
         location_embed_enable
         location_embed_link
+        mlh_badge_enable
+        mlh_badge_year
         name
         people_enable
         people {

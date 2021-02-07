@@ -12,7 +12,7 @@ homepage: true
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
-start_timer_enable: true
+start_timer_enable: false
 start: "2021-02-06T10:00:00+00:00"
 end: "2021-02-07T18:00:00+00:00"
 
@@ -41,13 +41,13 @@ hackathon_definition_enable: true
 # Location Settings
 # Describes the location the event is taking place
 # Disabling the location embed hides the iframe for "location_embed_link"
-location: "Fully virtual, on Discord and YouTube Live"
+location: "Fully virtual, on Discord and Twitch"
 location_embed_enable: false
 location_embed_link: ""
 
 # Ticket Settings
 # Disabling the button greys it out
-ticket_button_enable: true
+ticket_button_enable: false
 ticket_button_link: https://tickets.royalhackaway.com/
 ticket_button_label: Get your tickets here
 
@@ -187,15 +187,14 @@ faq:
   - do-you-have-a-code-of-conduct
   - how-much-does-it-cost
   - want-to-join-the-committee
-  - what-is-a-faq
   - who-can-attend
   - who-owns-my-project
 
 # Livestream Settings
 # Enabling the embed replaces the jumbotron description
 # Enabling the button shows the Twitch/YouTube button
-livestream_embed_enable: true
-livestream_button_enable: true
+livestream_embed_enable: false
+livestream_button_enable: false
 # Valid options: ["twitch", "youtube"]
 livestream_type: twitch
 # The ID to link/embed
@@ -207,6 +206,11 @@ livestream_link: hackathonsuk
 # Disabling the chat link hides the Discord button
 chat_link_enable: true
 chat_link: https://discord.gg/c8mq6cDwjF
+
+# MLH Badge
+# Disabling the MLH badge hides the MLH Badge
+mlh_badge_enable: true
+mlh_badge_year: 2021
 ---
 
 <!--

@@ -158,7 +158,6 @@ faq:
   - do-you-have-a-code-of-conduct
   - how-much-does-it-cost
   - want-to-join-the-committee
-  - what-is-a-faq
   - who-can-attend
   - who-owns-my-project
 
@@ -178,6 +177,11 @@ livestream_link: hackathonsuk
 # Disabling the chat link hides the Discord button
 chat_link_enable: false
 chat_link: https://discord.gg/c8mq6cDwjF
+
+# MLH Badge
+# Disabling the MLH badge hides the MLH Badge
+mlh_badge_enable: true
+mlh_badge_year: 2020
 ---
 
 <!--
