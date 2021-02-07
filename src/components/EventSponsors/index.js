@@ -45,6 +45,18 @@ class EventSponsors extends Component {
                   </div>
                 </div>
               ))}
+              {!sponsor_document_enable && sponsors.length === 0 && (
+                <div
+                  className={CombineStyles(
+                    "text-center",
+                    styles.sponsorButtonContainer
+                  )}
+                >
+                  <span className="btn btn-hackaway-orange text-white disabled">
+                    Sponsor document coming soon...
+                  </span>
+                </div>
+              )}
               {sponsor_document_enable && (
                 <div
                   className={CombineStyles(
