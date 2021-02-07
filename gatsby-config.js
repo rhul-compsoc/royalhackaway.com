@@ -15,6 +15,7 @@ module.exports = {
     "MarkdownRemark.frontmatter.sponsors.companies": "MarkdownRemark.fields.id",
   },
   plugins: [
+    "gatsby-plugin-meta-redirect",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
