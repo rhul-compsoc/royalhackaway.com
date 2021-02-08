@@ -68,6 +68,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
               is_public
               render
               homepage
+              redirects
             }
           }
         }
@@ -89,6 +90,8 @@ exports.createPages = ({ actions, graphql, reporter }) => {
 
         let slug = node.fields.slug
 
+        // If the page is meant to be found on the homepage,
+        // redirect users to "/" instead
         if (node.frontmatter.homepage) {
           createRedirect({
             fromPath: slug,
@@ -99,11 +102,25 @@ exports.createPages = ({ actions, graphql, reporter }) => {
           slug = "/"
         }
 
+        // Create a page at the expected location
         createPage({
           path: slug,
           component: getTemplate(template),
           context: node.fields,
         })
+
+        // Create redirects to the current page
+        // Ignore redirects that are the same as the page.
+        // Don't want any infinite loops!
+        node.frontmatter.redirects
+          .filter(redirectPath => redirectPath !== slug)
+          .forEach(redirectPath => {
+            createRedirect({
+              fromPath: redirectPath,
+              toPath: slug,
+              isPermanent: false,
+            })
+          })
       })
   })
 }

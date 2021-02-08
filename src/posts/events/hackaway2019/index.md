@@ -6,9 +6,13 @@ render: true
 is-public: true
 is-over: true
 
-# Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
-# Sets up (temporary) redirect from "/events/hackawayv4" to "/"
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackaway2019"
+# Sets up (temporary) redirect from "/events/hackaway2019" to "/"
+# Redirects array (permanently) redirects to the actual page
 homepage: false
+redirects:
+  - /v2
+  - /2019
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)

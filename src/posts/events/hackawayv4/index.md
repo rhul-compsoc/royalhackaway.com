@@ -8,7 +8,11 @@ is-over: false
 
 # Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
 # Sets up (temporary) redirect from "/events/hackawayv4" to "/"
+# Redirects array (permanently) redirects to the actual page
 homepage: true
+redirects:
+  - /v4
+  - /2021
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
