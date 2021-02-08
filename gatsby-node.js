@@ -55,7 +55,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions
 
-  return graphql(`
+  graphql(`
     {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___start] }) {
         edges {
@@ -79,9 +79,12 @@ exports.createPages = ({ actions, graphql, reporter }) => {
       return
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      // If public, create the page based on the folder it is in.
-      if (node.frontmatter.render && node.frontmatter.is_public) {
+    result.data.allMarkdownRemark.edges
+      .filter(
+        // If public, create the page based on the folder it is in.
+        ({ node }) => node.frontmatter.render && node.frontmatter.is_public
+      )
+      .forEach(({ node }) => {
         const template = node.fields.template
 
         let slug = node.fields.slug
@@ -101,7 +104,6 @@ exports.createPages = ({ actions, graphql, reporter }) => {
           component: getTemplate(template),
           context: node.fields,
         })
-      }
-    })
+      })
   })
 }
