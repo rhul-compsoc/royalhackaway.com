@@ -55,7 +55,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions
 
-  graphql(`
+  return graphql(`
     {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___start] }) {
         edges {

@@ -34,11 +34,12 @@ const HomePage = ({ data }) => {
     location_embed_link,
     mlh_badge_enable,
     mlh_badge_year,
+    short_description,
   } = frontmatter
 
   return (
     <Layout>
-      <SEO title={short_name} />
+      <SEO title={short_name} description={short_description} />
       <HackathonTitle frontmatter={frontmatter} />
       {start_timer_enable && <HackathonCountdown start={start} />}
       {hackathon_definition_enable && <HackathonDefinition />}
@@ -115,6 +116,7 @@ export const pageQuery = graphql`
           role
         }
         schedule_enable
+        short_description
         short_name
         schedule {
           name

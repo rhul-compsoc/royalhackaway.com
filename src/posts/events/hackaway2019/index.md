@@ -1,6 +1,6 @@
 ---
-name: Royal Hackaway v3
-short_name: Royal Hackaway v3
+name: Royal Hackaway 2019
+short_name: Royal Hackaway 2019
 subtitle: Create something awesome
 render: true
 is-public: true
@@ -13,11 +13,11 @@ homepage: false
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
 start_timer_enable: false
-start: "2020-02-01T09:30:00+00:00"
-end: "2020-02-02T18:00:00+00:00"
+start: 2019-02-02T09:30:00+00:00
+end: 2019-02-03T17:00:00+00:00
 
 # A text representation of the time period. Stick anything you like here.
-display_date: Saturday 1st February - Sunday 2nd February 2020
+display_date: Saturday 2nd February - Sunday 3rd February 2019
 
 # The start and end of the hacking period
 # Not used yet, but might be useful for the future
@@ -27,14 +27,14 @@ hacking_end: 2020-02-02T13:00:00+00
 # A description of the event in hand.
 # Short is currently not being used
 # Full is used for the site jumbotron and for SSO
-short-description: An exciting two-day hackathon, for students from any university.
+short-description: An exciting 24 hour hackathon, for students from any university.
 full-description: >
   Royal Hackaway is Royal Holloway's annual hackathon.
 
   Open to university students from the UK and around the world,
-  in this two-day hackathon you'll work as a team to build a project.
+  in this 24 hour hackathon you'll work as a group to build a project.
   You'll pick up new skills, try out new tech, and meet new people.
-  This is our third time running this event, and we're excited to
+  This is our second time running this event, and we're excited to
   create a more inclusive and rewarding event for all.
 
 # Enable the section which brings up the dictionary definition of what a hackathon is
@@ -43,66 +43,105 @@ hackathon_definition_enable: true
 # Location Settings
 # Describes the location the event is taking place
 # Disabling the location embed hides the iframe for "location_embed_link"
-location: Windsor Building, RHUL
+location: Windsor Building, on Campus
 location_embed_enable: true
 location_embed_link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106
 
 # Ticket Settings
 # Disabling the button greys it out
 ticket_button_enable: false
-ticket_button_link: https://ti.to/royal-hackaway/royal-hackaway-v3
-ticket_button_label: Get your tickets here
+ticket_button_link: https://royal-hackaway-v2.devpost.com/
+ticket_button_label: Submit your 2019 project to DevPost
 
 # Schedule Settings
 # Disabling the schedule just hides the section
 schedule_enable: true
 schedule:
-  - name: Saturday 1st — Day 1
+  - name: Saturday 2nd — Day 1
     events:
-      - time: "08:00"
-        activity: Registration Opens
       - time: "09:30"
-        activity: Opening Ceremony and Team Building
-      - time: "10:15"
-        activity: Hacking Begins
+        activity: Registration Opens
       - time: "11:00"
-        activity: Registration Closes
+        activity: Opening Ceremony and Team Building
       - time: "12:00"
+        activity: Hacking Begins
+      - time: "13:00"
         activity: Lunch
+      - time: "14:00"
+        activity: Digital Audio (Upstairs)
+      - time: "14:00"
+        activity: Digital Ocean (Downstairs)
+      - time: "15:00"
+        activity: Nexmo (Upstairs)
+      - time: "15:00"
+        activity: The Psychology of Dev Teams (Downstairs)
+      - time: "16:00"
+        activity: NotBinary Container Workshop (Upstairs)
+      - time: "16:00"
+        activity: GitHub Workshop (Downstairs)
       - time: "18:00"
         activity: Dinner
+      - time: "20:00"
+        activity: MLH Minigame
       - time: "23:59"
         activity: Midnight Pizza
-  - name: Sunday 2nd — Day 2
+  - name: Sunday 3rd — Day 2
     events:
-      - time: "00:05"
-        activity: Midnight Werewolf
       - time: "08:00"
         activity: Breakfast
-      - time: "13:00"
-        activity: Hacking Ends
-      - time: "13:00"
+      - time: "11:00"
         activity: Submissions Close
-      - time: ""
-        activity: Lunch
-      - time: ""
-        activity: Mass Judging
-      - time: 16:00 @ the latest
-        activity: Presentations & Closing Ceremony
+      - time: "12:00"
+        activity: Hacking Ends with Lunch
+      - time: "13:00"
+        activity: Presentations
+      - time: "15:00"
+        activity: Judging
+      - time: "16:00"
+        activity: Closing Ceremony
 
 # Sponsor Settings
 # Disabling the sponsor document hides the "Sponsor Us!" button
 # Please include relative link to a file (preferably a PDF). Word Documents are prohibited
 sponsor_document_enable: true
-sponsor_document: ./sponsorhandout.pdf
+sponsor_document: ./sponsordeck.pdf
 
 # Disabling the sponsor list hides the section
 # "Companies" are found in `/src/posts/companies`
 # 1. Create a new folder
 # 2. Create and populate `index.md`
 # 3. Refer to company via the folder name (or filename if not "index.md")
-sponsors_list_enable: false
-sponsors: []
+sponsors_list_enable: true
+sponsors:
+  - name: Gold
+    colour: gold
+    tier: 1
+    companies:
+      - rhulcompsci50
+  - name: Silver
+    colour: silver
+    tier: 2
+    companies:
+      - github
+      - notbinary
+      - nexmo
+  - name: Bronze
+    colour: "#CD7F32"
+    tier: 3
+    companies:
+      - balsamiq
+      - guardtime
+      - ig
+      - ukgovcamp
+  - name: Supporter
+    colour: null
+    tier: 4
+    companies:
+      - gitkraken
+      - mlh
+      - stickermule
+      - hacksmiths
+      - nordicsemi
 
 # People Settings
 # Disabling the people section hides the people section
@@ -146,7 +185,7 @@ chat_link: null
 # MLH Badge
 # Disabling the MLH badge hides the MLH Badge
 mlh_badge_enable: true
-mlh_badge_year: 2020
+mlh_badge_year: 2019
 ---
 
 <!--
