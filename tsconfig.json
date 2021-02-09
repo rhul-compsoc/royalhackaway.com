@@ -1,6 +1,7 @@
 {
   "include": ["src", "types"],
   "compilerOptions": {
+    "outDir": "public/",
     "noImplicitAny": true,
     "target": "es5",
     "lib": ["DOM"],
