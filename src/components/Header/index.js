@@ -2,7 +2,7 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import React, { useState } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import logo from "../../assets/images/logo/rh.svg"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false)

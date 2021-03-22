@@ -1,8 +1,31 @@
 import React, { ReactNode } from "react"
-import styles from "./index.module.scss"
+import { CombineStyles } from "../../helpers/CombineStyles"
+import { section, titleContainer, header } from "./index.module.scss"
 
-const Section = ({ children }: { children: ReactNode }): ReactNode => (
-  <div className={styles.section}>{children}</div>
+const Section = ({
+  children,
+  title,
+  subtitle,
+  className,
+}: {
+  children: ReactNode
+  title?: string
+  subtitle?: string
+  className?: string
+}): ReactNode => (
+  <div className={CombineStyles(section, className)}>
+    {title && (
+      <div className={CombineStyles("container", titleContainer)}>
+        <div className="row">
+          <div className="col-12 text-center">
+            <h2 className={header}>{title}</h2>
+            {subtitle && <p>{subtitle}</p>}
+          </div>
+        </div>
+      </div>
+    )}
+    {children}
+  </div>
 )
 
 export { Section }

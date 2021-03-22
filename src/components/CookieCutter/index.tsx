@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 import Cookies from "universal-cookie"
 import { CombineStyles } from "../../helpers/CombineStyles"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 const HACKAWAY_COOKIE = "hackaway-show-cookie-cutter"
 const ENABLE_GOOGLE_COOKIE = "gatsby-gdpr-google-analytics"

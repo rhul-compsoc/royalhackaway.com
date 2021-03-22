@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins/_breakpoints";
-@import '_config';
+@import "_config";
 
 .header {
   margin-bottom: 1.5em;
@@ -10,5 +10,27 @@
 .hackathonDef {
   background: $tertiary-background-colour;
   color: $tertiary-foreground-colour;
-  padding: 5em 0;
+}
+
+.leftText {
+  font-size: 1.5em;
+
+  .link {
+    text-decoration: none;
+  }
+}
+
+.word {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.pronunciation {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.definition {
+  font-size: 1.5em;
+  font-weight: lighter;
 }

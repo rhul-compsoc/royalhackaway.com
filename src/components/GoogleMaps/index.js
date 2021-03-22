@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 class GoogleMaps extends Component {
   render() {

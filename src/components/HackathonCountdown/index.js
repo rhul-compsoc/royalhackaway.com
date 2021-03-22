@@ -1,6 +1,6 @@
 import React from "react"
 import Countdown from "react-countdown"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 const HackathonCountdown = ({ start }) => (
   <section className={styles.hackathonCountdown}>

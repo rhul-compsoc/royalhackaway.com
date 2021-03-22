@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa"
 import { ButtonsContainer } from "../ButtonsContainer"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 class HackathonTitle extends Component {
   render() {
@@ -74,7 +74,7 @@ class HackathonTitle extends Component {
       <section className={styles.hackathonTitle}>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+            <div className="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-7">
               <h1 className={styles.name}>{short_name}</h1>
               <h3>{subtitle}</h3>
               {livestreamSection}

@@ -58,13 +58,13 @@ module.exports = {
         icon: "src/assets/images/logo/rh-small-1024.png", // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-gdpr-cookies",
-      options: {
-        googleAnalytics: {
-          trackingId: "G-YHVZ8QBQYD",
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-gdpr-cookies",
+    //   options: {
+    //     googleAnalytics: {
+    //       trackingId: "G-YHVZ8QBQYD",
+    //     },
+    //   },
+    // },
   ],
 }

@@ -1,8 +1,8 @@
 import React from "react"
+import { Section } from "../Section"
 
 const ScheduleSection = ({ schedule }) => (
-  <section className="py-4">
-    <h2 className="text-center display-4 fw-bold">Schedule</h2>
+  <Section title="Schedule">
     <div className="container">
       <div className="row">
         {schedule.map(({ name, events }, scheduleIndex) => (
@@ -29,7 +29,7 @@ const ScheduleSection = ({ schedule }) => (
         ))}
       </div>
     </div>
-  </section>
+  </Section>
 )
 
 export { ScheduleSection }

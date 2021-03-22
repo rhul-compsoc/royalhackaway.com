@@ -3,24 +3,39 @@
 
 /* CSS MODULES */
 declare module "*.module.css" {
-  const classes: { [key: string]: string }
-  export default classes
+  interface IClassNames {
+    [className: string]: string
+  }
+  const classNames: IClassNames
+  export = classNames
 }
 declare module "*.module.scss" {
-  const classes: { [key: string]: string }
-  export default classes
+  interface IClassNames {
+    [className: string]: string
+  }
+  const classNames: IClassNames
+  export = classNames
 }
 declare module "*.module.sass" {
-  const classes: { [key: string]: string }
-  export default classes
+  interface IClassNames {
+    [className: string]: string
+  }
+  const classNames: IClassNames
+  export = classNames
 }
 declare module "*.module.less" {
-  const classes: { [key: string]: string }
-  export default classes
+  interface IClassNames {
+    [className: string]: string
+  }
+  const classNames: IClassNames
+  export = classNames
 }
 declare module "*.module.styl" {
-  const classes: { [key: string]: string }
-  export default classes
+  interface IClassNames {
+    [className: string]: string
+  }
+  const classNames: IClassNames
+  export = classNames
 }
 
 /* CSS */

@@ -1,5 +1,8 @@
+@import "_config";
+
 .sponsorSection {
-  padding: 5em 0;
+  background: $tertiary-background-colour;
+  color: $tertiary-foreground-colour;
 }
 
 .sponsorTier {

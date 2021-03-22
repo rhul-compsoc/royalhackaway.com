@@ -1,17 +1,16 @@
 import React from "react"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 import Img from "gatsby-image"
 import { PersonHandle } from "../PersonHandle"
 import { CombineStyles } from "../../helpers/CombineStyles"
+import { Section } from "../Section"
 
 const PeopleSection = ({ event_name, people }) => (
-  <section className={styles.people}>
-    <div className="row justify-content-center">
-      <div className="col-sm-4 text-center">
-        <h2 className="display-4 fw-bold">Team</h2>
-        <p>These are the people that make {event_name} possible!</p>
-      </div>
-    </div>
+  <Section
+    className={styles.people}
+    title="The Team"
+    subtitle={`These are the people that make ${event_name} possible!`}
+  >
     <div className="container py-5">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-xl-8">
@@ -65,7 +64,7 @@ const PeopleSection = ({ event_name, people }) => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 )
 
 export { PeopleSection }

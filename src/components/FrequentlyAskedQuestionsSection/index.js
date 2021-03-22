@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { partition } from "../../helpers/partition"
 import { Collapsable } from "../Collapsable"
-import styles from "./index.module.scss"
+import { Section } from "../Section"
+import * as styles from "./index.module.scss"
 
 class FrequentlyAskedQuestionsSection extends Component {
   constructor(props) {
@@ -19,20 +20,12 @@ class FrequentlyAskedQuestionsSection extends Component {
   }
   render() {
     return (
-      <section className={styles.faq}>
+      <Section
+        className={styles.faq}
+        title="Frequently Asked Questions"
+        subtitle="Answers to some questions we get a lot of!"
+      >
         <div className="container">
-          <div
-            className={CombineStyles(
-              "row justify-content-center",
-              styles.title
-            )}
-          >
-            <div className="col-12 text-center">
-              <h2 className="display-5 fw-bold">Frequently Asked Questions</h2>
-              <p>Answers to some questions we get a lot of!</p>
-            </div>
-          </div>
-
           <div className="row">
             {partition(this.props.faq, 2).map((column, index) => (
               <div className="col-12 col-md-6" key={index}>
@@ -52,7 +45,7 @@ class FrequentlyAskedQuestionsSection extends Component {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
     )
   }
 }

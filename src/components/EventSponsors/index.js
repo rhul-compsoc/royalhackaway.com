@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
-import styles from "./index.module.scss"
+import { Section } from "../Section"
+import * as styles from "./index.module.scss"
 
 class EventSponsors extends Component {
   render() {
@@ -11,11 +12,10 @@ class EventSponsors extends Component {
     } = this.props
 
     return (
-      <section className={styles.sponsorSection}>
+      <Section className={styles.sponsorSection} title="Sponsors">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2 className="text-center display-5 fw-bold">Sponsors</h2>
               {sponsors.map(tier => (
                 <div key={tier.name} className={styles.tier}>
                   <h2 className="text-center" style={{ color: tier.colour }}>
@@ -75,7 +75,7 @@ class EventSponsors extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     )
   }
 }

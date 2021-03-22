@@ -40,7 +40,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.js"],
+      files: ["*.js", "*.tsx"],
       rules: {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
         // This rule means you do not need to declare a type for exported functions. You can't do this without TypeScript!
