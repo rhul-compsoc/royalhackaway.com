@@ -27,8 +27,8 @@ const HomePage = ({ data }) => {
     faq_enable,
     schedule_enable,
     schedule,
-    start,
-    start_timer_enable,
+    event_start,
+    countdown_timer_enable,
     hackathon_definition_enable,
     location_embed_enable,
     location_embed_link,
@@ -41,7 +41,7 @@ const HomePage = ({ data }) => {
     <Layout>
       <SiteSEO title={short_name} description={short_description} />
       <EventJumbotron frontmatter={frontmatter} />
-      {start_timer_enable && <EventCountdownSection start={start} />}
+      {countdown_timer_enable && <EventCountdownSection start={event_start} />}
       {hackathon_definition_enable && <HackathonDefinitionSection />}
       {location_embed_enable && (
         <EventLocationSection map={location_embed_link} />
@@ -72,6 +72,14 @@ export const pageQuery = graphql`
         chat_link
         chat_link_enable
         display_date
+        event_widescreen_logo {
+          publicURL
+          childImageSharp {
+            fluid(maxHeight: 256) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         faq_enable
         faq {
           fields {
@@ -84,6 +92,8 @@ export const pageQuery = graphql`
         }
         full_description
         hackathon_definition_enable
+        jumbotron_enable_title
+        jumbotron_enable_widescreen_logo
         livestream_button_enable
         livestream_embed_enable
         livestream_link
@@ -151,8 +161,8 @@ export const pageQuery = graphql`
             }
           }
         }
-        start
-        start_timer_enable
+        event_start
+        countdown_timer_enable
         subtitle
         ticket_button_enable
         ticket_button_label

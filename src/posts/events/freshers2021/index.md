@@ -1,7 +1,7 @@
 ---
 name: fresher's hack
 short_name: fresher's hack
-subtitle: Create something awesome
+subtitle: null
 render: true
 is-public: false
 is-over: false
@@ -15,12 +15,20 @@ redirects:
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Freshers 2021 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
-start_timer_enable: true
-start: "2021-08-06T10:00:00+00:00"
-end: "2021-08-07T18:00:00+00:00"
+countdown_timer_enable: true
+event_start: "2021-08-06T10:00:00+00:00"
+event_end: "2021-08-07T18:00:00+00:00"
+
+# A wide (about 3:1 aspect ratio) picture to display for this event.
+event_widescreen_logo: ./DiscordCanary_9EdQ4hkP3l.png
+
+# Jumbotron Settings
+# Enabling/Disabling the follow will show/hide the respective options.
+jumbotron_enable_title: false
+jumbotron_enable_widescreen_logo: true
 
 # A text representation of the time period. Stick anything you like here.
-display_date: Saturday 6th February - Sunday 7th February 2021
+display_date: Saturday 6th September 10am-10pm
 
 # The start and end of the hacking period
 # Not used yet, but might be useful for the future

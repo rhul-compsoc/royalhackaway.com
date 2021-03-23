@@ -46,7 +46,7 @@ export const Header = () => {
                       fields: { template: { eq: "events" } }
                       frontmatter: { is_public: { eq: true } }
                     }
-                    sort: { fields: frontmatter___start, order: DESC }
+                    sort: { fields: frontmatter___event_start, order: DESC }
                     limit: 1
                   ) {
                     nodes {

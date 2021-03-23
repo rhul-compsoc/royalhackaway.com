@@ -16,9 +16,17 @@ redirects:
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
-start_timer_enable: true
-start: "2022-02-05T10:00:00+00:00"
-end: "2022-02-06T18:00:00+00:00"
+countdown_timer_enable: true
+event_start: "2022-02-05T10:00:00+00:00"
+event_end: "2022-02-06T18:00:00+00:00"
+
+# A wide (about 3:1 aspect ratio) picture to display for this event.
+event_widescreen_logo: null
+
+# Jumbotron Settings
+# Enabling/Disabling the follow will show/hide the respective options.
+jumbotron_enable_title: true
+jumbotron_enable_widescreen_logo: false
 
 # A text representation of the time period. Stick anything you like here.
 display_date: Saturday 5th February - Sunday 6th February 2022

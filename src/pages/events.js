@@ -22,8 +22,8 @@ const HomePage = ({ data }) => {
             .map(node => {
               const { frontmatter: event, fields } = node
 
-              const start = new Date(event.start)
-              const end = new Date(event.end)
+              const start = new Date(event.event_start)
+              const end = new Date(event.event_end)
               const link = event.homepage ? "/" : fields.slug
 
               return (
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
   {
     allMarkdownRemark(
       filter: { fields: { template: { eq: "events" } } }
-      sort: { fields: frontmatter___start, order: DESC }
+      sort: { fields: frontmatter___event_start, order: DESC }
     ) {
       nodes {
         id
@@ -61,8 +61,8 @@ export const pageQuery = graphql`
           is_public
           short_name
           homepage
-          start
-          end
+          event_start
+          event_end
         }
         fields {
           slug

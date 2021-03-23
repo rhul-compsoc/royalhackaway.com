@@ -57,7 +57,9 @@ exports.createPages = ({ actions, graphql, reporter }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___start] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___event_start] }
+      ) {
         edges {
           node {
             fields {

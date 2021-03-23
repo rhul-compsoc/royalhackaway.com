@@ -1,3 +1,4 @@
+import GatsbyImage from "gatsby-image"
 import React, { Component } from "react"
 import {
   FaCalendarAlt,
@@ -7,6 +8,7 @@ import {
   FaYoutube,
 } from "react-icons/fa"
 import { ButtonsContainer } from "../ButtonsContainer"
+import { SiteImage } from "../SiteImage"
 import * as styles from "./index.module.scss"
 
 class EventJumbotron extends Component {
@@ -28,6 +30,9 @@ class EventJumbotron extends Component {
       chat_link,
       livestream_button_enable,
       subtitle,
+      event_widescreen_logo,
+      jumbotron_enable_title,
+      jumbotron_enable_widescreen_logo,
     } = this.props.frontmatter
 
     let livestreamSection
@@ -75,7 +80,12 @@ class EventJumbotron extends Component {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-7">
-              <h1 className={styles.name}>{short_name}</h1>
+              {jumbotron_enable_widescreen_logo && (
+                <SiteImage image={event_widescreen_logo} />
+              )}
+              {jumbotron_enable_title && (
+                <h1 className={styles.name}>{short_name}</h1>
+              )}
               <h3>{subtitle}</h3>
               {livestreamSection}
               <ButtonsContainer>
