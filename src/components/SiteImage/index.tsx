@@ -14,13 +14,20 @@ interface GatsbyGraphqlImageResponse {
  */
 const SiteImage = ({
   image,
+  ...other
 }: {
   image: GatsbyGraphqlImageResponse
 }): ReactNode => {
   if (image.publicURL.endsWith(".svg")) {
-    return <img src={image.publicURL} />
+    return <img {...other} src={image.publicURL} />
   } else {
-    return <GatsbyImage fluid={image.childImageSharp.fluid} />
+    return (
+      <GatsbyImage
+        {...other}
+        fluid={image.childImageSharp.fluid}
+        imgStyle={{ objectFit: "contain" }}
+      />
+    )
   }
 }
 

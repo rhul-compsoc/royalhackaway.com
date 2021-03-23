@@ -1,7 +1,10 @@
 import React, { Component } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { Section } from "../Section"
+import { SiteImage } from "../SiteImage"
 import * as styles from "./index.module.scss"
+
+const tierSizes = [undefined, 8, 5, 3, 2.7]
 
 class EventSponsorsSection extends Component {
   render() {
@@ -22,26 +25,38 @@ class EventSponsorsSection extends Component {
                     <b>{tier.name}</b>
                   </h2>
                   <div className={styles.sponsorTier}>
-                    {tier.companies.map(({ frontmatter: company }) => (
-                      <a
-                        key={company.name}
-                        href={company.link}
-                        className={styles.sponsor}
-                      >
-                        {/* TODO: Use Gatsby Image Sharp to lazy-load PNG files */}
-                        <img
-                          className={CombineStyles(
-                            styles.sponsorLogo,
-                            styles["tier" + tier.tier]
-                          )}
-                          style={company.style}
-                          src={company.image?.publicURL}
-                          key={company.image}
-                          alt={company.name}
-                          title={company.name}
-                        />
-                      </a>
-                    ))}
+                    {tier.companies.map(({ frontmatter: company }) => {
+                      let width
+
+                      // If there's a bitmap, calculate the appropriate width
+                      // so that it can fit in perfectly.
+                      if (company.image?.childImageSharp?.fluid.aspectRatio) {
+                        width =
+                          tierSizes[tier.tier] *
+                            company.image.childImageSharp.fluid.aspectRatio +
+                          "em"
+                      }
+
+                      return (
+                        <a
+                          key={company.name}
+                          href={company.link}
+                          className={styles.sponsor}
+                        >
+                          <SiteImage
+                            className={styles.sponsorLogo}
+                            style={{
+                              height: tierSizes[tier.tier] + "em",
+                              width,
+                            }}
+                            image={company.image}
+                            key={company.image.publicURL}
+                            alt={company.name}
+                            title={company.name}
+                          />
+                        </a>
+                      )
+                    })}
                   </div>
                 </div>
               ))}

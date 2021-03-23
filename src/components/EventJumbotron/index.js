@@ -1,4 +1,3 @@
-import GatsbyImage from "gatsby-image"
 import React, { Component } from "react"
 import {
   FaCalendarAlt,
