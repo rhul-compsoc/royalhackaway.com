@@ -48,7 +48,7 @@ const EventInformationCard = ({ node }: Props) => {
           )
         }
       />
-      <Link to={link} className="btn btn-hackaway-orange text-white px-4">
+      <Link to={link} className="btn btn-hackaway-orange px-4">
         {event.short_name}
       </Link>
     </div>

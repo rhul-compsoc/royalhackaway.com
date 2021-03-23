@@ -67,7 +67,7 @@ class EventSponsorsSection extends Component {
                     styles.sponsorButtonContainer
                   )}
                 >
-                  <span className="btn btn-hackaway-orange text-white disabled">
+                  <span className="btn btn-hackaway-orange disabled">
                     Sponsor document coming soon...
                   </span>
                 </div>
@@ -81,7 +81,7 @@ class EventSponsorsSection extends Component {
                 >
                   <a
                     href={sponsor_document?.publicURL}
-                    className="btn btn-hackaway-orange text-white"
+                    className="btn btn-hackaway-orange "
                   >
                     Become a sponsor
                   </a>

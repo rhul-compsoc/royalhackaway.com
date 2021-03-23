@@ -1,5 +1,22 @@
-@import 'config.scss';
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~@fontsource/anonymous-pro/index.css";
+@import "~@fontsource/anonymous-pro/700.css";
+@import "config.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+.hackaway-light-theme {
+  display: unset;
+}
+.hackaway-dark-theme {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .hackaway-light-theme {
+    display: none;
+  }
+  .hackaway-dark-theme {
+    display: unset;
+  }
+}
 
 .row {
   margin-left: 0;
@@ -7,36 +24,77 @@
 }
 
 .link-orange {
-  color: $hackaway-orange
+  color: $hackaway-orange;
 }
 
-@mixin create-button($name, $background-colour, $shadow, $lighten: true) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anonymous Pro", $font-family-sans-serif;
+}
+
+@mixin create-button(
+  $name,
+  $colour,
+  $background-colour,
+  $shadow,
+  $lighten: true
+) {
   .btn-#{$name} {
+    color: $colour;
     background-color: $background-colour;
     box-shadow: 0 5px $shadow;
     border-width: 0;
     font-weight: 600;
-  
+
     &.disabled {
-      opacity: 0.7
+      opacity: 0.7;
     }
 
-    @if $lighten {
-      &:hover, &:active {
-        background-color: lighten($background-colour, 10%);
-        box-shadow: 0 5px lighten($shadow, 10%);
-      }
-    } @else {
-      &:hover, &:active {
-        background-color: darken($background-colour, 10%);
-        box-shadow: 0 5px darken($shadow, 10%);
-      }
+    &:hover,
+    &:active {
+      color: $colour;
+      background-color: $background-colour;
+      box-shadow: 0 5px $shadow;
     }
-  } 
+  }
 }
 
-@include create-button("hackaway-youtube", $youtube-link-colour, $primary-button-shadow-colour, false);
-@include create-button("hackaway-twitch", $twitch-link-colour, $primary-button-shadow-colour, false);
-@include create-button("hackaway-blurple", $chat-link-colour, $primary-button-shadow-colour, false);
-@include create-button("hackaway-white", $primary-button-colour, $primary-button-shadow-colour, false);
-@include create-button("hackaway-orange", $secondary-button-colour, $secondary-button-shadow-colour, true);
+@include create-button(
+  "hackaway-youtube",
+  black,
+  $youtube-link-colour,
+  $primary-button-shadow-colour,
+  false
+);
+@include create-button(
+  "hackaway-twitch",
+  black,
+  $twitch-link-colour,
+  $primary-button-shadow-colour,
+  false
+);
+@include create-button(
+  "hackaway-blurple",
+  white,
+  $chat-link-colour,
+  $primary-button-shadow-colour,
+  false
+);
+@include create-button(
+  "hackaway-white",
+  $primary-button-foreground-colour,
+  $primary-button-background-colour,
+  $primary-button-shadow-colour,
+  false
+);
+@include create-button(
+  "hackaway-orange",
+  black,
+  $secondary-button-colour,
+  $secondary-button-shadow-colour,
+  true
+);

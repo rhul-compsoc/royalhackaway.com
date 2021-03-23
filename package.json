@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Royal Holloway Computing Society <hello@computingsociety.co.uk>",
   "dependencies": {
+    "@fontsource/anonymous-pro": "^4.2.2",
     "bootstrap": "^4.6.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",

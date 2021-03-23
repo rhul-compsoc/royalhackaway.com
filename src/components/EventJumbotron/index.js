@@ -110,7 +110,7 @@ class EventJumbotron extends Component {
                 )}
                 {livestream_button_enable && livestream_type === "youtube" && (
                   <a
-                    className="btn btn-hackaway-youtube text-white px-4"
+                    className="btn btn-hackaway-youtube px-4"
                     href={`https://www.youtube.com/watch?v=${livestream_link}`}
                   >
                     <FaYoutube /> YouTube
@@ -118,17 +118,14 @@ class EventJumbotron extends Component {
                 )}
                 {livestream_button_enable && livestream_type === "twitch" && (
                   <a
-                    className="btn btn-hackaway-twitch text-white px-4"
+                    className="btn btn-hackaway-twitch px-4"
                     href={`https://twitch.tv/${livestream_link}`}
                   >
                     <FaTwitch /> Twitch.tv
                   </a>
                 )}
                 {chat_link_enable && (
-                  <a
-                    className="btn btn-hackaway-blurple text-white px-4"
-                    href={chat_link}
-                  >
+                  <a className="btn btn-hackaway-blurple px-4" href={chat_link}>
                     <FaDiscord /> Join Discord
                   </a>
                 )}

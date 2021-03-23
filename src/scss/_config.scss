@@ -1,16 +1,51 @@
-$hackaway-orange: #f48c42;
+:root {
+  --hackaway-orange: #f35c22;
 
-$primary-foreground-colour: white;
-$primary-background-colour: $hackaway-orange;
+  --primary-foreground-colour: white;
+  --primary-background-colour: var(--hackaway-orange);
 
-$secondary-foreground-colour: white;
-$secondary-background-colour: #343a40;
+  --secondary-foreground-colour: white;
+  --secondary-background-colour: #343a40;
 
-$tertiary-foreground-colour: black;
-$tertiary-background-colour: white;
+  --tertiary-foreground-colour: black;
+  --tertiary-background-colour: white;
 
-$primary-button-colour: white;
-$primary-button-shadow-colour: black;
+  --primary-button-foreground-colour: black;
+  --primary-button-background-colour: white;
+  --primary-button-shadow-colour: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-foreground-colour: white;
+    --primary-background-colour: #202225;
+
+    --secondary-foreground-colour: white;
+    --secondary-background-colour: #343a40;
+
+    --tertiary-foreground-colour: white;
+    --tertiary-background-colour: #2f3136;
+
+    --primary-button-foreground-colour: white;
+    --primary-button-background-colour: #4c5059;
+    --primary-button-shadow-colour: black;
+  }
+}
+
+$hackaway-orange: var(--hackaway-orange);
+
+$primary-foreground-colour: var(--primary-foreground-colour);
+$primary-background-colour: var(--primary-background-colour);
+
+$secondary-foreground-colour: var(--secondary-foreground-colour);
+$secondary-background-colour: var(--secondary-background-colour);
+
+$tertiary-foreground-colour: var(--tertiary-foreground-colour);
+$tertiary-background-colour: var(--tertiary-background-colour);
+
+$primary-button-foreground-colour: var(--primary-button-foreground-colour);
+$primary-button-background-colour: var(--primary-button-background-colour);
+$primary-button-shadow-colour: var(--primary-button-shadow-colour);
 
 $secondary-button-colour: #eb6824;
 $secondary-button-shadow-colour: darken($secondary-button-colour, 20%);
@@ -19,14 +54,16 @@ $jumbotron-background-gradient: linear-gradient(to right, #f67e3a, #f39346);
 $jumbotron-foreground-colour: white;
 
 $footer-link-colour: $hackaway-orange;
-$chat-link-colour: #7289DA;
-$twitch-link-colour: #9146FF;
-$youtube-link-colour: #FF0000;
+$chat-link-colour: #7289da;
+$twitch-link-colour: #9146ff;
+$youtube-link-colour: #ff0000;
 
 $mobile-width: 576px;
 $radius: 5px;
 
-// $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-// $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
-// $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// $font-family-base:       $font-family-sans-serif !default;
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;

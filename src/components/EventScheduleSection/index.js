@@ -1,8 +1,9 @@
 import React from "react"
 import { Section } from "../Section"
+import { scheduleSection } from "./index.module.scss"
 
 const EventScheduleSection = ({ schedule }) => (
-  <Section title="Schedule">
+  <Section title="Schedule" className={scheduleSection}>
     <div className="container">
       <div className="row">
         {schedule.map(({ name, events }, scheduleIndex) => (

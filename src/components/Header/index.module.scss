@@ -1,8 +1,14 @@
+@use "config";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
 $logo-height: 2.5rem;
+
+.header {
+  color: config.$tertiary-foreground-colour;
+  background-color: config.$tertiary-background-colour;
+}
 
 .navBar {
   display: flex;

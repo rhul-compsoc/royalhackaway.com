@@ -1,0 +1,6 @@
+@use 'config';
+
+.eventsSection {
+  background: config.$primary-background-colour;
+  color: config.$primary-foreground-colour;
+}

@@ -1,4 +1,4 @@
-@import '_config';
+@import "_config";
 
 .description {
   white-space: pre-wrap;
@@ -34,7 +34,7 @@
   justify-content: center;
 
   .name {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: bold;
   }
 }

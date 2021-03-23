@@ -4,6 +4,7 @@ import { Layout } from "../components/Layout"
 import { Section } from "../components/Section"
 import { SiteSEO } from "../components/SiteSEO"
 import { EventInformationCard } from "../components/EventInformationCard"
+import { eventsSection } from "./events.module.scss"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -30,7 +31,7 @@ const HomePage = ({ data }) => {
         description="A list of all current and past events"
       />
 
-      <Section title="Events">
+      <Section title="Events" className={eventsSection}>
         <div class="container text-center">
           <div class="row">
             <div class="col-12 col-md-6">
