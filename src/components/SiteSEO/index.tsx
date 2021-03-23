@@ -9,9 +9,9 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 interface Props {
-  title: string
-  description: string
-  image: string
+  title?: string
+  description?: string
+  image?: string
 }
 
 const SiteSEO = ({ title, description, image }: Props) => {
