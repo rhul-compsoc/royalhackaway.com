@@ -4,7 +4,7 @@ short_name: Royal Hackaway v4
 subtitle: Create something awesome
 render: true
 is-public: true
-is-over: false
+is-over: true
 
 # Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
 # Sets up (temporary) redirect from "/events/hackawayv4" to "/"
