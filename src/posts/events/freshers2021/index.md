@@ -1,5 +1,5 @@
 ---
-name: fresher's hack
+name: fresher's hack 2021
 short_name: fresher's hack
 subtitle: null
 render: true
@@ -17,7 +17,7 @@ redirects:
 # It counts down to Freshers 2021 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
 countdown_timer_enable: true
 event_start: "2021-08-06T10:00:00+00:00"
-event_end: "2021-08-07T18:00:00+00:00"
+event_end: "2021-08-06T20:00:00+00:00"
 
 # A wide (about 3:1 aspect ratio) picture to display for this event.
 event_widescreen_logo: ./DiscordCanary_9EdQ4hkP3l.png

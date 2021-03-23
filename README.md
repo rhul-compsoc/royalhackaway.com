@@ -1,9 +1,9 @@
 # Royal Hackaway
 
 - [Website](https://royalhackaway.com)
-- [Hackaway v4](https://royalhackaway.com/events/hackawayv4/)
-  - [Register Your Interest for Hackaway v4](https://docs.google.com/forms/d/e/1FAIpQLSerZeQKMV_A0Wp3SHzUMSWY0aVisi4VLGH6jp1FzO3NV-EVWQ/viewform)
-  - [Sponsor Us](https://royalhackaway.com/static/c2d5b1fee39c6e1e23c2dfd5fb89c69a/SponsorDeckV4.pdf)
+  - [freshers hack](https://royalhackaway.com/events/freshers2021/)
+  - [Hackaway v5](https://royalhackaway.com/events/hackawayv5/)
+  - [~~Hackaway v4~~](https://royalhackaway.com/events/hackawayv4/)
 
 # Images
 

@@ -1,6 +1,6 @@
 ---
-name: Royal Hackaway v5
-short_name: Royal Hackaway v5
+name: Hackaway v5
+short_name: Hackaway v5
 subtitle: Create something awesome
 render: true
 is-public: true

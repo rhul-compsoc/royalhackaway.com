@@ -1,12 +1,27 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 import { Layout } from "../components/Layout"
 import { Section } from "../components/Section"
 import { SiteSEO } from "../components/SiteSEO"
+import { EventInformationCard } from "../components/EventInformationCard"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
   const { nodes } = allMarkdownRemark
+
+  const future = nodes
+    .filter(({ frontmatter }) => frontmatter.is_public && !frontmatter.is_over)
+    .sort(
+      ({ frontmatter: a }, { frontmatter: b }) =>
+        new Date(a.event_start) - new Date(b.event_start)
+    )
+
+  const past = nodes
+    .filter(({ frontmatter }) => frontmatter.is_public && frontmatter.is_over)
+    .sort(
+      ({ frontmatter: a }, { frontmatter: b }) =>
+        new Date(b.event_start) - new Date(a.event_start)
+    )
 
   return (
     <Layout>
@@ -16,31 +31,33 @@ const HomePage = ({ data }) => {
       />
 
       <Section title="Events">
-        <div className="text-center container" style={{ alignSelf: "center" }}>
-          {nodes
-            .filter(node => node.frontmatter.is_public)
-            .map(node => {
-              const { frontmatter: event, fields } = node
-
-              const start = new Date(event.event_start)
-              const end = new Date(event.event_end)
-              const link = event.homepage ? "/" : fields.slug
-
-              return (
-                <div key={node.id} className="py-4">
-                  <h2>{event.name}</h2>
-                  <p>
-                    {start.toLocaleDateString()} - {end.toLocaleDateString()}
-                  </p>
-                  <Link
-                    to={link}
-                    className="btn btn-hackaway-orange text-white px-4"
-                  >
-                    {event.short_name}
-                  </Link>
-                </div>
-              )
-            })}
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h3>Future Events</h3>
+              {future.length ? (
+                future.map(node => (
+                  <EventInformationCard key={node.id} node={node} />
+                ))
+              ) : (
+                <p>
+                  We don't have any future events planned yet...
+                  <br />
+                  Check back with us soon!
+                </p>
+              )}
+            </div>
+            <div class="col-12 col-md-6">
+              <h3>Past Events</h3>
+              {past.length ? (
+                past.map(node => (
+                  <EventInformationCard key={node.id} node={node} />
+                ))
+              ) : (
+                <p>There aren't any past events for you to see.</p>
+              )}
+            </div>
+          </div>
         </div>
       </Section>
     </Layout>
@@ -59,6 +76,7 @@ export const pageQuery = graphql`
         frontmatter {
           name
           is_public
+          is_over
           short_name
           homepage
           event_start
