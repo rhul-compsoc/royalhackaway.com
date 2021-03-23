@@ -82,8 +82,8 @@ exports.createPages = ({ actions, graphql, reporter }) => {
 
     result.data.allMarkdownRemark.edges
       .filter(
-        // If public, create the page based on the folder it is in.
-        ({ node }) => node.frontmatter.render && node.frontmatter.is_public
+        // Filter out edges where rendering is not enabled
+        ({ node }) => node.frontmatter.render
       )
       .forEach(({ node }) => {
         const template = node.fields.template
