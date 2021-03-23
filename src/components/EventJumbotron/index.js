@@ -9,7 +9,7 @@ import {
 import { ButtonsContainer } from "../ButtonsContainer"
 import * as styles from "./index.module.scss"
 
-class HackathonTitle extends Component {
+class EventJumbotron extends Component {
   render() {
     const {
       ticket_button_enable,
@@ -132,4 +132,4 @@ class HackathonTitle extends Component {
   }
 }
 
-export { HackathonTitle }
+export { EventJumbotron }

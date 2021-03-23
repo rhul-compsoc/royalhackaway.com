@@ -88,7 +88,7 @@ class Footer extends Component {
                     to="/events"
                     className="link-orange text-decoration-none"
                   >
-                    Past Events
+                    All Events
                   </Link>
                 </li>
               </ul>

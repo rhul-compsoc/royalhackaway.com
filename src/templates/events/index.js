@@ -1,16 +1,16 @@
 import { graphql } from "gatsby"
 import React from "react"
-import { FrequentlyAskedQuestionsSection } from "../../components/FrequentlyAskedQuestionsSection"
-import { EventSponsors } from "../../components/EventSponsors"
-import { HackathonCountdown } from "../../components/HackathonCountdown"
-import { HackathonDefinition } from "../../components/HackathonDefinition"
-import { HackathonTitle } from "../../components/HackathonTitle"
+import { EventCountdownSection } from "../../components/EventCountdownSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../components/EventFrequentlyAskedQuestionsSection"
+import { EventJumbotron } from "../../components/EventJumbotron"
+import { EventLocationSection } from "../../components/EventLocationSection"
+import { EventPeopleSection } from "../../components/EventPeopleSection"
+import { EventScheduleSection } from "../../components/EventScheduleSection"
+import { EventSponsorsSection } from "../../components/EventSponsorsSection"
+import { HackathonDefinitionSection } from "../../components/HackathonDefinitionSection"
 import { Layout } from "../../components/Layout"
-import { PeopleSection } from "../../components/PeopleSection"
-import { ScheduleSection } from "../../components/ScheduleSection"
-import { GoogleMaps } from "../../components/GoogleMaps"
-import { SEO } from "../../components/SEO"
 import { MajorLeagueHackingBadge } from "../../components/MajorLeagueHackingBadge"
+import { SiteSEO } from "../../components/SiteSEO"
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -39,23 +39,25 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={short_name} description={short_description} />
-      <HackathonTitle frontmatter={frontmatter} />
-      {start_timer_enable && <HackathonCountdown start={start} />}
-      {hackathon_definition_enable && <HackathonDefinition />}
-      {location_embed_enable && <GoogleMaps map={location_embed_link} />}
-      {faq_enable && <FrequentlyAskedQuestionsSection faq={faq} />}
+      <SiteSEO title={short_name} description={short_description} />
+      <EventJumbotron frontmatter={frontmatter} />
+      {start_timer_enable && <EventCountdownSection start={start} />}
+      {hackathon_definition_enable && <HackathonDefinitionSection />}
+      {location_embed_enable && (
+        <EventLocationSection map={location_embed_link} />
+      )}
+      {faq_enable && <EventFrequentlyAskedQuestionsSection faq={faq} />}
       {sponsors_list_enable && (
-        <EventSponsors
+        <EventSponsorsSection
           sponsors={sponsors}
           sponsor_document={sponsor_document}
           sponsor_document_enable={sponsor_document_enable}
         />
       )}
       {people_enable && (
-        <PeopleSection event_name={short_name} people={people} />
+        <EventPeopleSection event_name={short_name} people={people} />
       )}
-      {schedule_enable && <ScheduleSection schedule={schedule} />}
+      {schedule_enable && <EventScheduleSection schedule={schedule} />}
 
       {mlh_badge_enable && <MajorLeagueHackingBadge year={mlh_badge_year} />}
     </Layout>

@@ -1,7 +1,8 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
 import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
+import { Section } from "../components/Section"
+import { SiteSEO } from "../components/SiteSEO"
 
 const HomePage = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -9,38 +10,39 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO
+      <SiteSEO
         title="All Events"
         description="A list of all current and past events"
       />
 
-      <section>
+      <Section title="Events">
         <div className="text-center container" style={{ alignSelf: "center" }}>
-          <h1 className="display-1 fw-bold">Events</h1>
-          {nodes.map(node => {
-            const { frontmatter: event, fields } = node
+          {nodes
+            .filter(node => node.frontmatter.is_public)
+            .map(node => {
+              const { frontmatter: event, fields } = node
 
-            const start = new Date(event.start)
-            const end = new Date(event.end)
-            const link = event.homepage ? "/" : fields.slug
+              const start = new Date(event.start)
+              const end = new Date(event.end)
+              const link = event.homepage ? "/" : fields.slug
 
-            return (
-              <div key={node.id} className="py-4">
-                <h2>{event.name}</h2>
-                <p>
-                  {start.toLocaleDateString()} - {end.toLocaleDateString()}
-                </p>
-                <Link
-                  to={link}
-                  className="btn btn-hackaway-orange text-white px-4"
-                >
-                  {event.short_name}
-                </Link>
-              </div>
-            )
-          })}
+              return (
+                <div key={node.id} className="py-4">
+                  <h2>{event.name}</h2>
+                  <p>
+                    {start.toLocaleDateString()} - {end.toLocaleDateString()}
+                  </p>
+                  <Link
+                    to={link}
+                    className="btn btn-hackaway-orange text-white px-4"
+                  >
+                    {event.short_name}
+                  </Link>
+                </div>
+              )
+            })}
         </div>
-      </section>
+      </Section>
     </Layout>
   )
 }
@@ -56,6 +58,7 @@ export const pageQuery = graphql`
         id
         frontmatter {
           name
+          is_public
           short_name
           homepage
           start

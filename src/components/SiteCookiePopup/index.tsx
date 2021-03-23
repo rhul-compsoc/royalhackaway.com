@@ -16,7 +16,7 @@ interface State {
   show: boolean
 }
 
-class CookieCutter extends Component<Props, State> {
+class SiteCookiePopup extends Component<Props, State> {
   cookies = new Cookies()
   state = {
     show: false,
@@ -104,4 +104,4 @@ class CookieCutter extends Component<Props, State> {
   }
 }
 
-export { CookieCutter }
+export { SiteCookiePopup }

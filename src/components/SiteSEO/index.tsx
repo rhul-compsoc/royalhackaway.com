@@ -14,7 +14,7 @@ interface Props {
   image: string
 }
 
-const SEO = ({ title, description, image }: Props) => {
+const SiteSEO = ({ title, description, image }: Props) => {
   return (
     <Helmet>
       {title && <title>{title}</title>}
@@ -28,4 +28,4 @@ const SEO = ({ title, description, image }: Props) => {
   )
 }
 
-export { SEO }
+export { SiteSEO }

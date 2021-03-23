@@ -1,11 +1,10 @@
 import React, { Component } from "react"
-import { CombineStyles } from "../../helpers/CombineStyles"
 import { partition } from "../../helpers/partition"
 import { Collapsable } from "../Collapsable"
 import { Section } from "../Section"
 import * as styles from "./index.module.scss"
 
-class FrequentlyAskedQuestionsSection extends Component {
+class EventFrequentlyAskedQuestionsSection extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -50,4 +49,4 @@ class FrequentlyAskedQuestionsSection extends Component {
   }
 }
 
-export { FrequentlyAskedQuestionsSection }
+export { EventFrequentlyAskedQuestionsSection }

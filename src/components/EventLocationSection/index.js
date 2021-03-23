@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import * as styles from "./index.module.scss"
+import { googleMaps } from "./index.module.scss"
 
-class GoogleMaps extends Component {
+class EventLocationSection extends Component {
   render() {
     return (
-      <section className={styles.googleMaps}>
+      <section className={googleMaps}>
         <iframe
           src={this.props.map}
           frameBorder="0"
@@ -15,4 +15,4 @@ class GoogleMaps extends Component {
   }
 }
 
-export { GoogleMaps }
+export { EventLocationSection }

@@ -3,7 +3,7 @@ import { CombineStyles } from "../../helpers/CombineStyles"
 import { Section } from "../Section"
 import * as styles from "./index.module.scss"
 
-class EventSponsors extends Component {
+class EventSponsorsSection extends Component {
   render() {
     const {
       sponsors,
@@ -80,4 +80,4 @@ class EventSponsors extends Component {
   }
 }
 
-export { EventSponsors }
+export { EventSponsorsSection }

@@ -1,7 +1,7 @@
 import React from "react"
 import { Section } from "../Section"
 
-const ScheduleSection = ({ schedule }) => (
+const EventScheduleSection = ({ schedule }) => (
   <Section title="Schedule">
     <div className="container">
       <div className="row">
@@ -32,4 +32,4 @@ const ScheduleSection = ({ schedule }) => (
   </Section>
 )
 
-export { ScheduleSection }
+export { EventScheduleSection }

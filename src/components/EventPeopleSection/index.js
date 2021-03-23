@@ -1,11 +1,11 @@
-import React from "react"
-import * as styles from "./index.module.scss"
 import Img from "gatsby-image"
-import { PersonHandle } from "../PersonHandle"
+import React from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
+import { PersonHandle } from "../PersonHandle"
 import { Section } from "../Section"
+import * as styles from "./index.module.scss"
 
-const PeopleSection = ({ event_name, people }) => (
+const EventPeopleSection = ({ event_name, people }) => (
   <Section
     className={styles.people}
     title="The Team"
@@ -67,4 +67,4 @@ const PeopleSection = ({ event_name, people }) => (
   </Section>
 )
 
-export { PeopleSection }
+export { EventPeopleSection }

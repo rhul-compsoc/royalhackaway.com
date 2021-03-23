@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
-import { section, titleContainer, header } from "./index.module.scss"
+import { header, section, titleContainer } from "./index.module.scss"
 
 const Section = ({
   children,

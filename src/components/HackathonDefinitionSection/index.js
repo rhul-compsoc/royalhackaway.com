@@ -1,17 +1,15 @@
 import React, { Component } from "react"
-import { CombineStyles } from "../../helpers/CombineStyles"
 import { Section } from "../Section"
 import {
+  definition,
   hackathonDef,
-  header,
   leftText,
-  word,
   link,
   pronunciation,
-  definition,
+  word,
 } from "./index.module.scss"
 
-class HackathonDefinition extends Component {
+class HackathonDefinitionSection extends Component {
   render() {
     return (
       <Section className={hackathonDef} title="We make hackathons happen">
@@ -46,4 +44,4 @@ class HackathonDefinition extends Component {
   }
 }
 
-export { HackathonDefinition }
+export { HackathonDefinitionSection }

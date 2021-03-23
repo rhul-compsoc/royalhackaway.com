@@ -2,7 +2,7 @@ import React from "react"
 import Countdown from "react-countdown"
 import * as styles from "./index.module.scss"
 
-const HackathonCountdown = ({ start }) => (
+const EventCountdownSection = ({ start }) => (
   <section className={styles.hackathonCountdown}>
     <div className="container">
       <Countdown
@@ -38,4 +38,4 @@ const HackathonCountdown = ({ start }) => (
   </section>
 )
 
-export { HackathonCountdown }
+export { EventCountdownSection }

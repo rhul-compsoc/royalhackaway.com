@@ -5,15 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 import { Location } from "@reach/router"
-import favicon from "../../assets/images/logo/rh-small-64.png"
+import { graphql, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { Helmet } from "react-helmet"
 import logo from "../../assets/images/logo/rh-small-1024.png"
+import favicon from "../../assets/images/logo/rh-small-64.png"
 
-const DefaultSEO = ({ lang = "en-GB" }) => {
+const SiteDefaultSEO = ({ lang = "en-GB" }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -95,11 +95,11 @@ const DefaultSEO = ({ lang = "en-GB" }) => {
   )
 }
 
-DefaultSEO.propTypes = {
+SiteDefaultSEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
 }
 
-export { DefaultSEO }
+export { SiteDefaultSEO }
