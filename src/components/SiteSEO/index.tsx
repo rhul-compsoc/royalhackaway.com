@@ -23,7 +23,9 @@ const SiteSEO = ({ title, description, image }: Props) => {
       {description && <meta property="og:description" content={description} />}
       {description && <meta name="description" content={description} />}
       {description && <meta name="twitter:description" content={description} />}
-      {image && <meta name="og:image" content={image}></meta>}
+      {image && <meta property="og:image" content={image}></meta>}
+      {image && <meta name="twitter:card" content="summary_large_image"></meta>}
+      {image && <meta name="twitter:image" content={image}></meta>}
     </Helmet>
   )
 }

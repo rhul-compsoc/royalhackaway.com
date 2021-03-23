@@ -16,6 +16,7 @@ const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   const {
+    event_widescreen_logo,
     sponsors_list_enable,
     sponsors,
     sponsor_document_enable,
@@ -40,6 +41,9 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <SiteSEO title={short_name} description={short_description} />
+      {event_widescreen_logo && (
+        <SiteSEO image={event_widescreen_logo.publicURL} />
+      )}
       <EventJumbotron frontmatter={frontmatter} />
       {countdown_timer_enable && <EventCountdownSection start={event_start} />}
       {hackathon_definition_enable && <HackathonDefinitionSection />}
