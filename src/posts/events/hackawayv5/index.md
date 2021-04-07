@@ -21,7 +21,9 @@ event_start: "2022-02-05T10:00:00+00:00"
 event_end: "2022-02-06T18:00:00+00:00"
 
 # A wide (about 3:1 aspect ratio) picture to display for this event.
-event_widescreen_logo: null
+event_widescreen_logo:
+  light: null
+  dark: null
 
 # Jumbotron Settings
 # Enabling/Disabling the follow will show/hide the respective options.

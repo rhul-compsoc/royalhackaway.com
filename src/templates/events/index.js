@@ -77,10 +77,20 @@ export const pageQuery = graphql`
         chat_link_enable
         display_date
         event_widescreen_logo {
-          publicURL
-          childImageSharp {
-            fluid(maxHeight: 256) {
-              ...GatsbyImageSharpFluid
+          light {
+            publicURL
+            childImageSharp {
+              fluid(maxHeight: 256) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          dark {
+            publicURL
+            childImageSharp {
+              fluid(maxHeight: 256) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

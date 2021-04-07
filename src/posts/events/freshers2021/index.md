@@ -20,7 +20,9 @@ event_start: "2021-08-06T10:00:00+00:00"
 event_end: "2021-08-06T20:00:00+00:00"
 
 # A wide (about 3:1 aspect ratio) picture to display for this event.
-event_widescreen_logo: ./DiscordCanary_9EdQ4hkP3l.png
+event_widescreen_logo:
+  light: ./DiscordCanary_9EdQ4hkP3l.png
+  dark: ./DiscordCanary_9EdQ4hkP3l.png
 
 # Jumbotron Settings
 # Enabling/Disabling the follow will show/hide the respective options.
