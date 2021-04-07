@@ -32,9 +32,9 @@ const HomePage = ({ data }) => {
       />
 
       <Section title="Events" className={eventsSection}>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-12 col-md-6">
+        <div className="container text-center">
+          <div className="row">
+            <div className="col-12 col-md-6">
               <h3>Future Events</h3>
               {future.length ? (
                 future.map(node => (
@@ -42,20 +42,20 @@ const HomePage = ({ data }) => {
                 ))
               ) : (
                 <p>
-                  We don't have any future events planned yet...
+                  We don&apos;t have any future events planned yet...
                   <br />
                   Check back with us soon!
                 </p>
               )}
             </div>
-            <div class="col-12 col-md-6">
+            <div className="col-12 col-md-6">
               <h3>Past Events</h3>
               {past.length ? (
                 past.map(node => (
                   <EventInformationCard key={node.id} node={node} />
                 ))
               ) : (
-                <p>There aren't any past events for you to see.</p>
+                <p>There aren&apos;t any past events for you to see.</p>
               )}
             </div>
           </div>

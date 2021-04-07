@@ -1,9 +1,10 @@
 import React from "react"
 import Countdown from "react-countdown"
+import { Section } from "../Section"
 import * as styles from "./index.module.scss"
 
 const EventCountdownSection = ({ start }) => (
-  <section className={styles.hackathonCountdown}>
+  <Section className={styles.hackathonCountdown}>
     <div className="container">
       <Countdown
         renderer={({ days, hours, minutes, seconds }) => (
@@ -35,7 +36,7 @@ const EventCountdownSection = ({ start }) => (
         date={start}
       />
     </div>
-  </section>
+  </Section>
 )
 
 export { EventCountdownSection }

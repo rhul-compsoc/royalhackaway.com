@@ -90,7 +90,7 @@ class Collapsable extends Component<Props, State> {
     return (
       <div className={styles.collapsable}>
         <div
-          className={CombineStyles("btn btn-hackaway-white", styles.button)}
+          className={CombineStyles("btn btn-hackaway-primary", styles.button)}
           onClick={() =>
             typeof this.props.collapsed !== "boolean" && this.toggleState()
           }

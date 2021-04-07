@@ -13,7 +13,7 @@ const Section = ({
   subtitle?: string
   className?: string
 }): ReactNode => (
-  <div className={CombineStyles(section, className)}>
+  <section className={CombineStyles(section, className)}>
     {title && (
       <div className={CombineStyles("container", titleContainer)}>
         <div className="row">
@@ -25,7 +25,7 @@ const Section = ({
       </div>
     )}
     {children}
-  </div>
+  </section>
 )
 
 export { Section }

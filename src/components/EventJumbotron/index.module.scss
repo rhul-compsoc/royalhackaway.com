@@ -23,6 +23,11 @@
 
 .hackathonTitle {
   background-image: url("../../assets/images/background/founders-side-orange.jpg");
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../../assets/images/background/founders-side-dark.jpg");
+  }
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

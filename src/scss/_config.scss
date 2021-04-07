@@ -2,7 +2,7 @@
   --hackaway-orange: #f35c22;
 
   --primary-foreground-colour: white;
-  --primary-background-colour: var(--hackaway-orange);
+  --primary-background-colour: #f48c42;
 
   --secondary-foreground-colour: white;
   --secondary-background-colour: #343a40;
@@ -50,7 +50,6 @@ $primary-button-shadow-colour: var(--primary-button-shadow-colour);
 $secondary-button-colour: #eb6824;
 $secondary-button-shadow-colour: darken($secondary-button-colour, 20%);
 
-$jumbotron-background-gradient: linear-gradient(to right, #f67e3a, #f39346);
 $jumbotron-foreground-colour: white;
 
 $footer-link-colour: $hackaway-orange;

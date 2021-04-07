@@ -90,19 +90,19 @@ class EventJumbotron extends Component {
               <ButtonsContainer>
                 {ticket_button_enable ? (
                   <a
-                    className="btn btn-hackaway-white px-4"
+                    className="btn btn-hackaway-primary px-4"
                     href={ticket_button_link}
                   >
                     {ticket_button_label}
                   </a>
                 ) : (
-                  <span className="btn btn-hackaway-white px-4 disabled">
+                  <span className="btn btn-hackaway-primary px-4 disabled">
                     {ticket_button_label}
                   </span>
                 )}
                 {sponsor_document_enable && (
                   <a
-                    className="btn btn-hackaway-white px-4"
+                    className="btn btn-hackaway-primary px-4"
                     href={sponsor_document?.publicURL}
                   >
                     Sponsor Us

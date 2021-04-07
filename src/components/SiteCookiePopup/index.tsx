@@ -80,7 +80,7 @@ class SiteCookiePopup extends Component<Props, State> {
               </div>
               <div className={CombineStyles("col-auto", styles.col)}>
                 <button
-                  className="btn btn-hackaway-white"
+                  className="btn btn-hackaway-primary"
                   onClick={this.decline}
                 >
                   No
