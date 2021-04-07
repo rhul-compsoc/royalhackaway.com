@@ -1,6 +1,8 @@
 :root {
   --hackaway-orange: #f35c22;
 
+  --body-background-colour: white;
+
   --primary-foreground-colour: white;
   --primary-background-colour: #f48c42;
 
@@ -17,6 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --body-background-colour: #202225;
+
     --primary-foreground-colour: white;
     --primary-background-colour: #202225;
 
@@ -33,6 +37,8 @@
 }
 
 $hackaway-orange: var(--hackaway-orange);
+
+$body-background-colour: var(--body-background-colour);
 
 $primary-foreground-colour: var(--primary-foreground-colour);
 $primary-background-colour: var(--primary-background-colour);

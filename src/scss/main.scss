@@ -6,3 +6,7 @@
 @import "_buttons";
 @import "_fonts";
 @import "_media_queries";
+
+body {
+  background-color: $body-background-colour;
+}
