@@ -2,41 +2,11 @@
 /* Use this folder to also add/extend a package d.ts file, if needed. */
 
 /* CSS MODULES */
-declare module "*.module.css" {
-  interface IClassNames {
-    [className: string]: string
-  }
-  const classNames: IClassNames
-  export = classNames
-}
-declare module "*.module.scss" {
-  interface IClassNames {
-    [className: string]: string
-  }
-  const classNames: IClassNames
-  export = classNames
-}
-declare module "*.module.sass" {
-  interface IClassNames {
-    [className: string]: string
-  }
-  const classNames: IClassNames
-  export = classNames
-}
-declare module "*.module.less" {
-  interface IClassNames {
-    [className: string]: string
-  }
-  const classNames: IClassNames
-  export = classNames
-}
-declare module "*.module.styl" {
-  interface IClassNames {
-    [className: string]: string
-  }
-  const classNames: IClassNames
-  export = classNames
-}
+declare module "*.module.css"
+declare module "*.module.scss"
+declare module "*.module.sass"
+declare module "*.module.less"
+declare module "*.module.styl"
 
 /* CSS */
 declare module "*.css"
