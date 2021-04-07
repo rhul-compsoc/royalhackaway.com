@@ -39,14 +39,7 @@ const EventPeopleSection = ({ event_name, people }) => (
                       {person.frontmatter.name}
                     </span>
                     <br />
-                    <span
-                      className={CombineStyles(
-                        styles.description,
-                        "text-muted"
-                      )}
-                    >
-                      {role}
-                    </span>
+                    <span className={styles.description}>{role}</span>
                     <div className={styles.handles}>
                       {person.frontmatter.handles.map(handle => (
                         <PersonHandle

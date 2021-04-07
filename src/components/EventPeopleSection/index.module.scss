@@ -10,8 +10,8 @@
   flex-direction: column;
   padding-bottom: 2em;
   .cardContent {
-    background-color: white;
-    color: black;
+    color: $tertiary-foreground-colour;
+    background-color: $tertiary-background-colour;
     padding: 0.5em 0.25em;
     .name {
       font-weight: bold;
