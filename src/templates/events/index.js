@@ -121,9 +121,20 @@ export const pageQuery = graphql`
                 handle
               }
               image {
-                childImageSharp {
-                  fluid(maxWidth: 512) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
@@ -155,10 +166,20 @@ export const pageQuery = graphql`
               name
               link
               image {
-                publicURL
-                childImageSharp {
-                  fluid(maxHeight: 256) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }

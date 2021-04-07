@@ -1,7 +1,9 @@
 ---
 name: Tom Bailey
 render: false
-image: ./me.jpg
+image:
+  light: ./me.jpg
+  dark: ./me.jpg
 handles:
   - service: github
     handle: AreYouW

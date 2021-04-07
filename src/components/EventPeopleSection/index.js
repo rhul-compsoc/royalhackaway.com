@@ -3,6 +3,7 @@ import React from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { PersonHandle } from "../PersonHandle"
 import { Section } from "../Section"
+import { SiteImage } from "../SiteImage"
 import * as styles from "./index.module.scss"
 
 const EventPeopleSection = ({ event_name, people }) => (
@@ -24,11 +25,9 @@ const EventPeopleSection = ({ event_name, people }) => (
                 key={person.frontmatter.name}
               >
                 <div className={styles.pictureContainer}>
-                  <Img
-                    fluid={{
-                      ...person.frontmatter.image.childImageSharp.fluid,
-                      aspectRatio: 1,
-                    }}
+                  <SiteImage
+                    fluid={{ aspectRatio: 1 }}
+                    image={person.frontmatter.image}
                     className={styles.picture}
                     title={person.frontmatter.description}
                   />

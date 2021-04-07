@@ -1,5 +1,7 @@
 ---
 name: Hacksmiths
-image: ./hacksmiths.svg
+image:
+  light: ./hacksmiths.svg
+  dark: ./hacksmiths.svg
 link: https://goldsmiths.tech/
 ---

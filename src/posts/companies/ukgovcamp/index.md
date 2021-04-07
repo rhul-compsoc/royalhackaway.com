@@ -1,5 +1,7 @@
 ---
 name: UKGovCamp
-image: ./ukgc.png
+image:
+  light: ./ukgc.png
+  dark: ./ukgc.png
 link: https://www.ukgovcamp.com/
 ---

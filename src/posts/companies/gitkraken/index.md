@@ -1,5 +1,7 @@
 ---
 name: Gitkraken
-image: ./gitkraken.svg
+image:
+  light: ./gitkraken.svg
+  dark: ./gitkraken.svg
 link: https://www.gitkraken.com/
 ---

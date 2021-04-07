@@ -26,17 +26,6 @@ class EventSponsorsSection extends Component {
                   </h2>
                   <div className={styles.sponsorTier}>
                     {tier.companies.map(({ frontmatter: company }) => {
-                      let width
-
-                      // If there's a bitmap, calculate the appropriate width
-                      // so that it can fit in perfectly.
-                      if (company.image?.childImageSharp?.fluid.aspectRatio) {
-                        width =
-                          tierSizes[tier.tier] *
-                            company.image.childImageSharp.fluid.aspectRatio +
-                          "em"
-                      }
-
                       return (
                         <a
                           key={company.name}
@@ -45,12 +34,9 @@ class EventSponsorsSection extends Component {
                         >
                           <SiteImage
                             className={styles.sponsorLogo}
-                            style={{
-                              height: tierSizes[tier.tier] + "em",
-                              width,
-                            }}
+                            fixedHeight={tierSizes[tier.tier]}
                             image={company.image}
-                            key={company.image.publicURL}
+                            key={company.link}
                             alt={company.name}
                             title={company.name}
                           />

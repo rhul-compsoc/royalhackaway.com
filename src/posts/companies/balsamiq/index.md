@@ -1,5 +1,7 @@
 ---
 name: Balsamiq
-image: ./balsamiq-logo-screen.svg
+image:
+  light: ./balsamiq-logo-screen.svg
+  dark: ./balsamiq-logo-screen.svg
 link: https://balsamiq.com/
 ---

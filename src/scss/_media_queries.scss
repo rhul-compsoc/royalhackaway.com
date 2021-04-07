@@ -1,15 +1,11 @@
-.hackaway-light-theme {
-  display: unset;
-}
-.hackaway-dark-theme {
-  display: none;
+@media (prefers-color-scheme: light) {
+  .hackaway-dark-theme {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .hackaway-light-theme {
     display: none;
-  }
-  .hackaway-dark-theme {
-    display: unset;
   }
 }
