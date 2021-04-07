@@ -18,6 +18,17 @@ const getTemplate = templateName => {
   }
 }
 
+/**
+ * When Gatsby starts to create GraphQL nodes, we can extend some of these
+ * nodes to include our own information for our benefit.
+ *
+ * Here, we slap on:
+ * id       | Based on the markdown filename
+ * slug     | Based on where the markdown file is in the file system
+ * template | Based on which folder the markdown file is in the file system
+ *
+ * The ID will later be used for relational linking or whatever.
+ */
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
@@ -28,6 +39,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const folderName = directoryParts[0]
     const slug = createFilePath({ node, getNode })
 
+    // Grab the filename of the Markdown file.
     const { name } = path.parse(
       createFilePath({ node, getNode, trailingSlash: false })
     )
