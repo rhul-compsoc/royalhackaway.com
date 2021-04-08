@@ -5,7 +5,7 @@ description: null
 render: false
 image:
   light: ./cropped.jpg
-  dark: ./cropped.jpg
+  dark: ./Amogus.webp
 handles:
   - service: linkedin
     handle: oliver-graham-0083271ba
