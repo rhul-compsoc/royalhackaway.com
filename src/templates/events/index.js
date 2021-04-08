@@ -39,7 +39,9 @@ const HomePage = ({ data }) => {
   } = frontmatter
 
   return (
-    <Layout>
+    <Layout
+      sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
+    >
       <SiteSEO title={short_name} description={short_description} />
       {event_widescreen_logo && (
         <SiteSEO image={event_widescreen_logo.publicURL} />

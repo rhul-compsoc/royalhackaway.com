@@ -55,7 +55,7 @@ const SiteImage = ({
             ...style,
             height,
           }}
-          className={CombineStyles(className, "hackaway-light-theme")}
+          className={CombineStyles(className, "hackaway-light-theme-only")}
         />
       ) : (
         <GatsbyImage
@@ -69,7 +69,7 @@ const SiteImage = ({
             width,
             height,
           }}
-          className={CombineStyles(className, "hackaway-light-theme")}
+          className={CombineStyles(className, "hackaway-light-theme-only")}
         />
       )}
 
@@ -81,7 +81,7 @@ const SiteImage = ({
             ...style,
             height,
           }}
-          className={CombineStyles(className, "hackaway-dark-theme")}
+          className={CombineStyles(className, "hackaway-dark-theme-only")}
         />
       ) : (
         <GatsbyImage
@@ -95,7 +95,7 @@ const SiteImage = ({
             width,
             height,
           }}
-          className={CombineStyles(className, "hackaway-dark-theme")}
+          className={CombineStyles(className, "hackaway-dark-theme-only")}
         />
       )}
     </>
