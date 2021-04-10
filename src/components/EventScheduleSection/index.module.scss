@@ -1,0 +1,10 @@
+@use 'config';
+
+.scheduleSection {
+  background: config.$tertiary-background-colour;
+  color: config.$tertiary-foreground-colour;
+  table {
+    border-color: config.$tertiary-background-colour;
+    color: config.$tertiary-foreground-colour;
+  }
+}

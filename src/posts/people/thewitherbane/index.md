@@ -3,7 +3,9 @@ name: Dipo Rodipe
 short-description: Academic Director
 description: null
 render: false
-image: ./dipo.jpg
+image:
+  light: ./dipo.jpg
+  dark: ./dipo.jpg
 handles:
   - service: linkedin
     handle: christopher-r-8a2a31141

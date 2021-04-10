@@ -1,5 +1,7 @@
 ---
 name: Major League Hacking
-image: ./mlh.svg
+image:
+  light: ./mlh.svg
+  dark: ./mlh-logo-white.svg
 link: https://mlh.io/
 ---

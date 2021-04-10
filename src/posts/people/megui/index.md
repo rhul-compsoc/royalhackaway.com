@@ -3,7 +3,9 @@ name: Megi Braholli
 short-description: Secretary
 description: null
 render: false
-image: ./IMG_20210117_144111.jpg
+image:
+  light: ./IMG_20210117_144111.jpg
+  dark: ./IMG_20210117_144111.jpg
 handles:
   - service: github
     handle: MegiLB

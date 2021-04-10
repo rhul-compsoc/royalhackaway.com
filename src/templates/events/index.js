@@ -1,21 +1,22 @@
 import { graphql } from "gatsby"
 import React from "react"
-import { FrequentlyAskedQuestionsSection } from "../../components/FrequentlyAskedQuestionsSection"
-import { EventSponsors } from "../../components/EventSponsors"
-import { HackathonCountdown } from "../../components/HackathonCountdown"
-import { HackathonDefinition } from "../../components/HackathonDefinition"
-import { HackathonTitle } from "../../components/HackathonTitle"
+import { EventCountdownSection } from "../../components/EventCountdownSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../components/EventFrequentlyAskedQuestionsSection"
+import { EventJumbotron } from "../../components/EventJumbotron"
+import { EventLocationSection } from "../../components/EventLocationSection"
+import { EventPeopleSection } from "../../components/EventPeopleSection"
+import { EventScheduleSection } from "../../components/EventScheduleSection"
+import { EventSponsorsSection } from "../../components/EventSponsorsSection"
+import { HackathonDefinitionSection } from "../../components/HackathonDefinitionSection"
 import { Layout } from "../../components/Layout"
-import { PeopleSection } from "../../components/PeopleSection"
-import { ScheduleSection } from "../../components/ScheduleSection"
-import { GoogleMaps } from "../../components/GoogleMaps"
-import { SEO } from "../../components/SEO"
 import { MajorLeagueHackingBadge } from "../../components/MajorLeagueHackingBadge"
+import { SiteSEO } from "../../components/SiteSEO"
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   const {
+    event_widescreen_logo,
     sponsors_list_enable,
     sponsors,
     sponsor_document_enable,
@@ -27,8 +28,8 @@ const HomePage = ({ data }) => {
     faq_enable,
     schedule_enable,
     schedule,
-    start,
-    start_timer_enable,
+    event_start,
+    countdown_timer_enable,
     hackathon_definition_enable,
     location_embed_enable,
     location_embed_link,
@@ -38,24 +39,31 @@ const HomePage = ({ data }) => {
   } = frontmatter
 
   return (
-    <Layout>
-      <SEO title={short_name} description={short_description} />
-      <HackathonTitle frontmatter={frontmatter} />
-      {start_timer_enable && <HackathonCountdown start={start} />}
-      {hackathon_definition_enable && <HackathonDefinition />}
-      {location_embed_enable && <GoogleMaps map={location_embed_link} />}
-      {faq_enable && <FrequentlyAskedQuestionsSection faq={faq} />}
+    <Layout
+      sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
+    >
+      <SiteSEO title={short_name} description={short_description} />
+      {event_widescreen_logo && (
+        <SiteSEO image={event_widescreen_logo.publicURL} />
+      )}
+      <EventJumbotron frontmatter={frontmatter} />
+      {countdown_timer_enable && <EventCountdownSection start={event_start} />}
+      {hackathon_definition_enable && <HackathonDefinitionSection />}
+      {location_embed_enable && (
+        <EventLocationSection map={location_embed_link} />
+      )}
+      {faq_enable && <EventFrequentlyAskedQuestionsSection faq={faq} />}
       {sponsors_list_enable && (
-        <EventSponsors
+        <EventSponsorsSection
           sponsors={sponsors}
           sponsor_document={sponsor_document}
           sponsor_document_enable={sponsor_document_enable}
         />
       )}
       {people_enable && (
-        <PeopleSection event_name={short_name} people={people} />
+        <EventPeopleSection event_name={short_name} people={people} />
       )}
-      {schedule_enable && <ScheduleSection schedule={schedule} />}
+      {schedule_enable && <EventScheduleSection schedule={schedule} />}
 
       {mlh_badge_enable && <MajorLeagueHackingBadge year={mlh_badge_year} />}
     </Layout>
@@ -70,6 +78,24 @@ export const pageQuery = graphql`
         chat_link
         chat_link_enable
         display_date
+        event_widescreen_logo {
+          light {
+            publicURL
+            childImageSharp {
+              fluid(maxHeight: 256) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          dark {
+            publicURL
+            childImageSharp {
+              fluid(maxHeight: 256) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         faq_enable
         faq {
           fields {
@@ -82,6 +108,8 @@ export const pageQuery = graphql`
         }
         full_description
         hackathon_definition_enable
+        jumbotron_enable_title
+        jumbotron_enable_widescreen_logo
         livestream_button_enable
         livestream_embed_enable
         livestream_link
@@ -105,9 +133,20 @@ export const pageQuery = graphql`
                 handle
               }
               image {
-                childImageSharp {
-                  fluid(maxWidth: 512) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
@@ -139,18 +178,28 @@ export const pageQuery = graphql`
               name
               link
               image {
-                publicURL
-                childImageSharp {
-                  fluid(maxHeight: 256) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
             }
           }
         }
-        start
-        start_timer_enable
+        event_start
+        countdown_timer_enable
         subtitle
         ticket_button_enable
         ticket_button_label

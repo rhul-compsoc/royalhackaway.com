@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
+import { SiteSEO } from "../components/SiteSEO"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="404!!" />
+    <SiteSEO title="404!!" />
     <section style={{ flexGrow: 1, display: "flex" }}>
       <div className="text-center container" style={{ alignSelf: "center" }}>
         <h1 className="display-1">404</h1>

@@ -1,0 +1,56 @@
+@import "config";
+
+@mixin create-button($name, $colour, $background-colour, $shadow) {
+  .btn-#{$name} {
+    color: $colour;
+    background-color: $background-colour;
+    box-shadow: 0 5px $shadow;
+    border-width: 0;
+    font-weight: 600;
+    transition: filter 0.5s;
+
+    &.disabled {
+      opacity: 0.7;
+    }
+
+    &:hover,
+    &:active {
+      color: $colour;
+      background-color: $background-colour;
+      box-shadow: 0 5px $shadow;
+
+      filter: brightness(90%);
+    }
+  }
+}
+
+@include create-button(
+  "hackaway-youtube",
+  black,
+  $youtube-link-colour,
+  $primary-button-shadow-colour
+);
+@include create-button(
+  "hackaway-twitch",
+  black,
+  $twitch-link-colour,
+  $primary-button-shadow-colour
+);
+@include create-button(
+  "hackaway-blurple",
+  white,
+  $chat-link-colour,
+  $primary-button-shadow-colour
+);
+@include create-button(
+  "hackaway-primary",
+  $primary-button-foreground-colour,
+  $primary-button-background-colour,
+  $primary-button-shadow-colour
+);
+@include create-button(
+  "hackaway-orange",
+  black,
+  $secondary-button-colour,
+  $secondary-button-shadow-colour
+);

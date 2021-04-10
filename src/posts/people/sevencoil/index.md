@@ -1,9 +1,11 @@
 ---
 name: Leondro Lio
 short-description: Logistics Lead
-description: I&apos;m terrible at developing websites.
+description: wah
 render: false
-image: ./sevencoil.jpg
+image:
+  light: ./sevencoil.jpg
+  dark: ./sevencoil.jpg
 handles:
   - service: github
     handle: 7coil

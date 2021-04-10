@@ -3,7 +3,9 @@ name: Oliver Graham
 short-description: Bot Whisperer
 description: null
 render: false
-image: ./cropped.jpg
+image:
+  light: ./cropped.jpg
+  dark: ./Amogus.webp
 handles:
   - service: linkedin
     handle: oliver-graham-0083271ba

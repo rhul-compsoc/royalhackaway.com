@@ -1,5 +1,7 @@
 ---
 name: GitHub
-image: ./combo-lt-120.svg
+image:
+  light: ./logo.svg
+  dark: ./logo_dark.svg
 link: https://github.com/
 ---

@@ -4,7 +4,7 @@ short_name: Royal Hackaway v4
 subtitle: Create something awesome
 render: true
 is-public: true
-is-over: false
+is-over: true
 
 # Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
 # Sets up (temporary) redirect from "/events/hackawayv4" to "/"
@@ -16,9 +16,19 @@ redirects:
 
 # Enable/disable the countdown timer on the homepage
 # It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
-start_timer_enable: false
-start: "2021-02-06T10:00:00+00:00"
-end: "2021-02-07T18:00:00+00:00"
+countdown_timer_enable: false
+event_start: "2021-02-06T10:00:00+00:00"
+event_end: "2021-02-07T18:00:00+00:00"
+
+# A wide (about 3:1 aspect ratio) picture to display for this event.
+event_widescreen_logo:
+  light: null
+  dark: null
+
+# Jumbotron Settings
+# Enabling/Disabling the follow will show/hide the respective options.
+jumbotron_enable_title: true
+jumbotron_enable_widescreen_logo: false
 
 # A text representation of the time period. Stick anything you like here.
 display_date: Saturday 6th February - Sunday 7th February 2021

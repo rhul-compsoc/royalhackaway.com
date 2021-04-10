@@ -1,7 +1,9 @@
 ---
 name: Thomas Bass
 render: false
-image: ./ash.jpg
+image:
+  light: ./ash.jpg
+  dark: ./ash.jpg
 handles:
   - service: github
     handle: aejb

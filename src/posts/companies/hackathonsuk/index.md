@@ -1,5 +1,7 @@
 ---
 name: Hackathons UK
-image: ./Pink-NoText.svg
+image:
+  light: ./Pink-NoText.svg
+  dark: ./Pink-NoText.svg
 link: https://hackathons.org.uk/
 ---

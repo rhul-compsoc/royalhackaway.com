@@ -3,7 +3,9 @@ name: Joshua Sawyer
 short-description: Lead Organiser
 description: null
 render: false
-image: ./jcsawyer123.jpg
+image:
+  light: ./jcsawyer123.jpg
+  dark: ./jcsawyer123.jpg
 handles:
   - service: twitter
     handle: jcsawyer123

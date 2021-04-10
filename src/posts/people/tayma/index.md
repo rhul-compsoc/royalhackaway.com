@@ -3,7 +3,9 @@ name: Tayma Ferriera
 short-description: Outreach Director
 description: null
 render: false
-image: ./me.jpg
+image:
+  light: ./me.jpg
+  dark: ./me.jpg
 handles:
   - service: linkedin
     handle: tayma-ferriera

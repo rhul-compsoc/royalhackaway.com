@@ -1,83 +1,31 @@
 import { graphql, Link, StaticQuery } from "gatsby"
 import React, { useState } from "react"
-import { CombineStyles } from "../../helpers/CombineStyles"
 import logo from "../../assets/images/logo/rh.svg"
-import styles from "./index.module.scss"
+import logoDark from "../../assets/images/logo/hackaway-logo-text-dark-theme.svg"
+import { CombineStyles } from "../../helpers/CombineStyles"
+import * as styles from "./index.module.scss"
 
-export const Header = () => {
-  const [isActive, setIsActive] = useState(false)
-
-  const toggleIsActive = () => {
-    setIsActive(prevState => !prevState)
-  }
-
+export const Header = ({ sponsor_document }) => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={CombineStyles(styles.navBar, "container")}>
         <div className={styles.navBarLeftSide}>
-          <button type="button" onClick={() => toggleIsActive()}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
           <Link to="/">
-            <img src={logo} alt="RoyalHackaway" />
+            <img
+              className="hackaway-light-theme-only"
+              src={logo}
+              alt="RoyalHackaway"
+            />
+            <img
+              className="hackaway-dark-theme-only"
+              src={logoDark}
+              alt="RoyalHackaway"
+            />
           </Link>
         </div>
-        <div
-          className={
-            isActive
-              ? CombineStyles(
-                  styles.navBarRightSide,
-                  styles.navBarRightSideActive
-                )
-              : styles.navBarRightSide
-          }
-        >
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <StaticQuery
-              query={graphql`
-                {
-                  allMarkdownRemark(
-                    filter: {
-                      fields: { template: { eq: "events" } }
-                      frontmatter: { is_public: { eq: true } }
-                    }
-                    sort: { fields: frontmatter___start, order: DESC }
-                    limit: 1
-                  ) {
-                    nodes {
-                      frontmatter {
-                        sponsor_document_enable
-                        sponsor_document {
-                          publicURL
-                        }
-                      }
-                    }
-                  }
-                }
-              `}
-              render={data => {
-                if (!data?.allMarkdownRemark?.nodes) return null
-
-                const {
-                  sponsor_document,
-                  sponsor_document_enable,
-                } = data.allMarkdownRemark.nodes[0].frontmatter
-
-                if (!sponsor_document_enable) return null
-
-                return (
-                  <li>
-                    <a href={sponsor_document?.publicURL}>Sponsor Us</a>
-                  </li>
-                )
-              }}
-            />
-          </ul>
+        <div className={styles.navBarRightSide}>
+          <Link to="/">Home</Link>
+          {sponsor_document && <a href={sponsor_document}>Sponsor Us</a>}
         </div>
       </nav>
     </header>

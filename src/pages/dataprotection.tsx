@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react"
 import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
+import { SiteSEO } from "../components/SiteSEO"
 
 const DataProtectionPage = (): ReactNode => (
   <Layout>
-    <SEO title="Data Protection Policy" />
+    <SiteSEO title="Data Protection Policy" />
     <section>
       <div className="container">
         <h1>Data Protection Policy</h1>

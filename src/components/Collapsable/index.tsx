@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { FaArrowDown } from "react-icons/fa"
 import { CombineStyles } from "../../helpers/CombineStyles"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 interface State {
   collapsed: boolean
@@ -90,7 +90,7 @@ class Collapsable extends Component<Props, State> {
     return (
       <div className={styles.collapsable}>
         <div
-          className={CombineStyles("btn btn-hackaway-white", styles.button)}
+          className={CombineStyles("btn btn-hackaway-primary", styles.button)}
           onClick={() =>
             typeof this.props.collapsed !== "boolean" && this.toggleState()
           }
