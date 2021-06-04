@@ -1,52 +1,49 @@
-import React, { Component } from "react"
+import React, { Component, useState } from "react"
 import { partition } from "../../helpers/partition"
 import { Collapsable } from "../Collapsable"
+import { EventContext } from "../EventContext"
 import { Section } from "../Section"
-import * as styles from "./index.module.scss"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-class EventFrequentlyAskedQuestionsSection extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      opened: null,
-    }
-    this.toggle = this.toggle.bind(this)
-  }
-  toggle(id) {
-    this.setState(prev => ({
-      opened: prev.opened === id ? null : id,
-    }))
-  }
-  render() {
-    return (
-      <Section
-        className={styles.faq}
-        title="Frequently Asked Questions"
-        subtitle="Answers to some questions we get a lot of!"
-      >
-        <div className="container">
-          <div className="row">
-            {partition(this.props.faq, 2).map((column, index) => (
-              <div className="col-12 col-md-6" key={index}>
-                {column.map(faq => (
-                  <div
-                    key={faq.fields.slug}
-                    onClick={() => this.toggle(faq.fields.slug)}
+const EventFrequentlyAskedQuestionsSection = ({ type }) => {
+  const [opened, setOpened] = useState(null)
+  const data = React.useContext(EventContext)
+
+  return (
+    <Section
+      title="Frequently Asked Questions"
+      subtitle="Answers to some questions we get a lot of!"
+      type={type}
+    >
+      <div className="container">
+        <div className="row">
+          {partition(data.mdx.frontmatter.faq, 2).map((column, index) => (
+            <div className="col-12 col-md-6" key={index}>
+              {column.map(faq => (
+                <div
+                  key={faq.fields.slug}
+                  onClick={() => {
+                    if (faq.fields.slug === opened) {
+                      setOpened(null)
+                    } else {
+                      setOpened(faq.fields.slug)
+                    }
+                  }}
+                >
+                  <Collapsable
+                    title={faq.frontmatter.name}
+                    collapsed={opened !== faq.fields.slug}
                   >
-                    <Collapsable
-                      title={faq.frontmatter.name}
-                      html={faq.html}
-                      collapsed={this.state.opened !== faq.fields.slug}
-                    />
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
+                    <MDXRenderer>{faq.body}</MDXRenderer>
+                  </Collapsable>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
-      </Section>
-    )
-  }
+      </div>
+    </Section>
+  )
 }
 
 export { EventFrequentlyAskedQuestionsSection }

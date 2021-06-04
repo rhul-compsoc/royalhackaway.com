@@ -1,0 +1,91 @@
+---
+name: Localhost 2018
+short_name: Localhost 2018
+subtitle: Create something awesome
+render: true
+is-public: true
+is-over: true
+
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackaway2019"
+# Sets up (temporary) redirect from "/events/hackaway2019" to "/"
+# Redirects array (permanently) redirects to the actual page
+homepage: false
+redirects:
+  - /v2
+  - /localhost2018
+  - /2018
+
+# Enable/disable the countdown timer on the homepage
+# It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
+countdown_timer_enable: false
+event_start: 2018-10-01T12:00:00+00:00
+event_end: 2018-10-01T12:00:00+00:00
+
+# The start and end of the hacking period
+# Not used yet, but might be useful for the future
+hacking_start: 2020-02-01T11:00:00+00
+hacking_end: 2020-02-02T13:00:00+00
+
+# A description of the event in hand.
+# Short is currently not being used
+# Full is used for the site jumbotron and for SSO
+short-description: An exciting 24 hour hackathon, for students from any university.
+full-description: >
+  Royal Hackaway is Royal Holloway's annual hackathon.
+
+  Open to university students from the UK and around the world,
+  in this 24 hour hackathon you'll work as a group to build a project.
+  You'll pick up new skills, try out new tech, and meet new people.
+  This is our second time running this event, and we're excited to
+  create a more inclusive and rewarding event for all.
+
+location_embed_link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106
+schedule: []
+sponsor_document_enable: true
+sponsor_document: ./sponsordeck.pdf
+sponsors: []
+people: []
+faq: []
+---
+
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { SiteButton } from "../../../components/SiteButton"
+import { Section, SectionTypes } from "../../../components/Section"
+
+import localhostLogo from "../../../assets/images/logo/localhost-logo.svg"
+import { jumbotronBackground, logo } from "./2018.module.scss"
+
+<EventJumbotron className={`${jumbotronBackground} text-center`}>
+<img src={localhostLogo} className={logo} />
+
+# LocalHost 2018
+
+01 October 2018, 12:00:00 PM  
+Mccrea 125
+
+<p class="lead">Pick up a new skill, and build somewithing with it,</p>
+
+</EventJumbotron>
+<Section type={SectionTypes.LOCALHOST}>
+<div className="container">
+
+This event is like a mini-hackathon, where you'll learn a new skill, and put it to use.
+
+</div>
+</Section>
+<Section type={SectionTypes.TERTIARY}>
+<div className="container text-center">
+
+<!-- ## We'll reveal more information about this event soon. -->
+
+Questions, queries or qualms about this event?
+
+<SiteButton
+  className="btn-hackaway-orange"
+  href="mailto:hello@royalhackaway.com"
+>
+  Get in touch
+</SiteButton>
+
+</div>
+</Section>
