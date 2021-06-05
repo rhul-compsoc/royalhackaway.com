@@ -1,12 +1,6 @@
 module.exports = {
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:prettier/recommended"],
   settings: {
     react: {
       version: "detect",
@@ -40,7 +34,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.js"],
+      files: ["*.js", "*.tsx"],
       rules: {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
         // This rule means you do not need to declare a type for exported functions. You can't do this without TypeScript!

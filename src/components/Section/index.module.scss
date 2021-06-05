@@ -1,5 +1,45 @@
 @import "_config";
 
 .section {
-  padding: 3em 0;
+  padding: 5em 0;
+}
+
+.titleContainer {
+  padding-bottom: 2em;
+}
+
+.header {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.primary {
+  &,
+  table {
+    background-color: var(--primary-background-colour);
+    color: var(--primary-foreground-colour);
+  }
+}
+.secondary {
+  &,
+  table {
+    background-color: var(--secondary-background-colour);
+    color: var(--secondary-foreground-colour);
+  }
+}
+.tertiary {
+  &,
+  table,
+  td {
+    background-color: var(--tertiary-background-colour);
+    color: var(--tertiary-foreground-colour);
+  }
+}
+.localhost {
+  &,
+  table,
+  td {
+    background-color: var(--localhost-background-colour);
+    color: var(--localhost-foreground-colour);
+  }
 }

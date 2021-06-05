@@ -2,123 +2,36 @@
 
 $logo-height: 2.5rem;
 
+.header {
+  color: config.$tertiary-foreground-colour;
+  background-color: config.$tertiary-background-colour;
+}
+
 .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   height: 75px;
-
-  @include media-breakpoint-down(md) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-  }
 }
 
 .navBarLeftSide {
   display: flex;
   align-items: center;
-  z-index: 999;
   a {
     img {
       height: $logo-height;
     }
   }
-  button {
-    width: 30px;
-    height: 23px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-
-    &:focus {
-      outline: none;
-    }
-
-    span {
-      height: 3px;
-      width: 100%;
-      background-color: #111;
-      display: inline-block;
-      border-radius: 3px;
-    }
-
-    @include media-breakpoint-up(md) {
-      display: none;
-    }
-  }
 }
 
 .navBarRightSide {
-  margin-right: 100px;
+  display: flex;
+  gap: 2em;
 
-  @include media-breakpoint-down(lg) {
-    margin-right: 80px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-right: 60px;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 998;
-
-    li {
-      a {
-        padding: 0 15px;
-        color: inherit;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        transition: 0.2s ease-out;
-      }
-    }
-
-    @include media-breakpoint-down(md) {
-      min-height: 100vh;
-      width: 100vw;
-      position: fixed;
-      left: -100vw;
-      top: 0;
-      background-color: #fff;
-      flex-direction: column;
-      align-items: initial;
-      justify-content: initial;
-      padding-top: 100px;
-      text-align: center;
-      overflow: hidden;
-      transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-      li {
-        padding: 5px 0;
-        a {
-          width: 100%;
-          padding: 15px 0;
-          &:hover {
-            background-color: #eee;
-          }
-        }
-      }
-    }
-  }
-}
-
-.navBarRightSideActive {
-  ul {
-    @include media-breakpoint-down(md) {
-      left: 0;
-    }
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
   }
 }

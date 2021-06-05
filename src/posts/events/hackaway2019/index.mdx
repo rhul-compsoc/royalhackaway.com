@@ -1,0 +1,194 @@
+---
+name: Royal Hackaway 2019
+short_name: Royal Hackaway 2019
+render: true
+is-public: true
+is-over: true
+
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackaway2019"
+# Sets up (temporary) redirect from "/events/hackaway2019" to "/"
+# Redirects array (permanently) redirects to the actual page
+homepage: false
+redirects:
+  - /v2
+  - /2019
+
+event_start: 2019-02-02T09:30:00+00:00
+event_end: 2019-02-03T17:00:00+00:00
+
+hacking_start: 2020-02-01T11:00:00+00
+hacking_end: 2020-02-02T13:00:00+00
+
+short-description: An exciting 24 hour hackathon, for students from any university.
+full-description: >
+  Royal Hackaway is Royal Holloway's annual hackathon.
+
+  Open to university students from the UK and around the world,
+  in this 24 hour hackathon you'll work as a group to build a project.
+  You'll pick up new skills, try out new tech, and meet new people.
+  This is our second time running this event, and we're excited to
+  create a more inclusive and rewarding event for all.
+
+schedule:
+  - name: Saturday 2nd — Day 1
+    events:
+      - time: "09:30"
+        activity: Registration Opens
+      - time: "11:00"
+        activity: Opening Ceremony and Team Building
+      - time: "12:00"
+        activity: Hacking Begins
+      - time: "13:00"
+        activity: Lunch
+      - time: "14:00"
+        activity: Digital Audio (Upstairs)
+      - time: "14:00"
+        activity: Digital Ocean (Downstairs)
+      - time: "15:00"
+        activity: Nexmo (Upstairs)
+      - time: "15:00"
+        activity: The Psychology of Dev Teams (Downstairs)
+      - time: "16:00"
+        activity: NotBinary Container Workshop (Upstairs)
+      - time: "16:00"
+        activity: GitHub Workshop (Downstairs)
+      - time: "18:00"
+        activity: Dinner
+      - time: "20:00"
+        activity: MLH Minigame
+      - time: "23:59"
+        activity: Midnight Pizza
+  - name: Sunday 3rd — Day 2
+    events:
+      - time: "08:00"
+        activity: Breakfast
+      - time: "11:00"
+        activity: Submissions Close
+      - time: "12:00"
+        activity: Hacking Ends with Lunch
+      - time: "13:00"
+        activity: Presentations
+      - time: "15:00"
+        activity: Judging
+      - time: "16:00"
+        activity: Closing Ceremony
+
+# Sponsor Settings
+# Disabling the sponsor document hides the "Sponsor Us!" button
+# Please include relative link to a file (preferably a PDF). Word Documents are prohibited
+sponsor_document_enable: true
+sponsor_document: ./sponsordeck.pdf
+
+# Disabling the sponsor list hides the section
+# "Companies" are found in `/src/posts/companies`
+# 1. Create a new folder
+# 2. Create and populate `index.md`
+# 3. Refer to company via the folder name (or filename if not "index.md")
+sponsors:
+  - name: Gold
+    colour: gold
+    tier: 1
+    companies:
+      - rhulcompsci50
+  - name: Silver
+    colour: silver
+    tier: 2
+    companies:
+      - github
+      - notbinary
+      - nexmo
+  - name: Bronze
+    colour: "#CD7F32"
+    tier: 3
+    companies:
+      - balsamiq
+      - guardtime
+      - ig
+      - ukgovcamp
+  - name: Supporter
+    colour: null
+    tier: 4
+    companies:
+      - gitkraken
+      - mlh
+      - stickermule
+      - hacksmiths
+      - nordicsemi
+
+people: []
+
+faq:
+  - can-i-go-home-overnight-leave-early
+  - whats-a-hackathon
+  - can-i-start-before-i-arrive
+  - do-i-have-to-study-computer-science
+  - do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - how-much-does-it-cost
+  - want-to-join-the-committee
+  - who-can-attend
+  - who-owns-my-project
+---
+
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { SiteButton } from "../../../components/SiteButton"
+import { Section, SectionTypes } from "../../../components/Section"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventScheduleSection } from "../../../components/EventScheduleSection"
+import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
+
+import hackawayLogo from "../../../assets/images/logo/rh-small.svg"
+import { jumbotronBackground, hackawayLogoClass } from "./2019.module.scss"
+
+<MajorLeagueHackingBadge year={2019} />
+<EventJumbotron className={`${jumbotronBackground} text-center`}>
+<img src={hackawayLogo} className={hackawayLogoClass} />
+
+# Royal Hackaway 2019
+
+02 February 2019, 09:30:00 AM  
+Windsor Building, on Campus
+
+<p class="lead">An exciting 24 hackathon, for students from any university.</p>
+
+<SiteButton
+  class="btn-hackaway-orange"
+  href="https://royal-hackaway-v2.devpost.com/"
+>
+  Submit your 2019 project to DevPost
+</SiteButton>
+
+</EventJumbotron>
+<Section type={SectionTypes.PRIMARY}>
+<div className="container">
+
+Royal Hackaway is Royal Holloway's annual hackathon.
+
+Open to university students from the UK and around the world, in this 24 hour hackathon you'll work as a group to build a project. You'll pick up new skills, try out new tech, and meet new people. This is our second time running this event, and we're excited to create a more inclusive and rewarding event for all.
+
+</div>
+</Section>
+
+<EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
+<EventScheduleSection type={SectionTypes.TERTIARY} />
+
+<EventSponsorsSection type={SectionTypes.TERTIARY} />
+
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />
+
+<Section type={SectionTypes.TERTIARY}>
+<div className="container text-center">
+
+Questions, queries or qualms about this event?
+
+<SiteButton
+  className="btn-hackaway-orange"
+  href="mailto:hello@royalhackaway.com"
+>
+  Get in touch
+</SiteButton>
+
+</div>
+</Section>

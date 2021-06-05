@@ -10,9 +10,9 @@ module.exports = {
     siteUrl: "https://royalhackaway.com",
   },
   mapping: {
-    "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.id",
-    "MarkdownRemark.frontmatter.faq": "MarkdownRemark.fields.id",
-    "MarkdownRemark.frontmatter.sponsors.companies": "MarkdownRemark.fields.id",
+    "Mdx.frontmatter.people.person": "Mdx.fields.id",
+    "Mdx.frontmatter.faq": "Mdx.fields.id",
+    "Mdx.frontmatter.sponsors.companies": "Mdx.fields.id",
   },
   plugins: [
     "gatsby-plugin-meta-redirect",
@@ -41,7 +41,19 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
@@ -58,13 +70,13 @@ module.exports = {
         icon: "src/assets/images/logo/rh-small-1024.png", // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-gdpr-cookies",
-      options: {
-        googleAnalytics: {
-          trackingId: "G-YHVZ8QBQYD",
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-gdpr-cookies",
+    //   options: {
+    //     googleAnalytics: {
+    //       trackingId: "G-YHVZ8QBQYD",
+    //     },
+    //   },
+    // },
   ],
 }

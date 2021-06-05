@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa"
 import compsoc from "../../assets/images/logo/rh-white.svg"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { ContactEmail } from "../ContactEmail"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 class Footer extends Component {
   render() {
@@ -88,7 +88,7 @@ class Footer extends Component {
                     to="/events"
                     className="link-orange text-decoration-none"
                   >
-                    Past Events
+                    All Events
                   </Link>
                 </li>
               </ul>

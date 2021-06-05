@@ -1,0 +1,27 @@
+@import "_config";
+
+.hackathonCountdown {
+  padding: 2em 0;
+}
+
+.segments {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.segment {
+  text-align: center;
+}
+
+.digit {
+  font-size: 4em;
+  font-weight: bold;
+  display: block;
+  margin: -0.25em 0;
+}
+
+.label {
+  font-size: 1.3em;
+  color: $hackaway-orange;
+}

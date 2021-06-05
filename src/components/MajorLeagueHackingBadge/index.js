@@ -1,10 +1,10 @@
 import React from "react"
-import styles from "./index.module.scss"
+import { badge } from "./index.module.scss"
 
 const MajorLeagueHackingBadge = ({ year }) => (
   <a
     id="mlh-trust-badge"
-    className={styles.badge}
+    className={badge}
     href={`https://mlh.io/seasons/eu-${year}/events?utm_source=eu-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=${year}-season&amp;utm_content=white`}
     target="_blank"
     rel="noreferrer"

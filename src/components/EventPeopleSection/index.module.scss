@@ -1,0 +1,31 @@
+@import "_config";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  .cardContent {
+    color: $tertiary-foreground-colour;
+    background-color: $tertiary-background-colour;
+    padding: 0.5em 0.25em;
+    .name {
+      font-weight: bold;
+    }
+    .description {
+      padding-top: 0;
+    }
+  }
+  .pictureContainer {
+    .picture {
+      width: 100%;
+    }
+  }
+}
+
+.handles {
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+  padding: 0.4em 0;
+  line-height: 0;
+}

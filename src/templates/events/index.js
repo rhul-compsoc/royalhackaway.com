@@ -1,76 +1,36 @@
 import { graphql } from "gatsby"
 import React from "react"
-import { FrequentlyAskedQuestionsSection } from "../../components/FrequentlyAskedQuestionsSection"
-import { EventSponsors } from "../../components/EventSponsors"
-import { HackathonCountdown } from "../../components/HackathonCountdown"
-import { HackathonDefinition } from "../../components/HackathonDefinition"
-import { HackathonTitle } from "../../components/HackathonTitle"
 import { Layout } from "../../components/Layout"
-import { PeopleSection } from "../../components/PeopleSection"
-import { ScheduleSection } from "../../components/ScheduleSection"
-import { GoogleMaps } from "../../components/GoogleMaps"
-import { SEO } from "../../components/SEO"
-import { MajorLeagueHackingBadge } from "../../components/MajorLeagueHackingBadge"
+import { SiteSEO } from "../../components/SiteSEO"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { EventContextProvider } from "../../components/EventContext"
 
 const HomePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-
   const {
-    sponsors_list_enable,
-    sponsors,
+    short_name,
+    short_description,
     sponsor_document_enable,
     sponsor_document,
-    short_name,
-    people_enable,
-    people,
-    faq,
-    faq_enable,
-    schedule_enable,
-    schedule,
-    start,
-    start_timer_enable,
-    hackathon_definition_enable,
-    location_embed_enable,
-    location_embed_link,
-    mlh_badge_enable,
-    mlh_badge_year,
-    short_description,
-  } = frontmatter
+  } = data.mdx.frontmatter
 
   return (
-    <Layout>
-      <SEO title={short_name} description={short_description} />
-      <HackathonTitle frontmatter={frontmatter} />
-      {start_timer_enable && <HackathonCountdown start={start} />}
-      {hackathon_definition_enable && <HackathonDefinition />}
-      {location_embed_enable && <GoogleMaps map={location_embed_link} />}
-      {faq_enable && <FrequentlyAskedQuestionsSection faq={faq} />}
-      {sponsors_list_enable && (
-        <EventSponsors
-          sponsors={sponsors}
-          sponsor_document={sponsor_document}
-          sponsor_document_enable={sponsor_document_enable}
-        />
-      )}
-      {people_enable && (
-        <PeopleSection event_name={short_name} people={people} />
-      )}
-      {schedule_enable && <ScheduleSection schedule={schedule} />}
-
-      {mlh_badge_enable && <MajorLeagueHackingBadge year={mlh_badge_year} />}
+    <Layout
+      sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
+    >
+      <SiteSEO title={short_name} description={short_description} />
+      <EventContextProvider data={data}>
+        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      </EventContextProvider>
     </Layout>
   )
 }
 export default HomePage
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query ($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
-        chat_link
-        chat_link_enable
-        display_date
-        faq_enable
         faq {
           fields {
             slug
@@ -78,21 +38,10 @@ export const pageQuery = graphql`
           frontmatter {
             name
           }
-          html
+          body
         }
         full_description
-        hackathon_definition_enable
-        livestream_button_enable
-        livestream_embed_enable
-        livestream_link
-        livestream_type
-        location
-        location_embed_enable
-        location_embed_link
-        mlh_badge_enable
-        mlh_badge_year
         name
-        people_enable
         people {
           person {
             frontmatter {
@@ -105,9 +54,20 @@ export const pageQuery = graphql`
                 handle
               }
               image {
-                childImageSharp {
-                  fluid(maxWidth: 512) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
@@ -115,7 +75,6 @@ export const pageQuery = graphql`
           }
           role
         }
-        schedule_enable
         short_description
         short_name
         schedule {
@@ -129,7 +88,6 @@ export const pageQuery = graphql`
         sponsor_document {
           publicURL
         }
-        sponsors_list_enable
         sponsors {
           colour
           name
@@ -139,22 +97,28 @@ export const pageQuery = graphql`
               name
               link
               image {
-                publicURL
-                childImageSharp {
-                  fluid(maxHeight: 256) {
-                    ...GatsbyImageSharpFluid
+                light {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                dark {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 512) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
               }
             }
           }
         }
-        start
-        start_timer_enable
+        event_start
         subtitle
-        ticket_button_enable
-        ticket_button_label
-        ticket_button_link
       }
       fields {
         slug
