@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Section } from "../Section"
 import {
   definition,
-  hackathonDef,
   leftText,
   link,
   pronunciation,
@@ -12,10 +11,10 @@ import {
 class HackathonDefinitionSection extends Component {
   render() {
     return (
-      <Section className={hackathonDef} title="We make hackathons happen">
+      <Section title="We make hackathons happen" type={this.props.type}>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-12 col-md-6 text-center text-md-right">
+            <div className="col-12 col-md-6 text-center text-md-end">
               <p className={leftText}>
                 Royal Hackaway is an initiative of the{" "}
                 <a href="https://cmpsc.uk" className={link}>
@@ -28,7 +27,7 @@ class HackathonDefinitionSection extends Component {
                 learn and grow.
               </p>
             </div>
-            <div className="col-12 col-md-6 text-center text-md-left">
+            <div className="col-12 col-md-6 text-center text-md-start">
               <p className={word}>hackathon</p>
               <p className={pronunciation}>/ˈhækəθɒn/</p>
               <p className={definition}>

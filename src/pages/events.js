@@ -7,8 +7,8 @@ import { EventInformationCard } from "../components/EventInformationCard"
 import { eventsSection } from "./events.module.scss"
 
 const HomePage = ({ data }) => {
-  const { allMarkdownRemark } = data
-  const { nodes } = allMarkdownRemark
+  const { allMdx } = data
+  const { nodes } = allMdx
 
   const future = nodes
     .filter(({ frontmatter }) => frontmatter.is_public && !frontmatter.is_over)
@@ -68,7 +68,7 @@ export default HomePage
 
 export const pageQuery = graphql`
   {
-    allMarkdownRemark(
+    allMdx(
       filter: { fields: { template: { eq: "events" } } }
       sort: { fields: frontmatter___event_start, order: DESC }
     ) {

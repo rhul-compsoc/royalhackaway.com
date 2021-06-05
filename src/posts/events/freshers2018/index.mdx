@@ -1,0 +1,105 @@
+---
+name: Freshers Hackathon 2018
+short_name: Freshers Hackathon
+render: true
+is-public: true
+is-over: true
+
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
+# Sets up (temporary) redirect from "/events/hackawayv4" to "/"
+# Redirects array (permanently) redirects to the actual page
+homepage: false
+redirects:
+  - /freshers2018
+
+event_start: "2018-09-30T12:00:00+00:00"
+event_end: "2018-09-30T12:00:00+00:00"
+
+hacking_start: null
+hacking_end: null
+
+short-description: "A great place to start if you're interested in hacking."
+full-description: "Some of you lot have never written a line of code, and others of you spend your weekends writing C for fun (you're insane). A coding event that suits everyone sounds impossible, right? Think again. We'll have pizzas, games and a CTF style coding challenge for everyone who wants to get involved. There'll be prizes for the quickest team to finish!"
+
+schedule: []
+sponsor_document_enable: false
+sponsor_document: null
+sponsors: []
+people: []
+faq:
+  - can-i-start-before-i-arrive
+  - do-i-have-to-study-computer-science
+  - do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - how-much-does-it-cost
+  - want-to-join-the-committee
+  - who-can-attend
+  - who-owns-my-project
+---
+
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { Section, SectionTypes } from "../../../components/Section"
+import { EventFullDescription } from "../../../components/EventFullDescription"
+import { EventCountdownSection } from "../../../components/EventCountdownSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventLocationSection } from "../../../components/EventLocationSection"
+
+import { SiteButton } from "../../../components/SiteButton"
+import { ButtonsContainer } from "../../../components/ButtonsContainer"
+import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
+
+import { logo } from "./freshers2018.module.scss"
+
+<!-- <MajorLeagueHackingBadge year={2022} /> -->
+
+<EventJumbotron className={`${jumbotronBackground} text-center`}>
+
+# Freshers Hackathon
+
+30 September 2018, 12:00:00 PM  
+Mccrea 125
+
+<p class="lead">A great place to start if you're interested in hacking.</p>
+
+<SiteButton
+  disabled
+  href="https://www.facebook.com/events/453038041884752/"
+  className="btn-hackaway-orange"
+>
+  RSVP
+</SiteButton>
+
+</EventJumbotron>
+
+<Section type={SectionTypes.LOCALHOST}>
+<div className="container">
+
+Some of you lot have never written a line of code, and others of you spend your weekends writing C for fun (you're insane).
+A coding event that suits everyone sounds impossible, right? Think again.
+We'll have pizzas, games and a CTF style coding challenge for everyone who wants to get involved.
+There'll be prizes for the quickest team to finish!
+
+</div>
+</Section>
+
+<EventLocationSection map="https://maps.google.com/maps?q=McCrea+Building,+Egham&t=&z=13&ie=UTF8&iwloc=&output=embed" />
+
+<Section type={SectionTypes.TERTIARY}>
+<div className="container text-center">
+
+<div class="alert alert-warning" role="alert">
+  This event is for Royal Holloway students
+</div>
+
+Questions, queries or qualms about this event?
+
+<SiteButton
+  className="btn-hackaway-orange"
+  href="mailto:hello@royalhackaway.com"
+>
+  Get in touch
+</SiteButton>
+
+</div>
+</Section>

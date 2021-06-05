@@ -1,7 +1,6 @@
 ---
 name: Royal Hackaway 2019
 short_name: Royal Hackaway 2019
-subtitle: Create something awesome
 render: true
 is-public: true
 is-over: true
@@ -14,33 +13,12 @@ redirects:
   - /v2
   - /2019
 
-# Enable/disable the countdown timer on the homepage
-# It counts down to Hackaway V4 start (and then rests at 0 days, 0 hours, 0 minutes and 0 seconds)
-countdown_timer_enable: false
 event_start: 2019-02-02T09:30:00+00:00
 event_end: 2019-02-03T17:00:00+00:00
 
-# A wide (about 3:1 aspect ratio) picture to display for this event.
-event_widescreen_logo:
-  light: null
-  dark: null
-
-# Jumbotron Settings
-# Enabling/Disabling the follow will show/hide the respective options.
-jumbotron_enable_title: true
-jumbotron_enable_widescreen_logo: false
-
-# A text representation of the time period. Stick anything you like here.
-display_date: Saturday 2nd February - Sunday 3rd February 2019
-
-# The start and end of the hacking period
-# Not used yet, but might be useful for the future
 hacking_start: 2020-02-01T11:00:00+00
 hacking_end: 2020-02-02T13:00:00+00
 
-# A description of the event in hand.
-# Short is currently not being used
-# Full is used for the site jumbotron and for SSO
 short-description: An exciting 24 hour hackathon, for students from any university.
 full-description: >
   Royal Hackaway is Royal Holloway's annual hackathon.
@@ -51,25 +29,6 @@ full-description: >
   This is our second time running this event, and we're excited to
   create a more inclusive and rewarding event for all.
 
-# Enable the section which brings up the dictionary definition of what a hackathon is
-hackathon_definition_enable: true
-
-# Location Settings
-# Describes the location the event is taking place
-# Disabling the location embed hides the iframe for "location_embed_link"
-location: Windsor Building, on Campus
-location_embed_enable: true
-location_embed_link: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106
-
-# Ticket Settings
-# Disabling the button greys it out
-ticket_button_enable: false
-ticket_button_link: https://royal-hackaway-v2.devpost.com/
-ticket_button_label: Submit your 2019 project to DevPost
-
-# Schedule Settings
-# Disabling the schedule just hides the section
-schedule_enable: true
 schedule:
   - name: Saturday 2nd — Day 1
     events:
@@ -125,7 +84,6 @@ sponsor_document: ./sponsordeck.pdf
 # 1. Create a new folder
 # 2. Create and populate `index.md`
 # 3. Refer to company via the folder name (or filename if not "index.md")
-sponsors_list_enable: true
 sponsors:
   - name: Gold
     colour: gold
@@ -157,16 +115,8 @@ sponsors:
       - hacksmiths
       - nordicsemi
 
-# People Settings
-# Disabling the people section hides the people section
-# "people[].person" are found in `/src/posts/people`
-people_enable: false
 people: []
 
-# FAQ Settings
-# Disabling the FAQ section hides the FAQ section
-# "FAQ" are found in `/src/posts/faq`
-faq_enable: true
 faq:
   - can-i-go-home-overnight-leave-early
   - whats-a-hackathon
@@ -178,31 +128,67 @@ faq:
   - want-to-join-the-committee
   - who-can-attend
   - who-owns-my-project
-
-# Livestream Settings
-# Enabling the embed replaces the jumbotron description
-# Enabling the button shows the Twitch/YouTube button
-livestream_embed_enable: false
-livestream_button_enable: false
-# Valid options: ["twitch", "youtube"]
-livestream_type: twitch
-# The ID to link/embed
-# Twitch: The channel name
-# YouTube: The video ID
-livestream_link: null
-
-# Chat Settings
-# Disabling the chat link hides the Discord button
-chat_link_enable: false
-chat_link: null
-
-# MLH Badge
-# Disabling the MLH badge hides the MLH Badge
-mlh_badge_enable: true
-mlh_badge_year: 2019
 ---
 
-<!--
-  The HTML content is not used as of yet.
-  Use it in the future in case you need custom markup somewhere
--->
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { SiteButton } from "../../../components/SiteButton"
+import { Section, SectionTypes } from "../../../components/Section"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventScheduleSection } from "../../../components/EventScheduleSection"
+import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
+
+import hackawayLogo from "../../../assets/images/logo/rh-small.svg"
+import { jumbotronBackground, hackawayLogoClass } from "./2019.module.scss"
+
+<MajorLeagueHackingBadge year={2019} />
+<EventJumbotron className={`${jumbotronBackground} text-center`}>
+<img src={hackawayLogo} className={hackawayLogoClass} />
+
+# Royal Hackaway 2019
+
+02 February 2019, 09:30:00 AM  
+Windsor Building, on Campus
+
+<p class="lead">An exciting 24 hackathon, for students from any university.</p>
+
+<SiteButton
+  class="btn-hackaway-orange"
+  href="https://royal-hackaway-v2.devpost.com/"
+>
+  Submit your 2019 project to DevPost
+</SiteButton>
+
+</EventJumbotron>
+<Section type={SectionTypes.PRIMARY}>
+<div className="container">
+
+Royal Hackaway is Royal Holloway's annual hackathon.
+
+Open to university students from the UK and around the world, in this 24 hour hackathon you'll work as a group to build a project. You'll pick up new skills, try out new tech, and meet new people. This is our second time running this event, and we're excited to create a more inclusive and rewarding event for all.
+
+</div>
+</Section>
+
+<EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
+<EventScheduleSection type={SectionTypes.TERTIARY} />
+
+<EventSponsorsSection type={SectionTypes.TERTIARY} />
+
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />
+
+<Section type={SectionTypes.TERTIARY}>
+<div className="container text-center">
+
+Questions, queries or qualms about this event?
+
+<SiteButton
+  className="btn-hackaway-orange"
+  href="mailto:hello@royalhackaway.com"
+>
+  Get in touch
+</SiteButton>
+
+</div>
+</Section>
