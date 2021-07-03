@@ -42,7 +42,7 @@ faq:
 
 import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
 import { EventJumbotron } from "../../../components/EventJumbotron"
-import { SectionTypes } from "../../../components/Section"
+import { Section, SectionTypes } from "../../../components/Section"
 import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
@@ -55,34 +55,31 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 import freshersHackLogo from "./DiscordCanary_9EdQ4hkP3l.png"
 import { logo } from "./freshers2021.module.scss"
 
+import { FreshersHackSpring } from "../../../components/FreshersHackSpring"
+
 <!-- <MajorLeagueHackingBadge year={2022} /> -->
 
-<EventJumbotron>
-  <img src={freshersHackLogo} className={logo} />
-  <p>
-    <FaMapMarkerAlt /> Bedford Labs, under EPMS
-    <br />
-    <FaCalendarAlt /> Saturday 6th September 10am-10pm
-  </p>
-  <p>
-    <EventFullDescription />
-  </p>
-  <ButtonsContainer>
-    <SiteButton
-      disabled
-      href="https://tickets.royalhackaway.com/"
-      className="btn-hackaway-primary"
-    >
-      Coming soon...
-    </SiteButton>
-    <SiteButton
-      href="https://discord.gg/c8mq6cDwjF"
-      className="btn-hackaway-blurple"
-    >
-      <FaDiscord /> Join Discord
-    </SiteButton>
-  </ButtonsContainer>
+<EventJumbotron className="text-center" style={{ minHeight: "30vh" }}>
+  <h1>
+    <strong>&lt;//hackaway</strong>.zip
+  </h1>
 </EventJumbotron>
+
+<FreshersHackSpring
+  style={{
+    height: "100px",
+    marginTop: "-50px",
+    marginBottom: "-50px",
+    zIndex: "1",
+  }}
+/>
+
+<Section className="text-center" type={SectionTypes.TERTIARY}>
+  <h2>What is it?</h2>
+
+  <p>An all-day beginners hackathon, spanning 12 hours of full tilt programming!</p>
+</Section>
+
 <EventCountdownSection type={SectionTypes.SECONDARY} />
 <EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d879.5544955879114!2d-0.5642723835610113!3d51.425912479621154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487677c9aaec0297%3A0x88226b17c1bdebdf!2sBedford%20Building%20-%20Computer%20Science%20Department!5e0!3m2!1sen!2suk!4v1616458087265!5m2!1sen!2suk" />
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />

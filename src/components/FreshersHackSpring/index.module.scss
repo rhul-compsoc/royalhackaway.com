@@ -1,0 +1,21 @@
+.background {
+  background-image: url("./brush_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  width: 400px;
+  height: 100px;
+}
+
+.letters {
+  display: inline-block;
+  font-size: 3em;
+  color: white;
+}
