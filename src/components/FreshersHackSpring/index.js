@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react"
 import { background, letters } from "./index.module.scss"
 
-const getCurvePosition = pos => {
-  if (pos > Math.PI * 2) {
+const getCurvePosition = (frameCounter, letterPosition, clamp) => {
+  let x = (frameCounter - letterPosition) % clamp
+
+  if (x > Math.PI * 2) {
     return 0
   } else {
-    return (Math.cos(pos) - 1) * 2
+    return (Math.cos(x) - 1) * 2
   }
 }
 
 const FreshersHackSpring = ({ style }) => {
   const LETTERS = "fresher's hack".split("")
 
-  const [frame, setFrame] = useState(0)
+  const [frameCounter, setFrame] = useState(25)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFrame(frame + 0.15)
+      setFrame(frameCounter + 0.15)
     }, 10)
 
     return () => {
@@ -26,13 +28,15 @@ const FreshersHackSpring = ({ style }) => {
 
   return (
     <div className={background} style={style}>
-      {LETTERS.map((letter, index) => (
+      {LETTERS.map((letter, letterPosition) => (
         <span
-          key={index}
+          key={letterPosition}
           className={letters}
           style={{
             transform: `translateY(${getCurvePosition(
-              (frame + index) % 20
+              frameCounter,
+              letterPosition,
+              20
             )}px)`,
             width: letter === " " && "0.25em",
           }}
