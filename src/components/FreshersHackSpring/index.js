@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react"
 import { background, letters } from "./index.module.scss"
 
+import letterImage from "./letters.png"
+
 const getCurvePosition = (frameCounter, letterPosition, clamp) => {
   let x = (frameCounter - letterPosition) % clamp
 
   if (x > Math.PI * 2) {
     return 0
   } else {
-    return (Math.cos(x) - 1) * 2
+    return (Math.cos(x) - 1) * 3
   }
 }
 
@@ -17,33 +19,26 @@ const FreshersHackSpring = ({ style }) => {
   const [frameCounter, setFrame] = useState(25)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setFrame(frameCounter + 0.15)
-    }, 10)
+    const animate = () => {
+      setFrame(Date.now() / 100)
+    }
+
+    const interval = requestAnimationFrame(animate, 10)
 
     return () => {
-      clearInterval(interval)
+      cancelAnimationFrame(interval)
     }
   })
 
   return (
     <div className={background} style={style}>
-      {LETTERS.map((letter, letterPosition) => (
-        <span
-          key={letterPosition}
-          className={letters}
-          style={{
-            transform: `translateY(${getCurvePosition(
-              frameCounter,
-              letterPosition,
-              20
-            )}px)`,
-            width: letter === " " && "0.25em",
-          }}
-        >
-          {letter}
-        </span>
-      ))}
+      <img
+        src={letterImage}
+        className={letters}
+        style={{
+          transform: `translateY(${getCurvePosition(frameCounter, 0, 20)}px)`,
+        }}
+      />
     </div>
   )
 }
