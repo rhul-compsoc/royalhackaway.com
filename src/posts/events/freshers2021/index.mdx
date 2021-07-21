@@ -14,29 +14,41 @@ redirects:
   - /freshers2021
 
 event_start: "2021-09-06T10:00:00+00:00"
-event_end: "2021-09-06T20:00:00+00:00"
+event_end: "2021-09-07T20:00:00+00:00"
 
 hacking_start: 2021-09-06T11:00:00+00
 hacking_end: 2021-09-07T13:00:00+00
 
 short-description: >
-  An all-day beginner's hackathon: 12 hours to collaborate, build and learn. Team up and create the best project before 10pm.
+  A beginner's hackathon: two days to collaborate, build and learn. Team up and create the best project before 10pm.
 full-description: >
-  An all-day beginner's hackathon: 12 hours to collaborate, build and learn. Team up and create the best project before 10pm.
+  A beginner's hackathon: two days to collaborate, build and learn. Team up and create the best project before 10pm.
 
 schedule: []
 sponsor_document_enable: false
 sponsor_document: null
 sponsors: []
-people: []
+people:
+  - person: ash
+    role: President
+  - person: sevencoil
+    role: Vice President
+  - person: gosystems
+    role: Academic Director
+  - person: tayma
+    role: Secretary
+  - person: sheep
+    role: Treasurer
+  - person: shaw
+    role: Charity and Welfare Director
 faq:
   - can-i-start-before-i-arrive
-  - do-i-have-to-study-computer-science
+  - freshershack2021-do-i-have-to-study-computer-science
   - do-i-need-to-come-with-a-team
   - do-you-have-a-code-of-conduct
-  - how-much-does-it-cost
+  - freshershack2021-how-much-does-it-cost
   - want-to-join-the-committee
-  - who-can-attend
+  - freshershack2021-who-can-attend
   - who-owns-my-project
 ---
 
@@ -47,6 +59,8 @@ import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventPeopleSection } from "../../../components/EventPeopleSection"
+import { EventDate } from "../../../components/EventDate"
 
 import { SiteButton } from "../../../components/SiteButton"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
@@ -76,11 +90,15 @@ import { FreshersHack } from "../../../components/FreshersHack"
 
 <Section className="text-center" type={SectionTypes.TERTIARY}>
   <h2>What is it?</h2>
-
-  <p>An all-day beginners hackathon, spanning 12 hours of full tilt programming!</p>
+  <p>
+    An all-day beginners hackathon, spanning 12 hours of full tilt programming!
+  </p>
+  <h2>When is it?</h2>
+  <p>Come along to the Bedford Building on the 6th and 7th of September 2021</p>
 </Section>
 
 <EventCountdownSection type={SectionTypes.SECONDARY} />
 <EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d879.5544955879114!2d-0.5642723835610113!3d51.425912479621154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487677c9aaec0297%3A0x88226b17c1bdebdf!2sBedford%20Building%20-%20Computer%20Science%20Department!5e0!3m2!1sen!2suk!4v1616458087265!5m2!1sen!2suk" />
-<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />
+<EventPeopleSection type={SectionTypes.PRIMARY} />
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.SECONDARY} />
 <EventSponsorsSection type={SectionTypes.TERTIARY} />
