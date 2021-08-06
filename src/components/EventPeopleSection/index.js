@@ -9,12 +9,12 @@ import * as styles from "./index.module.scss"
 
 const EventPeopleSection = ({ type }) => {
   const data = React.useContext(EventContext)
-  const { event_name, people } = data.mdx.frontmatter
+  const { name, people } = data.mdx.frontmatter
 
   return (
     <Section
       title="The Team"
-      subtitle={`These are the people that make ${event_name} possible!`}
+      subtitle={`These are the people that make ${name} possible!`}
       type={type}
     >
       <div className="container py-5">
