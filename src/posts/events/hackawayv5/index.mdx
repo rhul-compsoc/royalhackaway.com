@@ -29,8 +29,8 @@ full-description: >
   create a more inclusive and rewarding event for all.
 
 schedule: []
-sponsor_document_enable: false
-sponsor_document: null
+sponsor_document_enable: true
+sponsor_document: ./v5 Sponsor Deck.pdf
 sponsors: []
 people:
   - person: ash
@@ -55,6 +55,7 @@ import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
 
 import { SiteButton } from "../../../components/SiteButton"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
@@ -95,3 +96,6 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 <EventCountdownSection type={SectionTypes.SECONDARY} />
 <HackathonDefinitionSection type={SectionTypes.TERTIARY} />
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />
+<EventSponsorsSection type={SectionTypes.TERTIARY}>
+  <p class="text-center">Interested in sponsoring Hackaway v5?</p>
+</EventSponsorsSection>

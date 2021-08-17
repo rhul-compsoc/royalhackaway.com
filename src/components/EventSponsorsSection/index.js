@@ -7,7 +7,7 @@ import * as styles from "./index.module.scss"
 
 const tierSizes = [undefined, 8, 5, 3, 2.7]
 
-const EventSponsorsSection = ({ type }) => {
+const EventSponsorsSection = ({ type, children }) => {
   const data = React.useContext(EventContext)
 
   const {
@@ -19,6 +19,7 @@ const EventSponsorsSection = ({ type }) => {
   return (
     <Section title="Sponsors" type={type}>
       <div className="container">
+        {children}
         <div className="row">
           <div className="col-12">
             {sponsors.map(tier => (
