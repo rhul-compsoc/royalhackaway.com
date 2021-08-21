@@ -28,6 +28,14 @@ const HomePage = ({ data }) => {
       <EventContextProvider data={data}>
         <div className="container">
           <div className="row">
+            <div className="col">
+              <SiteLink to={parent.fields.slug} className={headerClass}>
+                {parent?.frontmatter?.short_name}
+              </SiteLink>
+              <h2 className={subheadingClass}>{short_name}</h2>
+            </div>
+          </div>
+          <div className="row">
             <div className="col col-12 col-md-12 order-1 col-lg-4 order-lg-2">
               {tableOfContents.items && (
                 <>
@@ -43,11 +51,6 @@ const HomePage = ({ data }) => {
               )}
             </div>
             <div className="col col-12 col-md-12 order-2 col-lg-8 order-lg-1">
-              <SiteLink to={parent.fields.slug} className={headerClass}>
-                {parent?.frontmatter?.short_name}
-              </SiteLink>
-              <h2 className={subheadingClass}>{short_name}</h2>
-
               {children?.map(child => (
                 <div key={child.fields.slug}>
                   <h3>
