@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { SiteLink } from "../SiteClickable"
 import React, { Component } from "react"
 import Cookies from "universal-cookie"
 import { CombineStyles } from "../../helpers/CombineStyles"
@@ -73,9 +73,10 @@ class SiteCookiePopup extends Component<Props, State> {
               <div className={CombineStyles("col", styles.col)}>
                 Do you want to enable Google Tracking cookies?
                 <br />
-                See our <Link to="/dataprotection">
+                See our{" "}
+                <SiteLink to="/dataprotection">
                   Data Protection Policy
-                </Link>{" "}
+                </SiteLink>{" "}
                 for what we do with your data.
               </div>
               <div className={CombineStyles("col-auto", styles.col)}>

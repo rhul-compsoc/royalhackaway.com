@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { SiteLink } from "../components/SiteClickable"
 import React from "react"
 import { Layout } from "../components/Layout"
 import { SiteSEO } from "../components/SiteSEO"
@@ -10,7 +10,7 @@ const IndexPage = () => (
       <div className="text-center container" style={{ alignSelf: "center" }}>
         <h1 className="display-1">404</h1>
         <p>
-          You have reached a dead end. <Link to="/">Go home?</Link>
+          You have reached a dead end. <SiteLink to="/">Go home?</SiteLink>
         </p>
       </div>
     </section>

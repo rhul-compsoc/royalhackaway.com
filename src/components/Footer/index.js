@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { SiteLink } from "../SiteClickable"
 import React, { Component } from "react"
 import { FaTwitter } from "react-icons/fa"
 import compsoc from "../../assets/images/logo/rh-white.svg"
@@ -60,12 +60,12 @@ class Footer extends Component {
               <h3 className="fw-bold">Important Links</h3>
               <ul className={CombineStyles(styles.links, "link-orange")}>
                 <li>
-                  <Link
+                  <SiteLink
                     to="/dataprotection"
                     className="link-orange text-decoration-none"
                   >
                     Data Protection Policy
-                  </Link>
+                  </SiteLink>
                 </li>
                 <li>
                   <a
@@ -84,12 +84,12 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li>
-                  <Link
+                  <SiteLink
                     to="/events"
                     className="link-orange text-decoration-none"
                   >
                     All Events
-                  </Link>
+                  </SiteLink>
                 </li>
               </ul>
             </div>

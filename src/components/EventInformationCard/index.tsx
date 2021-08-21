@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { SiteLink } from "../SiteClickable"
 import Countdown from "react-countdown"
 
 interface Props {
@@ -48,9 +48,9 @@ const EventInformationCard = ({ node }: Props) => {
           )
         }
       />
-      <Link to={link} className="btn btn-hackaway-orange px-4">
+      <SiteLink to={link} className="btn btn-hackaway-orange px-4">
         {event.short_name}
-      </Link>
+      </SiteLink>
     </div>
   )
 }
