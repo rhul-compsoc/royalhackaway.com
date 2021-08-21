@@ -17,7 +17,7 @@ import {
 } from "./index.module.scss"
 
 const HomePage = ({ data }) => {
-  const { frontmatter, tableOfContents } = data.mdx
+  const { frontmatter, tableOfContents, timeToRead } = data.mdx
 
   const { name, short_name, short_description, parent, children } = frontmatter
 
@@ -53,6 +53,12 @@ const HomePage = ({ data }) => {
                   </ol>
                 </>
               )}
+
+              <h3>Page Information</h3>
+              <p>About a {timeToRead} minute read.</p>
+
+              <h3>Share this page</h3>
+              <p>TODO: Put some bullshit buttons here</p>
             </div>
             <div className="col col-12 col-md-12 order-2 col-lg-8 order-lg-1">
               {children?.map(child => (
@@ -91,6 +97,7 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       body
       tableOfContents
+      timeToRead
       frontmatter {
         full_description
         name
