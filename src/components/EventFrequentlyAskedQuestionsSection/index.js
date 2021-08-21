@@ -5,16 +5,18 @@ import { EventContext } from "../EventContext"
 import { Section } from "../Section"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const EventFrequentlyAskedQuestionsSection = ({ type }) => {
+const EventFrequentlyAskedQuestionsSection = ({
+  type,
+  children,
+  title = "Frequently Asked Questions",
+  subtitle = "Answers to some questions we get a lot of!",
+}) => {
   const [opened, setOpened] = useState(null)
   const data = React.useContext(EventContext)
 
   return (
-    <Section
-      title="Frequently Asked Questions"
-      subtitle="Answers to some questions we get a lot of!"
-      type={type}
-    >
+    <Section title={title} subtitle={subtitle} type={type}>
+      {children}
       <div className="container">
         <div className="row">
           {partition(data.mdx.frontmatter.faq, 2).map((column, index) => (

@@ -81,6 +81,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
               render
               homepage
               redirects
+              template
             }
           }
         }
@@ -98,7 +99,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
         ({ node }) => node.frontmatter.render
       )
       .forEach(({ node }) => {
-        const template = node.fields.template
+        const template = node.frontmatter.template || node.fields.template
 
         let slug = node.fields.slug
 
@@ -124,8 +125,8 @@ exports.createPages = ({ actions, graphql, reporter }) => {
         // Create redirects to the current page
         // Ignore redirects that are the same as the page.
         // Don't want any infinite loops!
-        node.frontmatter.redirects
-          .filter(redirectPath => redirectPath !== slug)
+        node.frontmatter?.redirects
+          ?.filter(redirectPath => redirectPath !== slug)
           .forEach(redirectPath => {
             createRedirect({
               fromPath: redirectPath,

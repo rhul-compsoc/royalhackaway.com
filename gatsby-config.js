@@ -13,6 +13,8 @@ module.exports = {
     "Mdx.frontmatter.people.person": "Mdx.fields.id",
     "Mdx.frontmatter.faq": "Mdx.fields.id",
     "Mdx.frontmatter.sponsors.companies": "Mdx.fields.id",
+    "Mdx.frontmatter.parent": "Mdx.fields.id",
+    "Mdx.frontmatter.children": "Mdx.fields.slug",
   },
   plugins: [
     "gatsby-plugin-meta-redirect",
@@ -46,10 +48,14 @@ module.exports = {
       options: {
         gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1200,
             },
+          },
+          {
+            resolve: "gatsby-remark-autolink-headers",
+            options: {},
           },
         ],
       },

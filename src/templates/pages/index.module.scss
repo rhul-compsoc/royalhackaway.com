@@ -1,0 +1,25 @@
+.mdx {
+  margin-bottom: 5em;
+
+  a[class*="anchor"] {
+    margin-right: 0.5em;
+  }
+}
+
+.toc {
+  list-style: upper-roman;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 4em;
+
+  text-decoration: none;
+}
+
+.subheading {
+  font-weight: lighter;
+  font-size: 3em;
+
+  margin-bottom: 1em;
+}

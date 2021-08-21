@@ -1,25 +1,24 @@
 import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
+import { EventContextProvider } from "../../components/EventContext"
 import { Layout } from "../../components/Layout"
 import { SiteSEO } from "../../components/SiteSEO"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { EventContextProvider } from "../../components/EventContext"
+import { mdx as mdxClass } from "./index.module.scss"
 
 const HomePage = ({ data }) => {
-  const {
-    short_name,
-    short_description,
-    sponsor_document_enable,
-    sponsor_document,
-  } = data.mdx.frontmatter
+  const { name, short_description, sponsor_document_enable, sponsor_document } =
+    data.mdx.frontmatter
 
   return (
     <Layout
       sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
     >
-      <SiteSEO title={short_name} description={short_description} />
+      <SiteSEO title={name} description={short_description} />
       <EventContextProvider data={data}>
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        <div class={mdxClass}>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </div>
       </EventContextProvider>
     </Layout>
   )
