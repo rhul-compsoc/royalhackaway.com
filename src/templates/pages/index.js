@@ -1,15 +1,19 @@
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 import React from "react"
 import { EventContextProvider } from "../../components/EventContext"
 import { Layout } from "../../components/Layout"
 import { SiteLink } from "../../components/SiteClickable"
+import { SiteCodeBlock } from "../../components/SiteCodeBlock"
 import { SiteSEO } from "../../components/SiteSEO"
 import {
   header as headerClass,
   mdx as mdxClass,
   subheading as subheadingClass,
   toc as tocClass,
+  tocHeader as tocHeaderClass,
+  childLink as childLinkClass,
 } from "./index.module.scss"
 
 const HomePage = ({ data }) => {
@@ -39,7 +43,7 @@ const HomePage = ({ data }) => {
             <div className="col col-12 col-md-12 order-1 col-lg-4 order-lg-2">
               {tableOfContents.items && (
                 <>
-                  <h3>Table of Contents</h3>
+                  <h3 className={tocHeaderClass}>Table of Contents</h3>
                   <ol className={tocClass}>
                     {tableOfContents.items.map(item => (
                       <li key={item.url}>
@@ -52,7 +56,7 @@ const HomePage = ({ data }) => {
             </div>
             <div className="col col-12 col-md-12 order-2 col-lg-8 order-lg-1">
               {children?.map(child => (
-                <div key={child.fields.slug}>
+                <div key={child.fields.slug} className={childLinkClass}>
                   <h3>
                     <SiteLink to={child.fields.slug}>
                       {child.frontmatter.name}
@@ -65,7 +69,13 @@ const HomePage = ({ data }) => {
               ))}
 
               <div className={mdxClass}>
-                <MDXRenderer>{data.mdx.body}</MDXRenderer>
+                <MDXProvider
+                  components={{
+                    pre: SiteCodeBlock,
+                  }}
+                >
+                  <MDXRenderer>{data.mdx.body}</MDXRenderer>
+                </MDXProvider>
               </div>
             </div>
           </div>

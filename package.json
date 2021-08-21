@@ -31,6 +31,7 @@
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-transformer-sharp": "^3.11.0",
     "node-sass": "^6.0.1",
+    "prism-react-renderer": "^1.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",

@@ -1,0 +1,22 @@
+.siteCodeBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 0 1.5em;
+  padding: 1.5em;
+  border-radius: 1em;
+
+  .siteCodeBlockLineContent {
+    // word-break: break-all;
+    white-space: pre-wrap;
+  }
+}
+
+.siteCodeBlockWithNumbers {
+  grid-template-columns: auto 1fr;
+
+  .siteCodeBlockLineNumber {
+    user-select: none;
+    justify-self: end;
+  }
+}

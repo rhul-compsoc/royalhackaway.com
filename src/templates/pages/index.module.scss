@@ -1,5 +1,10 @@
 .mdx {
   margin-bottom: 5em;
+  color: var(--body-foreground-colour);
+  stroke: var(--body-foreground-colour);
+  ::marker {
+    color: var(--body-foreground-colour);
+  }
 
   a[class*="anchor"] {
     margin-right: 0.5em;
@@ -8,6 +13,13 @@
 
 .toc {
   list-style: upper-roman;
+  ::marker {
+    color: var(--body-foreground-colour);
+  }
+}
+
+.tocHeader {
+  color: var(--body-foreground-colour);
 }
 
 .header {
@@ -20,6 +32,11 @@
 .subheading {
   font-weight: lighter;
   font-size: 3em;
+  color: var(--body-foreground-colour);
 
   margin-bottom: 1em;
+}
+
+.childLink {
+  color: var(--body-foreground-colour);
 }

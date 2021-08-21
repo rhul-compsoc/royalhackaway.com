@@ -1,6 +1,7 @@
 :root {
   --hackaway-orange: #f35c22;
 
+  --body-foreground-colour: black;
   --body-background-colour: white;
 
   --primary-foreground-colour: white;
@@ -22,6 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --body-foreground-colour: white;
     --body-background-colour: #202225;
 
     --primary-foreground-colour: white;
