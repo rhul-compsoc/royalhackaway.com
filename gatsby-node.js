@@ -61,6 +61,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "template",
       value: folderName,
     })
+
+    createNodeField({
+      node,
+      name: "relativePath",
+      value: parent.relativePath,
+    })
   }
 }
 

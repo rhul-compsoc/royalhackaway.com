@@ -11,17 +11,6 @@
   }
 }
 
-.toc {
-  list-style: upper-roman;
-  ::marker {
-    color: var(--body-foreground-colour);
-  }
-}
-
-.tocHeader {
-  color: var(--body-foreground-colour);
-}
-
 .header {
   font-weight: bold;
   font-size: 4em;
@@ -39,4 +28,33 @@
 
 .childLink {
   color: var(--body-foreground-colour);
+}
+
+.sidebarContainer {
+  color: var(--body-foreground-colour);
+
+  ::marker {
+    color: var(--body-foreground-colour);
+  }
+
+  .toc {
+    list-style: upper-roman;
+  }
+
+  .peopleContainerContainer {
+    margin-bottom: 1em;
+    display: grid;
+    gap: 0.5em;
+    .personContainer {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 0.5em;
+      .personImage {
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+      }
+    }
+  }
 }

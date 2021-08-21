@@ -8,6 +8,7 @@ module.exports = {
     github: "rhul-compsoc",
     email: "hello@royalhackaway.com",
     siteUrl: "https://royalhackaway.com",
+    githubUrl: "https://github.com/rhul-compsoc/royalhackaway.com",
   },
   mapping: {
     "Mdx.frontmatter.people.person": "Mdx.fields.id",
