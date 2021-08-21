@@ -7,13 +7,10 @@ import { SiteSEO } from "../../components/SiteSEO"
 import { mdx as mdxClass } from "./index.module.scss"
 
 const HomePage = ({ data }) => {
-  const { name, short_description, sponsor_document_enable, sponsor_document } =
-    data.mdx.frontmatter
+  const { name, short_description } = data.mdx.frontmatter
 
   return (
-    <Layout
-      sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
-    >
+    <Layout parentData={data.mdx}>
       <SiteSEO title={name} description={short_description} />
       <EventContextProvider data={data}>
         <div class={mdxClass}>
@@ -41,6 +38,14 @@ export const pageQuery = graphql`
         }
         full_description
         name
+        navigation {
+          label
+          to
+          href
+          file {
+            publicURL
+          }
+        }
         people {
           person {
             frontmatter {

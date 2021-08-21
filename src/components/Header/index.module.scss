@@ -10,7 +10,8 @@ $logo-height: 2.5rem;
 .navBar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
+  gap: 3em;
   position: relative;
   height: 75px;
 }

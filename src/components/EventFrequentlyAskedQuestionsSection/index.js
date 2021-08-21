@@ -16,7 +16,6 @@ const EventFrequentlyAskedQuestionsSection = ({
 
   return (
     <Section title={title} subtitle={subtitle} type={type}>
-      {children}
       <div className="container">
         <div className="row">
           {partition(data.mdx.frontmatter.faq, 2).map((column, index) => (
@@ -42,6 +41,7 @@ const EventFrequentlyAskedQuestionsSection = ({
               ))}
             </div>
           ))}
+          {children}
         </div>
       </div>
     </Section>

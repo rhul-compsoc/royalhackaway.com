@@ -15,15 +15,7 @@ import {
 const HomePage = ({ data }) => {
   const { frontmatter, tableOfContents } = data.mdx
 
-  const {
-    name,
-    short_name,
-    short_description,
-    sponsor_document_enable,
-    sponsor_document,
-    parent,
-    children,
-  } = frontmatter
+  const { name, short_name, short_description, parent, children } = frontmatter
 
   let title = name
 
@@ -31,9 +23,7 @@ const HomePage = ({ data }) => {
     title = parent.frontmatter.name + " :: " + title
 
   return (
-    <Layout
-      sponsor_document={sponsor_document_enable && sponsor_document.publicURL}
-    >
+    <Layout parentData={parent || data.mdx}>
       <SiteSEO title={title} description={short_description} />
       <EventContextProvider data={data}>
         <div className="container">
@@ -91,6 +81,14 @@ export const pageQuery = graphql`
       frontmatter {
         full_description
         name
+        navigation {
+          label
+          to
+          href
+          file {
+            publicURL
+          }
+        }
         parent {
           fields {
             slug
@@ -98,6 +96,18 @@ export const pageQuery = graphql`
           frontmatter {
             name
             short_name
+            sponsor_document {
+              publicURL
+            }
+            sponsor_document_enable
+            navigation {
+              label
+              to
+              href
+              file {
+                publicURL
+              }
+            }
           }
         }
         children {

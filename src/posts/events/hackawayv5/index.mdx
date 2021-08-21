@@ -46,6 +46,14 @@ faq:
   - want-to-join-the-committee
   - who-can-attend
   - who-owns-my-project
+
+navigation:
+  - label: Discord
+    href: https://discord.gg/c8mq6cDwjF
+  - label: Resources
+    to: /events/hackawayv5/pages/
+  - label: Sponsor Us
+    file: ./v5 Sponsor Deck.pdf
 ---
 
 import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
@@ -95,7 +103,22 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 </EventJumbotron>
 <EventCountdownSection type={SectionTypes.SECONDARY} />
 <HackathonDefinitionSection type={SectionTypes.TERTIARY} />
-<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY} />
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
+  <div class="row">
+    <div class="col text-center">
+      <p>
+        Can't find what you're looking for?
+        Check out our resources page for more.
+      </p>
+      <SiteButton
+        to="/events/hackawayv5/pages/"
+        className="btn-hackaway-primary"
+      >
+        Additional Resources
+      </SiteButton>
+    </div>
+  </div>
+</EventFrequentlyAskedQuestionsSection>
 <EventSponsorsSection type={SectionTypes.TERTIARY}>
   <p class="text-center">Interested in sponsoring Hackaway v5?</p>
 </EventSponsorsSection>

@@ -1,11 +1,15 @@
-import { graphql, Link, StaticQuery } from "gatsby"
-import React, { useState } from "react"
-import logo from "../../assets/images/logo/rh.svg"
+import { Link } from "gatsby"
+import React from "react"
 import logoDark from "../../assets/images/logo/hackaway-logo-text-dark-theme.svg"
+import logo from "../../assets/images/logo/rh.svg"
 import { CombineStyles } from "../../helpers/CombineStyles"
+import { SiteLink } from "../SiteClickable"
 import * as styles from "./index.module.scss"
 
-export const Header = ({ sponsor_document }) => {
+export const Header = ({ parentData }) => {
+  const sponsor_document = parentData?.frontmatter?.sponsor_document
+  const navigation = parentData?.frontmatter?.navigation
+
   return (
     <header className={styles.header}>
       <nav className={CombineStyles(styles.navBar, "container")}>
@@ -25,7 +29,12 @@ export const Header = ({ sponsor_document }) => {
         </div>
         <div className={styles.navBarRightSide}>
           <Link to="/">Home</Link>
-          {sponsor_document && <a href={sponsor_document}>Sponsor Us</a>}
+          {navigation &&
+            navigation.map((link, i) => (
+              <SiteLink key={i} {...link}>
+                {link.label}
+              </SiteLink>
+            ))}
         </div>
       </nav>
     </header>

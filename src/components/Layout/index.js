@@ -6,12 +6,12 @@ import { SiteDefaultSEO } from "../SiteDefaultSEO"
 import * as styles from "./index.module.scss"
 // import { CookieCutter } from "../CookieCutter"
 
-const Layout = ({ children, sponsor_document }) => {
+const Layout = ({ children, parentData }) => {
   return (
     <div>
       <SiteDefaultSEO />
       <div className={styles.layout}>
-        <Header sponsor_document={sponsor_document} />
+        <Header parentData={parentData} />
         <main className={styles.content}>{children}</main>
         <Footer />
       </div>
