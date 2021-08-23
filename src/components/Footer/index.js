@@ -12,7 +12,7 @@ class Footer extends Component {
       <footer className="bg-dark text-light">
         <div className="container">
           <div className="row justify-content-center py-5">
-            <div className="col col-sm-12 col-md-4">
+            <div className="col col-12 col-sm-12 col-md-4">
               <img src={compsoc} className={styles.logo} />
               <p>
                 Royal Hackaway is an entity of the Royal Holloway, Computing
@@ -28,7 +28,7 @@ class Footer extends Component {
                 </a>
               </p>
             </div>
-            <div className="col col-sm-12 col-md-8">
+            <div className="col col-12 col-sm-12 col-md-8">
               <h2 className="fw-bold">Stay Connected</h2>
               <p>
                 To keep up to date with all things Royal Hackaway follow our
