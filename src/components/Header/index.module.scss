@@ -10,15 +10,17 @@ $logo-height: 2.5rem;
 .navBar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   // justify-content: space-between;
-  gap: 3em;
+  gap: 0 3em;
   position: relative;
-  height: 75px;
+  // height: 75px;
 }
 
 .navBarLeftSide {
   display: flex;
   align-items: center;
+  height: 75px;
   a {
     img {
       height: $logo-height;
@@ -28,7 +30,8 @@ $logo-height: 2.5rem;
 
 .navBarRightSide {
   display: flex;
-  gap: 2em;
+  flex-wrap: wrap;
+  gap: 0.5em 2em;
 
   a {
     color: inherit;
