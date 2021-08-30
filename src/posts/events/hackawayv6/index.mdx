@@ -1,0 +1,117 @@
+---
+name: Royal Hackaway v6
+short_name: Coming Soon...
+render: false
+is-public: true
+is-over: false
+
+homepage: false
+redirects:
+  - /v6
+  - /2023
+
+event_start: "2023-02-05T10:00:00+00:00"
+event_end: "2023-02-06T18:00:00+00:00"
+
+hacking_start: 2023-02-05T11:00:00+00
+hacking_end: 2023-02-06T13:00:00+00
+
+short-description: An exciting two-day online Hackathon, for students across the UK or around the world
+full-description: >
+  Royal Hackaway is Royal Holloway's annual hackathon.
+
+  Open to university students from the UK and around the world,
+  in this two-day hackathon you'll work as a team to build a project.
+  You'll pick up new skills, try out new tech, and meet new people.
+
+
+  This is our sixth time running this event, and we're excited to
+  create a more inclusive and rewarding event for all.
+
+schedule: []
+sponsor_document_enable: false
+# sponsor_document: ./v5 Sponsor Deck.pdf
+sponsors: []
+people:
+  - person: sheep
+    role: President
+faq:
+  - can-i-go-home-overnight-leave-early
+  - whats-a-hackathon
+  - can-i-start-before-i-arrive
+  - do-i-have-to-study-computer-science
+  - do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - how-much-does-it-cost
+  - want-to-join-the-committee
+  - who-can-attend
+  - who-owns-my-project
+  - how-do-i-opt-out-of-photography
+
+navigation:
+  - label: Discord
+    href: https://discord.gg/c8mq6cDwjF
+---
+
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { SectionTypes } from "../../../components/Section"
+import { EventFullDescription } from "../../../components/EventFullDescription"
+import { EventCountdownSection } from "../../../components/EventCountdownSection"
+import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
+
+import { SiteButton } from "../../../components/SiteClickable"
+import { ButtonsContainer } from "../../../components/ButtonsContainer"
+import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
+
+<!-- <MajorLeagueHackingBadge year={2022} /> -->
+
+<EventJumbotron>
+
+# hackaway v6
+
+### Hack something awesome!
+
+  <p>
+    <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
+    <br />
+    <FaCalendarAlt /> Saturday 4th February - Sunday 5th February 2023
+  </p>
+  <p>
+    <EventFullDescription />
+  </p>
+  <ButtonsContainer>
+    <SiteButton
+      disabled
+      href="https://tickets.royalhackaway.com/"
+      className="btn-hackaway-primary"
+    >
+      Coming soon...
+    </SiteButton>
+    <SiteButton
+      href="https://discord.gg/c8mq6cDwjF"
+      className="btn-hackaway-blurple"
+    >
+      <FaDiscord /> Join Discord
+    </SiteButton>
+  </ButtonsContainer>
+</EventJumbotron>
+<EventCountdownSection type={SectionTypes.SECONDARY} />
+<HackathonDefinitionSection type={SectionTypes.TERTIARY} />
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
+  <div class="row">
+    <div class="col text-center">
+      <SiteButton
+        disabled
+        className="btn-hackaway-primary"
+      >
+        Additional Resources coming soon!
+      </SiteButton>
+    </div>
+  </div>
+</EventFrequentlyAskedQuestionsSection>
+<EventSponsorsSection type={SectionTypes.TERTIARY}>
+  <p class="text-center">Interested in sponsoring Hackaway v6?</p>
+</EventSponsorsSection>

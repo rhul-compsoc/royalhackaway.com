@@ -1,6 +1,7 @@
 import React from "react"
-import { SiteLink } from "../SiteClickable"
+import { SiteButton, SiteLink } from "../SiteClickable"
 import Countdown from "react-countdown"
+import { CombineStyles } from "../../helpers/CombineStyles"
 
 interface Props {
   node: {
@@ -12,6 +13,7 @@ interface Props {
       name: string
       is_public: boolean
       is_over: boolean
+      render: boolean
       short_name: string
       homepage: string
       event_start: string
@@ -48,9 +50,15 @@ const EventInformationCard = ({ node }: Props) => {
           )
         }
       />
-      <SiteLink to={link} className="btn btn-hackaway-orange px-4">
+      <SiteButton
+        to={event.render && link}
+        className={CombineStyles(
+          "btn btn-hackaway-orange px-4",
+          !event.render && "disabled"
+        )}
+      >
         {event.short_name}
-      </SiteLink>
+      </SiteButton>
     </div>
   )
 }

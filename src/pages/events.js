@@ -82,6 +82,7 @@ export const pageQuery = graphql`
           homepage
           event_start
           event_end
+          render
         }
         fields {
           slug
