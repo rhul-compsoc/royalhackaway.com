@@ -17,7 +17,7 @@ class HackathonDefinitionSection extends Component {
             <div className="col-12 col-md-6 text-center text-md-end">
               <p className={leftText}>
                 Royal Hackaway is an initiative of the{" "}
-                <a href="https://cmpsc.uk" className={link}>
+                <a href="https://computingsociety.co.uk" className={link}>
                   Computing Society at Royal Holloway, University of London
                 </a>
                 <br />
