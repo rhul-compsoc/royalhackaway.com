@@ -51,8 +51,8 @@ faq:
 navigation:
   - label: Discord
     href: https://discord.gg/c8mq6cDwjF
-  - label: Resources
-    to: /events/hackawayv5/pages/
+  # - label: Resources
+  #   to: /events/hackawayv5/pages/
   - label: Sponsor Us
     file: ./v5 Sponsor Deck.pdf
 ---
@@ -107,15 +107,11 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
   <div class="row">
     <div class="col text-center">
-      <p>
-        Can't find what you're looking for?
-        Check out our resources page for more.
-      </p>
       <SiteButton
-        to="/events/hackawayv5/pages/"
+        disabled
         className="btn-hackaway-primary"
       >
-        Additional Resources
+        Additional Resources coming soon!
       </SiteButton>
     </div>
   </div>
