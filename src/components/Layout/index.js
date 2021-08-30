@@ -13,7 +13,7 @@ const Layout = ({ children, parentData }) => {
       <div className={styles.layout}>
         <Header parentData={parentData} />
         <main className={styles.content}>{children}</main>
-        <Footer />
+        <Footer parentData={parentData} />
       </div>
       {/* <CookieCutter /> */}
     </div>

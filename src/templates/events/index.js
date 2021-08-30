@@ -124,6 +124,24 @@ export const pageQuery = graphql`
         event_start
         event_end
         subtitle
+        hackaway_logo {
+          light {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 512) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          dark {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 512) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
       fields {
         slug

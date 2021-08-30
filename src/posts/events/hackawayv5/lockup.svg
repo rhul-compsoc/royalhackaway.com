@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3000 1002" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.16041,0,0,1.16041,-131.202,-30.3161)">
+        <path d="M509.633,47.053L865.336,252.418L865.336,663.147L509.633,868.512L153.931,663.147L153.931,252.418L509.633,47.053Z" style="fill:none;stroke:black;stroke-width:37.06px;"/>
+    </g>
+    <g transform="matrix(580,0,0,580,113.633,636.516)">
+        <path d="M0.405,-0.043L0.347,0.016L0.097,-0.234L0.347,-0.484L0.405,-0.425L0.214,-0.234L0.405,-0.043Z" style="fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(0.441531,0.219132,-0.478577,0.964289,548.278,-136.845)">
+        <rect x="434.246" y="379.952" width="98.581" height="342.39"/>
+    </g>
+    <g transform="matrix(0.441531,0.219132,-0.478577,0.964289,716.429,-136.805)">
+        <rect x="434.246" y="379.952" width="98.581" height="342.39"/>
+    </g>
+    <g transform="matrix(1,0,0,1,577.853,127.018)">
+        <text x="452.522px" y="518.489px" style="font-family:'AnonymousPro-Bold', 'Anonymous Pro', monospace;font-weight:700;font-size:455px;">hackaway</text>
+    </g>
+</svg>
