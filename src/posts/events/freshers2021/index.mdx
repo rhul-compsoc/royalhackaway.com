@@ -72,7 +72,8 @@ import { EventDate } from "../../../components/EventDate"
 
 import { SiteButton } from "../../../components/SiteClickable"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
-import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
+import { FaDiscord } from "react-icons/fa"
+import { GrTicket } from "react-icons/gr"
 
 import freshersHackLogo from "./DiscordCanary_9EdQ4hkP3l.png"
 import { logo } from "./freshers2021.module.scss"
@@ -105,9 +106,17 @@ import { FreshersHack } from "../../../components/FreshersHack"
   <p>
     Come along to the Bedford Building on the 25th and 26th of September 2021!
   </p>
-  <SiteButton href="https://dc.cmpsc.uk/" className="btn-hackaway-blurple">
-    <FaDiscord /> Join the Computing Society Discord server
-  </SiteButton>
+  <ButtonsContainer className="justify-content-center">
+    <SiteButton href="https://dc.cmpsc.uk/" className="btn-hackaway-blurple">
+      <FaDiscord /> Join the Computing Society Discord server
+    </SiteButton>
+    <SiteButton
+      href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+      className="btn-hackaway-orange"
+    >
+      <GrTicket /> Grab your Tickets!
+    </SiteButton>
+  </ButtonsContainer>
 </Section>
 
 <EventCountdownSection type={SectionTypes.SECONDARY} />
