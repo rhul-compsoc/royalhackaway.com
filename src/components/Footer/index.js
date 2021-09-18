@@ -5,25 +5,14 @@ import compsoc from "../../assets/images/logo/rh-white.svg"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { ContactEmail } from "../ContactEmail"
 import * as styles from "./index.module.scss"
-import { SiteImage } from "../SiteImage"
 
-const Footer = ({ parentData }) => {
-  const hackawayLogo = parentData?.frontmatter?.hackaway_logo
-
+const Footer = () => {
   return (
     <footer className="bg-dark text-light">
       <div className="container">
         <div className="row justify-content-center py-5">
           <div className="col col-12 col-sm-12 col-md-4">
-            {hackawayLogo ? (
-              <SiteImage
-                forcedTheme="dark"
-                image={hackawayLogo}
-                className={styles.logo}
-              />
-            ) : (
-              <img src={compsoc} className={styles.logo} />
-            )}
+            <img src={compsoc} className={styles.logo} />
             <p>
               Royal Hackaway is an entity of the Royal Holloway, Computing
               Society that hosts hackathons and other similarly cool events.

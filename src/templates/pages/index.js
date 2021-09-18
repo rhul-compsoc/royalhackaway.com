@@ -244,24 +244,6 @@ export const pageQuery = graphql`
         }
         short_description
         short_name
-        hackaway_logo {
-          light {
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 512) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          dark {
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 512) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
       }
       fields {
         slug
