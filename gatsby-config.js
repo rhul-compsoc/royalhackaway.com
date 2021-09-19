@@ -21,6 +21,7 @@ module.exports = {
     "gatsby-plugin-meta-redirect",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-sass",
       options: {

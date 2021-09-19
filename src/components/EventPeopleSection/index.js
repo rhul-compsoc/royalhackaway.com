@@ -1,4 +1,3 @@
-import Img from "gatsby-image"
 import React from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 import { EventContext } from "../EventContext"
@@ -31,7 +30,7 @@ const EventPeopleSection = ({ type }) => {
                 >
                   <div className={styles.pictureContainer}>
                     <SiteImage
-                      fluid={{ aspectRatio: 1 }}
+                      aspectRatio={1}
                       image={person.frontmatter.image}
                       className={styles.picture}
                       title={person.frontmatter.description}

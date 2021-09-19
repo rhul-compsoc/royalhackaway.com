@@ -1,13 +1,10 @@
-import GatsbyImage, { FluidObject } from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { ReactNode } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 
 interface GatsbyGraphqlImageResponse {
   publicURL: string
-  childImageSharp: {
-    fluid: FluidObject
-    [key: string]: unknown
-  }
+  childImageSharp: any
 }
 
 interface ThemedGatsbyGraphqlImageResponse {
@@ -25,6 +22,7 @@ const SiteImage = ({
   className,
   fixedHeight,
   fixedHeightMeasurement = "em",
+  aspectRatio,
   forcedTheme,
   ...other
 }: {
@@ -34,6 +32,7 @@ const SiteImage = ({
   className?: string
   fixedHeight?: number
   fixedHeightMeasurement?: string
+  aspectRatio?: number
   forcedTheme?: "light" | "dark"
 }): ReactNode => {
   let width
@@ -44,9 +43,9 @@ const SiteImage = ({
 
     // If there's a bitmap, calculate the appropriate width
     // so that it can fit in perfectly.
-    if (image.light.childImageSharp?.fluid.aspectRatio) {
+    if (image.light.childImageSharp?.gatsbyImageData.aspectRatio) {
       width =
-        fixedHeight * image.light.childImageSharp.fluid.aspectRatio +
+        fixedHeight * image.light.childImageSharp.gatsbyImageData.aspectRatio +
         fixedHeightMeasurement
     }
   }
@@ -70,11 +69,8 @@ const SiteImage = ({
           />
         ) : (
           <GatsbyImage
+            image={image.light.childImageSharp.gatsbyImageData}
             {...other}
-            fluid={{
-              ...image.light.childImageSharp.fluid,
-              ...fluid,
-            }}
             style={{
               ...style,
               width,
@@ -84,6 +80,7 @@ const SiteImage = ({
               className,
               !forcedTheme && "hackaway-light-theme-only"
             )}
+            alt=""
           />
         ))}
 
@@ -104,11 +101,8 @@ const SiteImage = ({
           />
         ) : (
           <GatsbyImage
+            image={image.dark.childImageSharp.gatsbyImageData}
             {...other}
-            fluid={{
-              ...image.dark.childImageSharp.fluid,
-              ...fluid,
-            }}
             style={{
               ...style,
               width,
@@ -118,6 +112,7 @@ const SiteImage = ({
               className,
               !forcedTheme && "hackaway-dark-theme-only"
             )}
+            alt=""
           />
         ))}
     </>

@@ -1,0 +1,23 @@
+@import "_config";
+
+.jumbotron {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $jumbotron-foreground-colour;
+
+  div[class="react-parallax-background-children"] {
+    height: 100%;
+  }
+
+  .background {
+    height: 100%;
+    width: 100vw;
+
+    .image {
+      filter: brightness(40%);
+      height: 110%;
+    }
+  }
+}

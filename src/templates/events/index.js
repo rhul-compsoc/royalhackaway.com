@@ -1,9 +1,11 @@
+import { MDXProvider } from "@mdx-js/react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import { EventContextProvider } from "../../components/EventContext"
 import { Layout } from "../../components/Layout"
 import { SiteSEO } from "../../components/SiteSEO"
+import { Img } from "../../components/Img"
 import { mdx as mdxClass } from "./index.module.scss"
 
 const HomePage = ({ data }) => {
@@ -61,17 +63,21 @@ export const pageQuery = graphql`
                 light {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 512) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(
+                      width: 512
+                      height: 512
+                      layout: CONSTRAINED
+                    )
                   }
                 }
                 dark {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 512) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(
+                      width: 512
+                      height: 512
+                      layout: CONSTRAINED
+                    )
                   }
                 }
               }
@@ -104,17 +110,13 @@ export const pageQuery = graphql`
                 light {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 512) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(width: 512, layout: CONSTRAINED)
                   }
                 }
                 dark {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 512) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(width: 512, layout: CONSTRAINED)
                   }
                 }
               }

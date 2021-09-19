@@ -224,17 +224,13 @@ export const pageQuery = graphql`
                 light {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(width: 64, height: 64, layout: CONSTRAINED)
                   }
                 }
                 dark {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(width: 64, height: 64, layout: CONSTRAINED)
                   }
                 }
               }

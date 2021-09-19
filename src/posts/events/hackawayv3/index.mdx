@@ -87,25 +87,21 @@ import { SiteButton } from "../../../components/SiteClickable"
 import { Section, SectionTypes } from "../../../components/Section"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventScheduleSection } from "../../../components/EventScheduleSection"
+import { HackawayLogo } from "../../../components/HackawayLogo"
 
-import hackawayLogo from "../../../assets/images/logo/rh-small.svg"
 import { jumbotronBackground, hackawayLogoClass } from "./v3.module.scss"
 
 <MajorLeagueHackingBadge year={2020} />
 <EventJumbotron className={`${jumbotronBackground} text-center`}>
-<img src={hackawayLogo} className={hackawayLogoClass} />
 
-# Royal Hackaway v3
+<HackawayLogo className={hackawayLogoClass} />
 
-01 February 2020, 09:30:00 AM  
-Windsor Building, RHUL
-
-<p class="lead">
+<p className="lead">
   An exciting two-day hackathon, for students from any university.
 </p>
 
 <SiteButton
-  class="btn-hackaway-orange"
+  className="btn-hackaway-orange"
   href="https://ti.to/royal-hackaway/royal-hackaway-v3"
 >
   Get your tickets here

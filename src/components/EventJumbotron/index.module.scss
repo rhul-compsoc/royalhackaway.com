@@ -1,26 +1,5 @@
 @import "_config";
 
-.description {
-  white-space: pre-wrap;
-}
-
-.livestreamContainer {
-  position: relative;
-  width: 100%;
-  padding-top: (100% / 16) * 9;
-  margin-bottom: 1em;
-}
-
-.livestream {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .hackathonTitle {
   background-image: url("../../assets/images/background/founders-side-orange.jpg");
 
