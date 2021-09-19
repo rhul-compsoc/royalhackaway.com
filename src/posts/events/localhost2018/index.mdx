@@ -54,11 +54,15 @@ import { Section, SectionTypes } from "../../../components/Section"
 import { Image as Whatever } from "../../../components/Img"
 
 import localhostLogo from "../../../assets/images/logo/localhost-logo.svg"
-import { localhostBackground, logo } from "./2018.module.scss"
+import { localhostBackground, localhostLogoClass } from "./2018.module.scss"
 
 <EventJumbotron className={`${localhostBackground} text-center`}>
 
-<Whatever src={localhostLogo} className={logo} alt="MLH LocalHost 2018 Logo" />
+<Whatever
+  src={localhostLogo}
+  className={localhostLogoClass}
+  alt="MLH LocalHost 2018 Logo"
+/>
 
   <h1>LocalHost 2018</h1>
   <p>01 October 2018, 12:00:00 PM Mccrea 125</p>

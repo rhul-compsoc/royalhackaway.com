@@ -80,14 +80,16 @@ import { SiteButton } from "../../../components/SiteClickable"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
 import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 import { HackawayLogoText } from "../../../components/HackawayLogoText"
+import { Image as Whatever } from "../../../components/Img"
 
-import { hackawayLogoClass } from "./v5.module.scss"
+import hackaway5logo from "../../../assets/images/logo/rh-white-montserrat-v5.svg"
+import { hackaway5logoClass } from "./v5.module.scss"
 
 <!-- <MajorLeagueHackingBadge year={2022} /> -->
 
 <EventJumbotronParallax>
 
-<HackawayLogoText className={hackawayLogoClass} />
+<Whatever src={hackaway5logo} className={hackaway5logoClass} />
 
   <p>
     <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
