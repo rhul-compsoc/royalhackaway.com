@@ -34,6 +34,7 @@ const EventPeopleSection = ({ type }) => {
                       image={person.frontmatter.image}
                       className={styles.picture}
                       title={person.frontmatter.description}
+                      forcedTheme="light"
                     />
                   </div>
                   <div className={styles.cardContent}>
