@@ -1,5 +1,5 @@
 import React from "react"
 
-const Img = (...props) => <img src={props.source} />
+const Img = props => <img {...props} />
 
-export { Img }
+export { Img, Img as Image }

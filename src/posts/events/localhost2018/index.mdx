@@ -51,20 +51,20 @@ faq: []
 import { EventJumbotron } from "../../../components/EventJumbotron"
 import { SiteButton } from "../../../components/SiteClickable"
 import { Section, SectionTypes } from "../../../components/Section"
+import { Image as Whatever } from "../../../components/Img"
 
 import localhostLogo from "../../../assets/images/logo/localhost-logo.svg"
 import { localhostBackground, logo } from "./2018.module.scss"
 
 <EventJumbotron className={`${localhostBackground} text-center`}>
-<img src={localhostLogo} className={logo} />
 
-# LocalHost 2018
+<Whatever src={localhostLogo} className={logo} alt="MLH LocalHost 2018 Logo" />
 
-01 October 2018, 12:00:00 PM  
-Mccrea 125
-
-<p class="lead">Pick up a new skill, and build somewithing with it,</p>
-
+  <h1>LocalHost 2018</h1>
+  <p>01 October 2018, 12:00:00 PM Mccrea 125</p>
+  <p class="lead">
+    Pick up a new skill, and build somewithing with it
+  </p>
 </EventJumbotron>
 <Section type={SectionTypes.LOCALHOST}>
 <div className="container">
