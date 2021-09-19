@@ -1,4 +1,4 @@
-import React, { Component, useContext, useState } from "react"
+import React from "react"
 import "../../scss/main.scss"
 import { Footer } from "../Footer"
 import { Header } from "../Header"

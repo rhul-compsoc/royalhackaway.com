@@ -2,6 +2,11 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import React, { ReactNode } from "react"
 import { CombineStyles } from "../../helpers/CombineStyles"
 
+import {
+  hackawayDarkThemeOnly,
+  hackawayLightThemeOnly,
+} from "./index.module.scss"
+
 interface GatsbyGraphqlImageResponse {
   publicURL: string
   childImageSharp: any
@@ -64,7 +69,7 @@ const SiteImage = ({
             }}
             className={CombineStyles(
               className,
-              !forcedTheme && "hackaway-light-theme-only"
+              !forcedTheme && hackawayLightThemeOnly
             )}
           />
         ) : (
@@ -78,7 +83,7 @@ const SiteImage = ({
             }}
             className={CombineStyles(
               className,
-              !forcedTheme && "hackaway-light-theme-only"
+              !forcedTheme && hackawayLightThemeOnly
             )}
             alt=""
           />
@@ -96,7 +101,7 @@ const SiteImage = ({
             }}
             className={CombineStyles(
               className,
-              !forcedTheme && "hackaway-dark-theme-only"
+              !forcedTheme && hackawayDarkThemeOnly
             )}
           />
         ) : (
@@ -110,7 +115,7 @@ const SiteImage = ({
             }}
             className={CombineStyles(
               className,
-              !forcedTheme && "hackaway-dark-theme-only"
+              !forcedTheme && hackawayDarkThemeOnly
             )}
             alt=""
           />
