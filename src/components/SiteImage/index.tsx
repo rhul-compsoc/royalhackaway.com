@@ -48,11 +48,12 @@ const SiteImage = ({
 
     // If there's a bitmap, calculate the appropriate width
     // so that it can fit in perfectly.
-    if (image.light.childImageSharp?.gatsbyImageData.aspectRatio) {
-      width =
-        fixedHeight * image.light.childImageSharp.gatsbyImageData.aspectRatio +
-        fixedHeightMeasurement
+    if (image.light.childImageSharp?.gatsbyImageData) {
+      const data = image.light.childImageSharp.gatsbyImageData
+      width = fixedHeight * (data.width / data.height) + fixedHeightMeasurement
     }
+
+    console.log(image.light.childImageSharp, width, height)
   }
 
   return (

@@ -42,6 +42,8 @@ const EventSponsorsSection = ({ type, children, link }) => {
                           key={company.link}
                           alt={company.name}
                           title={company.name}
+                          objectFit="contain"
+                          layout="fixed"
                         />
                       </a>
                     )
