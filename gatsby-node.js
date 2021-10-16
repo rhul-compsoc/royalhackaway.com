@@ -87,7 +87,6 @@ exports.createPages = ({ actions, graphql, reporter }) => {
               render
               homepage
               redirects
-              template
             }
           }
         }

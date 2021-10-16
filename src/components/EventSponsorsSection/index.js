@@ -7,7 +7,7 @@ import * as styles from "./index.module.scss"
 
 const tierSizes = [undefined, 8, 5, 3, 2.7]
 
-const EventSponsorsSection = ({ type, children }) => {
+const EventSponsorsSection = ({ type, children, link }) => {
   const data = React.useContext(EventContext)
 
   const {
@@ -69,7 +69,7 @@ const EventSponsorsSection = ({ type, children }) => {
                 )}
               >
                 <a
-                  href={sponsor_document?.publicURL}
+                  href={link || sponsor_document?.publicURL}
                   className="btn btn-hackaway-orange "
                 >
                   Become a sponsor
