@@ -60,7 +60,7 @@ const Footer = () => {
             <ul className={CombineStyles(styles.links, "link-orange")}>
               <li>
                 <SiteLink
-                  to="/dataprotection"
+                  to="https://wiki.cmpsc.uk/en/royalhackaway/v5/data-protection"
                   className="link-orange text-decoration-none"
                 >
                   Data Protection Policy
@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/CodeOfConduct_2.pdf"
+                  href="https://wiki.cmpsc.uk/en/code-of-conduct"
                   className="link-orange text-decoration-none"
                 >
                   CompSoc Code of Conduct
