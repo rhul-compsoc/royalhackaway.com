@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: light) {
   .hackawayDarkThemeOnly {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .hackawayLightThemeOnly {
-    display: none;
+    display: none !important;
   }
 }
