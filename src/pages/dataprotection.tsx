@@ -60,7 +60,7 @@ const DataProtectionPage = (): ReactNode => (
           <li>
             Hold your data for a maximum of 3 days after the published event end
             time. This allows us to resolve any issues within a reasonable
-            timeframe
+            time frame
           </li>
           <li>
             Only share personal data if absolutely necessary and only when
@@ -83,7 +83,7 @@ const DataProtectionPage = (): ReactNode => (
             Securely store your data in a master spreadsheet that only
             organisers have access to
           </li>
-          <li>Anonymyse the statistics which we may pass on to sponsors</li>
+          <li>Anonymise the statistics which we may pass on to sponsors</li>
           <li>
             Provide MLH with attendee information so they can assign your
             university points in the overall rankings
