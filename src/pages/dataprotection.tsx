@@ -59,8 +59,8 @@ const DataProtectionPage = (): ReactNode => (
           </li>
           <li>
             Hold your data for a maximum of 3 days after the published event end
-            time. This allows us to resolve any issues within a reasonable
-            time frame
+            time. This allows us to resolve any issues within a reasonable time
+            frame
           </li>
           <li>
             Only share personal data if absolutely necessary and only when

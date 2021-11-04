@@ -91,6 +91,8 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 import { HackawayLogoText } from "../../../components/HackawayLogoText"
 import { Image as Whatever } from "../../../components/Img"
 
+import { TitoWidget } from "../../../components/TitoWidget"
+
 import hackaway5logo from "../../../assets/images/logo/rh-white-montserrat-v5.svg"
 import { hackaway5logoClass } from "./v5.module.scss"
 
@@ -109,9 +111,7 @@ import { hackaway5logoClass } from "./v5.module.scss"
     <EventFullDescription />
   </p>
   <ButtonsContainer className="justify-content-center">
-    <SiteButton href="/tickets" className="btn-hackaway-orange">
-      Get Tickets
-    </SiteButton>
+    <TitoWidget event_name="royal-hackaway/v5" releases="hacker" />
     <SiteButton
       href="https://discord.gg/c8mq6cDwjF"
       className="btn-hackaway-blurple"
