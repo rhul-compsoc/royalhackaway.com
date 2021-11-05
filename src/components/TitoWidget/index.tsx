@@ -1,26 +1,31 @@
-import React, { useEffect, useState } from "react"
+import React, { ReactNode, useEffect, useState } from "react"
 import { SiteButton } from "../SiteClickable"
 
 interface Props {
   event_name?: string
   releases?: string
+  label: string
 }
 
-const TitoWidget = ({ event_name, releases }: Props) => {
+const TitoWidget = ({ event_name, releases, label = "Tickets" }: Props) => {
   const [buttonLoaded, setButtonLoaded] = useState(false)
 
   useEffect(() => {
     const scriptElement = document.createElement("script")
     scriptElement.src = "https://js.tito.io/v2"
-    let retryMountJavaScript, retryFormatButton
+    let retryMountJavaScript: ReturnType<typeof setTimeout>
+    let retryFormatButton: ReturnType<typeof setTimeout>
 
     const attemptReformatButton = () => {
-      const titoButton = document.querySelector(".tito-widget-button")
+      const titoButton = document.querySelector(
+        ".tito-widget-button"
+      ) as HTMLButtonElement
 
       // If the Tito button exists, add the relevant styles
       if (titoButton) {
         titoButton.classList.add("btn")
         titoButton.classList.add("btn-hackaway-orange")
+        titoButton.innerText = label
 
         // Switch to the Tito button
         setButtonLoaded(true)
@@ -67,19 +72,19 @@ const TitoWidget = ({ event_name, releases }: Props) => {
   // display the button which brings them to the website
   // If the widget has loaded, display the created Tito button.
   return (
-    <div>
+    <>
       {!buttonLoaded && (
         <SiteButton
           href={`https://tito.io/${event_name}`}
           className="btn-hackaway-orange"
         >
-          Tickets
+          {label}
         </SiteButton>
       )}
       <div className={!buttonLoaded && "d-none"}>
-        <div id="tito-widget">Loading...</div>
+        <div id="tito-widget" />
       </div>
-    </div>
+    </>
   )
 }
 
