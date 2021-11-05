@@ -5,7 +5,7 @@ import { Section } from "../Section"
 import { SiteImage } from "../SiteImage"
 import * as styles from "./index.module.scss"
 
-const tierSizes = [undefined, 8, 6, 5, 3]
+const tierSizes = [undefined, 8, 6, 5, 3, 2.5]
 
 const EventSponsorsSection = ({ type, children, link }) => {
   const data = React.useContext(EventContext)
