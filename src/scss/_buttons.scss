@@ -24,6 +24,10 @@
   }
 }
 
+.tito-widget-button {
+  width: 100%;
+}
+
 @include create-button(
   "hackaway-youtube",
   black,
