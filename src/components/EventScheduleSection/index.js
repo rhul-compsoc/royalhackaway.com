@@ -21,10 +21,20 @@ const EventScheduleSection = ({ type }) => {
                 </thead>
 
                 <tbody>
-                  {events.map(({ activity, time }, eventIndex) => (
+                  {events.map(({ activity, time, description }, eventIndex) => (
                     <tr key={`${scheduleIndex},${eventIndex}`}>
                       <td>{time}</td>
-                      <td>{activity}</td>
+                      <td>
+                        <strong>{activity}</strong>
+                        {description && (
+                          <>
+                            <br />
+                            <span style={{ whiteSpace: "pre-wrap" }}>
+                              {description}
+                            </span>
+                          </>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

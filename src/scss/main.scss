@@ -10,3 +10,7 @@
 body {
   background-color: $body-background-colour;
 }
+
+.gatsby-image-wrapper [data-main-image] {
+  transform: unset;
+}

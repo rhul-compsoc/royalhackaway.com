@@ -92,6 +92,7 @@ export const pageQuery = graphql`
           events {
             time
             activity
+            description
           }
         }
         sponsor_document_enable

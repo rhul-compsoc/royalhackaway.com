@@ -1,0 +1,33 @@
+@import "_config";
+
+.header {
+  margin-bottom: 1.5em;
+}
+
+.leftText {
+  font-size: 1.5em;
+
+  .link {
+    text-decoration: none;
+  }
+}
+
+.word {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.pronunciation {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.definition {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
