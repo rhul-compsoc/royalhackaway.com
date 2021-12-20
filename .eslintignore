@@ -3,3 +3,4 @@ gatsby-*.js
 node_modules/
 oldsrc/
 public/
+#

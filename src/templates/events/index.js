@@ -127,6 +127,16 @@ export const pageQuery = graphql`
         event_start
         event_end
         subtitle
+        video {
+          autoplay
+          controls
+          responsive
+          fluid
+          sources {
+            src
+            type
+          }
+        }
       }
       fields {
         slug

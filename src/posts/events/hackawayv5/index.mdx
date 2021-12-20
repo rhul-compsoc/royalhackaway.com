@@ -147,6 +147,17 @@ navigation:
     href: https://rhulcompsoc.sharepoint.com/:b:/s/hello/EbeMq_6bhX9HiSmOKhP03HYBr_KLGRnE51dGQvt-Ggm56w?e=ciHaxu
   - label: Wiki
     href: https://wiki.cmpsc.uk/en/royalhackaway/v5
+
+video:
+  autoplay: true
+  controls: true
+  responsive: true
+  fluid: true
+  sources:
+    - src: https://vjs.zencdn.net/v/oceans.mp4
+      type: video/mp4
+    - src: https://vjs.zencdn.net/v/oceans.webm
+      type: video/webm
 ---
 
 import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
@@ -166,8 +177,8 @@ import { Image as Whatever } from "../../../components/Img"
 import { EventLocationSection } from "../../../components/EventLocationSection"
 import { LeftHandImage } from "../../../components/LeftHandImage"
 import { EventScheduleSection } from "../../../components/EventScheduleSection"
-
 import { TitoWidget } from "../../../components/TitoWidget"
+import { EventVideoWidget } from "../../../components/EventVideoWidget"
 
 import hackaway5logo from "../../../assets/images/logo/rh-white-montserrat-v5.svg"
 import { hackaway5logoClass } from "./v5.module.scss"
@@ -177,7 +188,6 @@ import { hackaway5logoClass } from "./v5.module.scss"
 <EventJumbotronParallax>
 
 <Whatever src={hackaway5logo} className={hackaway5logoClass} />
-
   <p>
     <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
     <br />
