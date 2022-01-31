@@ -11,7 +11,7 @@ const EventScheduleSection = ({ type }) => {
         <div className="row">
           {schedule.map(({ name, events }, scheduleIndex) => (
             <div className="col-sm" key={scheduleIndex}>
-              <table className="table table-bordered table-striped">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th className="text-center" colSpan="2">
