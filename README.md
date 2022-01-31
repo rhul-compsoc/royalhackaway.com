@@ -15,11 +15,12 @@ In terms of structure, everything has been built roughly in line with the defaul
 along with standard ReactJS folder structure, such as components in the /src/components folder.
 
 Some key details:
+
 - The homepage is decided by the homepage frontmatter flag. Only one event can have this flag at a time.
 - When linking to Royal Hackaway, always use the long form link if you intend for that link to last forever.
-    - https://royalhackaway.com/ won’t point to v4 forever!
-    - https://royalhackaway.com/events/hackawayv4 does!
-    - (Almost as if the folder structure means something)
+  - https://royalhackaway.com/ won’t point to v4 forever!
+  - https://royalhackaway.com/events/hackawayv4 does!
+  - (Almost as if the folder structure means something)
 - Settings are in gatsby-config.js
 - Check out the latest event in /src/posts/events for an idea of how to create a new event page.
 - Don’t worry about transpiling SASS/SCSS; This is done for you by Gatsby.
@@ -31,7 +32,7 @@ Some examples of what not to do:
 - Transpiling the SASS/SCSS to plain CSS
 - Obfuscate your CSS so nobody else can read it
 - Add a mysterious script that loads content from your personal server, and refuse to tell people what it does.
-    - Keep imports to NPM only.
+  - Keep imports to NPM only.
 
 (the last two actually happened to Alex)
 

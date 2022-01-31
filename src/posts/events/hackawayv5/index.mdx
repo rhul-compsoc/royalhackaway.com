@@ -31,61 +31,75 @@ full-description: >
 schedule:
   - name: Saturday 5th — Day 1
     events:
-      - time: "08:00"
+      - time: "8:00"
         activity: Registration
         description: |
           Bring along your ticket and laptop!
-          In line with government regulations, please bring proof of vaccination or a negative COVID-19 test.
-          COVID-19 Tests are available on site.
-      - time: "09:30"
+          Please bring proof of vaccination or a negative COVID-19 test.
+          COVID-19 LFT tests are available on site.
+      - time: "9:30"
         activity: Opening Ceremony
       - time: ""
         activity: Q&A Session
       - time: ""
         activity: 📺 Livestream Starts 📺
         description: Join us on Twitch to join along from home.
-      - time: "11:00"
+      - time: "10:30"
         activity: 🟢 Hacking Begins 🟢
+      - time: ""
+        activity: Team Building
       - time: "11:00"
         activity: Introduction to GitHub
-        description: Learn how to use GitHub
       - time: "12:00"
         activity: Lunch
+      - time: "13:00"
+        activity: Introduction to Python
       - time: "14:00"
-        activity: Whatever
-        description: Placeholder Event
-      - time: "18:00"
+        activity: Why JavaScript is Shit
+        description: |
+          JavaScript was used to code this page, render this page, and run the world - Is it all a bit too much?
+      - time: "16:00"
+        activity: Pub Quiz
+        description: Come in your teams for an afternoon of quizzing!
+      - time: "18:30"
+        activity: MLH Event
+      - time: "19:30"
+        activity: HackathonsUK Event
+      - time: "20:00"
         activity: Dinner Time
-      - time: "22:00"
-        activity: Carrot in a Box
+      - time: "23:00"
+        activity: Carrot in a Box 🥕📦
         description: |
-          Is the carrot in the box, or not?
-          A cunning game of bluff to see if you can trick the other person.
-      - time: "21:00"
-        activity: 📺 Night Stream 📺
-        description: |
-          Missed a talk? Replays will be running throughout the night.
+          A game of wits and bluffing to see if you can trick the other person into getting the carrot within your box.
   - name: Sunday 6th — Day 2
     events:
-      - time: "08:00"
-        activity: Breakfast!
-      - time: "09:30"
-        activity: 📺 Livestream Resumes 📺
-      - time: "12:00"
-        activity: ⚠ DevPost Submission Deadline ⚠
+      - time: Midnight
+        activity: Midnight Pizza 🍕
         description: |
-          If you're joining us online, don't forget you need a video demonstrating your project.
-      - time: "13:00"
-        activity: 🚨 Coding Ends - Submission Deadline 🚨
+          There is no such thing as "too much pizza"
+      - time: "1:00"
+        activity: PowerPoint™ Karaoke
+      - time: "8:00"
+        activity: Breakfast
+      - time: "12:30"
+        activity: 🚨 Coding Ends 🚨
         description: |
           No time left - besides, it's lunch time now.
       - time: ""
-        activity: "Lunch"
-      - time: "14:00"
-        activity: Demos & Presentations
+        activity: "Presentation Creation Time"
         description: |
-          Bring your laptop up and show us what you've made!
-      - time: "16:00 (approx)"
+          Spend the hour uploading your work onto DevPost and setting up your desk for people to see/judge your work at the Project Faire
+      - time: "13:30"
+        activity: "Lunch"
+      - time: ""
+        activity: "Project Faire"
+        description: |
+          Show off your project in a 'Science Fair'-esque like display to all other volunteers that come around!
+      - time: "15:30"
+        activity: Cleanup Time
+        description: |
+          Clean up, tidy up, pack up - We're about to decide who wins Royal Hackaway!
+      - time: "16:30 (approx)"
         activity: "Results Ceremony - Winners Announced"
 
 sponsor_document_enable: true
@@ -98,7 +112,7 @@ sponsors:
       - rhulcompsci
   - name: Silver
     colour: grey
-    tier: 3
+    tier: 2
     companies:
       - bcs
       - redbull
@@ -107,6 +121,7 @@ sponsors:
     tier: 3
     companies:
       - as207960
+      - tcs
   - name: Partner
     colour: null
     tier: 4
@@ -239,6 +254,6 @@ import { hackaway5logoClass } from "./v5.module.scss"
   <p class="text-center">Interested in sponsoring Hackaway v5?</p>
 </EventSponsorsSection>
 
-<!-- <EventScheduleSection type={SectionTypes.TERTIARY} /> -->
+<EventScheduleSection type={SectionTypes.TERTIARY} />
 
 <EventPeopleSection type={SectionTypes.SECONDARY} />
