@@ -210,7 +210,7 @@ import { TitoWidget } from "../../../components/TitoWidget"
 import { EventVideoWidget } from "../../../components/EventVideoWidget"
 
 import hackaway5logo from "../../../assets/images/logo/rh-white-montserrat-v5.svg"
-import { hackaway5logoClass } from "./v5.module.scss"
+import { video, hackaway5logoClass } from "./v5.module.scss"
 
 <MajorLeagueHackingBadge year={2022} />
 
@@ -222,9 +222,11 @@ import { hackaway5logoClass } from "./v5.module.scss"
     <br />
     <FaCalendarAlt /> Saturday 5th February - Sunday 6th February 2022
   </p>
-  <p>
-    <EventFullDescription />
-  </p>
+  <iframe
+    src="https://player.twitch.tv/?channel=hackathonsuk&parent=royalhackaway.com&parent=localhost&autoplay=true"
+    className={video}
+    allowFullScreen>
+  </iframe>
   <ButtonsContainer className="justify-content-center">
     <TitoWidget event_name="royal-hackaway/v5" releases="" label="Get your tickets!" />
     <SiteButton
@@ -232,6 +234,12 @@ import { hackaway5logoClass } from "./v5.module.scss"
       className="btn-hackaway-blurple"
     >
       <FaDiscord /> Join Discord
+    </SiteButton>
+    <SiteButton
+      href="https://wiki.cmpsc.uk/en/royalhackaway/v5"
+      className="btn-hackaway-primary"
+    >
+      Hacker Resources
     </SiteButton>
   </ButtonsContainer>
 </EventJumbotronParallax>
