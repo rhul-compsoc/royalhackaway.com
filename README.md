@@ -1,7 +1,8 @@
 # Royal Hackaway
 
 - [Website](https://royalhackaway.com)
-  - [Hackaway v5](https://royalhackaway.com/events/hackawayv5/)
+  - [Hackaway v6](https://royalhackaway.com/events/hackawayv6/)
+  - [~~Hackaway v5~~](https://royalhackaway.com/events/hackawayv5/)
   - [~~freshers hack~~](https://royalhackaway.com/events/freshers2021/)
   - [~~Hackaway v4~~](https://royalhackaway.com/events/hackawayv4/)
 
