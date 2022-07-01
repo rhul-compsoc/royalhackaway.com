@@ -18,7 +18,7 @@ const EventJumbotronParallax = ({ children, className, style }) => {
           layout="fullWidth"
         />
       </Background>
-      <div className="container">
+      <div className="container my-5">
         <div className="row justify-content-center">
           <div className="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-7">
             {children}
