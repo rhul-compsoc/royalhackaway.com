@@ -228,33 +228,62 @@ import { video, hackaway5logoClass } from "./v5.module.scss"
     allowFullScreen
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
   </iframe>
-  <ButtonsContainer className="justify-content-center">
-    <SiteButton
-      href="https://discord.gg/UHh6ea6mUp"
-      className="btn-hackaway-blurple"
-    >
-      <FaDiscord /> Join Discord
-    </SiteButton>
-    <SiteButton
-      href="https://wiki.cmpsc.uk/en/royalhackaway/v5"
-      className="btn-hackaway-primary"
-    >
-      Hacker Resources
-    </SiteButton>
-  </ButtonsContainer>
 </EventJumbotronParallax>
+<Section type={SectionTypes.PRIMARY}>
+<div className="container text-center">
+
+# Hackaway v5 is over!
+
+Stay updated with what's coming next on the Hackaway Discord server!
+
+<ButtonsContainer className="justify-content-center">
+  <SiteButton
+    href="https://discord.gg/UHh6ea6mUp"
+    className="btn-hackaway-blurple"
+  >
+    <FaDiscord /> Join Discord
+  </SiteButton>
+</ButtonsContainer>
+
+</div>
+</Section>
+
 <Section type={SectionTypes.TERTIARY}>
-<div className="container">
+
+<div className="text-center">
 
 # Winners!
 
-| Place | Product    | Link                                 |
-| ----- | ---------- | ------------------------------------ |
-| 1st   | **Knulla** | https://devpost.com/software/knulla  |
-| 2nd   | Swordle    | https://devpost.com/software/swordle |
-| 3rd   | websms     | https://devpost.com/software/websms  |
-
 </div>
+
+  <div className="container text-center flex flex-col justify-center">
+    <table className="mx-auto">
+      <thead>
+        <tr>
+          <td className="px-3">Place</td>
+          <td className="px-3">Name</td>
+          <td className="px-3">Link</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="px-3">1st</td>
+          <td className="px-3">Knulla</td>
+          <td className="px-3"><a href="https://devpost.com/software/knulla">https://devpost.com/software/knulla</a></td>
+        </tr>
+        <tr>
+          <td className="px-3">2nd</td>
+          <td className="px-3">Swordle</td>
+          <td className="px-3"><a href="https://devpost.com/software/swordle">https://devpost.com/software/swordle</a></td>
+        </tr>
+        <tr>
+          <td className="px-3">3rd</td>
+          <td className="px-3">websms</td>
+          <td className="px-3"><a href="https://devpost.com/software/websms">https://devpost.com/software/websms</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </Section>
 <EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
 <HackathonDefinitionSection type={SectionTypes.TERTIARY} />
