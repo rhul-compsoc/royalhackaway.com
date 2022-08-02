@@ -1,0 +1,137 @@
+---
+name: fresher's game jam 2022
+short_name: fresher's game jam
+render: true
+is-public: true
+is-over: true
+
+# Mark that a page is destined to be posted at "/" instead of something like "/events/hackawayv4"
+# Sets up (temporary) redirect from "/events/hackawayv4" to "/"
+# Redirects array (permanently) redirects to the actual page
+homepage: false
+redirects:
+  - /freshers-hackathon
+  - /freshers-game-jam
+  - /freshers2022
+
+event_start: "2022-09-24T10:00:00+00:00"
+event_end: "2022-09-25T20:00:00+00:00"
+
+hacking_start: 2021-09-24T10:00:00+00
+hacking_end: 2021-09-25T10:00:00+00
+
+short-description: >
+  A beginner's hackathon, with a gaming twist: two days to collaborate, build and learn. Team up and create the best project before 10pm.
+full-description: >
+  A beginner's hackathon, with a gaming twist: two days to collaborate, build and learn. Team up and create the best project before 10pm.
+
+schedule: []
+sponsor_document_enable: false
+sponsor_document: null
+sponsors: []
+people:
+  - person: gosystems
+    role: President
+  - person: 2022-steph
+    role: Vice President
+  - person: 2021-amber
+    role: Secretary
+  - person: 2022-leo
+    role: Treasurer
+  - person: 2021-charlie
+    role: Events, Academic & Outreach Director
+  - person: 2022-riddhi
+    role: Charity and Welfare Director
+faq:
+  - can-i-start-before-i-arrive
+  - freshershack2021-do-i-have-to-study-computer-science
+  - do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - freshershack2021-how-much-does-it-cost
+  - want-to-join-the-committee
+  - freshershack2021-who-can-attend
+  - who-owns-my-project
+  - how-do-i-opt-out-of-photography
+navigation:
+  - label: Discord
+    href: https://dc.cmpsc.uk/
+  - label: CompSoc Freshers Events 2022
+    href: https://computingsociety.co.uk/events/freshers2022
+  - label: Royal Hackaway V6
+    to: /events/hackawayv6
+---
+
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventJumbotron } from "../../../components/EventJumbotron"
+import { Section, SectionTypes } from "../../../components/Section"
+import { EventFullDescription } from "../../../components/EventFullDescription"
+import { EventCountdownSection } from "../../../components/EventCountdownSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventPeopleSection } from "../../../components/EventPeopleSection"
+import { EventDate } from "../../../components/EventDate"
+
+import { SiteButton } from "../../../components/SiteClickable"
+import { ButtonsContainer } from "../../../components/ButtonsContainer"
+import { FaDiscord } from "react-icons/fa"
+import { GrTicket } from "react-icons/gr"
+
+import freshersHackLogo from "./DiscordCanary_9EdQ4hkP3l.png"
+import {
+  logo,
+  gamejamTopOverride,
+  gamejamMapOverride,
+} from "./freshers2022.module.scss"
+
+import { FreshersJam } from "../../../components/FreshersJam"
+
+<!-- <MajorLeagueHackingBadge year={2023} /> -->
+
+<EventJumbotron className="text-center" style={{ minHeight: "30vh" }}>
+  <h1>
+    <strong>&lt;//hackaway</strong>.zip
+  </h1>
+</EventJumbotron>
+
+<FreshersJam
+  style={{
+    height: "300px",
+    marginTop: "-150px",
+    marginBottom: "-150px",
+    zIndex: "1",
+  }}
+/>
+
+<Section
+  className={`${gamejamTopOverride} text-center`}
+  type={SectionTypes.TERTIARY}
+>
+  <h2>What is it?</h2>
+  <p>
+    Fresher's Hack 2022 is a two-day beginners hackathon for new and existing
+    students of Royal Holloway, University of London.
+  </p>
+  <p>
+    Come along to the Shilling Building on the 24th and 25th of September 2022!
+  </p>
+  <ButtonsContainer className="justify-content-center">
+    <SiteButton href="https://dc.cmpsc.uk/" className="btn-hackaway-blurple">
+      <FaDiscord /> Join the Computing Society Discord server
+    </SiteButton>
+    <SiteButton
+      href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+      className="btn-hackaway-orange"
+    >
+      <GrTicket /> Grab your Tickets!
+    </SiteButton>
+  </ButtonsContainer>
+</Section>
+
+<EventLocationSection
+  className={`${gamejamMapOverride}`}
+  map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d630036.1203986208!2d-1.5904858479055166!3d51.91427714209127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487677138a372981%3A0xc3e50ca59ee46f11!2sDepartment%20of%20Electronic%20Engineering!5e0!3m2!1sen!2suk!4v1632520878422!5m2!1sen!2suk"
+/>
+
+<EventPeopleSection type={SectionTypes.PRIMARY} />
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.SECONDARY} />
+<EventSponsorsSection type={SectionTypes.TERTIARY} />
