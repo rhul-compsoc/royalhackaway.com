@@ -77,9 +77,13 @@ import { FaDiscord } from "react-icons/fa"
 import { GrTicket } from "react-icons/gr"
 
 import freshersHackLogo from "./DiscordCanary_9EdQ4hkP3l.png"
-import { logo } from "./freshers2022.module.scss"
+import {
+  logo,
+  gamejamTopOverride,
+  gamejamMapOverride,
+} from "./freshers2022.module.scss"
 
-import { FreshersHack } from "../../../components/FreshersHack"
+import { FreshersJam } from "../../../components/FreshersJam"
 
 <!-- <MajorLeagueHackingBadge year={2023} /> -->
 
@@ -89,7 +93,7 @@ import { FreshersHack } from "../../../components/FreshersHack"
   </h1>
 </EventJumbotron>
 
-<FreshersHack
+<FreshersJam
   style={{
     height: "300px",
     marginTop: "-150px",
@@ -98,7 +102,10 @@ import { FreshersHack } from "../../../components/FreshersHack"
   }}
 />
 
-<Section className="text-center" type={SectionTypes.TERTIARY}>
+<Section
+  className="gamejamTopOverride text-center"
+  type={SectionTypes.TERTIARY}
+>
   <h2>What is it?</h2>
   <p>
     Fresher's Hack 2022 is a two-day beginners hackathon for new and existing
@@ -120,7 +127,10 @@ import { FreshersHack } from "../../../components/FreshersHack"
   </ButtonsContainer>
 </Section>
 
-<EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d630036.1203986208!2d-1.5904858479055166!3d51.91427714209127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487677138a372981%3A0xc3e50ca59ee46f11!2sDepartment%20of%20Electronic%20Engineering!5e0!3m2!1sen!2suk!4v1632520878422!5m2!1sen!2suk" />
+<EventLocationSection
+  className={{ gamejamMapOverride }}
+  map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d630036.1203986208!2d-1.5904858479055166!3d51.91427714209127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487677138a372981%3A0xc3e50ca59ee46f11!2sDepartment%20of%20Electronic%20Engineering!5e0!3m2!1sen!2suk!4v1632520878422!5m2!1sen!2suk"
+/>
 
 <EventPeopleSection type={SectionTypes.PRIMARY} />
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.SECONDARY} />
