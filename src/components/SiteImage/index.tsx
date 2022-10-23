@@ -60,7 +60,8 @@ const SiteImage = ({
     <>
       {image.light &&
         forcedTheme !== "dark" &&
-        (image.light.publicURL.endsWith(".svg") ? (
+        (image.light.publicURL.endsWith(".svg") ||
+        image.dark.publicURL.endsWith(".gif") ? (
           <img
             {...other}
             src={image.light.publicURL}
@@ -92,7 +93,8 @@ const SiteImage = ({
 
       {image.dark &&
         forcedTheme !== "light" &&
-        (image.dark.publicURL.endsWith(".svg") ? (
+        (image.dark.publicURL.endsWith(".svg") ||
+        image.dark.publicURL.endsWith(".gif") ? (
           <img
             {...other}
             src={image.dark.publicURL}
