@@ -5,7 +5,7 @@ render: true
 is-public: true
 is-over: false
 
-homepage: false
+homepage: true
 redirects:
   - /v6
   - /2023
@@ -31,7 +31,20 @@ full-description: >
 schedule: []
 sponsor_document_enable: true
 # sponsor_document: ./v6-Sponsorship-Deck.pdf
-sponsors: []
+sponsors:
+  - name: Platinum
+    colour: platinum
+    tier: 1
+    companies:
+      - rhulcompsci
+      - scciotsc
+  - name: Supporter
+    colour: null
+    tier: 4
+    companies:
+      - goSystemLtd
+      - rhul
+      - rhulsu
 people:
   - person: gosystems
     role: President
@@ -50,14 +63,15 @@ faq:
 
 navigation:
   - label: Discord
-    href: https://discord.gg/c8mq6cDwjF
+    href: https://discord.gg/8EwQhhRkJv
 ---
 
 import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
-import { EventJumbotron } from "../../../components/EventJumbotron"
+import { EventJumbotronParallax } from "../../../components/EventJumbotronParallax"
 import { SectionTypes } from "../../../components/Section"
 import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
+import { EventLocationSection } from "../../../components/EventLocationSection"
 import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
@@ -66,9 +80,9 @@ import { SiteButton } from "../../../components/SiteClickable"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
 import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 
-<!-- <MajorLeagueHackingBadge year={2022} /> -->
+<MajorLeagueHackingBadge year={2023} />
 
-<EventJumbotron>
+<EventJumbotronParallax>
 
 # hackaway v6
 
@@ -97,8 +111,9 @@ import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
       <FaDiscord /> Join Discord
     </SiteButton>
   </ButtonsContainer>
-</EventJumbotron>
+</EventJumbotronParallax>
 <EventCountdownSection type={SectionTypes.SECONDARY} />
+<EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
 <HackathonDefinitionSection type={SectionTypes.TERTIARY} />
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
   <div class="row">
