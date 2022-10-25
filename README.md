@@ -2,7 +2,7 @@
 
 - [Website](https://royalhackaway.com)
   - [Hackaway v6](https://royalhackaway.com/events/hackawayv6/)
-  - [freshers jam](https://royalhackaway.com/events/freshers2022/)
+  - [~~freshers jam~~](https://royalhackaway.com/events/freshers2022/)
   - [~~Hackaway v5~~](https://royalhackaway.com/events/hackawayv5/)
   - [~~freshers hack~~](https://royalhackaway.com/events/freshers2021/)
   - [~~Hackaway v4~~](https://royalhackaway.com/events/hackawayv4/)
