@@ -76,19 +76,20 @@ import { EventLocationSection } from "../../../components/EventLocationSection"
 import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
+import { Image as Whatever } from "../../../components/Img"
 
 import { SiteButton } from "../../../components/SiteClickable"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
 import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
 
+import hackaway6logo from "../../../assets/images/logo/rh-white-montserrat-v6.png"
+import { hackaway6logoClass } from "./v6.module.scss"
+
 <MajorLeagueHackingBadge year={2023} />
 
 <EventJumbotronParallax>
 
-# hackaway v6
-
-### Hack something awesome!
-
+<Whatever src={hackaway6logo} className={hackaway6logoClass} />
   <p>
     <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
     <br />
