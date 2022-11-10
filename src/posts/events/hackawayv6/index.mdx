@@ -93,7 +93,12 @@ import { Image as Whatever } from "../../../components/Img"
 
 import { SiteButton } from "../../../components/SiteClickable"
 import { ButtonsContainer } from "../../../components/ButtonsContainer"
-import { FaCalendarAlt, FaDiscord, FaMapMarkerAlt } from "react-icons/fa"
+import {
+  FaCalendarAlt,
+  FaDiscord,
+  FaMapMarkerAlt,
+  FaTicketAlt,
+} from "react-icons/fa"
 
 import hackaway6logo from "../../../assets/images/logo/rh-white-montserrat-v6.png"
 import { hackaway6logoClass } from "./v6.module.scss"
@@ -113,11 +118,10 @@ import { hackaway6logoClass } from "./v6.module.scss"
   </p>
   <ButtonsContainer>
     <SiteButton
-      disabled
-      href="https://tickets.royalhackaway.com/"
-      className="btn-hackaway-primary"
+      href="https://pretix.eu/royalhackaway/v6/"
+      className="btn-hackaway-orange"
     >
-      Coming soon...
+      <FaTicketAlt /> Get Tickets
     </SiteButton>
     <SiteButton
       href="https://discord.gg/c8mq6cDwjF"
