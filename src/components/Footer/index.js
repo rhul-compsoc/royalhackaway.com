@@ -14,11 +14,11 @@ const Footer = () => {
           <div className="col col-12 col-sm-12 col-md-4">
             <img src={compsoc} className={styles.logo} />
             <p>
-              Royal Hackaway is an entity of the Royal Holloway, Computing
-              Society that hosts hackathons and other similarly cool events.
+              Royal Hackaway is hosted by the Royal Holloway Computing Society
+              that hosts hackathons and other similarly cool events.
             </p>
             <p>
-              For more information about the Computing Society visit our{" "}
+              For more information about the Computing Society, visit our{" "}
               <a
                 className="link-orange text-decoration-none"
                 href="https://computingsociety.co.uk"
@@ -31,7 +31,7 @@ const Footer = () => {
             <h2 className="fw-bold">Stay Connected</h2>
             <p>
               To keep up to date with all things Royal Hackaway follow our
-              social media pages
+              social media pages!
             </p>
             <ul className={styles.links}>
               <li>
@@ -60,27 +60,27 @@ const Footer = () => {
             <ul className={CombineStyles(styles.links, "link-orange")}>
               <li>
                 <SiteLink
-                  to="https://wiki.cmpsc.uk/en/royalhackaway/v5/data-protection"
+                  to="http://gsnet.uk/cdn/goSystem-Data-Policy.pdf"
                   className="link-orange text-decoration-none"
                 >
                   Data Protection Policy
                 </SiteLink>
               </li>
               <li>
-                <a
-                  href="https://wiki.cmpsc.uk/en/code-of-conduct"
+                <SiteLink
+                  href="/CodeOfConduct_2.pdf"
                   className="link-orange text-decoration-none"
                 >
                   CompSoc Code of Conduct
-                </a>
+                </SiteLink>
               </li>
               <li>
-                <a
+                <SiteLink
                   href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                   className="link-orange text-decoration-none"
                 >
                   MLH Code of Conduct
-                </a>
+                </SiteLink>
               </li>
               <li>
                 <SiteLink
