@@ -2,7 +2,7 @@
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: 2em;
   .cardContent {
     color: $tertiary-foreground-colour;
