@@ -21,21 +21,27 @@ const EventWhatsOnSection = ({ type }) => {
             <div className="row justify-content-center">
               {people.map(({ person, role }) => (
                 <div
-                  className={CombineStyles(
-                    "col-6 col-sm-4 col-md-3",
-                    styles.card
-                  )}
+                  className={CombineStyles("col-6 col-sm-4 col-md-3")}
                   key={person.frontmatter.name}
                 >
                   <div
-                    className={styles.pictureContainer}
                     style={{
                       background: `url(${person.frontmatter.image.light.publicURL})`,
-                      width: "100%",
-                      height: "1wv",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      height: "150px",
+                      width: "150px",
                     }}
                   >
-                    <div className={styles.overlayText}>
+                    <div
+                      className={styles.overlayText}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        color: "#000",
+                      }}
+                    >
                       <span>{person.frontmatter.name}</span>
                       <br />
                       <span className={styles.description}>{role}</span>
