@@ -60,7 +60,7 @@ const Footer = () => {
             <ul className={CombineStyles(styles.links, "link-orange")}>
               <li>
                 <SiteLink
-                  to="http://gsnet.uk/cdn/goSystem-Data-Policy.pdf"
+                  to="https://www.su.rhul.ac.uk/pageassets/intranet/staff/policies/RHSU-Data-Protection-Policy-Feb-2022.pdf"
                   className="link-orange text-decoration-none"
                 >
                   Data Protection Policy
