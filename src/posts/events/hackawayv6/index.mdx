@@ -28,7 +28,56 @@ full-description: >
   This is our sixth time running this event, and we're excited to
   create a more inclusive and rewarding event for all. You can join us in-person, or onine!
 
-schedule: []
+schedule:
+  - name: Saturday 4th - Day 1
+    events:
+      - time: "08:30"
+        activity: Registration begins
+        description: |
+          Open doors to hackers!
+          Bring along your ticket and laptop.
+      - time: "09:30"
+        activity: Opening Ceremony
+      - time: ""
+        activity: 📺 Livestream Starts 📺
+        description: Join us on Twitch to join along from home.
+      - time: "10:00"
+        activity: Team Building
+      - time: ""
+        activity: 💻 Hacking starts 💻
+      - time: "13:00"
+        activity: Lunchtime
+      - time: "14:00"
+        activity: Synk Mini Event
+      - time: "15:00"
+        activity: MLH Mini Event
+      - time: "16:00"
+        activity: Hackathons UK Mini Event
+      - time: "18:30"
+        activity: Worth Mini Event
+      - time: "19:30"
+        activity: Dinnertime (Pizza)
+      - time: "20:00"
+        activity: Pub Quiz
+      - time: "21:00"
+        activity: Carrot in a Box 🥕📦❓
+      - time: "22:00"
+        activity: Taskmaster
+  - name: Sunday 5th - Day 2
+    events:
+      - time: "00:00"
+        activity: PowerPoint Karoke
+      - time: "08:00"
+        activity: Breakfast
+      - time: "12:30"
+        activity: Hacking ends
+      - time: "13:00"
+        activity: Lunch
+      - time: "14:00"
+        activity: Judging Commences
+      - time: "15:30"
+        activity: Closing Ceremony
+
 sponsor_document_enable: true
 # sponsor_document: ./v6-Sponsorship-Deck.pdf
 sponsors:
@@ -64,6 +113,7 @@ sponsors:
 people:
   - person: gosystems
     role: President
+
 faq:
   - 2023-can-i-go-home-overnight-leave-early
   - whats-a-hackathon
@@ -87,6 +137,7 @@ import { SectionTypes } from "../../../components/Section"
 import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventScheduleSection } from "../../../components/EventScheduleSection" 
 import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
@@ -153,3 +204,5 @@ import { hackaway6logoClass } from "./v6.module.scss"
 >
   <p class="text-center">Interested in sponsoring Hackaway v6?</p>
 </EventSponsorsSection>
+
+<EventScheduleSection type={SectionTypes.TERTIARY} />
