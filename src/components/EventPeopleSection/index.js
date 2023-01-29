@@ -19,7 +19,7 @@ const EventPeopleSection = ({ type }) => {
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-12 col-md-10 col-xl-8">
-            <div className="row justify-content-center">
+            <div className="row g-2 justify-content-center">
               {people.map(({ person, role }) => (
                 <div
                   className={CombineStyles(

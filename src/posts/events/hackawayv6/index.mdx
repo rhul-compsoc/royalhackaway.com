@@ -28,7 +28,77 @@ full-description: >
   This is our sixth time running this event, and we're excited to
   create a more inclusive and rewarding event for all. You can join us in-person, or onine!
 
-schedule: []
+schedule:
+  - name: Saturday 4th - Day 1
+    events:
+      - time: "08:30"
+        activity: Registration begins
+        description: |
+          Open doors to hackers!
+          Bring along your tickets and laptops.
+      - time: "09:30"
+        activity: Opening Ceremony
+      - time: ""
+        activity: 📺 Livestream Starts 📺
+        description: Join us on Twitch to join along from home.
+      - time: "10:00"
+        activity: Team Building
+      - time: ""
+        activity: 💻 Hacking starts 💻
+      - time: "13:00"
+        activity: Lunchtime
+      - time: "14:00"
+        activity: Synk Mini Event
+      - time: "15:00"
+        activity: MLH Mini Event
+      - time: "16:00"
+        activity: Hackathons UK Mini Event
+      - time: "18:30"
+        activity: Worth Mini Event
+      - time: "19:30"
+        activity: Dinnertime (Pizza) 🍕
+      - time: "20:00"
+        activity: Pub Quiz 🍺
+      - time: "21:00"
+        activity: Carrot in a Box 🥕📦❓
+        description: |
+          A game of wits and bluffing to see if you can trick the other person into getting the carrot within your box.
+      - time: "22:00"
+        activity: Taskmaster ✉️
+        description: |
+          Compete in teams to perform a series of bizzare tasks. (As seen on TV!)
+
+  - name: Sunday 5th - Day 2
+    events:
+      - time: "00:00"
+        activity: PowerPoint Karoke™
+        description: |
+          Sing ya heart out with the power of Microsoft™ PowerPoint™
+      - time: "08:00"
+        activity: Breakfast
+      - time: "12:30"
+        activity: 🛑 Hacking ends 🛑
+      - time: ""
+        activity: "Presentation Creation Time"
+        description: |
+          Spend the hour uploading your work onto DevPost and setting up your desk for people to see/judge your work at the Project Faire
+      - time: "13:00"
+        activity: Lunch
+      - time: ""
+        activity: "Project Faire"
+        description: |
+          Show off your project in a 'Science Fair'-esque like display to all other volunteers that come around!
+      - time: "14:00"
+        activity: Judging Commences
+      - time: "15:30"
+        activity: Closing Ceremony
+      - time: ""
+        activity: Cleanup Time
+        description: |
+          Clean up, tidy up, pack up - We're about to decide who wins Royal Hackaway!
+      - time: "16:30 (approx)"
+        activity: "Results Ceremony - Winners Announced"
+
 sponsor_document_enable: true
 # sponsor_document: ./v6-Sponsorship-Deck.pdf
 sponsors:
@@ -43,6 +113,7 @@ sponsors:
     tier: 2
     companies:
       - bcs
+      - worth
   - name: Supporter
     colour: null
     tier: 4
@@ -62,8 +133,23 @@ sponsors:
       - rhulsu
 
 people:
-  - person: gosystems
+  - person: 2022-steph
     role: President
+  - person: 2021-amber
+    role: Secretary
+  - person: 2022-leo
+    role: Treasurer
+  - person: 2022-james
+    role: Vice President
+  - person: 2021-danny
+    role: Competitions Director
+  - person: 2022-riddhi
+    role: Charity & Welfare Director
+  - person: 2022-sinan
+    role: First Year Representitive
+  - person: 2022-william
+    role: Events Director
+
 faq:
   - 2023-can-i-go-home-overnight-leave-early
   - whats-a-hackathon
@@ -87,6 +173,8 @@ import { SectionTypes } from "../../../components/Section"
 import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventScheduleSection } from "../../../components/EventScheduleSection" 
+import { EventPeopleSection } from "../../../components/EventPeopleSection" 
 import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
 import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
 import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
@@ -105,9 +193,7 @@ import hackaway6logo from "../../../assets/images/logo/rh-white-montserrat-v6.pn
 import { hackaway6logoClass } from "./v6.module.scss"
 
 <MajorLeagueHackingBadge year={2023} />
-
 <EventJumbotronParallax>
-
 <Whatever src={hackaway6logo} className={hackaway6logoClass} />
   <p>
     <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
@@ -153,3 +239,5 @@ import { hackaway6logoClass } from "./v6.module.scss"
 >
   <p class="text-center">Interested in sponsoring Hackaway v6?</p>
 </EventSponsorsSection>
+<EventScheduleSection type={SectionTypes.TERTIARY} />
+<EventPeopleSection type={SectionTypes.SECONDARY} />
