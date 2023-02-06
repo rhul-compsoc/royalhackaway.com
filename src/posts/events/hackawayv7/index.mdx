@@ -1,0 +1,125 @@
+---
+name: Royal Hackaway v7
+short_name: Hackaway v7
+render: true
+is-public: false # Set to true sooner to the event
+is-over: false
+
+homepage: false
+redirects:
+  - /v7
+  - /2024
+
+event_start: "2024-02-03T10:00:00+00:00"
+event_end: "2024-02-04T18:00:00+00:00"
+
+hacking_start: 2024-02-03T11:00:00+00
+hacking_end: 2024-02-04T13:00:00+00
+
+short-description: An exciting two-day Hackathon, for students across the UK or around the world
+full-description: >
+  Royal Hackaway is Royal Holloway's annual hackathon.
+
+  Open to students from all around the world,
+  in this two-day hackathon you'll work as a team to build a project.
+  You'll pick up new skills, try out new tech, and meet new people.
+
+
+  This is our sixth time running this event, and we're excited to
+  create a more inclusive and rewarding event for all. You can join us in-person, or onine!
+
+schedule: []
+sponsor_document_enable: false
+# sponsor_document: ./v7-Sponsorship-Deck.pdf
+sponsors: []
+people: []
+
+faq:
+  - 2023-can-i-go-home-overnight-leave-early
+  - whats-a-hackathon
+  - can-i-start-before-i-arrive
+  - do-i-have-to-study-computer-science
+  - 2023-do-i-need-to-come-with-a-team
+  - do-you-have-a-code-of-conduct
+  - how-much-does-it-cost
+  - 2023-who-can-attend
+  - who-owns-my-project
+  - how-do-i-opt-out-of-photography
+
+navigation:
+  - label: Discord
+    href: https://discord.gg/8EwQhhRkJv
+---
+
+import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
+import { EventJumbotronParallax } from "../../../components/EventJumbotronParallax"
+import { SectionTypes } from "../../../components/Section"
+import { EventFullDescription } from "../../../components/EventFullDescription"
+import { EventCountdownSection } from "../../../components/EventCountdownSection"
+import { EventLocationSection } from "../../../components/EventLocationSection"
+import { EventScheduleSection } from "../../../components/EventScheduleSection" 
+import { EventPeopleSection } from "../../../components/EventPeopleSection" 
+import { HackathonDefinitionSection } from "../../../components/HackathonDefinitionSection"
+import { EventFrequentlyAskedQuestionsSection } from "../../../components/EventFrequentlyAskedQuestionsSection"
+import { EventSponsorsSection } from "../../../components/EventSponsorsSection"
+import { Image as Whatever } from "../../../components/Img"
+
+import { SiteButton } from "../../../components/SiteClickable"
+import { ButtonsContainer } from "../../../components/ButtonsContainer"
+import {
+  FaCalendarAlt,
+  FaDiscord,
+  FaMapMarkerAlt,
+  FaTicketAlt,
+} from "react-icons/fa"
+
+import hackaway7logo from "../../../assets/images/logo/rh-white-montserrat-v7.png"
+import { hackaway7logoClass } from "./v7.module.scss"
+
+<!-- <MajorLeagueHackingBadge year={2024} /> -->
+<EventJumbotronParallax>
+<Whatever src={hackaway7logo} className={hackaway7logoClass} />
+  <p>
+    <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
+    <br />
+    <FaCalendarAlt /> Saturday 3th February - Sunday 4th February 2024
+  </p>
+  <p>
+    <EventFullDescription />
+  </p>
+  <ButtonsContainer>
+    <SiteButton
+      href="https://pretix.eu/royalhackaway/v7/"
+      className="btn-hackaway-orange"
+    >
+      <FaTicketAlt /> Get Tickets
+    </SiteButton>
+    <SiteButton
+      href="https://discord.gg/8EwQhhRkJv"
+      className="btn-hackaway-blurple"
+    >
+      <FaDiscord /> Join Discord
+    </SiteButton>
+  </ButtonsContainer>
+</EventJumbotronParallax>
+<EventCountdownSection type={SectionTypes.SECONDARY} />
+<EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
+<HackathonDefinitionSection type={SectionTypes.TERTIARY} />
+<EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
+  <div class="row">
+    <div class="col text-center">
+      <SiteButton
+        disabled
+        className="btn-hackaway-primary"
+      >
+        Additional Resources coming soon!
+      </SiteButton>
+    </div>
+  </div>
+</EventFrequentlyAskedQuestionsSection>
+<EventSponsorsSection
+  type={SectionTypes.TERTIARY}
+  link="https://rhulcompsoc.sharepoint.com/:b:/s/hello/EdmsEMZCTZxEpJf8JAMuBAsBSJs_q0M09ejDS-V3M8Dyzw?e=K0zRNV"
+>
+  <p class="text-center">Interested in sponsoring Hackaway v7?</p>
+</EventSponsorsSection>
