@@ -3,7 +3,7 @@ name: Royal Hackaway v6
 short_name: Hackaway v6
 render: true
 is-public: true
-is-over: false
+is-over: true
 
 homepage: true
 redirects:
@@ -169,7 +169,7 @@ navigation:
 
 import { MajorLeagueHackingBadge } from "../../../components/MajorLeagueHackingBadge"
 import { EventJumbotronParallax } from "../../../components/EventJumbotronParallax"
-import { SectionTypes } from "../../../components/Section"
+import { SectionTypes, Section } from "../../../components/Section"
 import { EventFullDescription } from "../../../components/EventFullDescription"
 import { EventCountdownSection } from "../../../components/EventCountdownSection"
 import { EventLocationSection } from "../../../components/EventLocationSection"
@@ -195,30 +195,74 @@ import { hackaway6logoClass } from "./v6.module.scss"
 <MajorLeagueHackingBadge year={2023} />
 <EventJumbotronParallax>
 <Whatever src={hackaway6logo} className={hackaway6logoClass} />
-  <p>
+    <p>
     <FaMapMarkerAlt /> Windsor Building, Royal Holloway, University of London
     <br />
     <FaCalendarAlt /> Saturday 4th February - Sunday 5th February 2023
   </p>
-  <p>
-    <EventFullDescription />
-  </p>
-  <ButtonsContainer>
-    <SiteButton
-      href="https://pretix.eu/royalhackaway/v6/"
-      className="btn-hackaway-orange"
-    >
-      <FaTicketAlt /> Get Tickets
-    </SiteButton>
-    <SiteButton
-      href="https://discord.gg/8EwQhhRkJv"
-      className="btn-hackaway-blurple"
-    >
-      <FaDiscord /> Join Discord
-    </SiteButton>
-  </ButtonsContainer>
+  <iframe
+    src="https://www.youtube.com/embed/2zRMgKruZw0"
+    className={video}
+    allowFullScreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+  </iframe>
 </EventJumbotronParallax>
-<EventCountdownSection type={SectionTypes.SECONDARY} />
+<Section type={SectionTypes.PRIMARY}>
+<div className="container text-center">
+
+# Hackaway v6 is over!
+
+Stay updated with what's coming next on the Hackaway Discord server!
+
+<ButtonsContainer className="justify-content-center">
+  <SiteButton
+    href="https://discord.gg/UHh6ea6mUp"
+    className="btn-hackaway-blurple"
+  >
+    <FaDiscord /> Join Discord
+  </SiteButton>
+</ButtonsContainer>
+
+</div>
+</Section>
+
+<Section type={SectionTypes.TERTIARY}>
+
+<div className="text-center">
+
+# Winners!
+
+</div>
+
+  <div className="container text-center flex flex-col justify-center">
+    <table className="mx-auto">
+      <thead>
+        <tr>
+          <td className="px-3">Place</td>
+          <td className="px-3">Name</td>
+          <td className="px-3">Link</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="px-3">1st</td>
+          <td className="px-3">galactos</td>
+          <td className="px-3"><a href="https://devpost.com/software/galactos">https://devpost.com/software/galactos</a></td>
+        </tr>
+        <tr>
+          <td className="px-3">2nd</td>
+          <td className="px-3">Kaching Karaoke</td>
+          <td className="px-3"><a href="https://devpost.com/software/kaching-karaoke">https://devpost.com/software/kaching-karaoke</a></td>
+        </tr>
+        <tr>
+          <td className="px-3">3rd</td>
+          <td className="px-3">GoFish</td>
+          <td className="px-3"><a href="https://devpost.com/software/gofish-7x2ktj">https://devpost.com/software/gofish-7x2ktj</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Section>
 <EventLocationSection map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.759701888386!2d-0.5680310838687079!3d51.42584067962183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487679fe3dce3113%3A0x47f0f448b19730a3!2sWindsor+Building!5e0!3m2!1sen!2suk!4v1546448505106" />
 <HackathonDefinitionSection type={SectionTypes.TERTIARY} />
 <EventFrequentlyAskedQuestionsSection type={SectionTypes.PRIMARY}>
